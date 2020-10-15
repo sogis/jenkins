@@ -30,14 +30,14 @@ Ausserdem wurden alle Resourcen Angaben parametrisiert und für die Verwendung d
 Namespace liegt der Jenkins *ImageStream* nicht mehr benötigt. Stattdessen wird er nun dafür verwendet den Namen des *Namespaces*, in dem Jenkins läuft als ENV Variable an den Pod mitzugeben. Dieser wird dort bspw für die Namen der aus
 Openshift importierten Secrets benötigt.
 Die Installation in Openshift im Projekt *projectname* erfolgt mit den folgenden Befehlen. Diverse Parameter sind im Template enthalten und können angepasst werden.
-Im AGI werden allerdings die definierten Defaults verwendet.
+Im AGI werden die definierten Defaults verwendet. Eine Ausnahme bildet der Parameter *NAMESPACE*. Dieser muss mitgegeben werden und beinhaltet den Namen des *NAMESPACES*, in dem Jenkins laufen wird (im Beispiel agi-apps-test).
 
 ```
 oc login
 oc project projectname
 git clone https://github.com/sogis/pipelines.git
 cd pipelines
-oc process -f jenkins-persistent-template.yaml | oc apply -f- 
+oc process -f jenkins-persistent-template.yaml -p NAMESPACE=agi-apps-test | oc apply -f- 
 ```
 Das Login im Jenkins erfolgt über Openshift OAuth Authentifizierung, die vom Openshift Login Plugin zur Verfügung gestellt wird
 
