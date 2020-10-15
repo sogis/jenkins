@@ -1,0 +1,69 @@
+OpenShift Build agi-apps-test/ilivalidator-web-service-1 from https://github.com/pfeimich/ilivalidator-web-service.git
+Checking out git https://github.com/pfeimich/ilivalidator-web-service.git into /var/lib/jenkins/jobs/agi-apps-test/jobs/agi-apps-test-ilivalidator-web-service/workspace@script to read Jenkinsfile
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/pfeimich/ilivalidator-web-service.git
+ > git init /var/lib/jenkins/jobs/agi-apps-test/jobs/agi-apps-test-ilivalidator-web-service/workspace@script # timeout=10
+Fetching upstream changes from https://github.com/pfeimich/ilivalidator-web-service.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/pfeimich/ilivalidator-web-service.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/pfeimich/ilivalidator-web-service.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/pfeimich/ilivalidator-web-service.git # timeout=10
+Fetching upstream changes from https://github.com/pfeimich/ilivalidator-web-service.git
+ > git fetch --tags --progress https://github.com/pfeimich/ilivalidator-web-service.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision f782215590bf321fe47c5d5ce2ca16ce7a1eff8c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f782215590bf321fe47c5d5ce2ca16ce7a1eff8c
+Commit message: "Update Jenkinsfile"
+First time build. Skipping changelog.
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4CcidHSqjU3dWIU+uS5naOtkdTU9krcZdNLygtRpUCoUAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4AAedh8yYR3+zTbiijmPvqDMCVh3Nu7lYMFPR5xSGnmNAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/lib/jenkins/jobs/agi-apps-test/jobs/agi-apps-test-ilivalidator-web-service/workspace
+[8mha:////4Iir6/QmUAAhEm2CDw5OIAfXhYnzeuy/Swb7JX89hEtkAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4ItQ/uJWatRr3LZBuoJrIazZ36TRhTvMu1qAtR9K8lnWAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4DagydfRPV4fXaHQpwoSf91OJHSUio7mSA088xIUZNWpAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4JCtY60dHLiqe35yawnHRIwPjuSPGxgBi+dGHKgFb9jiAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/pfeimich/ilivalidator-web-service.git
+ > git init /var/lib/jenkins/jobs/agi-apps-test/jobs/agi-apps-test-ilivalidator-web-service/workspace # timeout=10
+Fetching upstream changes from https://github.com/pfeimich/ilivalidator-web-service.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/pfeimich/ilivalidator-web-service.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/pfeimich/ilivalidator-web-service.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/pfeimich/ilivalidator-web-service.git # timeout=10
+Fetching upstream changes from https://github.com/pfeimich/ilivalidator-web-service.git
+ > git fetch --tags --progress https://github.com/pfeimich/ilivalidator-web-service.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision f782215590bf321fe47c5d5ce2ca16ce7a1eff8c (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f782215590bf321fe47c5d5ce2ca16ce7a1eff8c
+Commit message: "Update Jenkinsfile"
+[8mha:////4Bm+Y0bazpGeT2qUCKDqMMgzOqGo7Eq1znXqYPU0F3OfAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4HxMiG8kfNjSUPeuEW/p3//b1VSsniJVi/ufqzjTQkMYAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4Gu9x9pvFqzuP84enC2bSHSqGPxszZZzGPyA39RyuwQNAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
+[8mha:////4Lwb4G/2zP2gO5r13dITLzkFA2ebUggO+7wIRhLWRI/IAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4CJ4dzcL4EXD+n+ARh/Tvj337mjv3LtffsatdPrlj7dmAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] stage
+[8mha:////4HDi3kQtM2oYZ0RWvmm+7ad61w8c9CPVyIPs1Lk7DNIuAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] { (Build)
+[8mha:////4PzGBHgkm2F8SAael53qhYVdulvdXX9+Wy299rordqOjAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBgq0rvS+AAAA[0m[Pipeline] echo
+
+[8mha:////4Bwk68f2463VXS/YtcyBSnnWQZFByeeIFkV3aLihwwQvAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN0uFte2+AAAA[0m[Pipeline] _OcContextInit
+[8mha:////4M0hcFPUshoXnUlPR24z++6pyyeISK/in4aPvvP66C0IAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihESDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAGI1pjGvgAAAA==[0m[Pipeline] readFile
+[8mha:////4PGU+thfkIegaJbAJO2ZBhjr1rqiws3zFpwws60IHxg1AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiREGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAHJ54PfvgAAAA==[0m[Pipeline] readFile
+[8mha:////4Nz3D8Bs93BO90FXzQr2qYlTiVO0YOz2hgrFwliHUOxmAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiRIOEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAEG+xtYvgAAAA==[0m[Pipeline] _OcAction
+[8mha:////4OnnHiTZcW3HrRz0iM6hb8Em2E3lBDJQCwltKXYJgTGGAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiRIUQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN0fKAEG+AAAA[0m[Pipeline] readFile
+[8mha:////4IL/k75v7QBCpMmGFVXmYWIvkhg4w5QA26XiCOBgZTuvAAAApB+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGLDp0SpaC03nMAkxjixdoPt4FSciKtxBywiUTHFaN407/WGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYI5e6Qa78dPlfPhJK+AAAA[0m[Pipeline] readFile
+[8mha:////4IATohy/uq9TKF+2/mOuWdX01g2k0UN6Jh4DXUu8CF1MAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiQImo0lppeIGJjXFi3RnbIal4EV/jD1hEomKL1c4283rDOgY4cTDYaxosxc6id6PJCycOw9XxhD1fsGOK7DS2empZ6WbBlpOGJUUJKwEbTZ3jaMkk2IpePmTlJJnqnEL+jgJKq+7whEJkc5IhfWEOsLuNKjL9PH8FMPsEZX3Ita/9Bxb+n4u+AAAA[0m[Pipeline] _OcAction
+Stage "Build" skipped due to when conditional
+[8mha:////4GywGRzvd6Dcy97BEyrJORG62HSviNAQkX2NuMMoh110AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRoURUaa00vMDEh3Fi3RnbIal4EV/jD1hEomKL1c4283rDOgY4cTCiRxosxc4K70aTl5g4DFfHk+j5IjqmyA5Fi1PLGpsFW04IS4oSVhI2SJ3jaMkk2MpePVTlFJnqnEL+jhJKq+/whEJmc1IhfWEOsLuNOjL9PH8FMHufoKzrXPvDB5VNw/O+AAAA[0m[Pipeline] }
+[8mha:////4Od3dPCYhCvrd/BNILhB26mCmo4QQiKyyqz519QsZaaNAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRoURUaa00vMDEh3Fi3RnbIal4EV/jD1hEomKL1c4283rDOgY4cTCiRxosxc4K70aTl5g4DFfHk+j5IjqmyA5Fi1PLGpsFW04IS4oSVhI2SJ3jaMkk2MpePVTlFJnqnEL+jhJKq+/whEJmc1IhfWEOsLuNOjL9PH8FMHufoKwPufb1B6aumE++AAAA[0m[Pipeline] // stage
+[8mha:////4D6+Vzb04dhASA8YSyQubl/2irAi78rJjnFBCsFmIIpYAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiIDpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOX+kKuuP6TPlMu+AAAA[0m[Pipeline] }
+[8mha:////4LkrqE5Rpb8z5ShfMHBjXiIaBQ/bLPLE/3XqbXiAPm9gAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICSFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Iddu+wGXLM93vgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4GzoSTKwvZRLOa0AAOZiNeiPqEW6f4VHEv7neiMiPGPVAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKREKJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Nu9INt9AIuskdu9AAAA[0m[Pipeline] }
+[8mha:////4Mcclrz0OVbogzOawKJZd9S0N6EdHXqAceF9WJKFRoHVAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRoKBAVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Nu9INt9AJgQlXi9AAAA[0m[Pipeline] // node
+[8mha:////4NJ8Yzl/Ssoz7e+bQW6oAHANPXZEuRkDpL0kly9gJcF7AAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkTCbGybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FebkXZOUH37fCjb0AAAA=[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

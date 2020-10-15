@@ -1,0 +1,65 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@2.22">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.61.1">
+    <parentIds>
+      <string>84</string>
+    </parentIds>
+    <id>85</id>
+    <descriptorId>com.openshift.jenkins.plugins.pipeline.OcAction</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.61.1">
+      <arguments>
+        <entry>
+          <string>verbArgs</string>
+          <list>
+            <string>pod/ilivalidator-web-service-1-llf7q</string>
+          </list>
+        </entry>
+        <entry>
+          <string>server</string>
+          <string>https://172.19.0.1:443</string>
+        </entry>
+        <entry>
+          <string>logLevel</string>
+          <int>0</int>
+        </entry>
+        <entry>
+          <string>skipTLSVerify</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>verb</string>
+          <string>get</string>
+        </entry>
+        <entry>
+          <string>options</string>
+          <list>
+            <string>-o=json</string>
+          </list>
+        </entry>
+        <entry>
+          <string>project</string>
+          <string>agi-apps-test</string>
+        </entry>
+        <entry>
+          <string>userArgs</string>
+          <list/>
+        </entry>
+        <entry>
+          <string>caPath</string>
+          <string>/var/run/secrets/kubernetes.io/serviceaccount/ca.crt</string>
+        </entry>
+        <entry>
+          <string>token</string>
+          <string>eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJhZ2ktYXBwcy10ZXN0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6ImplbmtpbnMtdG9rZW4td3JkcmsiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiamVua2lucyIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6IjFkOGJmMmMzLTZjMjAtMTFlOS05NmVhLTAwNTA1NmExMTgxNyIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDphZ2ktYXBwcy10ZXN0OmplbmtpbnMifQ.vnMqhob1J1k_SUOb5c0laFHoTdINMGzJ6YFREuFeOpjQ8U6Ic8uviCQV-DNAjqOop7yFlERWItK0nVtKpU_Nzs1-9P18Qh6qnlBckoZP6bUKvoMuHXk8vJvdY5_bNRncjrJA9PGrOUYCBouCrkuketWtK10Ypf6WBSvgzJnA84vDoLJZaFnb2RbkvApdfm0nsuD6cr3UFxSIfqrmkU4fgs51FPbL0leiyA79XISICA8iI5sAjTZQyAcUsOFXbItt8Ehb8koL4Ydvd9OhN_6TlrWIoBWaM7wL6_clP_v298JGpbHs-BsfoVW50DSgciFtROyCcvmXpDsjlBNTG-aEFA</string>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.32">
+      <startTime>1562002293929</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

@@ -1,0 +1,336 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.29">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <io.fabric8.jenkins.openshiftsync.BuildCause plugin="openshift-sync@1.0.37">
+            <uid>5328ed27-9c24-11e9-96ea-005056a11817</uid>
+            <namespace>agi-apps-test</namespace>
+            <name>ilivalidator-pipeline-2</name>
+            <buildConfigUid>1ea3f2b4-9c23-11e9-96ea-005056a11817</buildConfigUid>
+            <numStages>5</numStages>
+            <numFlowNodes>76</numFlowNodes>
+            <lastUpdateToOpenshift>4066055740</lastUpdateToOpenshift>
+          </io.fabric8.jenkins.openshiftsync.BuildCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>version</name>
+          <value>latest</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>version</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.11">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@1.3.4.1">
+      <stagesUUID>07c4a3ce-eae3-495b-9abd-9d8256c67ce1</stagesUUID>
+      <stagesList>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStages plugin="pipeline-model-api@1.3.4.1">
+          <stages>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>preamble</name>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                      <name>script</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>scriptBlock</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">openshift.withCluster() {
+                        openshift.withProject() {
+                            echo &quot;Using project: ${openshift.project()}&quot;
+                        }
+                    }</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+              <parallelContent/>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>cleanup</name>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                      <name>script</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>scriptBlock</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">openshift.withCluster() {
+                        openshift.withProject() {
+                            // delete everything with this template label
+                            openshift.selector(&quot;all&quot;, [ application : &apos;ilivalidator-web-service&apos; ]).delete()
+                            // delete any secrets with this template label
+                            if (openshift.selector(&quot;secrets&quot;, templateName).exists()) {
+                                openshift.selector(&quot;secrets&quot;, templateName).delete()
+                            }
+                        }
+                    }</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+              <parallelContent/>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>create</name>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                      <name>script</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>scriptBlock</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">openshift.withCluster() {
+                        openshift.withProject() {
+                            // create a new application from the templatePath
+                            openshift.newApp(templatePath,&quot;-p version=latest&quot;)
+                        }
+                    }</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+              <parallelContent/>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>deploy</name>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                      <name>script</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>scriptBlock</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">openshift.withCluster() {
+                        openshift.withProject() {
+                            def rm = openshift.selector(&quot;dc&quot;, templateName).rollout()
+                            openshift.selector(&quot;dc&quot;, templateName).related(&apos;pods&apos;).untilEach(1) {
+                                return (it.object().status.phase == &quot;Running&quot;)
+                            }
+                        }
+                    }</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+              <parallelContent/>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>tag</name>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                      <name>script</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>scriptBlock</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">openshift.withCluster() {
+                        openshift.withProject() {
+                            // if everything else succeeded, tag the ${templateName}:latest image as ${templateName}-staging:latest
+                            // a pipeline build config for the staging environment can watch for the ${templateName}-staging:latest
+                            // image to change and then deploy it to the staging environment
+                            openshift.tag(&quot;${templateName}:latest&quot;, &quot;${templateName}-staging:latest&quot;)
+                        }
+                    }</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+              <parallelContent/>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+          </stages>
+          <uuid>07c4a3ce-eae3-495b-9abd-9d8256c67ce1</uuid>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStages>
+      </stagesList>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.61.1">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+  </actions>
+  <queueId>30</queueId>
+  <timestamp>1562001544107</timestamp>
+  <startTime>1562001544111</startTime>
+  <result>SUCCESS</result>
+  <description>OpenShift Build agi-apps-test/ilivalidator-pipeline-2</description>
+  <duration>16724</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>// path of the template to use
+def templatePath = &apos;https://raw.githubusercontent.com/sogis/openshift-templates/master/ilivalidator/ilivalidator-web-service.yaml&apos;
+// name of the template that will be created
+def templateName = &apos;ilivalidator-web-service&apos;
+// NOTE, the &quot;pipeline&quot; directive/closure from the declarative pipeline syntax needs to include, or be nested outside,
+// and &quot;openshift&quot; directive/closure from the OpenShift Client Plugin for Jenkins.  Otherwise, the declarative pipeline engine
+// will not be fully engaged.
+pipeline {
+    agent any
+    options {
+        // set a timeout of 5 minutes for this pipeline
+        timeout(time: 5, unit: &apos;MINUTES&apos;)
+    }
+    stages {
+        stage(&apos;preamble&apos;) {
+            steps {
+                script {
+                    openshift.withCluster() {
+                        openshift.withProject() {
+                            echo &quot;Using project: ${openshift.project()}&quot;
+                        }
+                    }
+                }
+            }
+        }
+        stage(&apos;cleanup&apos;) {
+            steps {
+                script {
+                    openshift.withCluster() {
+                        openshift.withProject() {
+                            // delete everything with this template label
+                            openshift.selector(&quot;all&quot;, [ application : &apos;ilivalidator-web-service&apos; ]).delete()
+                            // delete any secrets with this template label
+                            if (openshift.selector(&quot;secrets&quot;, templateName).exists()) {
+                                openshift.selector(&quot;secrets&quot;, templateName).delete()
+                            }
+                        }
+                    }
+                } // script
+            } // steps
+        } // stage
+        stage(&apos;create&apos;) {
+            steps {
+                script {
+                    openshift.withCluster() {
+                        openshift.withProject() {
+                            // create a new application from the templatePath
+                            openshift.newApp(templatePath,&quot;-p version=latest&quot;)
+                        }
+                    }
+                } // script
+            } // steps
+        } // stage
+        stage(&apos;deploy&apos;) {
+            steps {
+                script {
+                    openshift.withCluster() {
+                        openshift.withProject() {
+                            def rm = openshift.selector(&quot;dc&quot;, templateName).rollout()
+                            openshift.selector(&quot;dc&quot;, templateName).related(&apos;pods&apos;).untilEach(1) {
+                                return (it.object().status.phase == &quot;Running&quot;)
+                            }
+                        }
+                    }
+                } // script
+            } // steps
+        } // stage
+        stage(&apos;tag&apos;) {
+            steps {
+                script {
+                    openshift.withCluster() {
+                        openshift.withProject() {
+                            // if everything else succeeded, tag the ${templateName}:latest image as ${templateName}-staging:latest
+                            // a pipeline build config for the staging environment can watch for the ${templateName}-staging:latest
+                            // image to change and then deploy it to the staging environment
+                            openshift.tag(&quot;${templateName}:latest&quot;, &quot;${templateName}-staging:latest&quot;)
+                        }
+                    }
+                } // script
+            } // steps
+        } // stage
+    } // stages
+} // pipeline</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>1068653540</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>963645521</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>5123741372</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>65358602</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>917658374</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>137</iota>
+    <head>1:137</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

@@ -1,0 +1,113 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.29">
+  <displayName>agi-apps-test/ilivalidator-pipeline</displayName>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <io.fabric8.jenkins.openshiftsync.BuildConfigProjectProperty plugin="openshift-sync@1.0.27">
+      <uid>1ea3f2b4-9c23-11e9-96ea-005056a11817</uid>
+      <namespace>agi-apps-test</namespace>
+      <name>ilivalidator-pipeline</name>
+      <resourceVersion>101965722</resourceVersion>
+      <buildRunPolicy>Serial</buildRunPolicy>
+    </io.fabric8.jenkins.openshiftsync.BuildConfigProjectProperty>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>version</name>
+          <description>From OpenShift Build Environment Variable</description>
+          <defaultValue>1.0.70</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+    <org.jenkinsci.plugins.workflow.job.properties.DisableConcurrentBuildsJobProperty/>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.61.1">
+    <script>// path of the template to use
+def templatePath = &apos;https://raw.githubusercontent.com/sogis/openshift-templates/master/ilivalidator/ilivalidator-web-service.yaml&apos;
+// name of the template that will be created
+def templateName = &apos;ilivalidator-web-service&apos;
+// NOTE, the &quot;pipeline&quot; directive/closure from the declarative pipeline syntax needs to include, or be nested outside,
+// and &quot;openshift&quot; directive/closure from the OpenShift Client Plugin for Jenkins.  Otherwise, the declarative pipeline engine
+// will not be fully engaged.
+pipeline {
+    agent any
+    options {
+        // set a timeout of 5 minutes for this pipeline
+        timeout(time: 5, unit: &apos;MINUTES&apos;)
+    }
+    stages {
+        stage(&apos;preamble&apos;) {
+            steps {
+                script {
+                    openshift.withCluster() {
+                        openshift.withProject() {
+                            echo &quot;Using project: ${openshift.project()}&quot;
+                        }
+                    }
+                }
+            }
+        }
+        stage(&apos;cleanup&apos;) {
+            steps {
+                script {
+                    openshift.withCluster() {
+                        openshift.withProject() {
+                            // delete everything with this template label
+                            openshift.selector(&quot;all&quot;, [ application : &apos;ilivalidator-web-service&apos; ]).delete()
+                            // delete any secrets with this template label
+                            if (openshift.selector(&quot;secrets&quot;, templateName).exists()) {
+                                openshift.selector(&quot;secrets&quot;, templateName).delete()
+                            }
+                        }
+                    }
+                } // script
+            } // steps
+        } // stage
+        stage(&apos;create&apos;) {
+            steps {
+                script {
+                    openshift.withCluster() {
+                        openshift.withProject() {
+                            // create a new application from the templatePath
+                            openshift.newApp(templatePath,&quot;-p version=latest&quot;)
+                        }
+                    }
+                } // script
+            } // steps
+        } // stage
+        stage(&apos;deploy&apos;) {
+            steps {
+                script {
+                    openshift.withCluster() {
+                        openshift.withProject() {
+                            def rm = openshift.selector(&quot;dc&quot;, templateName).rollout()
+                            openshift.selector(&quot;dc&quot;, templateName).related(&apos;pods&apos;).untilEach(1) {
+                                return (it.object().status.phase == &quot;Running&quot;)
+                            }
+                        }
+                    }
+                } // script
+            } // steps
+        } // stage
+        stage(&apos;tag&apos;) {
+            steps {
+                script {
+                    openshift.withCluster() {
+                        openshift.withProject() {
+                            // if everything else succeeded, tag the ${templateName}:latest image as ${templateName}-staging:latest
+                            // a pipeline build config for the staging environment can watch for the ${templateName}-staging:latest
+                            // image to change and then deploy it to the staging environment
+                            openshift.tag(&quot;${templateName}:latest&quot;, &quot;${templateName}-staging:${version}&quot;)
+                        }
+                    }
+                } // script
+            } // steps
+        } // stage
+    } // stages
+} // pipeline</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

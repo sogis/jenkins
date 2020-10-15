@@ -1,0 +1,37 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.29">
+  <displayName>agi-apps-test/ilivalidator-web-service</displayName>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <io.fabric8.jenkins.openshiftsync.BuildConfigProjectProperty plugin="openshift-sync@1.0.27">
+      <uid>138d169a-99b5-11e9-96ea-005056a11817</uid>
+      <namespace>agi-apps-test</namespace>
+      <name>ilivalidator-web-service</name>
+      <resourceVersion>101103218</resourceVersion>
+      <buildRunPolicy>Serial</buildRunPolicy>
+    </io.fabric8.jenkins.openshiftsync.BuildConfigProjectProperty>
+    <org.jenkinsci.plugins.workflow.job.properties.DisableConcurrentBuildsJobProperty/>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@2.61.1">
+    <scm class="hudson.plugins.git.GitSCM" plugin="git@3.9.3">
+      <configVersion>2</configVersion>
+      <userRemoteConfigs class="singleton-list">
+        <hudson.plugins.git.UserRemoteConfig>
+          <url>https://github.com/pfeimich/ilivalidator-web-service.git</url>
+        </hudson.plugins.git.UserRemoteConfig>
+      </userRemoteConfigs>
+      <branches class="singleton-list">
+        <hudson.plugins.git.BranchSpec>
+          <name>master</name>
+        </hudson.plugins.git.BranchSpec>
+      </branches>
+      <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+      <submoduleCfg class="empty-list"/>
+      <extensions/>
+    </scm>
+    <scriptPath>Jenkinsfile</scriptPath>
+    <lightweight>false</lightweight>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

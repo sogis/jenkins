@@ -1,0 +1,14 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@2.22">
+  <node class="org.jenkinsci.plugins.workflow.graph.FlowStartNode" plugin="workflow-api@2.32">
+    <parentIds/>
+    <id>2</id>
+  </node>
+  <actions>
+    <s.a.WorkspaceActionImpl>
+      <node></node>
+      <path>/var/lib/jenkins/jobs/agi-apps-test/jobs/agi-apps-test-ilivalidator-web-service/workspace@script</path>
+      <labels class="sorted-set"/>
+    </s.a.WorkspaceActionImpl>
+  </actions>
+</Tag>
