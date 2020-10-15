@@ -87,3 +87,20 @@ pipeline {
 ```
 
 Weitere Informationen unter https://docs.openshift.com/container-platform/3.11/using_images/other_images/jenkins.html#sync-plug-in
+
+### Labeling Richtlinien
+Folgende Labeling Richtlinien gelten für **alle** im Zusammenhang mit Jenkins erstellten Openshift Objekte, also auch für die Openshift Objekte, die für Pipelines benötigt werden.
+Bei Objekten die nur für Jenkins benötigt werden soll folgendes Label gesetzt werden
+```
+metadata:
+  labels:
+    app: jenkins-persistent
+```
+
+Bei Objekten, die für die Ausführung von Pipelines in Jenkins benötigt werden, wie etwa *Secrets* oder Agents sollte zusätzlich der Name der Pipeline, für die das Objekt erstellt wird als Label ergänzt werden.
+```
+metadata:
+  labels:
+    app: jenkins-persistent
+    pipeline: wgc
+```
