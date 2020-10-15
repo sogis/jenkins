@@ -26,7 +26,9 @@ envFrom:
 ### Installation Jenkins in Openshift
 Für die Installation wurde das in Openshift enthaltene Template leicht angepasst.
 So wird nun anstelle des in der Openshift Registry enthaltenen und veralteten Jenkins Images das Image *openshift/jenkins-2-centos7:v3.11* verwendet. Dieses ist aktueller und wird auch für den Gretl-Jenkins verwendet.
-Ausserdem wurden alle Resourcen Angaben parametrisiert und für die Verwendung des Images in der DeploymentConfig muss noch ein ImageStream erstellt werden.
+Ausserdem wurden alle Resourcen Angaben parametrisiert und für die Verwendung des Images in der DeploymentConfig muss noch ein ImageStream erstellt werden. Der Parameter *NAMESPACE* wird in seiner urspünglichen Bedeutung (in welchem
+Namespace liegt der Jenkins *ImageStream* nicht mehr benötigt. Stattdessen wird er nun dafür verwendet den Namen des *Namespaces*, in dem Jenkins läuft als ENV Variable an den Pod mitzugeben. Dieser wird dort bspw für die Namen der aus
+Openshift importierten Secrets benötigt.
 Die Installation in Openshift im Projekt *projectname* erfolgt mit den folgenden Befehlen. Diverse Parameter sind im Template enthalten und können angepasst werden.
 Im AGI werden allerdings die definierten Defaults verwendet.
 

@@ -88,6 +88,8 @@ objects:
               value: ${JNLP_SERVICE_NAME}
             - name: ENABLE_FATAL_ERROR_LOG_FILE
               value: ${ENABLE_FATAL_ERROR_LOG_FILE}
+            - name: NAMESPACE
+              value: ${NAMESPACE}
           envFrom:
             - configMapRef:
                 name: jenkins-env-config
@@ -238,10 +240,10 @@ parameters:
   name: VOLUME_CAPACITY
   required: true
   value: 10Gi
-- description: The OpenShift Namespace where the Jenkins ImageStream resides.
-  displayName: Jenkins ImageStream Namespace
+- description: The OpenShift Namespace where Jenkins runs (changed from original)
+  displayName: Jenkins Namespace
   name: NAMESPACE
-  value: openshift
+  required: true
 - description: Whether to perform memory intensive, possibly slow, synchronization
     with the Jenkins Update Center on start.  If true, the Jenkins core update monitor
     and site warnings monitor are disabled.
