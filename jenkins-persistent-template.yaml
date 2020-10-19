@@ -88,7 +88,7 @@ objects:
               value: ${JNLP_SERVICE_NAME}
             - name: ENABLE_FATAL_ERROR_LOG_FILE
               value: ${ENABLE_FATAL_ERROR_LOG_FILE}
-            - name: NAMESPACE
+            - name: NAMESPACE_JENKINS
               value: ${NAMESPACE}
           envFrom:
             - configMapRef:
@@ -242,7 +242,7 @@ parameters:
   value: 10Gi
 - description: The OpenShift Namespace where Jenkins runs (changed from original)
   displayName: Jenkins Namespace
-  name: NAMESPACE
+  name: NAMESPACE_JENKINS
   required: true
 - description: Whether to perform memory intensive, possibly slow, synchronization
     with the Jenkins Update Center on start.  If true, the Jenkins core update monitor
