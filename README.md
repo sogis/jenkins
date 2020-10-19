@@ -92,8 +92,8 @@ Weitere Informationen unter https://docs.openshift.com/container-platform/3.11/u
 
 ### Credentials für apiUser
 Damit via Pipeline auf die Jenkins Api zugegriffen werden kann wird ein Credentials mit Namen *jenkinsApi* erstellt.
-Dafür unter [https://jenkins-agi-apps-test.dev.so.ch/credentials/store/system/domain/_/newCredentials] ein neues Credentials erstellen.
-Username ist apiUser Passwort wird mit keypass erstellt und dort abgespeichert.
+Dafür unter https://jenkins-agi-apps-test.dev.so.ch/credentials/store/system/domain/_/newCredentials ein neues Credentials erstellen.
+Username ist *apiUser* Passwort wird mit keypass erstellt und dort abgespeichert.
 
 ### Labeling Richtlinien
 Folgende Labeling Richtlinien gelten für **alle** im Zusammenhang mit Jenkins erstellten Openshift Objekte, also auch für die Openshift Objekte, die für Pipelines benötigt werden.
