@@ -48,6 +48,10 @@ oc rsync jobs/ jenkins-podname:/var/lib/jenkins/jobs/
 ```
 Anschliessend muss der Jenkins *Pod* neu gestartet werden
 
+### LDAP Anbindung
+Die Authentifizierung in Jenkins erfolgt analog zum Gretl Jenkins via LDAP.
+Die Einrichtung erfolgt folgendermassen:
+
 ### Use credentials from Openshift secrets in Pipeline
 
 Necessary for credential use in Jenkins is the openshift-jenkins-sync-plugin (https://github.com/openshift/jenkins-sync-plugin)
@@ -92,9 +96,7 @@ Weitere Informationen unter https://docs.openshift.com/container-platform/3.11/u
 
 ### Credentials für apiUser
 Damit via Pipeline auf die Jenkins Api zugegriffen werden kann wird ein Credentials mit Namen *jenkinsApi* und ein API Token benötigt.
-Der API Token für einen bestimmten User wird unter https://jenkins-agi-apps-integration.dev.so.ch/user/username/configure erstellt.
-Da die Authentifizierung über das Openshift Sync Plugin erfolgt ist Stand 20.10.2020 unklar, wie ein Maschinenuser erstellt werden kann.
-In der WebGISClient wird deshalb derzeit der API Token unter dem User *pfeiffer michael-admin-edit-view* erstellt. Es würde aber auch jeder andere User, der Zugriff auf Jenkins hat, funktionieren.
+Der Zugriff auf die API erfolgt mit dem LDAP User *sogis_service*. Der API Token für diesen User wird unter https://jenkins-agi-apps-integration.dev.so.ch/user/sogis_service/configure erstellt.
 Als Name für den Token wird *apiUser* verwendet. Als nächstes werden die *Credentials* erstellt.
 Dafür unter https://jenkins-agi-apps-test.dev.so.ch/credentials/store/system/domain/_/newCredentials ein neues Credentials erstellen.
 Als Name für die Credentials bitte *apiToken* verwenden. Username ist der User für den der API Token erstellt wurde. Passwort ist der generierte API Token. Im Keypass dafür einen entsprechenden Eintrag erstellen, da dieser in Jenkins nicht mehr aufgerufen werden kann.
