@@ -1,0 +1,707 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson>
+  <disabledAdministrativeMonitors/>
+  <version>2.204.2</version>
+  <installStateName>RESTART</installStateName>
+  <numExecutors>20</numExecutors>
+  <mode>NORMAL</mode>
+  <useSecurity>true</useSecurity>
+  <authorizationStrategy class="hudson.security.ProjectMatrixAuthorizationStrategy">
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:sogis-adm</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:sogis-adm</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:sogis-adm</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:sogis-adm</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:sogis-adm</permission>
+    <permission>hudson.model.Computer.Build:sogis-adm</permission>
+    <permission>hudson.model.Computer.Configure:sogis-adm</permission>
+    <permission>hudson.model.Computer.Connect:sogis-adm</permission>
+    <permission>hudson.model.Computer.Create:sogis-adm</permission>
+    <permission>hudson.model.Computer.Delete:sogis-adm</permission>
+    <permission>hudson.model.Computer.Disconnect:sogis-adm</permission>
+    <permission>hudson.model.Hudson.Administer:sogis-adm</permission>
+    <permission>hudson.model.Hudson.Read:anonymous</permission>
+    <permission>hudson.model.Hudson.Read:authenticated</permission>
+    <permission>hudson.model.Hudson.Read:bjsvw</permission>
+    <permission>hudson.model.Hudson.Read:sogis-adm</permission>
+    <permission>hudson.model.Hudson.Read:sogis_service</permission>
+    <permission>hudson.model.Item.Build:bjsvw</permission>
+    <permission>hudson.model.Item.Build:sogis-adm</permission>
+    <permission>hudson.model.Item.Build:sogis_service</permission>
+    <permission>hudson.model.Item.Cancel:bjsvw</permission>
+    <permission>hudson.model.Item.Cancel:sogis-adm</permission>
+    <permission>hudson.model.Item.Cancel:sogis_service</permission>
+    <permission>hudson.model.Item.Configure:sogis-adm</permission>
+    <permission>hudson.model.Item.Create:sogis-adm</permission>
+    <permission>hudson.model.Item.Delete:sogis-adm</permission>
+    <permission>hudson.model.Item.Discover:sogis-adm</permission>
+    <permission>hudson.model.Item.Move:sogis-adm</permission>
+    <permission>hudson.model.Item.Read:authenticated</permission>
+    <permission>hudson.model.Item.Read:bjsvw</permission>
+    <permission>hudson.model.Item.Read:sogis-adm</permission>
+    <permission>hudson.model.Item.Read:sogis_service</permission>
+    <permission>hudson.model.Item.Workspace:sogis-adm</permission>
+    <permission>hudson.model.Run.Delete:sogis-adm</permission>
+    <permission>hudson.model.Run.Replay:sogis-adm</permission>
+    <permission>hudson.model.Run.Update:sogis-adm</permission>
+    <permission>hudson.model.View.Configure:sogis-adm</permission>
+    <permission>hudson.model.View.Create:sogis-adm</permission>
+    <permission>hudson.model.View.Delete:sogis-adm</permission>
+    <permission>hudson.model.View.Read:sogis-adm</permission>
+    <permission>hudson.scm.SCM.Tag:sogis-adm</permission>
+    <permission>org.jenkins.plugins.lockableresources.LockableResourcesManager.Reserve:sogis-adm</permission>
+    <permission>org.jenkins.plugins.lockableresources.LockableResourcesManager.Unlock:sogis-adm</permission>
+  </authorizationStrategy>
+  <securityRealm class="hudson.security.LDAPSecurityRealm" plugin="ldap@1.11">
+    <server>ldap.verw.rootso.org</server>
+    <rootDN>dc=ldap,dc=rootso,dc=org</rootDN>
+    <inhibitInferRootDN>false</inhibitInferRootDN>
+    <userSearchBase></userSearchBase>
+    <userSearch>uid={0}</userSearch>
+    <groupMembershipStrategy class="jenkins.security.plugins.ldap.FromGroupSearchLDAPGroupMembershipStrategy">
+      <filter></filter>
+    </groupMembershipStrategy>
+    <managerDN>uid=connect,ou=users,ou=management,dc=ldap,dc=rootso,dc=org</managerDN>
+    <managerPasswordSecret>{AQAAABAAAAAgKg5bKW6xSLEgldYHSalgMTNWz9MLLdaNR0YA0GaDyNS0qyvGyeD9KzE4VkwfKGGl}</managerPasswordSecret>
+    <disableMailAddressResolver>false</disableMailAddressResolver>
+    <displayNameAttributeName>displayname</displayNameAttributeName>
+    <mailAddressAttributeName>mail</mailAddressAttributeName>
+    <userIdStrategy class="jenkins.model.IdStrategy$CaseInsensitive"/>
+    <groupIdStrategy class="jenkins.model.IdStrategy$CaseInsensitive"/>
+  </securityRealm>
+  <disableRememberMe>false</disableRememberMe>
+  <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
+  <workspaceDir>${ITEM_ROOTDIR}/workspace</workspaceDir>
+  <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
+  <jdks/>
+  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
+  <clouds>
+    <org.csanchez.jenkins.plugins.kubernetes.KubernetesCloud plugin="kubernetes@1.18.2">
+      <name>openshift</name>
+      <defaultsProviderTemplate></defaultsProviderTemplate>
+      <templates>
+        <org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+          <inheritFrom></inheritFrom>
+          <name>maven</name>
+          <namespace></namespace>
+          <privileged>false</privileged>
+          <capOnlyOnAlivePods>false</capOnlyOnAlivePods>
+          <alwaysPullImage>false</alwaysPullImage>
+          <instanceCap>2147483647</instanceCap>
+          <slaveConnectTimeout>100</slaveConnectTimeout>
+          <idleMinutes>0</idleMinutes>
+          <activeDeadlineSeconds>0</activeDeadlineSeconds>
+          <label>maven</label>
+          <serviceAccount>jenkins</serviceAccount>
+          <nodeSelector></nodeSelector>
+          <nodeUsageMode>NORMAL</nodeUsageMode>
+          <customWorkspaceVolumeEnabled>false</customWorkspaceVolumeEnabled>
+          <workspaceVolume class="org.csanchez.jenkins.plugins.kubernetes.volumes.workspace.EmptyDirWorkspaceVolume">
+            <memory>false</memory>
+          </workspaceVolume>
+          <volumes/>
+          <containers>
+            <org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
+              <name>jnlp</name>
+              <image>docker.io/openshift/jenkins-agent-maven-35-centos7:v3.11</image>
+              <privileged>false</privileged>
+              <alwaysPullImage>true</alwaysPullImage>
+              <workingDir>/tmp</workingDir>
+              <command></command>
+              <args>${computer.jnlpmac} ${computer.name}</args>
+              <ttyEnabled>false</ttyEnabled>
+              <resourceRequestCpu></resourceRequestCpu>
+              <resourceRequestMemory></resourceRequestMemory>
+              <resourceLimitCpu></resourceLimitCpu>
+              <resourceLimitMemory></resourceLimitMemory>
+              <envVars/>
+              <ports/>
+              <livenessProbe>
+                <execArgs></execArgs>
+                <timeoutSeconds>0</timeoutSeconds>
+                <initialDelaySeconds>0</initialDelaySeconds>
+                <failureThreshold>0</failureThreshold>
+                <periodSeconds>0</periodSeconds>
+                <successThreshold>0</successThreshold>
+              </livenessProbe>
+            </org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
+          </containers>
+          <envVars>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>http_proxy</key>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>https_proxy</key>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>no_proxy</key>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+          </envVars>
+          <annotations/>
+          <imagePullSecrets/>
+          <nodeProperties/>
+          <yamlMergeStrategy class="org.csanchez.jenkins.plugins.kubernetes.pod.yaml.Overrides"/>
+          <showRawYaml>true</showRawYaml>
+          <podRetention class="org.csanchez.jenkins.plugins.kubernetes.pod.retention.Default"/>
+        </org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+        <org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+          <inheritFrom></inheritFrom>
+          <name>nodejs</name>
+          <namespace></namespace>
+          <privileged>false</privileged>
+          <capOnlyOnAlivePods>false</capOnlyOnAlivePods>
+          <alwaysPullImage>false</alwaysPullImage>
+          <instanceCap>2147483647</instanceCap>
+          <slaveConnectTimeout>100</slaveConnectTimeout>
+          <idleMinutes>0</idleMinutes>
+          <activeDeadlineSeconds>0</activeDeadlineSeconds>
+          <label>nodejs</label>
+          <serviceAccount>jenkins</serviceAccount>
+          <nodeSelector></nodeSelector>
+          <nodeUsageMode>NORMAL</nodeUsageMode>
+          <customWorkspaceVolumeEnabled>false</customWorkspaceVolumeEnabled>
+          <workspaceVolume class="org.csanchez.jenkins.plugins.kubernetes.volumes.workspace.EmptyDirWorkspaceVolume">
+            <memory>false</memory>
+          </workspaceVolume>
+          <volumes/>
+          <containers>
+            <org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
+              <name>jnlp</name>
+              <image>docker.io/openshift/jenkins-agent-nodejs-8-centos7:v3.11</image>
+              <privileged>false</privileged>
+              <alwaysPullImage>true</alwaysPullImage>
+              <workingDir>/tmp</workingDir>
+              <command></command>
+              <args>${computer.jnlpmac} ${computer.name}</args>
+              <ttyEnabled>false</ttyEnabled>
+              <resourceRequestCpu></resourceRequestCpu>
+              <resourceRequestMemory></resourceRequestMemory>
+              <resourceLimitCpu></resourceLimitCpu>
+              <resourceLimitMemory></resourceLimitMemory>
+              <envVars/>
+              <ports/>
+              <livenessProbe>
+                <execArgs></execArgs>
+                <timeoutSeconds>0</timeoutSeconds>
+                <initialDelaySeconds>0</initialDelaySeconds>
+                <failureThreshold>0</failureThreshold>
+                <periodSeconds>0</periodSeconds>
+                <successThreshold>0</successThreshold>
+              </livenessProbe>
+            </org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
+          </containers>
+          <envVars>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>http_proxy</key>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>https_proxy</key>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>no_proxy</key>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+          </envVars>
+          <annotations/>
+          <imagePullSecrets/>
+          <nodeProperties/>
+          <yamlMergeStrategy class="org.csanchez.jenkins.plugins.kubernetes.pod.yaml.Overrides"/>
+          <showRawYaml>true</showRawYaml>
+          <podRetention class="org.csanchez.jenkins.plugins.kubernetes.pod.retention.Default"/>
+        </org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+        <org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+          <inheritFrom></inheritFrom>
+          <name>custom-jenkins-slave</name>
+          <namespace></namespace>
+          <privileged>false</privileged>
+          <capOnlyOnAlivePods>false</capOnlyOnAlivePods>
+          <alwaysPullImage>false</alwaysPullImage>
+          <instanceCap>2147483647</instanceCap>
+          <slaveConnectTimeout>100</slaveConnectTimeout>
+          <idleMinutes>0</idleMinutes>
+          <activeDeadlineSeconds>0</activeDeadlineSeconds>
+          <label>custom-jenkins-slave</label>
+          <serviceAccount>jenkins</serviceAccount>
+          <nodeSelector></nodeSelector>
+          <nodeUsageMode>EXCLUSIVE</nodeUsageMode>
+          <customWorkspaceVolumeEnabled>false</customWorkspaceVolumeEnabled>
+          <workspaceVolume class="org.csanchez.jenkins.plugins.kubernetes.volumes.workspace.EmptyDirWorkspaceVolume">
+            <memory>false</memory>
+          </workspaceVolume>
+          <volumes/>
+          <containers>
+            <org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
+              <name>jnlp</name>
+              <image>docker-registry.default.svc:5000/agi-apps-test/custom-jenkins-slave</image>
+              <privileged>false</privileged>
+              <alwaysPullImage>true</alwaysPullImage>
+              <workingDir>/tmp</workingDir>
+              <command></command>
+              <args>${computer.jnlpmac} ${computer.name}</args>
+              <ttyEnabled>false</ttyEnabled>
+              <resourceRequestCpu></resourceRequestCpu>
+              <resourceRequestMemory></resourceRequestMemory>
+              <resourceLimitCpu></resourceLimitCpu>
+              <resourceLimitMemory></resourceLimitMemory>
+              <envVars/>
+              <ports/>
+              <livenessProbe>
+                <execArgs></execArgs>
+                <timeoutSeconds>0</timeoutSeconds>
+                <initialDelaySeconds>0</initialDelaySeconds>
+                <failureThreshold>0</failureThreshold>
+                <periodSeconds>0</periodSeconds>
+                <successThreshold>0</successThreshold>
+              </livenessProbe>
+            </org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
+          </containers>
+          <envVars>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>http_proxy</key>
+              <value></value>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>https_proxy</key>
+              <value></value>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>no_proxy</key>
+              <value></value>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+          </envVars>
+          <annotations/>
+          <imagePullSecrets/>
+          <nodeProperties/>
+          <yamlMergeStrategy class="org.csanchez.jenkins.plugins.kubernetes.pod.yaml.Overrides"/>
+          <showRawYaml>true</showRawYaml>
+          <podRetention class="org.csanchez.jenkins.plugins.kubernetes.pod.retention.Default"/>
+        </org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+        <org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+          <inheritFrom></inheritFrom>
+          <name>custom-jenkins-slave.latest</name>
+          <namespace></namespace>
+          <privileged>false</privileged>
+          <capOnlyOnAlivePods>false</capOnlyOnAlivePods>
+          <alwaysPullImage>false</alwaysPullImage>
+          <instanceCap>2147483647</instanceCap>
+          <slaveConnectTimeout>100</slaveConnectTimeout>
+          <idleMinutes>0</idleMinutes>
+          <activeDeadlineSeconds>0</activeDeadlineSeconds>
+          <label>custom-jenkins-slave:latest</label>
+          <serviceAccount>jenkins</serviceAccount>
+          <nodeSelector></nodeSelector>
+          <nodeUsageMode>EXCLUSIVE</nodeUsageMode>
+          <customWorkspaceVolumeEnabled>false</customWorkspaceVolumeEnabled>
+          <workspaceVolume class="org.csanchez.jenkins.plugins.kubernetes.volumes.workspace.EmptyDirWorkspaceVolume">
+            <memory>false</memory>
+          </workspaceVolume>
+          <volumes/>
+          <containers>
+            <org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
+              <name>jnlp</name>
+              <image>docker.io/openshift/jenkins-slave-base-centos7@sha256:86db243d917e14dcd0abf0b47ceb2875fc01de338f13dfeed915bf03f9818259</image>
+              <privileged>false</privileged>
+              <alwaysPullImage>true</alwaysPullImage>
+              <workingDir>/tmp</workingDir>
+              <command></command>
+              <args>${computer.jnlpmac} ${computer.name}</args>
+              <ttyEnabled>false</ttyEnabled>
+              <resourceRequestCpu></resourceRequestCpu>
+              <resourceRequestMemory></resourceRequestMemory>
+              <resourceLimitCpu></resourceLimitCpu>
+              <resourceLimitMemory></resourceLimitMemory>
+              <envVars/>
+              <ports/>
+              <livenessProbe>
+                <execArgs></execArgs>
+                <timeoutSeconds>0</timeoutSeconds>
+                <initialDelaySeconds>0</initialDelaySeconds>
+                <failureThreshold>0</failureThreshold>
+                <periodSeconds>0</periodSeconds>
+                <successThreshold>0</successThreshold>
+              </livenessProbe>
+            </org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
+          </containers>
+          <envVars>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>http_proxy</key>
+              <value></value>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>https_proxy</key>
+              <value></value>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>no_proxy</key>
+              <value></value>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+          </envVars>
+          <annotations/>
+          <imagePullSecrets/>
+          <nodeProperties/>
+          <yamlMergeStrategy class="org.csanchez.jenkins.plugins.kubernetes.pod.yaml.Overrides"/>
+          <showRawYaml>true</showRawYaml>
+          <podRetention class="org.csanchez.jenkins.plugins.kubernetes.pod.retention.Default"/>
+        </org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+        <org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+          <inheritFrom></inheritFrom>
+          <name>evarga-jenkins-slave</name>
+          <namespace></namespace>
+          <privileged>false</privileged>
+          <capOnlyOnAlivePods>false</capOnlyOnAlivePods>
+          <alwaysPullImage>false</alwaysPullImage>
+          <instanceCap>2147483647</instanceCap>
+          <slaveConnectTimeout>100</slaveConnectTimeout>
+          <idleMinutes>0</idleMinutes>
+          <activeDeadlineSeconds>0</activeDeadlineSeconds>
+          <label>evarga-jenkins-slave</label>
+          <serviceAccount>jenkins</serviceAccount>
+          <nodeSelector></nodeSelector>
+          <nodeUsageMode>EXCLUSIVE</nodeUsageMode>
+          <customWorkspaceVolumeEnabled>false</customWorkspaceVolumeEnabled>
+          <workspaceVolume class="org.csanchez.jenkins.plugins.kubernetes.volumes.workspace.EmptyDirWorkspaceVolume">
+            <memory>false</memory>
+          </workspaceVolume>
+          <volumes/>
+          <containers>
+            <org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
+              <name>jnlp</name>
+              <image>docker-registry.default.svc:5000/agi-apps-test/evarga-jenkins-slave</image>
+              <privileged>false</privileged>
+              <alwaysPullImage>true</alwaysPullImage>
+              <workingDir>/tmp</workingDir>
+              <command></command>
+              <args>${computer.jnlpmac} ${computer.name}</args>
+              <ttyEnabled>false</ttyEnabled>
+              <resourceRequestCpu></resourceRequestCpu>
+              <resourceRequestMemory></resourceRequestMemory>
+              <resourceLimitCpu></resourceLimitCpu>
+              <resourceLimitMemory></resourceLimitMemory>
+              <envVars/>
+              <ports/>
+              <livenessProbe>
+                <execArgs></execArgs>
+                <timeoutSeconds>0</timeoutSeconds>
+                <initialDelaySeconds>0</initialDelaySeconds>
+                <failureThreshold>0</failureThreshold>
+                <periodSeconds>0</periodSeconds>
+                <successThreshold>0</successThreshold>
+              </livenessProbe>
+            </org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
+          </containers>
+          <envVars>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>http_proxy</key>
+              <value></value>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>https_proxy</key>
+              <value></value>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>no_proxy</key>
+              <value></value>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+          </envVars>
+          <annotations/>
+          <imagePullSecrets/>
+          <nodeProperties/>
+          <yamlMergeStrategy class="org.csanchez.jenkins.plugins.kubernetes.pod.yaml.Overrides"/>
+          <showRawYaml>true</showRawYaml>
+          <podRetention class="org.csanchez.jenkins.plugins.kubernetes.pod.retention.Default"/>
+        </org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+        <org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+          <inheritFrom></inheritFrom>
+          <name>evarga-jenkins-slave.latest</name>
+          <namespace></namespace>
+          <privileged>false</privileged>
+          <capOnlyOnAlivePods>false</capOnlyOnAlivePods>
+          <alwaysPullImage>false</alwaysPullImage>
+          <instanceCap>2147483647</instanceCap>
+          <slaveConnectTimeout>100</slaveConnectTimeout>
+          <idleMinutes>0</idleMinutes>
+          <activeDeadlineSeconds>0</activeDeadlineSeconds>
+          <label>evarga-jenkins-slave:latest</label>
+          <serviceAccount>jenkins</serviceAccount>
+          <nodeSelector></nodeSelector>
+          <nodeUsageMode>EXCLUSIVE</nodeUsageMode>
+          <customWorkspaceVolumeEnabled>false</customWorkspaceVolumeEnabled>
+          <workspaceVolume class="org.csanchez.jenkins.plugins.kubernetes.volumes.workspace.EmptyDirWorkspaceVolume">
+            <memory>false</memory>
+          </workspaceVolume>
+          <volumes/>
+          <containers>
+            <org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
+              <name>jnlp</name>
+              <image>pfeimich/evarga-jenkins-slave@sha256:0acce51eb7290cc37658a497d17f56c8c503bce8e1e0299af244fbd25839918f</image>
+              <privileged>false</privileged>
+              <alwaysPullImage>true</alwaysPullImage>
+              <workingDir>/tmp</workingDir>
+              <command></command>
+              <args>${computer.jnlpmac} ${computer.name}</args>
+              <ttyEnabled>false</ttyEnabled>
+              <resourceRequestCpu></resourceRequestCpu>
+              <resourceRequestMemory></resourceRequestMemory>
+              <resourceLimitCpu></resourceLimitCpu>
+              <resourceLimitMemory></resourceLimitMemory>
+              <envVars/>
+              <ports/>
+              <livenessProbe>
+                <execArgs></execArgs>
+                <timeoutSeconds>0</timeoutSeconds>
+                <initialDelaySeconds>0</initialDelaySeconds>
+                <failureThreshold>0</failureThreshold>
+                <periodSeconds>0</periodSeconds>
+                <successThreshold>0</successThreshold>
+              </livenessProbe>
+            </org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
+          </containers>
+          <envVars>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>http_proxy</key>
+              <value></value>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>https_proxy</key>
+              <value></value>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>no_proxy</key>
+              <value></value>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+          </envVars>
+          <annotations/>
+          <imagePullSecrets/>
+          <nodeProperties/>
+          <yamlMergeStrategy class="org.csanchez.jenkins.plugins.kubernetes.pod.yaml.Overrides"/>
+          <showRawYaml>true</showRawYaml>
+          <podRetention class="org.csanchez.jenkins.plugins.kubernetes.pod.retention.Default"/>
+        </org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+        <org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+          <inheritFrom></inheritFrom>
+          <name>jenkins-slave-python</name>
+          <namespace></namespace>
+          <privileged>false</privileged>
+          <capOnlyOnAlivePods>false</capOnlyOnAlivePods>
+          <alwaysPullImage>false</alwaysPullImage>
+          <instanceCap>2147483647</instanceCap>
+          <slaveConnectTimeout>100</slaveConnectTimeout>
+          <idleMinutes>0</idleMinutes>
+          <activeDeadlineSeconds>0</activeDeadlineSeconds>
+          <label>jenkins-slave-python</label>
+          <serviceAccount>jenkins</serviceAccount>
+          <nodeSelector></nodeSelector>
+          <nodeUsageMode>EXCLUSIVE</nodeUsageMode>
+          <customWorkspaceVolumeEnabled>false</customWorkspaceVolumeEnabled>
+          <workspaceVolume class="org.csanchez.jenkins.plugins.kubernetes.volumes.workspace.EmptyDirWorkspaceVolume">
+            <memory>false</memory>
+          </workspaceVolume>
+          <volumes/>
+          <containers>
+            <org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
+              <name>jnlp</name>
+              <image>docker-registry.default.svc:5000/agi-apps-test/jenkins-slave-python</image>
+              <privileged>false</privileged>
+              <alwaysPullImage>true</alwaysPullImage>
+              <workingDir>/tmp</workingDir>
+              <command></command>
+              <args>${computer.jnlpmac} ${computer.name}</args>
+              <ttyEnabled>false</ttyEnabled>
+              <resourceRequestCpu></resourceRequestCpu>
+              <resourceRequestMemory></resourceRequestMemory>
+              <resourceLimitCpu></resourceLimitCpu>
+              <resourceLimitMemory></resourceLimitMemory>
+              <envVars/>
+              <ports/>
+              <livenessProbe>
+                <execArgs></execArgs>
+                <timeoutSeconds>0</timeoutSeconds>
+                <initialDelaySeconds>0</initialDelaySeconds>
+                <failureThreshold>0</failureThreshold>
+                <periodSeconds>0</periodSeconds>
+                <successThreshold>0</successThreshold>
+              </livenessProbe>
+            </org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
+          </containers>
+          <envVars>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>http_proxy</key>
+              <value></value>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>https_proxy</key>
+              <value></value>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>no_proxy</key>
+              <value></value>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+          </envVars>
+          <annotations/>
+          <imagePullSecrets/>
+          <nodeProperties/>
+          <yamlMergeStrategy class="org.csanchez.jenkins.plugins.kubernetes.pod.yaml.Overrides"/>
+          <showRawYaml>true</showRawYaml>
+          <podRetention class="org.csanchez.jenkins.plugins.kubernetes.pod.retention.Default"/>
+        </org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+        <org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+          <inheritFrom></inheritFrom>
+          <name>config-generator-agent</name>
+          <namespace></namespace>
+          <privileged>false</privileged>
+          <capOnlyOnAlivePods>false</capOnlyOnAlivePods>
+          <alwaysPullImage>false</alwaysPullImage>
+          <instanceCap>4</instanceCap>
+          <slaveConnectTimeout>100</slaveConnectTimeout>
+          <idleMinutes>600</idleMinutes>
+          <activeDeadlineSeconds>0</activeDeadlineSeconds>
+          <label>config-generator-agent</label>
+          <serviceAccount>jenkins</serviceAccount>
+          <nodeSelector></nodeSelector>
+          <nodeUsageMode>NORMAL</nodeUsageMode>
+          <customWorkspaceVolumeEnabled>false</customWorkspaceVolumeEnabled>
+          <workspaceVolume class="org.csanchez.jenkins.plugins.kubernetes.volumes.workspace.EmptyDirWorkspaceVolume">
+            <memory>false</memory>
+          </workspaceVolume>
+          <volumes>
+            <org.csanchez.jenkins.plugins.kubernetes.volumes.SecretVolume>
+              <mountPath>/var/www</mountPath>
+              <secretName>config-generator-agent-pg-service</secretName>
+              <defaultMode></defaultMode>
+            </org.csanchez.jenkins.plugins.kubernetes.volumes.SecretVolume>
+          </volumes>
+          <containers>
+            <org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
+              <name>jnlp</name>
+              <image>docker-registry.default.svc:5000/agi-apps-test/config-generator-agent:latest</image>
+              <privileged>false</privileged>
+              <alwaysPullImage>true</alwaysPullImage>
+              <workingDir>/tmp</workingDir>
+              <command></command>
+              <args>${computer.jnlpmac} ${computer.name}</args>
+              <ttyEnabled>false</ttyEnabled>
+              <resourceRequestCpu>750m</resourceRequestCpu>
+              <resourceRequestMemory>2Gi</resourceRequestMemory>
+              <resourceLimitCpu>3000m</resourceLimitCpu>
+              <resourceLimitMemory>8Gi</resourceLimitMemory>
+              <envVars/>
+              <ports/>
+              <livenessProbe>
+                <execArgs></execArgs>
+                <timeoutSeconds>0</timeoutSeconds>
+                <initialDelaySeconds>0</initialDelaySeconds>
+                <failureThreshold>0</failureThreshold>
+                <periodSeconds>0</periodSeconds>
+                <successThreshold>0</successThreshold>
+              </livenessProbe>
+            </org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
+          </containers>
+          <envVars>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>http_proxy</key>
+              <value></value>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>https_proxy</key>
+              <value></value>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>no_proxy</key>
+              <value></value>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+          </envVars>
+          <annotations/>
+          <imagePullSecrets/>
+          <nodeProperties/>
+          <yaml>
+    apiVersion: v1
+    kind: Pod
+    spec:
+      volumes:
+        - name: pg-service-claim
+          secret:
+            defaultMode: 420
+            items:
+              - key: pg_service.conf
+                path: .pg_service.conf
+            secretName: config-generator-agent-pg-service
+  </yaml>
+          <yamlMergeStrategy class="org.csanchez.jenkins.plugins.kubernetes.pod.yaml.Overrides"/>
+          <showRawYaml>true</showRawYaml>
+          <podRetention class="org.csanchez.jenkins.plugins.kubernetes.pod.retention.Default"/>
+        </org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+      </templates>
+      <serverUrl>https://172.19.0.1:443</serverUrl>
+      <serverCertificate>-----BEGIN CERTIFICATE-----
+MIIC6jCCAdKgAwIBAgIBATANBgkqhkiG9w0BAQsFADAmMSQwIgYDVQQDDBtvcGVu
+c2hpZnQtc2lnbmVyQDE1MTI1NTAwNTkwHhcNMTcxMjA2MDg0NzM4WhcNMjIxMjA1
+MDg0NzM5WjAmMSQwIgYDVQQDDBtvcGVuc2hpZnQtc2lnbmVyQDE1MTI1NTAwNTkw
+ggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDcuFEyzY/D3LSDfI8ntBBJ
+oC6laNy55y8N17CyE7lZqSfIEzpm0Li+8isPJuPIkA9e0VAf4kcjR5BLbzI6Y/rs
++rY0Oh5PXUdshqnu/NY57ylYMnNOd15f+rmdSG+7tekFJVJfxwvxvBzA4cCX074/
+qpVKAiqPALzoPcb9spBqj6RbNeWgq3iOrqxlL1dUzXUqz9qScPrxeXpd0LP7mt38
+Q8K5r0fNVm9EDVvBA8FVz4O6H2tJbvkwM1H4Wfoz9JLdhsM6dVQHGxwXAx9apbJD
+fTKWt6A7k/D+vqXD6RC849ENGdNL8ES4yFnERAgx/uM8+rdDJGNnwbAoKCReQwaz
+AgMBAAGjIzAhMA4GA1UdDwEB/wQEAwICpDAPBgNVHRMBAf8EBTADAQH/MA0GCSqG
+SIb3DQEBCwUAA4IBAQDQ4GorIMoM2AlWHHpB0NbEMXWBvqqSkzDwPRNiipVRHD5r
+y1oegbzcW1oY1iJqfUVcbsp6dRE9oRoc95JiSRYozGUq40893GmxQBlAotyNy5A7
++ut92hvehwLzFj6I5LrKYJGUOtDvrdHKh+x/8K9qbtLj4bC41yxaCaWsJ4AC14Ks
+tbso4dJNrZ6UIaq1Zt6et8VZbdjCd6RrAhQGMnRTiY55ONygtiNjAB0JIE47EGOx
+E70/Ck6+K0tsU4wKPRzFmfvUrP/XZN4rD2Xz4nfproTs9zclnE4Ao4KOdKFkFrtu
+aMklZKWAK1QMLlsLb4DCzs894EZRo4EFOX+KsBhL
+-----END CERTIFICATE-----</serverCertificate>
+      <skipTlsVerify>false</skipTlsVerify>
+      <addMasterProxyEnvVars>true</addMasterProxyEnvVars>
+      <capOnlyOnAlivePods>false</capOnlyOnAlivePods>
+      <namespace>agi-apps-test</namespace>
+      <jenkinsUrl>http://172.19.136.65:80</jenkinsUrl>
+      <jenkinsTunnel>172.19.216.75:50000</jenkinsTunnel>
+      <credentialsId>1a12dfa4-7fc5-47a7-aa17-cc56572a41c7</credentialsId>
+      <containerCap>100</containerCap>
+      <retentionTimeout>5</retentionTimeout>
+      <connectTimeout>0</connectTimeout>
+      <readTimeout>0</readTimeout>
+      <podLabels>
+        <org.csanchez.jenkins.plugins.kubernetes.PodLabel>
+          <key>jenkins</key>
+          <value>slave</value>
+        </org.csanchez.jenkins.plugins.kubernetes.PodLabel>
+      </podLabels>
+      <usageRestricted>false</usageRestricted>
+      <maxRequestsPerHost>32</maxRequestsPerHost>
+      <waitForPodSec>600</waitForPodSec>
+      <podRetention class="org.csanchez.jenkins.plugins.kubernetes.pod.retention.Never"/>
+    </org.csanchez.jenkins.plugins.kubernetes.KubernetesCloud>
+  </clouds>
+  <quietPeriod>1</quietPeriod>
+  <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
+  <views>
+    <hudson.model.AllView>
+      <owner class="hudson" reference="../../.."/>
+      <name>all</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties/>
+    </hudson.model.AllView>
+  </views>
+  <primaryView>all</primaryView>
+  <slaveAgentPort>50000</slaveAgentPort>
+  <label>master</label>
+  <nodeProperties/>
+  <globalNodeProperties>
+    <hudson.slaves.EnvironmentVariablesNodeProperty>
+      <envVars serialization="custom">
+        <unserializable-parents/>
+        <tree-map>
+          <default>
+            <comparator class="hudson.util.CaseInsensitiveComparator"/>
+          </default>
+          <int>1</int>
+          <string>JENKINS_SHARED_LIBS_BRANCH</string>
+          <string>master</string>
+        </tree-map>
+      </envVars>
+    </hudson.slaves.EnvironmentVariablesNodeProperty>
+  </globalNodeProperties>
+  <noUsageStatistics>true</noUsageStatistics>
+</hudson>
