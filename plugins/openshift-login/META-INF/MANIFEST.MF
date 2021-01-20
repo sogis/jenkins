@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: akram
+Build-Jdk: 1.8.0_192
+Extension-Name: openshift-login
+Specification-Title: The Jenkins Plugins Parent POM Project
+Implementation-Title: openshift-login
+Implementation-Version: 1.0.22
+Group-Id: org.openshift.jenkins
+Short-Name: openshift-login
+Long-Name: OpenShift Login Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/OpenShift+Login+Plugin
+Minimum-Java-Version: 1.8
+Plugin-Version: 1.0.22
+Hudson-Version: 2.60.3
+Jenkins-Version: 2.60.3
+Plugin-Dependencies: credentials:2.1.9,mailer:1.6,matrix-auth:1.1
+Plugin-Developers: Clayton Coleman:smarterclayton:smarterclayton@gmail
+ .com,Gabe Montero:gabemontero:gmontero@redhat.com
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/openshift-login-plugin
+

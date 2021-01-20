@@ -42,6 +42,26 @@ objects:
       kind: Service
       name: ${JENKINS_SERVICE_NAME}
 - apiVersion: v1
+  kind: BuildConfig
+  metadata:
+    name: custom-jenkins-build
+    labels:
+      name: ${JENKINS_SERVICE_NAME}
+  spec:
+    source:                       
+      git:
+        uri: https://github.com/sogis/jenkins
+      type: Git
+    strategy:                     
+      sourceStrategy:
+        from:
+          kind: ImageStreamTag
+          name: jenkins:v3.11
+    output:                       
+      to:
+        kind: ImageStreamTag
+        name: custom-jenkins:latest
+- apiVersion: v1
   kind: PersistentVolumeClaim
   metadata:
     name: ${JENKINS_SERVICE_NAME}
@@ -142,8 +162,8 @@ objects:
         - jenkins
         from:
           kind: ImageStreamTag
-          name: jenkins:v3.11
-          namespace: agi-apps-integration
+          name: custom-jenkins:latest
+          namespace: ${NAMESPACE}
         lastTriggeredImage: ""
       type: ImageChange
     - type: ConfigChange
@@ -159,6 +179,12 @@ objects:
         kind: DockerImage
         name: ${JENKINS_IMAGE_STREAM_TAG}
       name: v3.11
+- apiVersion: v1
+  kind: ImageStream
+  metadata:
+    name: custom-jenkins
+    labels:
+      name: ${JENKINS_SERVICE_NAME}
 - apiVersion: v1
   kind: ServiceAccount
   metadata:
