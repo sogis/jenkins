@@ -697,7 +697,7 @@ aMklZKWAK1QMLlsLb4DCzs894EZRo4EFOX+KsBhL
           </default>
           <int>2</int>
           <string>branch_webgisclient</string>
-          <string>set_branch_dynamic</string>
+          <string>master</string>
           <string>JENKINS_SHARED_LIBS_BRANCH</string>
           <string>master</string>
         </tree-map>
