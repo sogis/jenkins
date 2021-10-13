@@ -20,12 +20,7 @@ metadata:
     openshift.io/provider-display-name: Red Hat, Inc.
     openshift.io/support-url: https://access.redhat.com
     tags: instant-app,jenkins
-  creationTimestamp: 2017-12-06T08:53:30Z
   name: jenkins-persistent
-  namespace: openshift
-  resourceVersion: "70266335"
-  selfLink: /apis/template.openshift.io/v1/namespaces/openshift/templates/jenkins-persistent
-  uid: eebf15ee-da62-11e7-a83b-005056a12422
 objects:
 - apiVersion: v1
   kind: Route
@@ -56,22 +51,11 @@ objects:
       sourceStrategy:
         from:
           kind: ImageStreamTag
-          name: jenkins:v3.11
+          name: jenkins:v4.7
     output:                       
       to:
         kind: ImageStreamTag
         name: custom-jenkins:latest
-- apiVersion: v1
-  kind: PersistentVolumeClaim
-  metadata:
-    name: ${JENKINS_SERVICE_NAME}
-  spec:
-    accessModes:
-    - ReadWriteOnce
-    resources:
-      requests:
-        storage: ${VOLUME_CAPACITY}
-    storageClassName: nfs
 - apiVersion: v1
   kind: DeploymentConfig
   metadata:
@@ -154,7 +138,7 @@ objects:
         volumes:
         - name: ${JENKINS_SERVICE_NAME}-data
           persistentVolumeClaim:
-            claimName: ${JENKINS_SERVICE_NAME}
+            claimName: ${JENKINS_SERVICE_NAME}-lowback
     triggers:
     - imageChangeParams:
         automatic: true
@@ -178,7 +162,7 @@ objects:
     - from:
         kind: DockerImage
         name: ${JENKINS_IMAGE_STREAM_TAG}
-      name: v3.11
+      name: v4.7
 - apiVersion: v1
   kind: ImageStream
   metadata:
@@ -283,7 +267,7 @@ parameters:
 - description: Name of the ImageStreamTag to be used for the Jenkins image.
   displayName: Jenkins ImageStreamTag
   name: JENKINS_IMAGE_STREAM_TAG
-  value: openshift/jenkins-2-centos7:v3.11
+  value: registry.redhat.io/openshift4/ose-jenkins:4.7
 - description: When a fatal error occurs, an error log is created with information
     and the state obtained at the time of the fatal error.
   displayName: Fatal Error Log File
