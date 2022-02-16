@@ -98,6 +98,11 @@ objects:
               value: '0.75'
             - name: JENKINS_JAVA_OVERRIDES
               value: '-Dcom.sun.jndi.ldap.connect.pool.timeout=1200000'
+            - name: BASICAUTH_BASE64
+              valueFrom:
+                secretKeyRef:
+                  key: base64
+                  name: wmsauth-base64codierung
           envFrom:
             - configMapRef:
                 name: jenkins-env-config
