@@ -33,6 +33,7 @@
     <permission>hudson.model.Item.Configure:sogis-adm</permission>
     <permission>hudson.model.Item.Create:sogis-adm</permission>
     <permission>hudson.model.Item.Delete:sogis-adm</permission>
+    <permission>hudson.model.Item.Discover:anonymous</permission>
     <permission>hudson.model.Item.Discover:sogis-adm</permission>
     <permission>hudson.model.Item.Move:sogis-adm</permission>
     <permission>hudson.model.Item.Read:authenticated</permission>
