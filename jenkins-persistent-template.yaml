@@ -98,11 +98,6 @@ objects:
               value: '0.75'
             - name: JENKINS_JAVA_OVERRIDES
               value: '-Dcom.sun.jndi.ldap.connect.pool.timeout=1200000'
-            - name: BASICAUTH_BASE64
-              valueFrom:
-                secretKeyRef:
-                  key: base64
-                  name: wmsauth-base64codierung
           envFrom:
             - configMapRef:
                 name: jenkins-env-config
@@ -137,6 +132,8 @@ objects:
           volumeMounts:
           - mountPath: /var/lib/jenkins
             name: ${JENKINS_SERVICE_NAME}-data
+          - mountPath: /etc/ssh-keys
+            name: ssh-keys
         dnsPolicy: ClusterFirst
         restartPolicy: Always
         serviceAccountName: ${JENKINS_SERVICE_NAME}
@@ -144,6 +141,12 @@ objects:
         - name: ${JENKINS_SERVICE_NAME}-data
           persistentVolumeClaim:
             claimName: ${JENKINS_SERVICE_NAME}-lowback
+        - name: ssh-keys
+          secret:
+            secretName: jenkins-geocat-ssh-key
+            items:
+              - key: id_rsa
+                path: id_rsa
     triggers:
     - imageChangeParams:
         automatic: true
