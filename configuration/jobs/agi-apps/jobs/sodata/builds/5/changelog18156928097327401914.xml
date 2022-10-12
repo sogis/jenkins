@@ -1,0 +1,12 @@
+commit da0e96b24638f1f015f51d19bd1ba6f90ad3da3e
+tree 095661bd820dd7d035a558583cfd9814a707011e
+parent 09846c2fcf5544ef55e4c686a562f802941a4d3b
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-27 15:58:41 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-27 15:58:41 +0200
+
+    [sodata] update params
+
+
+:100644 100644 a5f1e2756e481aad1985bf78f47da1efde58fa4f e304e7ba3305f7eee007fa57fe6ac0a90d0fdc30 M	sodata/sodata_integration.params
+:100644 100644 31f5a380dfae8b7406e4548b15fc34c760c86004 d4080676d79816f95bf3c9655b355288b1581217 M	sodata/sodata_production.params
+:100644 100644 174feb68634946dfd9adbac16b434145efd56a4a a95ff44e914bcd1715553b53393688f3ee51f897 M	sodata/sodata_test.params

@@ -1,0 +1,68 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.94">
+    <parentIds>
+      <string>35</string>
+    </parentIds>
+    <id>36</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.94">
+      <arguments>
+        <entry>
+          <string>script</string>
+          <string> 
+        if [ -d &quot;sql2json&quot; ]; then
+          rm -rf sql2json/* rm -rf sql2json/.git
+        fi
+        
+        if [ ! -d  &quot;config/default&quot; ]; then
+          mkdir -p config/default
+        fi
+
+        # if not exists get the sql2json.jar and set the necessary permissions
+        if [ ! -f &quot;sql2json.jar&quot; ]; then
+          wget https://github.com/sogis/simi-sql2json/releases/download/v1.1.35/sql2json.jar
+          chmod u+x sql2json.jar
+        fi
+
+        # sql2json command to create the config file
+        java -jar sql2json.jar -c jdbc:postgresql://geodb-i.rootso.org:5432/simi -u ${apiUser} -p ${PwdSogisService} -t https://raw.githubusercontent.com/sogis/pipelines/master/api_webgisclient/auth-service/sql2json/template.json -o /var/lib/jenkins/jobs/gdi/jobs/auth-service/workspace/config/default/samlAuthConfig.json -s https://raw.githubusercontent.com/qwc-services/sogis-config-generator/master/schemas/qwc-saml-auth.json
+        
+        # grep for qgis-server pod name
+    </string>
+        </entry>
+      </arguments>
+      <sensitiveVariables>
+        <string>PwdSogisService</string>
+        <string>PwdSogisServiceWrite</string>
+        <string>PwdApiUser</string>
+        <string>PwdOgcServer</string>
+        <string>apiUser</string>
+      </sensitiveVariables>
+      <isUnmodifiedBySanitization>false</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.47">
+      <startTime>1665492206550</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+    <wf.a.ErrorAction plugin="workflow-api@2.47">
+      <error class="hudson.AbortException">
+        <detailMessage>script returned exit code 1</detailMessage>
+        <stackTrace>
+          <trace>org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep$Execution.handleExit(DurableTaskStep.java:659)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep$Execution.check(DurableTaskStep.java:605)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep$Execution.run(DurableTaskStep.java:549)</trace>
+          <trace>java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)</trace>
+          <trace>java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)</trace>
+          <trace>java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)</trace>
+          <trace>java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)</trace>
+          <trace>java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)</trace>
+          <trace>java.base/java.lang.Thread.run(Thread.java:829)</trace>
+        </stackTrace>
+        <suppressedExceptions class="empty-list"/>
+      </error>
+    </wf.a.ErrorAction>
+  </actions>
+</Tag>

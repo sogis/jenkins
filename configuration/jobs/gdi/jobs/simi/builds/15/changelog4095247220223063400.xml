@@ -1,0 +1,20 @@
+commit 1127055b634fb3781690a2232faf96012116dfe5
+tree f10e09e8de74867f9d12ed024ac6f7d0363db9a1
+parent cbc64188277d240d9f23c85c1853522211fed814
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-20 17:27:34 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-20 17:27:34 +0200
+
+    [simi] update production to v2.0
+
+
+:100644 100644 1c63dc5bd2bdf9b7a07aef7724493a74c6176789 e8c147650ab551bf6bc6ff8aee66045573be3650 M	simi/simi_production.params
+commit cbc64188277d240d9f23c85c1853522211fed814
+tree 6093a67ed1bf6859782d6e6fdf20a5fd82b57e34
+parent 6b445253be7bb3fa2e46cd59e9e726def99d854f
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-20 15:50:48 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-20 15:50:48 +0200
+
+    [solr] adjust image versions
+
+
+:100644 100644 3f149bf97a218117996acd6920075fa9ec2a4f94 7b9617732bcda309b06eea841fde4e83e4efeaa4 M	solr/6_exporter-deployment.yaml

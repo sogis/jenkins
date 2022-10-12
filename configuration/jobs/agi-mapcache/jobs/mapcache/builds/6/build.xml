@@ -1,0 +1,734 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.42">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>NAMESPACE</name>
+          <description>Namespace, in welchem die App deployt werden soll</description>
+          <value>agi-mapcache-test</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>RESTART_ONLY</name>
+          <description>Nur Pods neu starten (keine Änderung an der DeploymentConfig vornehmen)</description>
+          <value>false</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>BRANCH</name>
+          <description>Branch, der ausgecheckt werden soll</description>
+          <value>mapcache_fixes</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>NAMESPACE</string>
+        <string>RESTART_ONLY</string>
+        <string>BRANCH</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>barpasan</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.0.2.8">
+      <queuingDurationMillis>8</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>0</buildableDurationMillis>
+      <waitingDurationMillis>6</waitingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.21">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@1.9.2">
+      <stagesUUID>c7ffe842-56c1-4165-a752-588f30d4ae87</stagesUUID>
+      <pipelineDefs>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@1.9.2">
+          <stages>
+            <stages>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Checkout branch</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>checkout</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scm</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                <value class="string">[
+                    $class: &apos;GitSCM&apos;,
+                    branches: [[name: &quot;*/${params.BRANCH}&quot;]],
+                    extensions: [
+                        [$class: &apos;CloneOption&apos;, noTags: true, shallow: true],
+                        [$class: &apos;SparseCheckoutPaths&apos;, sparseCheckoutPaths: [[path: appName]]]
+                    ],
+                    userRemoteConfigs: [[url: env.GIT_URL]]
+                ]</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Deploy applications</name>
+                <branches/>
+                <parallel>
+                  <stages>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <name>mapcache</name>
+                      <stages>
+                        <stages>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                            <when>
+                              <conditions>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                                  <name>expression</name>
+                                  <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                    <arguments class="linked-hash-map">
+                                      <entry>
+                                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                          <key>scriptBlock</key>
+                                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                          <value class="string">params.RESTART_ONLY</value>
+                                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      </entry>
+                                    </arguments>
+                                  </args>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                              </conditions>
+                            </when>
+                            <name>Restart the pods</name>
+                            <branches>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                                <name>default</name>
+                                <steps>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                    <name>sh</name>
+                                    <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                      <arguments class="linked-hash-map">
+                                        <entry>
+                                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                            <key>script</key>
+                                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                            <value class="string">&quot;oc rollout latest dc/${appName} -n ${params.NAMESPACE}&quot;</value>
+                                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                        </entry>
+                                      </arguments>
+                                    </args>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                </steps>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                            </branches>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                            <when>
+                              <conditions>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                                  <name>expression</name>
+                                  <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                    <arguments class="linked-hash-map">
+                                      <entry>
+                                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                          <key>scriptBlock</key>
+                                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                          <value class="string">!params.RESTART_ONLY</value>
+                                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      </entry>
+                                    </arguments>
+                                  </args>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                              </conditions>
+                            </when>
+                            <name>Apply configuration after updating ImageStream tags</name>
+                            <branches>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                                <name>default</name>
+                                <steps>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                    <name>sh</name>
+                                    <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                      <arguments class="linked-hash-map">
+                                        <entry>
+                                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                            <key>script</key>
+                                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                            <value class="string">&quot;oc import-image ${appName} --all --confirm -o name -n ${params.NAMESPACE}&quot;</value>
+                                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                        </entry>
+                                      </arguments>
+                                    </args>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                    <name>sh</name>
+                                    <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                      <arguments class="linked-hash-map">
+                                        <entry>
+                                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                            <key>script</key>
+                                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                            <value class="string">&quot;oc process -f ${appName}/${appName}.yaml --param-file=${appName}/${appName}_${environment}.params | oc apply -f - -n ${params.NAMESPACE}&quot;</value>
+                                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                        </entry>
+                                      </arguments>
+                                    </args>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                </steps>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                            </branches>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                            <name>Wait for rollout to finish</name>
+                            <branches>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                                <name>default</name>
+                                <steps>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                    <name>sh</name>
+                                    <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                      <arguments class="linked-hash-map">
+                                        <entry>
+                                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                            <key>script</key>
+                                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                            <value class="string">&quot;sleep 2 &amp;&amp; oc rollout status dc/${appName} --timeout=90s -n ${params.NAMESPACE}&quot;</value>
+                                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                        </entry>
+                                      </arguments>
+                                    </args>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                </steps>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                            </branches>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                        </stages>
+                        <uuid>7c5c0d99-7451-47fd-b708-a2d72a6709c4</uuid>
+                      </stages>
+                      <branches/>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <name>qgis-server</name>
+                      <stages>
+                        <stages>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                            <when>
+                              <conditions>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                                  <name>expression</name>
+                                  <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                    <arguments class="linked-hash-map">
+                                      <entry>
+                                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                          <key>scriptBlock</key>
+                                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                          <value class="string">params.RESTART_ONLY</value>
+                                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      </entry>
+                                    </arguments>
+                                  </args>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                              </conditions>
+                            </when>
+                            <name>Restart the pods</name>
+                            <branches>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                                <name>default</name>
+                                <steps>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                    <name>sh</name>
+                                    <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                      <arguments class="linked-hash-map">
+                                        <entry>
+                                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                            <key>script</key>
+                                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                            <value class="string">&quot;oc rollout latest dc/${app2Name} -n ${params.NAMESPACE}&quot;</value>
+                                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                        </entry>
+                                      </arguments>
+                                    </args>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                </steps>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                            </branches>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                            <when>
+                              <conditions>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                                  <name>expression</name>
+                                  <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                    <arguments class="linked-hash-map">
+                                      <entry>
+                                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                          <key>scriptBlock</key>
+                                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                          <value class="string">!params.RESTART_ONLY</value>
+                                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      </entry>
+                                    </arguments>
+                                  </args>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                              </conditions>
+                            </when>
+                            <name>Apply configuration after updating ImageStream tags</name>
+                            <branches>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                                <name>default</name>
+                                <steps>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                    <name>sh</name>
+                                    <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                      <arguments class="linked-hash-map">
+                                        <entry>
+                                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                            <key>script</key>
+                                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                            <value class="string">&quot;oc import-image ${app2Name} --all --confirm -o name -n ${params.NAMESPACE}&quot;</value>
+                                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                        </entry>
+                                      </arguments>
+                                    </args>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                    <name>sh</name>
+                                    <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                      <arguments class="linked-hash-map">
+                                        <entry>
+                                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                            <key>script</key>
+                                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                            <value class="string">&quot;oc process -f ${appName}/${app2Name}.yaml --param-file=${appName}/${app2Name}_${environment}.params | oc apply -f - -n ${params.NAMESPACE}&quot;</value>
+                                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                        </entry>
+                                      </arguments>
+                                    </args>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                </steps>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                            </branches>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                            <name>Wait for rollout to finish</name>
+                            <branches>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                                <name>default</name>
+                                <steps>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                    <name>sh</name>
+                                    <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                      <arguments class="linked-hash-map">
+                                        <entry>
+                                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                            <key>script</key>
+                                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                            <value class="string">&quot;sleep 2 &amp;&amp; oc rollout status dc/${app2Name} --timeout=90s -n ${params.NAMESPACE}&quot;</value>
+                                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                        </entry>
+                                      </arguments>
+                                    </args>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                </steps>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                            </branches>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                        </stages>
+                        <uuid>3507295f-1042-4652-b40f-995fb8950bb7</uuid>
+                      </stages>
+                      <branches/>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                  </stages>
+                  <uuid>331d99ea-c6ea-468e-a822-347c741ebad1</uuid>
+                </parallel>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            </stages>
+            <uuid>c7ffe842-56c1-4165-a752-588f30d4ae87</uuid>
+          </stages>
+          <postBuild>
+            <conditions>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildCondition>
+                <condition>always</condition>
+                <branch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>sh</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>script</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                              <value class="string">&quot;oc status --suggest -n ${params.NAMESPACE}&quot;</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                      <name>script</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>scriptBlock</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">currentBuild.description = &quot;${params.NAMESPACE}, branch: ${params.BRANCH}&quot;</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                  </steps>
+                </branch>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildCondition>
+            </conditions>
+          </postBuild>
+          <agent>
+            <agentType>
+              <key>any</key>
+            </agentType>
+          </agent>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
+      </pipelineDefs>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.94">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <hudson.plugins.git.util.BuildData plugin="git@4.9.0">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/mapcache</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>8208ba78e883b9d886069be70b562ba66067b5c6</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/mapcache</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision plugin="git-client@3.10.0">
+              <sha1 reference="../../marked/sha1"/>
+              <branches class="list">
+                <hudson.plugins.git.Branch reference="../../../marked/branches/hudson.plugins.git.Branch"/>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>4</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>8384df98ec952f0846ce12d9cd43ef1f68f826c9</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>6</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry[2]/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/sogis/openshift-templates.git</string>
+      </remoteUrls>
+      <index>2</index>
+    </hudson.plugins.git.util.BuildData>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.13">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/sogis/openshift-templates.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <hudson.plugins.git.util.BuildData plugin="git@4.9.0">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/mapcache</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1 reference="../../../../../../hudson.plugins.git.util.BuildData/buildsByBranchName/entry/hudson.plugins.git.util.Build/marked/sha1"/>
+              <branches class="list">
+                <hudson.plugins.git.Branch reference="../../../../../../../hudson.plugins.git.util.BuildData/buildsByBranchName/entry/hudson.plugins.git.util.Build/marked/branches/hudson.plugins.git.Branch"/>
+              </branches>
+            </marked>
+            <revision plugin="git-client@3.10.0">
+              <sha1 reference="../../../../../../hudson.plugins.git.util.BuildData/buildsByBranchName/entry/hudson.plugins.git.util.Build/marked/sha1"/>
+              <branches class="list">
+                <hudson.plugins.git.Branch reference="../../../../../../../hudson.plugins.git.util.BuildData/buildsByBranchName/entry/hudson.plugins.git.util.Build/marked/branches/hudson.plugins.git.Branch"/>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>4</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>refs/remotes/origin/mapcache_fixes</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>2006d7d051de8e5910d82f204d9508fc0b040d9a</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/mapcache_fixes</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>6</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>8384df98ec952f0846ce12d9cd43ef1f68f826c9</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision plugin="git-client@3.10.0">
+              <sha1 reference="../../marked/sha1"/>
+              <branches class="list">
+                <hudson.plugins.git.Branch reference="../../../marked/branches/hudson.plugins.git.Branch"/>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>5</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry[2]/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/sogis/openshift-templates.git</string>
+      </remoteUrls>
+      <index>2</index>
+    </hudson.plugins.git.util.BuildData>
+    <jenkins.metrics.impl.SubTaskTimeInQueueAction plugin="metrics@4.0.2.8">
+      <queuingDurationMillis>16</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>13</buildableDurationMillis>
+      <waitingDurationMillis>0</waitingDurationMillis>
+      <executingDurationMillis>11353</executingDurationMillis>
+      <workUnitCount>1</workUnitCount>
+    </jenkins.metrics.impl.SubTaskTimeInQueueAction>
+  </actions>
+  <queueId>35171</queueId>
+  <timestamp>1663243778152</timestamp>
+  <startTime>1663243778156</startTime>
+  <result>SUCCESS</result>
+  <description>agi-mapcache-test, branch: mapcache_fixes</description>
+  <duration>14766</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>def appName = env.JOB_BASE_NAME
+def app2Name = &apos;qgis-server&apos;
+def environment = params.NAMESPACE.substring(params.NAMESPACE.lastIndexOf(&apos;-&apos;) + 1)
+
+pipeline {
+    agent any
+    stages {
+        stage(&apos;Checkout branch&apos;) {
+            steps {
+                checkout([
+                    $class: &apos;GitSCM&apos;,
+                    branches: [[name: &quot;*/${params.BRANCH}&quot;]],
+                    extensions: [
+                        [$class: &apos;CloneOption&apos;, noTags: true, shallow: true],
+                        [$class: &apos;SparseCheckoutPaths&apos;, sparseCheckoutPaths: [[path: appName]]]
+                    ],
+                    userRemoteConfigs: [[url: env.GIT_URL]]
+                ])
+            }
+        }
+        stage(&apos;Deploy applications&apos;) {
+            parallel {
+                stage(&apos;mapcache&apos;) {
+                    stages {
+                        stage(&apos;Restart the pods&apos;) {
+                            when { expression { params.RESTART_ONLY } }
+                            steps {
+                                sh &quot;oc rollout latest dc/${appName} -n ${params.NAMESPACE}&quot;
+                            }
+                        }
+                        stage(&apos;Apply configuration after updating ImageStream tags&apos;) {
+                            when { expression { !params.RESTART_ONLY } }
+                            steps {
+                                // Update the ImageStream tags (needed for tracking tags like &quot;latest&quot; or &quot;v2.1&quot;)
+                                sh &quot;oc import-image ${appName} --all --confirm -o name -n ${params.NAMESPACE}&quot;
+                                sh &quot;oc process -f ${appName}/${appName}.yaml --param-file=${appName}/${appName}_${environment}.params | oc apply -f - -n ${params.NAMESPACE}&quot;
+                            }
+                        }
+                        stage(&apos;Wait for rollout to finish&apos;) {
+                            steps {
+                                sh &quot;sleep 2 &amp;&amp; oc rollout status dc/${appName} --timeout=90s -n ${params.NAMESPACE}&quot;
+                            }
+                        }
+                    }
+                }
+                stage(&apos;qgis-server&apos;) {
+                    stages {
+                        stage(&apos;Restart the pods&apos;) {
+                            when { expression { params.RESTART_ONLY } }
+                            steps {
+                                sh &quot;oc rollout latest dc/${app2Name} -n ${params.NAMESPACE}&quot;
+                            }
+                        }
+                        stage(&apos;Apply configuration after updating ImageStream tags&apos;) {
+                            when { expression { !params.RESTART_ONLY } }
+                            steps {
+                                // Update the ImageStream tags (needed for tracking tags like &quot;latest&quot; or &quot;v2.1&quot;)
+                                sh &quot;oc import-image ${app2Name} --all --confirm -o name -n ${params.NAMESPACE}&quot;
+                                sh &quot;oc process -f ${appName}/${app2Name}.yaml --param-file=${appName}/${app2Name}_${environment}.params | oc apply -f - -n ${params.NAMESPACE}&quot;
+                            }
+                        }
+                        stage(&apos;Wait for rollout to finish&apos;) {
+                            steps {
+                                sh &quot;sleep 2 &amp;&amp; oc rollout status dc/${app2Name} --timeout=90s -n ${params.NAMESPACE}&quot;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+    post {
+        always {
+            sh &quot;oc status --suggest -n ${params.NAMESPACE}&quot;
+            script { currentBuild.description = &quot;${params.NAMESPACE}, branch: ${params.BRANCH}&quot; }
+        }
+    }
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>529084315</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>4016877464</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>2627739566</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>1801089675</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>408813066</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>79</iota>
+    <head>1:79</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.9.0">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/sogis/openshift-templates.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions/>
+      </scm>
+      <node></node>
+      <workspace>/var/lib/jenkins/jobs/agi-mapcache/jobs/mapcache/workspace</workspace>
+      <changelogFile>/var/lib/jenkins/jobs/agi-mapcache/jobs/mapcache/builds/6/changelog17118644625922277578.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.9.0">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/sogis/openshift-templates.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>*/mapcache_fixes</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions>
+          <hudson.plugins.git.extensions.impl.CloneOption>
+            <shallow>true</shallow>
+            <noTags>true</noTags>
+            <honorRefspec>false</honorRefspec>
+          </hudson.plugins.git.extensions.impl.CloneOption>
+          <hudson.plugins.git.extensions.impl.SparseCheckoutPaths>
+            <sparseCheckoutPaths>
+              <hudson.plugins.git.extensions.impl.SparseCheckoutPath>
+                <path>mapcache</path>
+              </hudson.plugins.git.extensions.impl.SparseCheckoutPath>
+            </sparseCheckoutPaths>
+          </hudson.plugins.git.extensions.impl.SparseCheckoutPaths>
+        </extensions>
+      </scm>
+      <node></node>
+      <workspace>/var/lib/jenkins/jobs/agi-mapcache/jobs/mapcache/workspace</workspace>
+      <changelogFile>/var/lib/jenkins/jobs/agi-mapcache/jobs/mapcache/builds/6/changelog12221696607935420330.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

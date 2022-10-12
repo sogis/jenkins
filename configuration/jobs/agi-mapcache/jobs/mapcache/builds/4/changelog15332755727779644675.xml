@@ -1,0 +1,14 @@
+commit 8208ba78e883b9d886069be70b562ba66067b5c6
+tree fdb0e84da84cc1ee801d6b4cae93bf8caf08b638
+parent f6b9c1452481dd1542f0d6c8de70c50e9c72a89f
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-13 12:53:34 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-13 12:53:34 +0200
+
+    [mapcache] Move host definition to pg_service file
+
+
+:100644 100644 73fc4acb3e549c6078e263a5b62a5ea940fe41cc 995ce10cf60a46301dcec300082ce6ce9e2bd7a0 M	mapcache/README.md
+:100644 100644 83b6b458b8375f3590c49218497594279511e9dc c52b18a40cb5c92c30f581d418d1bde6ec9056b4 M	mapcache/mapcache.yaml
+:100644 100644 0259eb6e0c3b5aaf412bc9f786945bb470458e4f 9001803631d27aae4683ad3e17c9a5dbc23b150f M	mapcache/mapcache_development.params
+:100644 100644 e688d5d5ff9349aaf8141fb32a82f92b770af71d 0f896e4b621fe2f0a7d293185b8f267deb27799e M	mapcache/mapcache_production.params
+:100644 100644 5a82cdf8cd5a4b66b16b88b602df3ba65a6b2012 61eb55576672cddaea14c4d9063fb2455e7a03b2 M	mapcache/mapcache_test.params

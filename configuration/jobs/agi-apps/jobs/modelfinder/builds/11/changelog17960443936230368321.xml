@@ -1,0 +1,27 @@
+commit b9d33c2a7edc4f4a740707eb9bfcb3b680844df8
+tree d34693d97f9042ff7c0f394347a767a5d0dbdef8
+parent 8a81f187fc6f2fef4895c808ca9e8f41dd857504
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-13 14:43:24 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-13 14:43:24 +0200
+
+    [avgbs2mtab] changed version to 1.2.24
+
+
+:100644 100644 ed2a95510fe4972310303844d553f3491cf7df1d 47cf054dd3719a34dbf5eb4d550f65721872a2e9 M	avgbs2mtab-web-service/avgbs2mtab-web-service_integration.params
+:100644 100644 f2722faab6ba7fc30d2efdafb1be086b580d3ebd 797c3a71382478b9d6897d62991aec0a99a60a6e M	avgbs2mtab-web-service/avgbs2mtab-web-service_production.params
+commit 8a81f187fc6f2fef4895c808ca9e8f41dd857504
+tree 0f49e95a1090225ad6048555bd146f750990358f
+parent 9069871c32e7f60ca776cf9f5574d8c9e09cd50d
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-13 12:17:16 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-13 12:17:16 +0200
+
+    [avgbs2mtab-web-service] switch to pipeline
+
+
+:000000 100644 0000000000000000000000000000000000000000 afc36bbf1ee3102fa25cd9c9995cbc9e746e41f3 A	avgbs2mtab-web-service/README.md
+:000000 100644 0000000000000000000000000000000000000000 ad8f7d991f93f20ba2484e41e7d4894fba072f11 A	avgbs2mtab-web-service/avgbs2mtab-web-service.yaml
+:000000 100644 0000000000000000000000000000000000000000 ed2a95510fe4972310303844d553f3491cf7df1d A	avgbs2mtab-web-service/avgbs2mtab-web-service_integration.params
+:000000 100644 0000000000000000000000000000000000000000 f2722faab6ba7fc30d2efdafb1be086b580d3ebd A	avgbs2mtab-web-service/avgbs2mtab-web-service_production.params
+:000000 100644 0000000000000000000000000000000000000000 d3ed66937a927413f3abd5d5f0fce1b246393bdf A	avgbs2mtab-web-service/avgbs2mtab-web-service_test.params
+:100644 000000 a6f235c0ea40792cc3b6422fe9385940759c13ac 0000000000000000000000000000000000000000 D	avgbs2mtab/README.md
+:100644 000000 1737cfe76079ef8eb1e1d8af02cab0c70d8aaef5 0000000000000000000000000000000000000000 D	avgbs2mtab/avgbs2mtab-web-service.yaml

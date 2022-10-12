@@ -1,0 +1,31 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.94">
+    <parentIds>
+      <string>30</string>
+    </parentIds>
+    <id>31</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.94">
+      <arguments>
+        <entry>
+          <string>script</string>
+          <string> 
+                            #To do: rsync file to sodata Pod
+                            #oc rsync -n agi-apps-integration config/ sodata-1-rmcw2:/app
+                        </string>
+        </entry>
+      </arguments>
+      <sensitiveVariables>
+        <string>PwdSimi</string>
+      </sensitiveVariables>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.47">
+      <startTime>1664984540869</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

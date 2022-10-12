@@ -1,0 +1,61 @@
+commit 115173f75f79826636ea9f5739208790b40bc25c
+tree 87c255a01c34fb18d9627ed47b960a1b7dd312fb
+parent 864095c6b0b329766dbf0a88da6072c0fbfe8736
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-06 17:56:12 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-06 17:56:12 +0200
+
+    [meta-exporter_*] change name
+
+
+:100644 100644 ddf9d2aa36499182150e4eda923310cecec3e794 aa5b84395a34fbf25401b484032e047da6c3c9ac M	api_webgisclient/meta-exporter_conf/Jenkinsfile
+:100644 100644 336bc09478c4063874582cacf20c2cfe2ae18172 8e21c2d66c4315eb1b5c2adbb72277e14225cc1d M	api_webgisclient/meta-exporter_geocat/Jenkinsfile
+commit 864095c6b0b329766dbf0a88da6072c0fbfe8736
+tree 82b2030ced144dd2b082cf7e76db3ad05f427e7d
+parent 6177410c1c255bf50e3b46ee8deba1db2b0b95b2
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-06 17:36:28 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-06 17:36:28 +0200
+
+    [meta-excporter_geocat] test env variable for geocat server
+
+
+:100644 100644 f3cc600a9ffd3f546cd28aa1515002399a504b0a 336bc09478c4063874582cacf20c2cfe2ae18172 M	api_webgisclient/meta-exporter_geocat/Jenkinsfile
+commit 6ab0aa26dd6cbb1b6a1f1198f42230f576b5b3b5
+tree 93fd724025c4d5d8f03d22390e4d34bf91179a63
+parent 2ae6d53b2cace032d3a958eae894d11bb0575710
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:49:23 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:49:23 +0200
+
+    [meta-exporter_geocat] Initialimport
+
+
+:000000 100644 0000000000000000000000000000000000000000 f3cc600a9ffd3f546cd28aa1515002399a504b0a A	api_webgisclient/meta-exporter_geocat/Jenkinsfile
+commit 76f15c60b59e0e44c807676af670e640fb31e87b
+tree 040964a416e39a3ba5f2226b534680a32e3f0005
+parent 737f0c01a8f9ff35b5cbe40e7be93b8a266ad59c
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-29 17:16:12 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-29 17:16:12 +0200
+
+    [data-service] rollback uncomment post actions
+
+
+:100644 100644 bb2e56f920cd2b01e24a203494903429e228d0ca caed6bd1ecdd5c863565ce969fb5400573ae6b98 M	api_webgisclient/data-service/Jenkinsfile
+commit 737f0c01a8f9ff35b5cbe40e7be93b8a266ad59c
+tree 480289be3ff0a617ea107b74f31ab0c5a56fb6b5
+parent 23d422cd1ff6036780e73753f7a3e0f8e4afc4b7
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-29 17:14:56 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-29 17:14:56 +0200
+
+    [dataproduct-service] change text/plain to application/json for test purposes
+
+
+:100644 100644 6e9349bfd0a472898ae808532a5feecc240a893c dcef53d1a181baad81651d25136d1a26849a8bdd M	api_webgisclient/dataproduct-service/sql2json/dataprod.sql
+commit 23d422cd1ff6036780e73753f7a3e0f8e4afc4b7
+tree 3c66bfd06c2b505f5690d86cb89bc4336250cd56
+parent f3f159368cc20b0eda1f058b1aad0165ef55ace9
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-29 11:50:40 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-29 11:50:40 +0200
+
+    [data-service] uncomment post actions
+
+
+:100644 100644 caed6bd1ecdd5c863565ce969fb5400573ae6b98 bb2e56f920cd2b01e24a203494903429e228d0ca M	api_webgisclient/data-service/Jenkinsfile

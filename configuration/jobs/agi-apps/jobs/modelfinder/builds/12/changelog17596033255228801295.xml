@@ -1,0 +1,21 @@
+commit edebb0a44617fa4320c2a3d26e6744a8c7c58763
+tree 7e18ec7a2ae5e4ff5ad8d2ffc71b75a091f3cea7
+parent d25d1a5d1c399708901fd15c131a15a4ce934c70
+author Stefan Ziegler <edi.gonzales@gmail.com> 2022-07-14 17:55:39 +0200
+committer Stefan Ziegler <edi.gonzales@gmail.com> 2022-07-14 17:55:39 +0200
+
+    [modelfinder] bump version
+
+
+:100644 100644 47d9d21f82e88ba48aebc4574acf79a4fbee1a7c 24c6bb7f8f90950171dd3fec9e3beaafe2737098 M	modelfinder/modelfinder_integration.params
+:100644 100644 bc3defd9e67df3b667b402ccba85eeb4db601f98 148b7391f329393f7b731ce5ac7db44ab59483a4 M	modelfinder/modelfinder_production.params
+commit d25d1a5d1c399708901fd15c131a15a4ce934c70
+tree 4febc63e4904e9292e1319331add15690c6f89b4
+parent 94be5a7bf7adcde5e480f0060ce7dbec5574ee65
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-14 11:31:52 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-14 11:31:52 +0200
+
+    [avgbs2mtab] add healthchecks
+
+
+:100644 100644 ad8f7d991f93f20ba2484e41e7d4894fba072f11 241ff271ae6d6a9932d0562148098addc7eecb84 M	avgbs2mtab-web-service/avgbs2mtab-web-service.yaml

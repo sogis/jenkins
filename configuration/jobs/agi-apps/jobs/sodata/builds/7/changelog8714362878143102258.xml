@@ -1,0 +1,127 @@
+commit 6953e9a021f516a231b3859ed0d09280121a105c
+tree bab96099dc83260b3bba5890d3b2ccd56d1c5cfa
+parent cf92a1c927ef52c6c67a4bd7d335eae9c54b382b
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 15:07:09 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 15:07:09 +0200
+
+    [sodata] update params
+
+
+:100644 100644 e304e7ba3305f7eee007fa57fe6ac0a90d0fdc30 aeb27e1c5a149c3d945ded0cf7dfdb13128aa803 M	sodata/sodata_integration.params
+:100644 100644 a95ff44e914bcd1715553b53393688f3ee51f897 6ae6611042611b5a1cf547aed78cb901309675a6 M	sodata/sodata_test.params
+commit cf92a1c927ef52c6c67a4bd7d335eae9c54b382b
+tree 1847da8e027c24e77cd54e2588e5e6887dc1086e
+parent 7e3320dea8f9ff87790f5fe9ba8b9e8c959a13fa
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-11 10:04:57 +0200
+committer GitHub <noreply@github.com> 2022-10-11 10:04:57 +0200
+
+    [oereb-web-service] bump prod version
+
+:100644 100644 531d647984fdc7007cab8f47c2d6122cc65a6875 05c4e058b61f766cb456f081ddd8482b8794b0fe M	oereb-web-service/oereb-web-service_production.params
+commit 7e3320dea8f9ff87790f5fe9ba8b9e8c959a13fa
+tree 81cfafc4b40569ec561b0d2baad2fd7bb1977aa2
+parent 1944b58f20944c730e32e81c7c0fee0966ea209e
+author edigonzales <edi.gonzales@gmail.com> 2022-10-11 06:17:48 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-10-11 06:17:48 +0200
+
+    [oereb-web-service] bump int version
+
+
+:100644 100644 7ed599c4c8d25d53d0a8ff56ffffd50ec12d3d00 9ac42c7de24891d8b68c96862b7146ed60786ae5 M	oereb-web-service/oereb-web-service_integration.params
+commit 1944b58f20944c730e32e81c7c0fee0966ea209e
+tree e20490287799cb0da752912ace045e82a494e4cb
+parent 7b5d15d5f6f65e28d89c076ce7e52add8fe8ff38
+author Stefan Ziegler <edi.gonzales@gmail.com> 2022-10-10 13:31:31 +0200
+committer GitHub <noreply@github.com> 2022-10-10 13:31:31 +0200
+
+    [interlis-repo-checker] bump version for int
+
+:100644 100644 1219a49c87fab276037bd5664401bad617e2f8c8 9c19cfb6283b161f1ea381f53a6f9047798be1fb M	interlis-repo-checker/interlis-repo-checker_integration.params
+commit 7b5d15d5f6f65e28d89c076ce7e52add8fe8ff38
+tree 6688a98755a1629dbee363af2f39f762305b6974
+parent c9fc3186b1c4346fba177613b56108baf5e92a89
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-10 08:28:28 +0200
+committer GitHub <noreply@github.com> 2022-10-10 08:28:28 +0200
+
+    [gretl] Add Jenkins deploymentconfig (#54)
+    
+
+
+:100644 100644 e3b405a78974c6b62dff8d21630a1ad4107718dc f224e3315cc1fbe7754d96f02259085fbaad012a M	gretl/Jenkinsfile
+:100644 100644 c6801db3cdd4750160ed8914d5203de253f35d88 da15bd55452c074822fa03540e315b8ae9fbe0d6 M	gretl/README.md
+:100644 100644 f0fcae29dff9a1edaa525634fca0704292e95891 14c41dbd4700fe400b5650d6255a5480833d61bb R050	gretl/gretl-pod-template.yaml	gretl/gretl.yaml
+:000000 100644 0000000000000000000000000000000000000000 dfc0ab482993d38dfc577321806f429fdd86da4c A	gretl/gretl_development.params
+:100644 100644 45a82ea3a6987a336b6939eaf7f561259604ef12 f6270b514eb0a785ab5363ee7eb2de7f69d78f12 M	gretl/gretl_integration.params
+:100644 100644 297561c7378647dc8bd14c91fc91ab9210f554af f64f2d441ab429e0bab78a5be327998095dd3905 M	gretl/gretl_production.params
+:100644 100644 550db9996fee96b3aba2665431e2ff0573308b78 d7cb5f29b27718a98ea2fdddb3b497db5c9bb907 M	gretl/gretl_test.params
+commit c9fc3186b1c4346fba177613b56108baf5e92a89
+tree 2fa5e8257acf5bf6ff139406e7335ca9d8905903
+parent e4cd8e1fe1348a3cce53de9bf45e576ee06f4a52
+author edigonzales <edi.gonzales@gmail.com> 2022-10-10 07:37:48 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-10-10 07:37:48 +0200
+
+    [wgs-embedded] bump version
+
+
+:100644 100644 d85b77258ccaf0cc26fd4dcb08775e32a652d33e 8d935d2e8f914f8762f8bd3f6456e6dc5ba92f80 M	wgc-embedded/wgc-embedded_production.params
+commit e4cd8e1fe1348a3cce53de9bf45e576ee06f4a52
+tree 894dff0e7e7d4405abba20f13f55be7474d837c0
+parent 885d0dce2ced103d567aa19dde7483c1e818bb94
+author edigonzales <edi.gonzales@gmail.com> 2022-10-04 15:04:33 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-10-04 15:04:33 +0200
+
+    [sodata-preview] bump version
+
+
+:100644 100644 ddf1a1cbd02af7c22a0372ffd9bbbc3dfcd7a9db 09104f5302850a456c5fdbc1c7f1f6e1ecc27400 M	sodata-preview/sodata-preview_integration.params
+:100644 100644 37e7d0ffdaa5c6fd68105b0dd9034ebf1930e9be 6d8530d9401642941c1e62ed693e04fbce493b50 M	sodata-preview/sodata-preview_production.params
+commit 885d0dce2ced103d567aa19dde7483c1e818bb94
+tree e254a73baf895016ea4e51fbbb9cf874c7e09c5c
+parent 5ae404a0e0f8f2aba642d6c79f67dc8b2b348e39
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-03 12:10:47 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-03 12:24:07 +0200
+
+    [oereb-web-service] Update to tag 2.0.1692
+    
+    And update liveness and readiness probes
+
+
+:100644 100644 a32334f2fde722cdf935e62b95983aa6532efc04 b0a0a0d109dc923d97c9717b66d168c641f257fb M	oereb-web-service/oereb-web-service.yaml
+:100644 100644 ace2d72ed084a1881f2346781c7fe3c8829c7483 7ed599c4c8d25d53d0a8ff56ffffd50ec12d3d00 M	oereb-web-service/oereb-web-service_integration.params
+:100644 100644 4be103a1adc37dbd0ad9e462fd0ccb22c2ea15f8 531d647984fdc7007cab8f47c2d6122cc65a6875 M	oereb-web-service/oereb-web-service_production.params
+commit 5ae404a0e0f8f2aba642d6c79f67dc8b2b348e39
+tree 40b11a5396ac89d57d959461257dccc9bf97fd89
+parent 7f93a1b6e21f82e7fc839ed4ac0bf5c7ccbdb4eb
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-18 11:50:51 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-03 12:24:07 +0200
+
+    [oereb-web-service] Add TOMCAT_THREADS_MAX env var
+
+
+:100644 100644 269bcb50a0f64fd2a6fb3c9c0638a219f9c06b71 a32334f2fde722cdf935e62b95983aa6532efc04 M	oereb-web-service/oereb-web-service.yaml
+:100644 100644 645f1f059b9802e39c3381caac83fc041b005aad ace2d72ed084a1881f2346781c7fe3c8829c7483 M	oereb-web-service/oereb-web-service_integration.params
+:100644 100644 becc1c16f534018f045fe0a761d61df848d870a5 4be103a1adc37dbd0ad9e462fd0ccb22c2ea15f8 M	oereb-web-service/oereb-web-service_production.params
+:100644 100644 21205ea184a48a35e4e33f873d801e738e21eb9e 53f03e1ed4ec0b497bc9b8b48764f38105395119 M	oereb-web-service/oereb-web-service_test.params
+commit 7f93a1b6e21f82e7fc839ed4ac0bf5c7ccbdb4eb
+tree f68b62a5f00a4ec02e2ad4279fe28491ab15567e
+parent 0408475ddc28d534e9452ac398ee7db3e50d2206
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-03 09:19:41 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-03 09:19:41 +0200
+
+    [oereb-web-service] Increase CPU limit (production)
+
+
+:100644 100644 4d00ba68d56e50cbfac2d6533449d1940f834cc3 becc1c16f534018f045fe0a761d61df848d870a5 M	oereb-web-service/oereb-web-service_production.params
+commit 0408475ddc28d534e9452ac398ee7db3e50d2206
+tree a0dc3eb7abd03db561484b1b546e51408d5a8d2c
+parent da0e96b24638f1f015f51d19bd1ba6f90ad3da3e
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-29 11:34:29 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-29 11:34:29 +0200
+
+    Revert "[gretl] Remove CPU limits"
+    
+    This reverts commit 6b445253be7bb3fa2e46cd59e9e726def99d854f. CPU limit
+    must be higher than or equal to CPU request.
+
+
+:100644 100644 2dd4a701e37c78039538674be2ca1f2b57e61eae f0fcae29dff9a1edaa525634fca0704292e95891 M	gretl/gretl-pod-template.yaml

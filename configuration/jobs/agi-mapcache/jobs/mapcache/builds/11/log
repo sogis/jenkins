@@ -1,0 +1,165 @@
+Started by user [8mha:////4CFL4ajIJg735xzVKga2gV2zY+m7Fq67a03Dbg2w3L0gAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgY+/dLi1CL9pMSigsTixDwAv6ciDsMAAAA=[0mSchmid Andreas
+Obtained mapcache/Jenkinsfile from git https://github.com/sogis/openshift-templates.git
+[8mha:////4IZv91CJqeUCAWo9ck9BVKh65/LumSNWSnryjT7AKhk0AAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4HHgYYa5KBwDaDsSI0fedbp02SxS+btDIrvo1ARFNS4rAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4LBgOhqKJGJElaTk2oYj7t8ESRC/z/RoPQ3eebNqQmjGAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/lib/jenkins/jobs/agi-mapcache/jobs/mapcache/workspace
+[8mha:////4OD/7XoghmcD3pjjbz4PofN1EPXx5yCRwJTfoIVyQgGQAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4M2wjJBcTt6l0j05cB3fhNNde3QV0ipQsYN6E93uEx3ZAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4DfYJV9i63ZlmHDPdVbO87w3NbgDo/9lAugxpaw8hxAsAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4Ghi1xt4uQ8gdPycHHyAQwXyQwSlznZ0fp0rXu3pwp6WAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+The recommended git tool is: git
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/jobs/agi-mapcache/jobs/mapcache/workspace/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sogis/openshift-templates.git # timeout=10
+Fetching upstream changes from https://github.com/sogis/openshift-templates.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/sogis/openshift-templates.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 32d43eb77f2044e3710fa66b46bd7b88ebecb36c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git read-tree -mu HEAD # timeout=10
+ > git config core.sparsecheckout false # timeout=10
+ > git checkout -f 32d43eb77f2044e3710fa66b46bd7b88ebecb36c # timeout=10
+Commit message: "[mapcache] Set CPU limit"
+ > git rev-list --no-walk 32d43eb77f2044e3710fa66b46bd7b88ebecb36c # timeout=10
+[8mha:////4HMazXeOn40xNOwd//6oT9IqBYXaS5xhWCGLdIDByycxAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4MVrHeTLwsYjWdheZEeFYL9S/2qJSEo0UzEbVl5e2krGAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4ItfW+8sjOWiuCvF70kIfiryVYfOS47WjxKiUSNvC1XqAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
+[8mha:////4BTtFpcWBia86DCeMmjVjbfZbflafBqmiPI76VnX/xO5AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4OOacfizf4v2Ymvmi4PzoSg4GvitQSaI8OF/jB+SU/ErAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] stage
+[8mha:////4PRr4iqmP0UJMHkWWE7Pp/oD96jLXUPeNEITLkMvrKb3AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] { (Checkout branch)
+[8mha:////4IYKVMtKCWdGA+1GQ+/wvCP28ByaF0S4H0DSP4Rd3MuXAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBgq0rvS+AAAA[0m[Pipeline] checkout
+The recommended git tool is: git
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/jobs/agi-mapcache/jobs/mapcache/workspace/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sogis/openshift-templates.git # timeout=10
+Using shallow fetch with depth 1
+Fetching upstream changes from https://github.com/sogis/openshift-templates.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --no-tags --force --progress --depth=1 -- https://github.com/sogis/openshift-templates.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 32d43eb77f2044e3710fa66b46bd7b88ebecb36c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git config core.sparsecheckout true # timeout=10
+ > git read-tree -mu HEAD # timeout=10
+ > git checkout -f 32d43eb77f2044e3710fa66b46bd7b88ebecb36c # timeout=10
+Commit message: "[mapcache] Set CPU limit"
+[8mha:////4EivEwcDh2Bruh9XowUZtoPLMrdkuwswh/NIeS8Jd+E5AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N7BnLt++AAAA[0m[Pipeline] }
+[8mha:////4Ile7BGUsr5ouzxbIafa7qMdIVEk9bygXzbSjYqXewfyAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N4glvS6+AAAA[0m[Pipeline] // stage
+[8mha:////4HRXrO8W+Fj/3wsnN4QKo13If9EMgdiqhCJVKMIYeErLAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUnRgQE2uUhROEJoSk0f9tkpJOnIircQdaKjHhwbItWe/1hioGOFEwzGnsLMbWst6PZk4sU+hunjJzdGUtYSSvmdBZkNLntQpKGlYVJWw4bDW2nqJFk2DHnXzI2ks09SWFeTtyKK0a4AkFn8lJhvQtU4D9fVSR8Mf5C4CpT1A2zWKH5Vl9ANydZ8vCAAAA[0m[Pipeline] stage
+[8mha:////4B5AWaX8+T03KHNR1nJ4PceMXi8dquLJOfsh7ADHx4JxAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] { (Deploy applications)
+[8mha:////4O8VbnR/gHLCmu7w/D8oemsaeVkYKJIew6bcH5sHn4XpAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUbCDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASnCIIrCAAAA[0m[Pipeline] parallel
+[8mha:////4BZoiMNCZJOIxtbQsdSQMGNz5xRWbM0apbylzgps6tUSAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUOIqWvUhROEJoSk0f8lSUknTsTVuAOBSkx4sGxL1nu+oAoejuQ1swoHg6E3bHSTzokl8sPFUWKWzqwnDOQU61TqSKp2qR1FBYuKElYc1gp7R8GgjrDhVtxF7QTq+hR93g4cSiNv8ICCZ3IUPn7L7GF7nWQg/HH+AmAeI5TNPtuu+TyrNxmFFZbCAAAA[0m[Pipeline] { (Branch: mapcache)
+[8mha:////4DmSiGYY/y84dqPMX0VvZAV7JhzM1zoXcI35UAnWWSDHAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUdEOIqWuUhROEJIS00f8lSWknTsTVuAOBSkx4sGxL1nu+oIoBjhQs6wz2DqNybPCjzYlNFPqLp4l1dGaKMJI3TJhJkDbtUgUlA4uKElYc1gaVp+jQJtjwTt5l7SXa+pRC3g4cSqdv8ICCZ3KSIX3LHGB7HXUk/HH+AmAeEpS7fbam+TyrN7f3gRDCAAAA[0m[Pipeline] { (Branch: qgis-server)
+[8mha:////4GEki3H8jgxS4/0MLwHHAG3p2aFGrT7hehb5JD+F5+rZAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfL9brbD/Cw+pxeAFsIAAAA=[0m[Pipeline] stage
+[8mha:////4KOP1o2LEFexvlI8y4s8Yvc++jimn0DHoRbidOpI9El3AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAd6e6VPCAAAA[0m[Pipeline] { (mapcache)
+[8mha:////4HB+oKXgak6/eBGHxeZIUiDMyX7zYQh/PpBwIbKYWc2VAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUqsSEmFijLJwgNCEkjf5vk5R04kRcjTvQUokJD5ZtyXqvN1QxwImCYU5jZzG2lvV+NHNimUJ385SZoytrCSN5zYTOgpQ+r1VQ0rCqKGHDYaux9RQtmgQ77uRD1l6iqS8pzNuRQ2nVAE8o+ExOMqRvmQLs76OKhD/OXwBMfYKyaRY7LM/qA7uSO1nCAAAA[0m[Pipeline] stage
+[8mha:////4My27QX6f7BAzgbPA/8SliCKjrzIw+yqsQYK0F00f7fxAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQoIFMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfACW9ZT2wgAAAA==[0m[Pipeline] { (qgis-server)
+[8mha:////4AdUfTyqY33VlroIQAz6tMbufzK6baFg32iaMXSDmB+pAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQkgMiKlrlIUThCaEtNH/5SelnTgRV+MOtFRiwoNlW7Le6w1FZDgRO9FYbD3G2osu9G5KYiBur4EG0dBF1ISRghXKDoqMrZaqKFlYlOWwkrC2WAeKHl2CjWz0Q5dBoyvPiaftKCH35g5PyORETprTt4wM21tvIuGP8xcAY5cg3+1nO8zP4gPz+Ub8wgAAAA==[0m[Pipeline] stage
+[8mha:////4H4KaJZeo8u4jgjeiaTgQgIIHGbDE0SEglCt7JHzDNloAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgEJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAnLfKUwgAAAA==[0m[Pipeline] { (Restart the pods)
+[8mha:////4JfbglAAVfLlzcAx4XuZ5mwjtw3ohLmq7zGJBVKqSW/jAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYkBCiKlrlIUThCaEtNH/5SelnTgRV+MOtFRiwoNlW7Le6w1FZDgRO9FYbD3G2osu9G5KYiBur4EG0dBF1ISRghXKDoqMrZaqKFlYlOWwkrC2WAeKHl2CjWz0Q5dBoyvPiaftKCH35g5PyORETprTt4wM21tvIuGP8xcAY5cg3+1nO8zP4gNCISCewgAAAA==[0m[Pipeline] stage
+[8mha:////4BvkWZeSWu9nPVhKZE/P0ySr8WtoPFbtJBtNo2X/h/W+AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUwYRQJ9aoCycITQhJo/9LkpJOnIircQcClZjwYNmWrPd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCi3+2y7zedZvQH4j6CMwgAAAA==[0m[Pipeline] { (Restart the pods)
+Stage "Restart the pods" skipped due to when conditional
+[8mha:////4L4SKMjnfqT05T4JBdUhyu22lEdwyJEoLlV0OpZ23VEwAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEFCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw/Evt9vvgAAAA==[0m[Pipeline] }
+Stage "Restart the pods" skipped due to when conditional
+[8mha:////4MMNKqdfsjulvtHQVJQlfi/Vx+5J0zLR89lwk4WXzlNvAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCoERUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFkKPe7T23fGXWL/r4AAAA=[0m[Pipeline] }
+[8mha:////4GkJOJrL4EAozGNwDxoNsPvPvpaTqAbrzxfDzuUtA7uHAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRSEGBqNJaaXiBiQ/jxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgRI80WIqdFd6NJi8xcRiujifR80V0TJEdihanljU2C7acEJYUJawkbJA6x9GSSbCVvXqoyiky1TmF/B0llFbf4QmFzOakQvrCHGB3G3Vk+nn+CmD2PkFZ17n2hw9eAqiyvgAAAA==[0m[Pipeline] // stage
+[8mha:////4NY/QIdAp8YO9djxz2atDs8ODZIm/t3csKvMO/KHGVxIAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAQ1CqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw/hHxVIvgAAAA==[0m[Pipeline] // stage
+[8mha:////4LiX1r535pObFB4ULDVsNZBnMucGLvwYIDH2rm8MHnh/AAAAqB+LCAAAAAAAAP9tjT0OwjAUg1+LOrAycohU4mdCnVijLpwgNCEkjd4rSUo6cSKuxh0IVGLCg2Vbsr7nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK52WXb7j/P6g1MU/kXwgAAAA==[0m[Pipeline] stage
+[8mha:////4EGjTIvZ2h3PL2ZZ7T5/ShbjP3uK3HXaqp3zSVlDWv5GAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD02yRsvCAAAA[0m[Pipeline] { (Apply configuration after updating ImageStream tags)
+[8mha:////4FAq53TF4DKyGY8AuwT9vC8DeD3DICgUwS2mUFRywZBkAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAgkG1Ik16sIJQhNC0uj/kqSkEyfiatyBQCUmPFi2Jes9X1AFDw15zazC3mDoDBvcqHNiiXx/cZSYpTPrCAM5xVqVWpLqONeWooJZRQkLDkuFnaNgUEdYcSvuonYCdX2KPm8HDqWRN3hAwTM5Ch+/ZfKwvo4yEP44fwEwDRHKzS7bdv95Vm+GS10CwgAAAA==[0m[Pipeline] stage
+[8mha:////4F7jvbOhp3/fCqVEw6Hg6lm0jRSJwgKVRrpFTmBIhSYpAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YAAJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAD8aiCpwgAAAA==[0m[Pipeline] { (Apply configuration after updating ImageStream tags)
+[8mha:////4BV/siYCtxGBwdc9MyEVPeAzNzoFqCyMWCcTxFFDLkI/AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSICEhRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYMpTb3af24Q3zNplSvgAAAA==[0m[Pipeline] sh
+[8mha:////4E91ZfR4tUxIST88H7VsGm3xDyZWJFFH5rQZ48u2qNRIAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCBAUSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANEcrdIdd+O3wAYuAr1r4AAAA=[0m[Pipeline] sh
++ oc import-image mapcache --all --confirm -o name -n agi-mapcache-production
++ oc import-image qgis-server --all --confirm -o name -n agi-mapcache-production
+imagestream.image.openshift.io/mapcache
+[8mha:////4C/jA/5AWPPOysXPY41mmH+j5S5WWTz5lrHd0f9kF30zAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBKJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw9+qg+fvgAAAA==[0mimagestream.image.openshift.io/qgis-server
+[Pipeline] sh
+[8mha:////4M91gfFII7kgErTLtU4mBPaE/ji55uOyldKbxo4MfTDOAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAQUSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANEcrdIdd+O3wA4IId5L4AAAA=[0m[Pipeline] sh
++ oc process -f mapcache/mapcache.yaml --param-file=mapcache/mapcache_production.params
++ oc apply -f - -n agi-mapcache-production
++ oc process -f mapcache/qgis-server.yaml --param-file=mapcache/qgis-server_production.params
++ oc apply -f - -n agi-mapcache-production
+Warning: resource imagestreams/mapcache is missing the kubectl.kubernetes.io/last-applied-configuration annotation which is required by oc apply. oc apply should only be used on resources created declaratively by either oc create --save-config or oc apply. The missing annotation will be patched automatically.
+imagestream.image.openshift.io/mapcache configured
+deploymentconfig.apps.openshift.io/mapcache created
+service/mapcache unchanged
+route.route.openshift.io/mapcache unchanged
+cronjob.batch/mapcache-seeder created
+[8mha:////4GR9UVWrYHcSU/XAhNYz59Fmm0mUP0LWGx3xPYOji2QFAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSBNEgqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AEHPRMZvgAAAA==[0m[Pipeline] }
+[8mha:////4FC7iwAwjM9YvO0qFkRbhxr3CFrd81Go/rB+y/wsYM2DAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIpCBWiSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BGVd59ofPgVcH52+AAAA[0m[Pipeline] // stage
+Warning: resource imagestreams/qgis-server is missing the kubectl.kubernetes.io/last-applied-configuration annotation which is required by oc apply. oc apply should only be used on resources created declaratively by either oc create --save-config or oc apply. The missing annotation will be patched automatically.
+imagestream.image.openshift.io/qgis-server configured
+deploymentconfig.apps.openshift.io/qgis-server created
+service/qgis-server unchanged
+[8mha:////4Ab5jnu23fFldaGSoi4LYLaQzuJAIdK85qPAvslc6LhyAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQmVCTF2jLJwgJCGkjf4vSUo7cSKuxh0IVGLCg2Vbst7zBVUMcKRgWWewdxiVY4MfbU5sotBfPE2sozNThJG8YcJMgrRplyooGVhUlLDisDaoPEWHNsGGd/Iuay/R1qcU8nbgUDp9gwcUPJOTDOlb5gDb66gj4Y/zFwDzkKDcNdma/edZvQHCbV7SwgAAAA==[0m[Pipeline] stage
+[8mha:////4KAuBt7HdnefUc0TyBmfrfKG18ch5Y6qXeJEIeTumiDaAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ARbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAUxleXrCAAAA[0m[Pipeline] { (Wait for rollout to finish)
+[8mha:////4JSszyfV4+UAQPXvOSmtOcecVTTEB1EqqoRhfUL/rrPCAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSgAQSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryt8+1PXwAFlI6Zb4AAAA=[0m[Pipeline] }
+[8mha:////4LRCb3Qc7rTfAK3li1oQYJoajc0QMgQZgAkZ1b0LXALPAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSgAQSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryd8i13X8AUv3TBL4AAAA=[0m[Pipeline] // stage
+[8mha:////4D2BX7ReiYRfeFDX/6mnLe5q8H799H0t96wNk3z0BuGqAAAAqB+LCAAAAAAAAP9tjUEKwjAURH8rXbh16SFSEBFEunIbuvEEsYkxafi/JqnpyhN5Ne9gtODKWQwzA8N7vqAKHhrymlmFvcHQGTa4UefEEvn+4igxS2fWEQZyirUqtSTVca4tRQWzihIWHJYKO0fBoI6w4lbcRe0E6voUfd4OHEojb/CAgmdyFD5+y+RhfR1lIPxx/gJgGiKUm1227f7zrN54FPD9wgAAAA==[0m[Pipeline] stage
+[8mha:////4FGux0mKpUbEaLzjLxrwRy9Nc2i6dGmlwXd3gJcsAAcYAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoiUAQaEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g0iH00AwgAAAA==[0m[Pipeline] { (Wait for rollout to finish)
+[8mha:////4GTmboa2IVIhS3UmMy4MkWfr0SwtoL2kjQICdnwlE1KtAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJKBBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw9QyQiUvgAAAA==[0m[Pipeline] sh
+[8mha:////4Ltzlpe9t0kG7HIcT80nWw12fJAUlJ3UuRTj+rgEJ9diAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCkKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO63n9qFNzevXxC+AAAA[0m[Pipeline] sh
++ sleep 2
++ sleep 2
++ oc rollout status dc/mapcache --timeout=90s -n agi-mapcache-production
++ oc rollout status dc/qgis-server --timeout=90s -n agi-mapcache-production
+Waiting for rollout to finish: 0 out of 2 new replicas have been updated...
+Waiting for rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for rollout to finish: 0 out of 2 new replicas have been updated...
+Waiting for rollout to finish: 0 of 2 updated replicas are available...
+Waiting for rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for rollout to finish: 0 of 1 updated replicas are available...
+Waiting for rollout to finish: 1 of 2 updated replicas are available...
+Waiting for latest deployment config spec to be observed by the controller loop...
+Waiting for latest deployment config spec to be observed by the controller loop...
+replication controller "mapcache-1" successfully rolled out
+[8mha:////4ATr/+raspU6EMYytQVUQ8Kla8jEACBLRThUx5rsC9RCAAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGJT8GlQKlrLDScwiTFOrN1gOzgVJ+Jq3AGLSFRMMZo3zXu9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw90oCXwvgAAAA==[0m[Pipeline] }
+[8mha:////4BQBiEa9gNBVeLKLE08R583QQB34HYb5r3QwUCZuD5frAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMJpkgpR0VppeIGJjXFi3Tn2haTiRXyNP2ARiYotVjvbzOsN2xThRNGK3uDgMHVOBD/ZvMRMcbh5mkVPV9ERJvJGtGZuSZvzii2xgTVFCRsJO4Odp+TQMuxlrx6q8gptdeGYv6OE0ukRnlDIbGYV+QtLhMN90onw5/krgCUEhrKpc9XNB3bBKXS+AAAA[0m[Pipeline] // stage
+[8mha:////4JJxJOH6TCUvwKSm5z0mJ4d3y355XlWmbLM1r1DXEEMXAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIVIhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyjrOtf+8AHDhSievgAAAA==[0m[Pipeline] }
+[8mha:////4Mm/UkM0mbxpHDuJwlrdcBdFF8tL+rDht99Y/vSxm1KjAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigaBBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuD7m2uw/OYtiGvgAAAA==[0m[Pipeline] // stage
+[8mha:////4Aey4b9e+PetlRPGMuBzpoo/ZplopLAY39b+RI9P5DYkAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikBAFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryf8i1234AR9CKo74AAAA=[0m[Pipeline] }
+replication controller "qgis-server-1" successfully rolled out
+[8mha:////4DxQ1hyltHo1W15FFbSNr9mLqLvc44BVQrwaXfLaQCG0AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCg4SEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgHDxJpqvgAAAA==[0m[Pipeline] }
+[8mha:////4ADROtYaMEsg9gmgDWLkhRe5Cawz1YWBj/UbHOSISAajAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSQBEhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJygPda59/QGDngHBvgAAAA==[0m[Pipeline] // stage
+[8mha:////4JBFxPTooiCgXVZkszCQvVEJuby4tsWFKzKJisMzmJICAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCKNIgqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyjrfa5D/QHBbwMRvgAAAA==[0m[Pipeline] }
+[8mha:////4PTf/7gc5+Da4gLYD0YWfj6ETI3g7RxVBjTySvYq5nB4AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikKBBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFAetrl2+w/e7VZDvgAAAA==[0m[Pipeline] // stage
+[8mha:////4GDzuBr/kPuu90NLVAvAcnq1MphH+POWn75eq9BPgRhLAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRUtAgKlrLDS8wiTF2rDtjX0gqXsTX+AMWkajYYrWzzbzesM4JjpSs8AYHh7lzIobRliUmSsM10CQ8XURHmCkYocykqDenBRWxgSVVDSsJG4NdoOzQMmyl1w/dBI22OXMq30FC7fo7PKGSxcw68RfmBLvb2GfCn+evAOYYGep9W6ptP9MKplu+AAAA[0m[Pipeline] }
+[8mha:////4GiZ28IIs+Tk9Tew15pqG5Hq8BCESckLZhlo9tc6U4fDAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihISEUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKU+12u7eEDPVMFLL4AAAA=[0m[Pipeline] // parallel
+[8mha:////4H+n4AnjfVxffSw64KyrrNxMwYFdLSmbeA2nHo0xiLwHAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJISQUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKU+12u7eEDE1MHRr4AAAA=[0m[Pipeline] }
+[8mha:////4I9wSg9Pp6jq98vlDpkoVm8cKZXC6Mb/1pvka4RmXRAcAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCqBAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDud7m2hw8nneQdvgAAAA==[0m[Pipeline] // stage
+[8mha:////4ABl0Iv4AgpjWBvw4T7ZuYVxBPdQhrb3ByhgNflYyteEAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUXbogJtaoCycIaQhJo//bJKWdOBFX4w4EKjHhwbItWe/5gjIGOFIw3GnsLUZl+eAnkxOfKfRXTzN3dOGKMJLXvNVzS50+rbWlpGFVwWAjYKtReYoWTYKdcPIuKy/RVOcU8nYQwGw3wgMKkclJhvQtS4D9beoi4Y/zFwDLkIDVdbam+TzLN/dwnMXCAAAA[0m[Pipeline] stage
+[8mha:////4AGVyRVpBQWIqjjQ5ySPjg4MEeNCPqrECV2B/eIt0CjNAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KwNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPXl9jU8IAAAA=[0m[Pipeline] { (Declarative: Post Actions)
+[8mha:////4L6Ccc0ys3qeiVgAAP9YS1vN5/SgY5FJYtpRwLTRBlP6AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSARKiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBonA3qO+AAAA[0m[Pipeline] sh
++ oc status --suggest -n agi-mapcache-production
+In project agi-mapcache-production on server https://100.68.0.1:443
+
+http://geo-wmts.so.ch to pod port 80-tcp (svc/mapcache)
+  dc/mapcache deploys istag/mapcache:50 
+    deployment #1 deployed 12 seconds ago - 2 pods
+
+svc/qgis-server - 100.68.79.164:80
+  dc/qgis-server deploys istag/qgis-server:2.0.15 
+    deployment #1 deployed 12 seconds ago - 1 pod
+
+Warnings:
+  * dc/qgis-server references a volume which may only be used in a single pod at a time - this may lead to hung deployments
+
+View details with 'oc describe <resource>/<name>' or list resources with 'oc get all'.
+[8mha:////4GC5qRey4Vdx7MzhFt3xZ3D3EaO8AzvIniLA/OjH5+iDAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0AyHE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAe7h56jCAAAA[0m[Pipeline] script
+[8mha:////4Jtr5qlemI9RTWv3t5AfMtD9noyEHA1dpFhqY5lI85AvAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoiUCYRQJ9aoCycITQhJo/9LkpJOnIircQcClZjwYNmWrPd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCi3+2y7zedZvQGUkOl7wgAAAA==[0m[Pipeline] {
+[8mha:////4Dt6SNqCcFzbOTcdgbz0aHlMoXxkQ/dUCtP+qukVYgNMAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICFQWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nffWr7BqDmPOi+AAAA[0m[Pipeline] }
+[8mha:////4NceCmZ3RXRTQigaTwYItYGhMDVMH4j1VYqCtQKRnV0NAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUYAQSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wA6x1vDr4AAAA=[0m[Pipeline] // script
+[8mha:////4Pws4yq37mf3bTH3oakEA5Mk7/AtgaOo5AtwT+TlsWm4AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIJECUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkFZ73Md6g9J44sivgAAAA==[0m[Pipeline] }
+[8mha:////4BCcOZ+PQxeg5jOiue9zVJ8k2Zv/qaYL+hKEhcD8DBsJAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMJpUCgQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJygP+1x1/QFn44lIvgAAAA==[0m[Pipeline] // stage
+[8mha:////4Pi47eaMGJSxnsdeNoKDDwiBJbVgIw/Drx7zTw8iAl/wAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiFIgCUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkF52Oeq6w+mM/BSvgAAAA==[0m[Pipeline] }
+[8mha:////4N6EgyzT46YamUPQBBY27T9mQtF6ICo08yzaIVXj2joLAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICDRQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrDPtdu+wGecWOjvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4CQiKuQAhYnFaz5VscAfNK1q9I86mAv7oU9EwxFpgyxXAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IsJgzGybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FeVkKsv0HiBQ8tr0AAAA=[0m[Pipeline] }
+[8mha:////4PeyXMyrps/yUlSD4xZ9HPAJdlnkxnlyGY5dg7bebpHuAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpKEBCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Lu9INt+APoWCKq9AAAA[0m[Pipeline] // node
+[8mha:////4CZmb+WMB4I6FLP2WZ7944IwFwqvxZO3Sn8ALNVJyX8fAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRaBBCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Lu9INt+ANwPb+C9AAAA[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

@@ -1,0 +1,11 @@
+commit 2f650dc514a31f122d4f817851b1c3045a478c42
+tree 1a3df274ce093e231d9b38d989c74317863f3646
+parent 4a714674ac23bd8f2bd9eecf19689ebd0ada14da
+author edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:34:14 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:34:14 +0200
+
+    [standortkarte] bump version
+
+
+:100644 100644 96b7a78a4a7317cf906beec5c2f889917765cc0f 9b23d26aa6f11ed067fc2125ee8be6897a8451aa M	standortkarte/standortkarte_integration.params
+:100644 100644 1196808fb1d1b3012b0129b25fb77662b210074d da9902f7d99ad6d4761ed215f1c892bf189eeb91 M	standortkarte/standortkarte_production.params

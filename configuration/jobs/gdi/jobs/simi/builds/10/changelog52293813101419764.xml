@@ -1,0 +1,10 @@
+commit 1b429d93fb22aa0293ad6ce3ea2a70764e9c34dd
+tree 5f4dedfa296c9ac5def7b5ebec077cc2663ef686
+parent e463dc87f134ac9a1e99e9be3f5b80d5a3728f60
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-08-31 16:37:44 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-08-31 16:37:44 +0200
+
+    [simi] Set tag to 2.0(integration)
+
+
+:100644 100644 d37872bd57592e7d7a28d830383a4ef2aa468e4b ea2d7796c554b74eb4f2e2eadfafb32f7c2486e5 M	simi/simi_integration.params

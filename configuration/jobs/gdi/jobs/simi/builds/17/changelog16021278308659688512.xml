@@ -1,0 +1,103 @@
+commit 22494101488389b421985f69684e4533e11a74ff
+tree 0d5ad1462acf82d2122e93132b8dd84f83b0252d
+parent a5565a891286bce890fdf3f4f3878b7a7b8c5da9
+author pfeimich <mpfeiffer1975@gmail.com> 2022-09-26 12:28:11 +0200
+committer pfeimich <mpfeiffer1975@gmail.com> 2022-09-26 12:28:11 +0200
+
+    [sodata] change image version
+
+
+:100644 100644 b55a5511a4de7059265965a6b2b28b1a86c9f3d3 300349814b3e923383ab634e36cf73824b959bfd M	sodata/sodata_test.params
+commit a5565a891286bce890fdf3f4f3878b7a7b8c5da9
+tree 2a579004517f2d40d26c168bffc2abc013a544e6
+parent 180550ed2050f800db38f11b5d3401d3abbb1f34
+author pfeimich <mpfeiffer1975@gmail.com> 2022-09-26 12:07:42 +0200
+committer pfeimich <mpfeiffer1975@gmail.com> 2022-09-26 12:07:42 +0200
+
+    [sodata] Initialimport
+
+
+:000000 100644 0000000000000000000000000000000000000000 332baedb83cfc2edaad27de813e700a6664c0dfa A	sodata/README.md
+:000000 100644 0000000000000000000000000000000000000000 73b262ca7ca71cb5e6a874527f624c79494db3d0 A	sodata/sodata.yaml
+:000000 100644 0000000000000000000000000000000000000000 a5f1e2756e481aad1985bf78f47da1efde58fa4f A	sodata/sodata_integration.params
+:000000 100644 0000000000000000000000000000000000000000 31f5a380dfae8b7406e4548b15fc34c760c86004 A	sodata/sodata_production.params
+:000000 100644 0000000000000000000000000000000000000000 b55a5511a4de7059265965a6b2b28b1a86c9f3d3 A	sodata/sodata_test.params
+commit 180550ed2050f800db38f11b5d3401d3abbb1f34
+tree 5926cc1a5aee76a51a78d6f0751e5d8b04a50c69
+parent ef9b6e8c1ce44075c7c0c78fa1c7c068fedb43c3
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-23 15:29:08 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-26 11:42:27 +0200
+
+    [mapcache] Upgrade to MapCache 1.12
+    
+    Requires a switch to sogis/mapache image
+
+
+:100644 100644 6a22fadf802f3f52945aabcdf5bb23e447b202cb 7a8cdd7afd4cba0a206316047947af3378a53b4a M	mapcache/mapcache.yaml
+:100644 100644 9001803631d27aae4683ad3e17c9a5dbc23b150f baf843097cf4973a4889fb5aa3e2af0deea538ad M	mapcache/mapcache_development.params
+:100644 100644 1544eb665edc5f4a484356345f0aac276f949720 7dfa2cc693f537763205bbc0087e4fa196711df0 M	mapcache/mapcache_production.params
+:100644 100644 61eb55576672cddaea14c4d9063fb2455e7a03b2 758759d851ab5d39b50cf925744fb48408f2c1dc M	mapcache/mapcache_test.params
+commit ef9b6e8c1ce44075c7c0c78fa1c7c068fedb43c3
+tree cdf3d3e4228b95c3e96d1f5b46802e2ceaa400fb
+parent b62db5a6a094f8e52359b45e328bb9671d5bfac8
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-23 14:17:12 +0200
+committer GitHub <noreply@github.com> 2022-09-23 14:17:12 +0200
+
+    Update gb2av_integration.params
+
+:100644 100644 9cd65878921998977c598b34474c40349ab8771f 6456574231d27e59c012f398e0b3767779b7c875 M	gb2av/gb2av_integration.params
+commit b62db5a6a094f8e52359b45e328bb9671d5bfac8
+tree d291502d616cebb79e7113fb3aed4be82edba1e8
+parent 68905786b7605461fdef820ce98dc7a39872331d
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-23 14:12:50 +0200
+committer GitHub <noreply@github.com> 2022-09-23 14:12:50 +0200
+
+    Update gb2av_integration.params
+
+:100644 100644 6456574231d27e59c012f398e0b3767779b7c875 9cd65878921998977c598b34474c40349ab8771f M	gb2av/gb2av_integration.params
+commit 68905786b7605461fdef820ce98dc7a39872331d
+tree cdf3d3e4228b95c3e96d1f5b46802e2ceaa400fb
+parent 2090afb80de7bb898ccd3928944fbf9f060fa59a
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-23 09:00:44 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-23 09:00:44 +0200
+
+    [mapcache] Update seeding docs
+
+
+:100644 100644 dd04198ebae31e493ef81952c6810b9170441835 90da9d8374c5429fd8599cf53ae1a71ed7ba89a5 M	mapcache/README.md
+commit 2090afb80de7bb898ccd3928944fbf9f060fa59a
+tree a8e138f0b1c51e88392cad408c946f2745ee8283
+parent be60cce2791b44b3c223a71bae361d163543742d
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-23 08:15:33 +0200
+committer GitHub <noreply@github.com> 2022-09-23 08:15:33 +0200
+
+    Update gb2av_production.params
+
+:100644 100644 627c8978486311c5fd464d9ccdf6077f07caee8c d582e1b06a396979f795faefa9275e5999ae787b M	gb2av/gb2av_production.params
+commit be60cce2791b44b3c223a71bae361d163543742d
+tree e99053c217855ba876f689f2028c57a8e6d202a8
+parent d30283aaa113b3860ec5a81031a27470158d539c
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-23 08:14:26 +0200
+committer GitHub <noreply@github.com> 2022-09-23 08:14:26 +0200
+
+    Update gb2av_integration.params
+
+:100644 100644 9cd65878921998977c598b34474c40349ab8771f 6456574231d27e59c012f398e0b3767779b7c875 M	gb2av/gb2av_integration.params
+commit d30283aaa113b3860ec5a81031a27470158d539c
+tree bb1491dce862e2d8627f8596343e48d51ea2504c
+parent 96041d2822c7711dec4787daab97ef051f112bed
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-23 08:02:09 +0200
+committer GitHub <noreply@github.com> 2022-09-23 08:02:09 +0200
+
+    Update gb2av_production.params
+
+:100644 100644 d582e1b06a396979f795faefa9275e5999ae787b 627c8978486311c5fd464d9ccdf6077f07caee8c M	gb2av/gb2av_production.params
+commit 96041d2822c7711dec4787daab97ef051f112bed
+tree f3b5f322f7d58b37a81afb6f159d73c13eacb56d
+parent 9f73c77ace3456c1c1f50cab0fdd22caa932806f
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-23 08:01:54 +0200
+committer GitHub <noreply@github.com> 2022-09-23 08:01:54 +0200
+
+    Update gb2av_integration.params
+
+:100644 100644 6456574231d27e59c012f398e0b3767779b7c875 9cd65878921998977c598b34474c40349ab8771f M	gb2av/gb2av_integration.params

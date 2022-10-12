@@ -1,0 +1,14 @@
+commit f53bfb3645d4f46aa9b829853ab239633a0916ac
+tree cb84899096c2c35140d777f0a8662f9c17b5a450
+parent ccdd6d8835ceab3ccdb2d46ba914f48054c1ea87
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-09 21:57:03 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-09 21:57:03 +0200
+
+    [gretl] Add JENKINS_PVC_NAME parameter
+
+
+:100644 100644 66b07625104ace926ce87fce0eb13fcc9c4933e2 1bacdaae8ad2357b6d60108d4ad9bb5716a2c566 M	gretl/gretl.yaml
+:100644 100644 24d02239612d86ebbf5c7234d65cea4c24cc0ec5 dfc0ab482993d38dfc577321806f429fdd86da4c M	gretl/gretl_development.params
+:100644 100644 42095455150f8bddb40ed8ae3cbe40751a45dbed f6270b514eb0a785ab5363ee7eb2de7f69d78f12 M	gretl/gretl_integration.params
+:100644 100644 029339c24724d167521030981cb858779b28ae12 f64f2d441ab429e0bab78a5be327998095dd3905 M	gretl/gretl_production.params
+:100644 100644 51fa7579e727ecce455d8e89672c84ed74df8903 d7cb5f29b27718a98ea2fdddb3b497db5c9bb907 M	gretl/gretl_test.params

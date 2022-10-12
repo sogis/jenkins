@@ -1,0 +1,10 @@
+commit 7bf765c4c66d74bacf9f196b65d867d3f333e289
+tree 83902e55a3226c2843c568ae4af78e341018c662
+parent f53bfb3645d4f46aa9b829853ab239633a0916ac
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-09 22:06:29 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-09 22:06:29 +0200
+
+    [gretl] Set TLS termination type
+
+
+:100644 100644 1bacdaae8ad2357b6d60108d4ad9bb5716a2c566 622f9dea9f69566226a17adc050ffc9db799ed03 M	gretl/gretl.yaml

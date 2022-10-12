@@ -1,0 +1,11 @@
+commit e08dc1bf9bc5bb5fd12aab619520c0239d48fe93
+tree 3c1b8a55d5506eb1788ff5a941c5d896cb822ab5
+parent 92594419a7a1c06799286edc4415f65873db010f
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-15 14:11:47 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-15 14:11:47 +0200
+
+    [gretl] Fix GRETL image tag
+
+
+:100644 100644 25a189e5cdcfe628ccf9c7f51509fdb5acbe548b e5093a199231bff6f1e644a28d38de00e7520b72 M	gretl/gretl_integration.params
+:100644 100644 4571f8f570317812e7cee45b7fb36a1ec7548e91 8ac0f9773a6623b006f1839a31be7659756a0cef M	gretl/gretl_production.params

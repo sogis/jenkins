@@ -1,0 +1,770 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.42">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <org.jenkinsci.plugins.workflow.support.steps.build.BuildUpstreamCause plugin="pipeline-build-step@2.15">
+            <upstreamProject>WebGISClient</upstreamProject>
+            <upstreamUrl>job/WebGISClient/</upstreamUrl>
+            <upstreamBuild>1464</upstreamBuild>
+            <upstreamCauses>
+              <hudson.model.Cause_-UserIdCause/>
+            </upstreamCauses>
+            <nodeId>54</nodeId>
+          </org.jenkinsci.plugins.workflow.support.steps.build.BuildUpstreamCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.support.steps.build.BuildUpstreamNodeAction plugin="pipeline-build-step@2.15">
+      <upstreamNodeId>54</upstreamNodeId>
+      <upstreamRunId>WebGISClient#1464</upstreamRunId>
+    </org.jenkinsci.plugins.workflow.support.steps.build.BuildUpstreamNodeAction>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>namespace</name>
+          <description>Bitte namespace auswählen</description>
+          <value>gdi-integration</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.BooleanParameterValue>
+          <name>deploy</name>
+          <value>true</value>
+        </hudson.model.BooleanParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>replicas</name>
+          <description>Anzahl der Replicas GetMap QGIS Server</description>
+          <value>1</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>branch</name>
+          <description>Bitte Branch auswählen, der für die Pipeline verwendet werden soll</description>
+          <value>master</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>branch</string>
+        <string>replicas</string>
+        <string>namespace</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.0.2.8">
+      <queuingDurationMillis>1675</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>0</buildableDurationMillis>
+      <waitingDurationMillis>1674</waitingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <hudson.plugins.git.util.BuildData plugin="git@4.9.0">
+      <buildsByBranchName>
+        <entry>
+          <string>origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>66af947b89ad6896a9e2a1738cd1a3453b03408c</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>1032</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>origin/sort_pipelines</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>7a3bb79dfc638482770d112d2819d14309efcd07</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/sort_pipelines</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision plugin="git-client@3.10.0">
+              <sha1 reference="../../marked/sha1"/>
+              <branches class="list">
+                <hudson.plugins.git.Branch reference="../../../marked/branches/hudson.plugins.git.Branch"/>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>982</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>origin/simi_v2</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>703236f3d9af280c29d102c5fb82b5edcdd34fe0</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/simi_v2</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision plugin="git-client@3.10.0">
+              <sha1 reference="../../marked/sha1"/>
+              <branches class="list">
+                <hudson.plugins.git.Branch reference="../../../marked/branches/hudson.plugins.git.Branch"/>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>981</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>origin/featureinf</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>4473cae6ab74d9d62e98bcd6028fe310f29123ca</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/featureinf</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision plugin="git-client@3.10.0">
+              <sha1 reference="../../marked/sha1"/>
+              <branches class="list">
+                <hudson.plugins.git.Branch reference="../../../marked/branches/hudson.plugins.git.Branch"/>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>271</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/sogis/pipelines.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.13">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/sogis/pipelines.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+        <entry>
+          <string>git https://github.com/sogis/jenkins-shared-libs.git</string>
+          <hudson.scm.SCMRevisionState_-None reference="../../entry/hudson.scm.SCMRevisionState_-None"/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@1.9.2">
+      <stagesUUID>b4905d7d-362c-4e56-835f-84e052ad3292</stagesUUID>
+      <pipelineDefs>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@1.9.2">
+          <stages>
+            <stages>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Ask for Version</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                        <name>script</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scriptBlock</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">repo = &apos;https://raw.githubusercontent.com/sogis/pipelines/&apos; + params.branch + &apos;/api_webgisclient/&apos; + serviceName + &apos;/deployment&apos;
+                    namespace = params.namespace
+                    if ( namespace == &apos;gdi-test&apos; ) { 
+                      db_server = env.DB_SERVER_TEST
+                      geo_db_server = env.GEO_DB_SERVER_TEST
+                      environment = &apos;test&apos;
+                      sogisPicMirEnv = &apos;-test&apos;
+                      replicas = &apos;2&apos;
+                      resources = [&apos;cpu_request&apos;: &apos;0&apos;, &apos;cpu_limit&apos;: &apos;0&apos;, &apos;memory_request&apos;: &apos;0&apos;, &apos;memory_limit&apos;: &apos;0&apos;]
+                      }
+                    else if ( namespace == &apos;gdi-integration&apos; ) { 
+                      db_server = env.DB_SERVER_INT
+                      geo_db_server = env.GEO_DB_SERVER_TEST
+                      environment = &apos;integration&apos;
+                      sogisPicMirEnv = &apos;-int&apos;
+                      replicas = &apos;2&apos;
+                      resources = [&apos;cpu_request&apos;: &apos;250m&apos;, &apos;cpu_limit&apos;: &apos;1000m&apos;, &apos;memory_request&apos;: &apos;1024Mi&apos;, &apos;memory_limit&apos;: &apos;2048Mi&apos;]
+                      }
+                    else if ( namespace == &apos;gdi-production&apos; ) { 
+                      db_server = env.DB_SERVER_PROD
+                      geo_db_server = env.GEO_DB_SERVER_PROD
+                      environment = &apos;production&apos;
+                      sogisPicMirEnv = &apos;-prod&apos;
+                      replicas = &apos;12&apos;
+                      resources = [&apos;cpu_request&apos;: &apos;1000m&apos;, &apos;cpu_limit&apos;: &apos;1000m&apos;, &apos;memory_request&apos;: &apos;2500Mi&apos;, &apos;memory_limit&apos;: &apos;3072Mi&apos;]
+                      }
+                    else {
+                      environment = &apos;test&apos;
+                      sogisPicMirEnv = &apos;-test&apos;
+                      replicas = &apos;2&apos;
+                      resources = [&apos;cpu_request&apos;: &apos;0&apos;, &apos;cpu_limit&apos;: &apos;0&apos;, &apos;memory_request&apos;: &apos;0&apos;, &apos;memory_limit&apos;: &apos;0&apos;]
+                      }
+                    credentials = [ 
+                        usernamePassword(credentialsId: (env.NAMESPACE_JENKINS) + &apos;-pw-ogc-server&apos;   , usernameVariable: &apos;DbUserOgcServer&apos;   , passwordVariable: &apos;PwdOgcServer&apos;),
+                        usernamePassword(credentialsId: (env.NAMESPACE_JENKINS) + &apos;-pw-sogis-service&apos;, usernameVariable: &apos;DbUserSogisService&apos;, passwordVariable: &apos;PwdSogisService&apos;),
+                        usernamePassword(credentialsId: &apos;jenkinsApi&apos;                                 , usernameVariable: &apos;apiUser&apos;           , passwordVariable: &apos;PwdApiUser&apos;)
+                        ]</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Create configs</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTreeStep>
+                        <name>withCredentials</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTSingleArgument">
+                          <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$GStringValue">
+                            <value class="string">${credentials}</value>
+                          </value>
+                        </args>
+                        <children>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                            <name>createConfigs</name>
+                            <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPositionalArgumentList">
+                              <arguments>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  <value class="string">${namespace}</value>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  <value class="string">${branch}</value>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  <value class="string">${DbUserSogisService}</value>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  <value class="string">${PwdSogisService}</value>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  <value class="string">${db_server}</value>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  <value class="string">${env.SIMI_DB}</value>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  <value class="string">${configFileName}</value>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  <value class="string">${serviceName}</value>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  <value class="string">services-unified-permissions</value>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  <value class="string">qwc</value>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  <value class="string">qwc-services-core</value>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              </arguments>
+                            </args>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        </children>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTreeStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <when>
+                  <conditions>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                      <name>expression</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>scriptBlock</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">(params.deploy != true)</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                  </conditions>
+                </when>
+                <name>Deploy permissions</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>sh</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>script</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                <value class="string">&quot;&quot;&quot;
+                        for i in \$(oc get dc -o name -n $namespace);do oc rollout latest \$i -n $namespace;done
+                    &quot;&quot;&quot;</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            </stages>
+            <uuid>b4905d7d-362c-4e56-835f-84e052ad3292</uuid>
+          </stages>
+          <postBuild>
+            <conditions>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildCondition>
+                <condition>cleanup</condition>
+                <branch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>sh</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>script</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                              <value class="string">&quot;&quot;&quot;
+                rm -rf $JENKINS_HOME/jobs/$JOB_NAME/workspace\\@script
+                rm -rf $JENKINS_HOME/jobs/$JOB_NAME/workspace\\@libs
+                rm -rf $WORKSPACE/*
+            &quot;&quot;&quot;</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                  </steps>
+                </branch>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildCondition>
+            </conditions>
+          </postBuild>
+          <agent>
+            <variables class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+              <value class="string">master</value>
+            </variables>
+            <agentType>
+              <key>label</key>
+            </agentType>
+          </agent>
+          <options>
+            <options>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTOption>
+                <name>timeout</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>time</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="int">35</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>unit</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">MINUTES</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTOption>
+            </options>
+            <inStage>false</inStage>
+          </options>
+          <parameters>
+            <parameters>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+                <name>string</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>defaultValue</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">master</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>description</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Bitte Branch auswählen, der für die Pipeline verwendet werden soll</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>name</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">branch</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+                <name>string</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>description</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Anzahl der Replicas GetMap QGIS Server</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>defaultValue</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">1</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>name</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">replicas</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+                <name>string</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>defaultValue</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">gdi-test</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>description</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Bitte namespace auswählen</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>name</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">namespace</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+            </parameters>
+          </parameters>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
+      </pipelineDefs>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.94">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.21">
+      <libraries>
+        <org.jenkinsci.plugins.workflow.libs.LibraryRecord>
+          <name>jenkins-shared-libs</name>
+          <version>master</version>
+          <variables class="sorted-set">
+            <string>buildImage</string>
+            <string>configureRessources</string>
+            <string>createConfigMaps</string>
+            <string>createConfigs</string>
+            <string>deployImage</string>
+          </variables>
+          <trusted>false</trusted>
+          <changelog>true</changelog>
+        </org.jenkinsci.plugins.workflow.libs.LibraryRecord>
+      </libraries>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <hudson.plugins.git.util.BuildData plugin="git@4.9.0">
+      <buildsByBranchName>
+        <entry>
+          <string>master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>3459e1770a518a80984f743e0cd0471c31eea966</sha1>
+              <branches class="singleton-set">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>1032</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/sogis/jenkins-shared-libs.git</string>
+      </remoteUrls>
+      <index>2</index>
+    </hudson.plugins.git.util.BuildData>
+    <com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder plugin="credentials@2.6.1">
+      <boundCredentials class="concurrent-hash-map"/>
+    </com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder>
+    <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction plugin="workflow-cps@2.94">
+      <interpolatedWarnings>
+        <org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+          <stepName>sh</stepName>
+          <interpolatedVariables>
+            <string>PwdSogisService</string>
+            <string>apiUser</string>
+          </interpolatedVariables>
+        </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction_-InterpolatedWarnings>
+      </interpolatedWarnings>
+    </org.jenkinsci.plugins.workflow.cps.view.InterpolatedSecretsAction>
+    <jenkins.metrics.impl.SubTaskTimeInQueueAction plugin="metrics@4.0.2.8">
+      <queuingDurationMillis>772</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>11</buildableDurationMillis>
+      <waitingDurationMillis>759</waitingDurationMillis>
+      <executingDurationMillis>9373</executingDurationMillis>
+      <workUnitCount>1</workUnitCount>
+    </jenkins.metrics.impl.SubTaskTimeInQueueAction>
+  </actions>
+  <queueId>37398</queueId>
+  <timestamp>1665498398127</timestamp>
+  <startTime>1665498398131</startTime>
+  <result>SUCCESS</result>
+  <duration>11811</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>def serviceName = &apos;permission&apos;
+def configFileName = &apos;permissions.json&apos;
+// NOTE, the &quot;pipeline&quot; directive/closure from the declarative pipeline syntax needs to include, or be nested outside,
+// and &quot;openshift&quot; directive/closure from the OpenShift Client Plugin for Jenkins.  Otherwise, the declarative pipeline engine
+// will not be fully engaged.
+library identifier: &quot;jenkins-shared-libs@${JENKINS_SHARED_LIBS_BRANCH}&quot;, retriever: modernSCM(
+    [$class: &apos;GitSCMSource&apos;,
+     remote: &apos;https://github.com/sogis/jenkins-shared-libs.git&apos;])
+
+pipeline {
+    agent { label &apos;master&apos; }
+    options {
+        // set a timeout of 10 minutes for this pipeline
+        timeout(time: 35, unit: &apos;MINUTES&apos;)
+        }
+    parameters {
+        string(defaultValue: &quot;master&quot;,
+               description: &apos;Bitte Branch auswählen, der für die Pipeline verwendet werden soll&apos;,
+               name: &apos;branch&apos;
+               )
+        string(description: &apos;Anzahl der Replicas GetMap QGIS Server&apos;,
+               defaultValue: &apos;1&apos;,
+               name: &apos;replicas&apos;
+               )
+        string(defaultValue: &quot;gdi-test&quot;,
+               description: &apos;Bitte namespace auswählen&apos;,
+               name: &apos;namespace&apos;
+               )
+        }
+
+    stages {
+        stage (&apos;Ask for Version&apos;) {
+            steps {
+                script {
+                    repo = &apos;https://raw.githubusercontent.com/sogis/pipelines/&apos; + params.branch + &apos;/api_webgisclient/&apos; + serviceName + &apos;/deployment&apos;
+                    namespace = params.namespace
+                    if ( namespace == &apos;gdi-test&apos; ) { 
+                      db_server = env.DB_SERVER_TEST
+                      geo_db_server = env.GEO_DB_SERVER_TEST
+                      environment = &apos;test&apos;
+                      sogisPicMirEnv = &apos;-test&apos;
+                      replicas = &apos;2&apos;
+                      resources = [&apos;cpu_request&apos;: &apos;0&apos;, &apos;cpu_limit&apos;: &apos;0&apos;, &apos;memory_request&apos;: &apos;0&apos;, &apos;memory_limit&apos;: &apos;0&apos;]
+                      }
+                    else if ( namespace == &apos;gdi-integration&apos; ) { 
+                      db_server = env.DB_SERVER_INT
+                      geo_db_server = env.GEO_DB_SERVER_TEST
+                      environment = &apos;integration&apos;
+                      sogisPicMirEnv = &apos;-int&apos;
+                      replicas = &apos;2&apos;
+                      resources = [&apos;cpu_request&apos;: &apos;250m&apos;, &apos;cpu_limit&apos;: &apos;1000m&apos;, &apos;memory_request&apos;: &apos;1024Mi&apos;, &apos;memory_limit&apos;: &apos;2048Mi&apos;]
+                      }
+                    else if ( namespace == &apos;gdi-production&apos; ) { 
+                      db_server = env.DB_SERVER_PROD
+                      geo_db_server = env.GEO_DB_SERVER_PROD
+                      environment = &apos;production&apos;
+                      sogisPicMirEnv = &apos;-prod&apos;
+                      replicas = &apos;12&apos;
+                      resources = [&apos;cpu_request&apos;: &apos;1000m&apos;, &apos;cpu_limit&apos;: &apos;1000m&apos;, &apos;memory_request&apos;: &apos;2500Mi&apos;, &apos;memory_limit&apos;: &apos;3072Mi&apos;]
+                      }
+                    else {
+                      environment = &apos;test&apos;
+                      sogisPicMirEnv = &apos;-test&apos;
+                      replicas = &apos;2&apos;
+                      resources = [&apos;cpu_request&apos;: &apos;0&apos;, &apos;cpu_limit&apos;: &apos;0&apos;, &apos;memory_request&apos;: &apos;0&apos;, &apos;memory_limit&apos;: &apos;0&apos;]
+                      }
+                    credentials = [ 
+                        usernamePassword(credentialsId: (env.NAMESPACE_JENKINS) + &apos;-pw-ogc-server&apos;   , usernameVariable: &apos;DbUserOgcServer&apos;   , passwordVariable: &apos;PwdOgcServer&apos;),
+                        usernamePassword(credentialsId: (env.NAMESPACE_JENKINS) + &apos;-pw-sogis-service&apos;, usernameVariable: &apos;DbUserSogisService&apos;, passwordVariable: &apos;PwdSogisService&apos;),
+                        usernamePassword(credentialsId: &apos;jenkinsApi&apos;                                 , usernameVariable: &apos;apiUser&apos;           , passwordVariable: &apos;PwdApiUser&apos;)
+                        ]
+                    }
+                }
+            }
+        stage (&apos;Create configs&apos;) {
+            steps {
+                withCredentials ( credentials ) {
+                    createConfigs namespace, branch, DbUserSogisService, PwdSogisService, db_server, env.SIMI_DB, configFileName, serviceName, &apos;services-unified-permissions&apos;, &apos;qwc&apos;, &apos;qwc-services-core&apos;
+                    }
+                }
+            }
+        stage (&apos;Deploy permissions&apos;) {
+            when {
+                expression {
+                    (params.deploy != true)
+                    }
+                }
+            steps {
+                    sh &quot;&quot;&quot;
+                        for i in \$(oc get dc -o name -n $namespace);do oc rollout latest \$i -n $namespace;done
+                    &quot;&quot;&quot;
+                }
+            }
+        }
+    post {
+        // Clean after build
+        cleanup {
+            sh &quot;&quot;&quot;
+                rm -rf $JENKINS_HOME/jobs/$JOB_NAME/workspace\\@script
+                rm -rf $JENKINS_HOME/jobs/$JOB_NAME/workspace\\@libs
+                rm -rf $WORKSPACE/*
+            &quot;&quot;&quot;
+            }
+        }
+    }
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>1273059489</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>147689075</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>2313783080</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>90183133</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>349959361</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>51</iota>
+    <head>1:51</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.9.0">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/sogis/pipelines.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>$branch_webgisclient</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="list"/>
+        <extensions/>
+      </scm>
+      <node></node>
+      <workspace>/var/lib/jenkins/jobs/gdi/jobs/permission/workspace@script</workspace>
+      <changelogFile>/var/lib/jenkins/jobs/gdi/jobs/permission/builds/1032/changelog5915384685448346841.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.9.0">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <name>origin</name>
+            <refspec>+refs/heads/*:refs/remotes/origin/*</refspec>
+            <url>https://github.com/sogis/jenkins-shared-libs.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches class="singleton-list">
+          <hudson.plugins.git.BranchSpec>
+            <name>master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions>
+          <jenkins.plugins.git.GitSCMSourceDefaults>
+            <includeTags>false</includeTags>
+          </jenkins.plugins.git.GitSCMSourceDefaults>
+          <hudson.plugins.git.extensions.impl.BuildChooserSetting>
+            <buildChooser class="jenkins.plugins.git.AbstractGitSCMSource$SpecificRevisionBuildChooser">
+              <revision reference="../../../../../../../actions/hudson.plugins.git.util.BuildData[2]/buildsByBranchName/entry/hudson.plugins.git.util.Build/marked"/>
+            </buildChooser>
+          </hudson.plugins.git.extensions.impl.BuildChooserSetting>
+        </extensions>
+      </scm>
+      <node></node>
+      <workspace>/var/lib/jenkins/jobs/gdi/jobs/permission/workspace@libs/jenkins-shared-libs</workspace>
+      <changelogFile>/var/lib/jenkins/jobs/gdi/jobs/permission/builds/1032/changelog1621199780133056096.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" reference="../../org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout/scm"/>
+      <node></node>
+      <workspace>/var/lib/jenkins/jobs/gdi/jobs/permission/workspace</workspace>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

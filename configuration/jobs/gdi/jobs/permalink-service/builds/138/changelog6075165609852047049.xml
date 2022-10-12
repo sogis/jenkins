@@ -1,0 +1,10 @@
+commit 3459e1770a518a80984f743e0cd0471c31eea966
+tree cea2c1b796b9c5e83d6c465ec85b4211b491f164
+parent c9e4c75bd92f70d783c5f01133abb70c158ffb84
+author pfeimich <mpfeiffer1975@gmail.com> 2022-09-19 08:34:00 +0200
+committer pfeimich <mpfeiffer1975@gmail.com> 2022-09-19 08:34:00 +0200
+
+    fixed wrong parameter name
+
+
+:100644 100644 195ac5ed0c02c66f52d83f3ae650817fd5b04087 5c3cfd59e24d13856c9e100aec752c95d26c2aac M	vars/createConfigs.groovy

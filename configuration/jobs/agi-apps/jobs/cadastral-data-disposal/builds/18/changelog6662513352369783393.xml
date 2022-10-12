@@ -1,0 +1,21 @@
+commit b153892a208f34880598901921ef7e0ecf46c746
+tree 1c8861873cbef634a74dd3c1d8f74bc7ee988581
+parent 32761d0ddd3bab2cf27a294ccf4c1bb5e36cd1ba
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-13 11:10:03 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-13 11:10:03 +0200
+
+    [cadastral-data-disposal] added new params and remove double quotes
+
+
+:100644 100644 94f14eb945decd8de0f2a52cb4ad9d23c00ca1a6 009aeddafa632eed26e5ee1ad9d5c19380a38e4f M	cadastral-data-disposal/cadastral-data-disposal_integration.params
+:100644 100644 1903cfd17b85e0b0efb619426db10674d4392e53 14f69a55a66c559fcda1bab38871c6c5cf93d88f M	cadastral-data-disposal/cadastral-data-disposal_production.params
+commit 32761d0ddd3bab2cf27a294ccf4c1bb5e36cd1ba
+tree 823b27ff5da3c3164b98134b2f427b4300016ce7
+parent 7a9772a95aa70909ffbc99213b0662b7a248f900
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-13 11:09:17 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-13 11:09:17 +0200
+
+    [cadastral-data-disposal] replace hardcoded names with $APPNAME
+
+
+:100644 100644 9cc5f87d29ebc27f3e22af5e606a5da8a2f40daa 2381a434124d217af5c4a85d195f8a458042c9d3 M	cadastral-data-disposal/cadastral-data-disposal.yaml

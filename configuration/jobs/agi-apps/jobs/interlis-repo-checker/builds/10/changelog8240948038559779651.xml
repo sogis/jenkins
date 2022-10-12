@@ -1,0 +1,14 @@
+commit 17516e556646c176a0ef35114d2c06caee73ea2d
+tree 9cce871890a92194d6cee6c654d0c4e06bf75d38
+parent 9c4ff6901873bb4920e9e68f84614338066c07d3
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-29 16:11:58 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-29 16:11:58 +0200
+
+    [interlis-repo-checker] Disable app
+    
+    Due to a memory leak
+
+
+:100644 100644 be4331757179e042ea98a36179cf87ceda7b5b6c f5a6afb9da2085e2d10389eca1277b8aa6eda7df M	interlis-repo-checker/interlis-repo-checker_integration.params
+:100644 100644 27ff118a194e65924e5aa8b85c851cd64aac35c8 abb40d377668c7ad324a673062ab0c3e6cd66608 M	interlis-repo-checker/interlis-repo-checker_production.params
+:100644 100644 63583b387e285974383cb2a0b399d029f9a21a3e 08df8198f2330233ddb17bb266f6b2ced98265e1 M	interlis-repo-checker/interlis-repo-checker_test.params

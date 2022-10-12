@@ -1,0 +1,989 @@
+commit d4c2878e942505966abd494d4e6bbfe0c9148548
+tree eac91f33c06000c64c5a1dd8e0531209fa32bc74
+parent 3220ea003d32fb23af7baf7107d565267a790840
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 12:59:36 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 12:59:36 +0200
+
+    [meta-exporter_geocat] fixed syntax for put
+
+
+:100644 100644 f1661d90a9cffc94e1f646d757b143e136f87e66 466b85fc49a824521c1e7b27441f74dee2c4bc53 M	api_webgisclient/meta-exporter_geocat/Jenkinsfile
+commit 3220ea003d32fb23af7baf7107d565267a790840
+tree a1f739579d76bb6090236e8d873f6b9d506850a9
+parent 23eb27819d6dcd7fd74946de411f84950f80d8dc
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 12:54:01 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 12:54:01 +0200
+
+    [metaexporter_geocat] add sftp commands
+
+
+:100644 100644 2864515f19291cd2eab1fcaed1fcb48f44be7f8b f1661d90a9cffc94e1f646d757b143e136f87e66 M	api_webgisclient/meta-exporter_geocat/Jenkinsfile
+commit 23eb27819d6dcd7fd74946de411f84950f80d8dc
+tree 7afcbd7315e2a084ebc64688d23e153f4d990c5d
+parent 070ad89d7dd9963ed431cdfae3ad48b68404afbf
+author pfeimich <mpfeiffer1975@gmail.com> 2022-10-10 14:19:15 +0200
+committer pfeimich <mpfeiffer1975@gmail.com> 2022-10-10 14:19:15 +0200
+
+    [meta-exporter_geocat] added user to scp command
+
+
+:100644 100644 4a31712409a9e6d7e997ce02fd6fc5cdb8b00b3b 2864515f19291cd2eab1fcaed1fcb48f44be7f8b M	api_webgisclient/meta-exporter_geocat/Jenkinsfile
+commit 070ad89d7dd9963ed431cdfae3ad48b68404afbf
+tree d638c3acf990901bca18c8985e02cbb6e150ceb6
+parent e3850e254603dde8316e725401545d4287ca6ab2
+author pfeimich <mpfeiffer1975@gmail.com> 2022-10-10 14:15:08 +0200
+committer pfeimich <mpfeiffer1975@gmail.com> 2022-10-10 14:15:08 +0200
+
+    [meta-exporter_geocat] change from sftp to scp
+
+
+:100644 100644 7a45b7ea53dbae84e9d99a835dbda3d1fc3f1090 4a31712409a9e6d7e997ce02fd6fc5cdb8b00b3b M	api_webgisclient/meta-exporter_geocat/Jenkinsfile
+commit e3850e254603dde8316e725401545d4287ca6ab2
+tree 003a84d3821ce9c25a22e69672b511192bf4288d
+parent 61e675efc320c7feecf188ef82cd0107488a4339
+author pfeimich <mpfeiffer1975@gmail.com> 2022-10-10 13:31:46 +0200
+committer pfeimich <mpfeiffer1975@gmail.com> 2022-10-10 13:31:46 +0200
+
+    [meta-exporter_geocat] fixed typo in sftp command
+
+
+:100644 100644 ff5ffc8f642fc545ef30fb11de928ee8f05e8872 7a45b7ea53dbae84e9d99a835dbda3d1fc3f1090 M	api_webgisclient/meta-exporter_geocat/Jenkinsfile
+commit 61e675efc320c7feecf188ef82cd0107488a4339
+tree 7e48c32b7d4eebc069dbc3e43cca345e1f499daa
+parent ec6a2c69898d4286fc45ed4fcfa9da4df014bf49
+author pfeimich <mpfeiffer1975@gmail.com> 2022-10-10 12:37:36 +0200
+committer pfeimich <mpfeiffer1975@gmail.com> 2022-10-10 12:37:36 +0200
+
+    [meta-exporter_geocat] added login to sftp server
+
+
+:100644 100644 eb52e3d30a84fa0a548914f8e14841691e0b0bb0 ff5ffc8f642fc545ef30fb11de928ee8f05e8872 M	api_webgisclient/meta-exporter_geocat/Jenkinsfile
+commit ec6a2c69898d4286fc45ed4fcfa9da4df014bf49
+tree a8802d420885d5a7cf9210c038800a1131b412e2
+parent 115173f75f79826636ea9f5739208790b40bc25c
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-06 18:00:25 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-06 18:00:25 +0200
+
+    [meta-exporter_geocat] change stage name
+
+
+:100644 100644 8e21c2d66c4315eb1b5c2adbb72277e14225cc1d eb52e3d30a84fa0a548914f8e14841691e0b0bb0 M	api_webgisclient/meta-exporter_geocat/Jenkinsfile
+commit 115173f75f79826636ea9f5739208790b40bc25c
+tree 87c255a01c34fb18d9627ed47b960a1b7dd312fb
+parent 864095c6b0b329766dbf0a88da6072c0fbfe8736
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-06 17:56:12 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-06 17:56:12 +0200
+
+    [meta-exporter_*] change name
+
+
+:100644 100644 ddf9d2aa36499182150e4eda923310cecec3e794 aa5b84395a34fbf25401b484032e047da6c3c9ac M	api_webgisclient/meta-exporter_conf/Jenkinsfile
+:100644 100644 336bc09478c4063874582cacf20c2cfe2ae18172 8e21c2d66c4315eb1b5c2adbb72277e14225cc1d M	api_webgisclient/meta-exporter_geocat/Jenkinsfile
+commit 864095c6b0b329766dbf0a88da6072c0fbfe8736
+tree 82b2030ced144dd2b082cf7e76db3ad05f427e7d
+parent 6177410c1c255bf50e3b46ee8deba1db2b0b95b2
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-06 17:36:28 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-06 17:36:28 +0200
+
+    [meta-excporter_geocat] test env variable for geocat server
+
+
+:100644 100644 f3cc600a9ffd3f546cd28aa1515002399a504b0a 336bc09478c4063874582cacf20c2cfe2ae18172 M	api_webgisclient/meta-exporter_geocat/Jenkinsfile
+commit 6ab0aa26dd6cbb1b6a1f1198f42230f576b5b3b5
+tree 93fd724025c4d5d8f03d22390e4d34bf91179a63
+parent 2ae6d53b2cace032d3a958eae894d11bb0575710
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:49:23 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:49:23 +0200
+
+    [meta-exporter_geocat] Initialimport
+
+
+:000000 100644 0000000000000000000000000000000000000000 f3cc600a9ffd3f546cd28aa1515002399a504b0a A	api_webgisclient/meta-exporter_geocat/Jenkinsfile
+commit 2ae6d53b2cace032d3a958eae894d11bb0575710
+tree f61d9179b8a71f2ce99ec9bf3b88f543ba952a40
+parent 2db414402a9ee903a09f7b0849a1222205c29bd7
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:41:56 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:41:56 +0200
+
+    [meta-exporter_conf] uncomment rsync part
+
+
+:100644 100644 6ed48fe5837bf3c5559920795cbbb3f455a254ba ddf9d2aa36499182150e4eda923310cecec3e794 M	api_webgisclient/meta-exporter_conf/Jenkinsfile
+commit 2db414402a9ee903a09f7b0849a1222205c29bd7
+tree 7e0b6cd118a65883cbfdcf2ded94a060f2e08df1
+parent 45d52bf3b015b9d90163236a2d9c169db2bee3ea
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:12:36 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:12:36 +0200
+
+    [meta-exporter_conf] rollback hardcoded podname
+
+
+:100644 100644 c87a4e6f173e488d1bba44e22c021d4c059283a8 6ed48fe5837bf3c5559920795cbbb3f455a254ba M	api_webgisclient/meta-exporter_conf/Jenkinsfile
+commit 45d52bf3b015b9d90163236a2d9c169db2bee3ea
+tree f22401e830f6b7611fd64cba1d7685eac5b9f378
+parent 903e5bd29f56b7e16b119e987e331f4be03692de
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:10:37 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:10:37 +0200
+
+    [meta-exporter_conf] added script part
+
+
+:100644 100644 16021aaee68fa8320d544e2dd208e988bfeda08c c87a4e6f173e488d1bba44e22c021d4c059283a8 M	api_webgisclient/meta-exporter_conf/Jenkinsfile
+commit 903e5bd29f56b7e16b119e987e331f4be03692de
+tree f967201363b85be230d6946f485beb8b8704fc8e
+parent de4985504159ede942ee3d22e76c561f79fb0438
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:05:07 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:05:07 +0200
+
+    [meta-exporter_conf] hardcode podname for debugging
+
+
+:100644 100644 37a08d9243798f91b8b84b4027157d827046eb9c 16021aaee68fa8320d544e2dd208e988bfeda08c M	api_webgisclient/meta-exporter_conf/Jenkinsfile
+commit de4985504159ede942ee3d22e76c561f79fb0438
+tree fd4ca15b3d1aa6dfd711313a50a2fc303cbf213e
+parent a48bf7142d36b7c96fda3149fe012d194f222924
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 16:46:13 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 16:46:13 +0200
+
+    [meta-exporter_conf] added missing bracket
+
+
+:100644 100644 380950e240d2e47e5e92561e6996679abdf68654 37a08d9243798f91b8b84b4027157d827046eb9c M	api_webgisclient/meta-exporter_conf/Jenkinsfile
+commit a48bf7142d36b7c96fda3149fe012d194f222924
+tree 4c7666038b3dd693df4e45b250ae52f1dc4d0b3a
+parent 245ac252596597276eeafaa9ed0fef0d57a18f5b
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 16:44:27 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 16:44:27 +0200
+
+    [meta-exporter_conf] added sync to sodata Pod
+
+
+:100644 100644 fe59c3c1de99b71e4b7e6fda450654de2298ad8f 380950e240d2e47e5e92561e6996679abdf68654 M	api_webgisclient/meta-exporter_conf/Jenkinsfile
+commit 245ac252596597276eeafaa9ed0fef0d57a18f5b
+tree 92d31d9d2d5ae535f5152dd73a1a9a268b348953
+parent d367d396135d66349008d3e4f78a49eab250541e
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 15:32:37 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 15:32:37 +0200
+
+    [meta-exporter_conf] change db username to simi
+
+
+:100644 100644 2fe0edfbd0b598a26f389af3d5fdd30b5d79e661 fe59c3c1de99b71e4b7e6fda450654de2298ad8f M	api_webgisclient/meta-exporter_conf/Jenkinsfile
+commit d367d396135d66349008d3e4f78a49eab250541e
+tree 5bf7e0cc71385e2d47408ec4ddf669d0c353fc70
+parent 5b0d127fca82a7a9538d50b97eaf4036cfafdfce
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 15:23:57 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 15:23:57 +0200
+
+    [meta-exporter_conf] change default value for namespace
+
+
+:100644 100644 cbb723294ec58d9fc3ca2720c5532f7a2a3e49a1 2fe0edfbd0b598a26f389af3d5fdd30b5d79e661 M	api_webgisclient/meta-exporter_conf/Jenkinsfile
+commit 5b0d127fca82a7a9538d50b97eaf4036cfafdfce
+tree ed110854903ecf668e231c520ef133eb78f23a33
+parent 8f7de30fa633089f44ce3f5a246c6acc77ac4e2d
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 15:21:18 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 15:21:18 +0200
+
+    [meta-exporter_conf] change naming
+
+
+:100644 100644 fc224dadc9be4a5b4f0ff1841edfb033a6f684ba cbb723294ec58d9fc3ca2720c5532f7a2a3e49a1 R097	api_webgisclient/metaexport_conf/Jenkinsfile	api_webgisclient/meta-exporter_conf/Jenkinsfile
+commit 8f7de30fa633089f44ce3f5a246c6acc77ac4e2d
+tree b16e26fbfbc4af687dc147d6e50b478e6dfba561
+parent 6acbc74e02eb3ee4d6c1ea85fb09fccae67706bf
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 15:19:38 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 15:19:38 +0200
+
+    [metaexporter_conf] added credentials to step Create Datensuche Conf File
+
+
+:100644 100644 3920afa0f70dd44baa6dadbea04673f433bd2367 fc224dadc9be4a5b4f0ff1841edfb033a6f684ba M	api_webgisclient/metaexport_conf/Jenkinsfile
+commit 6acbc74e02eb3ee4d6c1ea85fb09fccae67706bf
+tree d0319b45e46ad43f5a3ee64df08437fc5f922998
+parent 4d1c2c5c43c9eb6ff2c3594fcfcbdf6c9243d0b6
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 15:14:10 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 15:14:10 +0200
+
+    [metaexport_conf] change param syntax
+
+
+:100644 100644 1554b898e9833a453bae736807939ec32601274e 3920afa0f70dd44baa6dadbea04673f433bd2367 M	api_webgisclient/metaexport_conf/Jenkinsfile
+commit 4d1c2c5c43c9eb6ff2c3594fcfcbdf6c9243d0b6
+tree 279bf6fd7c01aa45f5e1001e380bf3a15b73146d
+parent 6e8644c7a64c0bdb744f70d5f412f6170c0648e8
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 13:07:44 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 13:07:44 +0200
+
+    [metaexport_conf] added java command to create xml
+
+
+:100644 100644 3071c722804a2912190d1fef3c3792fe3473efb8 1554b898e9833a453bae736807939ec32601274e M	api_webgisclient/metaexport_conf/Jenkinsfile
+commit 6e8644c7a64c0bdb744f70d5f412f6170c0648e8
+tree 8c4f852316dcbf0d3f535d674c9341946029db7a
+parent 6f817d62f86dea6703fb7037eddf1c5c764af6c8
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 12:53:59 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 12:53:59 +0200
+
+    [metaexport_conf] added missing stage
+
+
+:100644 100644 c62b2271757ec4d0e5652f3eb301b0ffa84ff1c9 3071c722804a2912190d1fef3c3792fe3473efb8 M	api_webgisclient/metaexport_conf/Jenkinsfile
+commit 6f817d62f86dea6703fb7037eddf1c5c764af6c8
+tree 0e8512620911e96feb88f6d67e9292050e7a5039
+parent e01bc7aef9639b6e2521eac6e746a354a75876f6
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 12:48:10 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 12:48:10 +0200
+
+    [metaexport_conf] Initialimport
+
+
+:000000 100644 0000000000000000000000000000000000000000 c62b2271757ec4d0e5652f3eb301b0ffa84ff1c9 A	api_webgisclient/metaexport_conf/Jenkinsfile
+commit e01bc7aef9639b6e2521eac6e746a354a75876f6
+tree 58868b9f70a94d1e62143a6544be2a58f461f82b
+parent 02bd5a89c82dbbec461f43f76f9d8f95aa701f43
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-05 09:10:51 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-05 09:10:51 +0200
+
+    Revert "[plotinfo-service] Route directly to oereb-web-service"
+    
+    This reverts commit d620021fb468a1491d41969355b5ef842b4199d5. The change
+    isn't needed anymore, and it didn't fully work.
+
+
+:100644 100644 6585ec186eda617bdd55170bd14b5d0037c14c21 40c6ab147baacd9043245a665fc44d6b1edee345 M	api_webgisclient/plotinfo-service/Jenkinsfile
+:100644 100644 e06651836e93cdd8fb5f369168e58f0e1087db75 7656cafab56ba3a9fab59d77475643c165568005 M	api_webgisclient/plotinfo-service/deployment/deploymentconfig.yaml
+commit 02bd5a89c82dbbec461f43f76f9d8f95aa701f43
+tree 661d0cafd9c70be9066d560abfbeb0a49dfac08b
+parent d620021fb468a1491d41969355b5ef842b4199d5
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-04 18:47:45 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-04 18:47:45 +0200
+
+    [api-gateway] fixed wrong variable for ip address in limit_req_zone
+
+
+:100644 100644 f2fe5242f44f0da6b1f45dc026f235fcd66f8960 30bfc358038b1655d4cb9570aaf7123bc51d45a1 M	api_webgisclient/api-gateway/resources.yaml
+commit d620021fb468a1491d41969355b5ef842b4199d5
+tree 0c7662419f88823d2e96eb6adbc00364ca260cf0
+parent f3f159368cc20b0eda1f058b1aad0165ef55ace9
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-03 14:02:54 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-03 14:14:20 +0200
+
+    [plotinfo-service] Route directly to oereb-web-service
+
+
+:100644 100644 40c6ab147baacd9043245a665fc44d6b1edee345 6585ec186eda617bdd55170bd14b5d0037c14c21 M	api_webgisclient/plotinfo-service/Jenkinsfile
+:100644 100644 7656cafab56ba3a9fab59d77475643c165568005 e06651836e93cdd8fb5f369168e58f0e1087db75 M	api_webgisclient/plotinfo-service/deployment/deploymentconfig.yaml
+commit 76f15c60b59e0e44c807676af670e640fb31e87b
+tree 040964a416e39a3ba5f2226b534680a32e3f0005
+parent 737f0c01a8f9ff35b5cbe40e7be93b8a266ad59c
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-29 17:16:12 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-29 17:16:12 +0200
+
+    [data-service] rollback uncomment post actions
+
+
+:100644 100644 bb2e56f920cd2b01e24a203494903429e228d0ca caed6bd1ecdd5c863565ce969fb5400573ae6b98 M	api_webgisclient/data-service/Jenkinsfile
+commit 737f0c01a8f9ff35b5cbe40e7be93b8a266ad59c
+tree 480289be3ff0a617ea107b74f31ab0c5a56fb6b5
+parent 23d422cd1ff6036780e73753f7a3e0f8e4afc4b7
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-29 17:14:56 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-29 17:14:56 +0200
+
+    [dataproduct-service] change text/plain to application/json for test purposes
+
+
+:100644 100644 6e9349bfd0a472898ae808532a5feecc240a893c dcef53d1a181baad81651d25136d1a26849a8bdd M	api_webgisclient/dataproduct-service/sql2json/dataprod.sql
+commit 23d422cd1ff6036780e73753f7a3e0f8e4afc4b7
+tree 3c66bfd06c2b505f5690d86cb89bc4336250cd56
+parent f3f159368cc20b0eda1f058b1aad0165ef55ace9
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-29 11:50:40 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-29 11:50:40 +0200
+
+    [data-service] uncomment post actions
+
+
+:100644 100644 caed6bd1ecdd5c863565ce969fb5400573ae6b98 bb2e56f920cd2b01e24a203494903429e228d0ca M	api_webgisclient/data-service/Jenkinsfile
+commit f3f159368cc20b0eda1f058b1aad0165ef55ace9
+tree 531e4b1068bb3524e76300e347ddda4c95ed8cc4
+parent 82b5e0156a3dcf4b206ffc259d4e7b6174112a60
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-29 09:21:53 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-29 09:21:53 +0200
+
+    [api-gateway] added rate limit for oereb
+
+
+:100644 100644 c72c643ec3c28c220bb8acd311f17c5d6f1baa0d f2fe5242f44f0da6b1f45dc026f235fcd66f8960 M	api_webgisclient/api-gateway/resources.yaml
+commit 82b5e0156a3dcf4b206ffc259d4e7b6174112a60
+tree a292a567386e057da4797058066929361b3041d0
+parent 55338c122b918e055eeb1278922af54ec4f71342
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-28 16:23:35 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-28 16:23:35 +0200
+
+    [api-gateway] lock some ddos ip ranges
+
+
+:100644 100644 d439500dcfd87bb9cc5c4a78f24a47d1aa4acedc c72c643ec3c28c220bb8acd311f17c5d6f1baa0d M	api_webgisclient/api-gateway/resources.yaml
+commit 55338c122b918e055eeb1278922af54ec4f71342
+tree 9dfc1bc2f077740b5418264b5ea32a51dda8c851
+parent a2376438c9f30e0fd0aee959ebe35fa98e74ac7b
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-28 14:55:06 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-28 14:55:06 +0200
+
+    [qwc-service] changed path
+
+
+:100644 100644 9c8f90ae8d23c2dbf505633e4e95d01e9b78e0ff fd64c8159e267439660536bc6005cd2e5de9b92c M	api_webgisclient/qwc-service/index.html
+commit a2376438c9f30e0fd0aee959ebe35fa98e74ac7b
+tree 92362016d55744d0299588432ea1ff4f2794c438
+parent 3e13f2c200af33681accd5533f636e27c2c8c825
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-28 14:33:25 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-28 14:33:25 +0200
+
+    [qwc-service] added apple icon links
+
+
+:100644 100644 5f3aaa53c6d6ce2ed116ceb3faa9b474e84f3562 9c8f90ae8d23c2dbf505633e4e95d01e9b78e0ff M	api_webgisclient/qwc-service/index.html
+commit 3e13f2c200af33681accd5533f636e27c2c8c825
+tree 522b9ce71ff93ea0c736a357786fc22239556354
+parent db42d1a258ff0e0d3eb5c7486da8315c2ba5e618
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-28 12:39:47 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-28 12:39:47 +0200
+
+    [api-gateway] add path to *.png
+
+
+:100644 100644 a3f4db29662ad5ab4d86da91ab2a1a41d05800fd d439500dcfd87bb9cc5c4a78f24a47d1aa4acedc M	api_webgisclient/api-gateway/resources.yaml
+commit db42d1a258ff0e0d3eb5c7486da8315c2ba5e618
+tree 05f5496f5fe9107e82b72cb3e6ba23fe939bdfec
+parent 86b1599691d674ea7d32cedbaf0e3f75e472a70e
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-28 09:11:22 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-28 09:11:22 +0200
+
+    [webgisclient] change path to jobs
+
+
+:100644 100644 78ff9d627da6e3109de82e5e520956a4885b58ba 1f6a48858fdb48b163242b8ee123cb80c63c5ca1 M	api_webgisclient/Jenkinsfile
+commit 7a3bb79dfc638482770d112d2819d14309efcd07
+tree 1c9f7fce31dc7213c8b79679bc55947f15b5f4ea
+parent 3826849c519477ccb210084319073bb0cc9f5d1f
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-27 16:45:27 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-27 16:45:27 +0200
+
+    [qgis-server] correct url to config/default
+
+
+:100644 100644 944519b3832baa56c7ec25704fd5af07734ac866 213dbd23d28a68df091fcd00c040ce3785bee537 M	api_webgisclient/qgis-server/Jenkinsfile
+commit 3826849c519477ccb210084319073bb0cc9f5d1f
+tree 4283a503d78bb9b8c5a1592ac0512086c7efbec8
+parent f09e9f2f9180a2b36e8c9aa431b774e91ee7e58b
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-27 16:40:06 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-27 16:40:06 +0200
+
+    [qgis-server] update url to config/default
+
+
+:100644 100644 ab271d7749c87091f0a8f034f29faa7cdab7d4d0 944519b3832baa56c7ec25704fd5af07734ac866 M	api_webgisclient/qgis-server/Jenkinsfile
+commit f09e9f2f9180a2b36e8c9aa431b774e91ee7e58b
+tree 6019ec5c178699fb7d5101b9662506bd56303566
+parent 3c093cc9331985716e776bb9e3f9e65f8580cb2e
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-27 16:20:51 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-27 16:22:23 +0200
+
+    [ccc-config] update sql to simi_v2
+
+
+:100644 100644 3f7a42579d66f789325cf78865e214e1be837344 8d451af3b0f205d11366516d10cb6a6013d8deff M	api_webgisclient/ccc-config/sql2json/ccc_client.sql
+commit 20eed77635f0777560fb6480fb9b87adfc0b686b
+tree cc67322b86d223f77a9a59c996c696714ba84d4f
+parent a232c0b227190ca9b6ba6cfe78ef227da4de1d54
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-27 16:20:51 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-27 16:20:51 +0200
+
+    [ccc-config] update sql to simi_v2
+
+
+:100644 100644 3f7a42579d66f789325cf78865e214e1be837344 8d451af3b0f205d11366516d10cb6a6013d8deff M	api_webgisclient/ccc-config/sql2json/ccc_client.sql
+commit 3c093cc9331985716e776bb9e3f9e65f8580cb2e
+tree 5e80fc2f48f3b32ccbc2d7c2157f0a25fc6ce047
+parent 2615920bed01cb03a791875f4b716f137e4d0549
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-27 12:30:05 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-27 12:30:05 +0200
+
+    [webgisclient] change path to requirements
+
+
+:100644 100644 3e9b96ec009478d0e4cdd07a74f0ccb1fca5a14f 78ff9d627da6e3109de82e5e520956a4885b58ba M	api_webgisclient/Jenkinsfile
+commit 2615920bed01cb03a791875f4b716f137e4d0549
+tree 0c2ab9bc5a92d846074d30a30960a843190aa168
+parent 6c813eb4c62f7059dd87945dac5c07af29da7dc9
+author pfeimich <mpfeiffer1975@gmail.com> 2022-09-26 15:30:36 +0200
+committer pfeimich <mpfeiffer1975@gmail.com> 2022-09-26 15:30:36 +0200
+
+    [webgisclient] change path to job
+
+
+:100644 100644 7235404312b5d42da7edbd76b24bb92f129b7398 3e9b96ec009478d0e4cdd07a74f0ccb1fca5a14f M	api_webgisclient/Jenkinsfile
+commit 6c813eb4c62f7059dd87945dac5c07af29da7dc9
+tree 456901682c4d64e1fdfa2801e7a4177adfd08e74
+parent a232c0b227190ca9b6ba6cfe78ef227da4de1d54
+author pfeimich <mpfeiffer1975@gmail.com> 2022-09-26 15:10:37 +0200
+committer pfeimich <mpfeiffer1975@gmail.com> 2022-09-26 15:10:37 +0200
+
+    [webgisclient] change path to requirements
+
+
+:100644 100644 52b344bc80f588d651623a636796326beca6381e 7235404312b5d42da7edbd76b24bb92f129b7398 M	api_webgisclient/Jenkinsfile
+commit afaa1e5b0a93f8c3de5638466f172906363bd218
+tree 558a1480498bcff79c96815f3329d30f4fca1550
+parent 73c5874c467fbb5a70dabe99ad4957b521a12518
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-23 08:37:47 +0200
+committer GitHub <noreply@github.com> 2022-09-23 08:37:47 +0200
+
+    Update resources.yaml
+
+:100644 100644 f0a21a0fb3d0478cc5fa4704c3ffb21700549668 906e2321ef83325f42ba4c7ae776d489b45a85af M	api_webgisclient/api-gateway/resources.yaml
+commit 84dd63a3eb35e5509ff2ad0e30e841be38e8dac3
+tree 458e8822bb8e95163d0933d0f1bbc482ef240c89
+parent 9d2deb595b5a0faa71a3c773304a3653172b4f50
+author bjsvwcur <sandra.curiger@bd.so.ch> 2022-09-22 15:23:13 +0200
+committer bjsvwcur <sandra.curiger@bd.so.ch> 2022-09-22 15:23:13 +0200
+
+    [api-gateway] Korrektur gb2av
+
+
+:100644 100644 558422ce8a3aec79afcd2b79c6c58f5c2c7b56b9 a3f4db29662ad5ab4d86da91ab2a1a41d05800fd M	api_webgisclient/api-gateway/resources.yaml
+commit 73c5874c467fbb5a70dabe99ad4957b521a12518
+tree c6a64cdedcabc37ba88a8296e8961bdb4127c6a8
+parent 8af32bb4f443f53991ed38662aa7969a03ab1c4a
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-21 10:09:32 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-21 10:09:32 +0200
+
+    Revert "[featureinfo-service] set temporarily build to "nein""
+    
+    This reverts commit 8af32bb4f443f53991ed38662aa7969a03ab1c4a.
+
+
+:100644 100644 3403714fdef2a6da569109d9996b58955187ee3a 081ef1b75e758e423425784c7e715bf743b9363d M	api_webgisclient/featureinfo-service/Jenkinsfile
+commit 8af32bb4f443f53991ed38662aa7969a03ab1c4a
+tree ca37efedcd5519742292e2dd72e16b1b9ed9ba0e
+parent 70368f4b2eea06cb23b194eee94e74b93a14aea9
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-20 17:23:56 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-20 17:23:56 +0200
+
+    [featureinfo-service] set temporarily build to "nein"
+
+
+:100644 100644 081ef1b75e758e423425784c7e715bf743b9363d 3403714fdef2a6da569109d9996b58955187ee3a M	api_webgisclient/featureinfo-service/Jenkinsfile
+commit 9d2deb595b5a0faa71a3c773304a3653172b4f50
+tree bed8a3ef5afb4d44a4d8ef4bdd7ce3cba10c1dc1
+parent 7d17349541737e42540e0cd4779229d858e7c240
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-20 17:21:25 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-20 17:21:25 +0200
+
+    [qwc-service] added search-icons
+
+
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.ada.adagisa.flaechenfundstellen_geschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.ada.adagisa.punktfundstellen_geschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.ada.adagisa.punktfundstellen_ungeschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.abbaustellen.abbaustellen.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.altlasten.standorte.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.altlasten.standorte_geschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.bodeninformationen.bodenprofilstandorte.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.fliessgewaesser.netz.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.geotope.aufschluss.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.geotope.erratiker.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.geotope.fundstelle_grabung_geschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.geotope.hoehle.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.geotope.landschaftsform.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.geotope.quelle.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.gewaesserschutz_lw.stall.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.gewaesserschutz_lw.standort_mit_erhebung.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.gewaesserschutz_lw.standort_ohne_erhebung.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.tankanlage.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.fassung.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.fassung_geschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.grundwasserwaermenutzung.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.grundwasserwaermenutzung_geschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.quellen.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.quellen_geschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.sondierung.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.sondierung_geschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.trinkwasserversorgung_geschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.versickerungsschacht.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.versickerungsschacht_geschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.weitere_einbauten_geschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.agi.av.bodenbedeckung.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.agi.av.gb2av.controlling_mutationen.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.agi.av.gb2av.controlling_vollzugsmeldungen.svg
+:000000 100755 0000000000000000000000000000000000000000 5c16469f773ea9b13861fbc0bfeb083d308cf10f A	api_webgisclient/qwc-service/search-icons/ch.so.agi.av.gebaeudeadressen.gebaeudeeingaenge.svg
+:000000 100755 0000000000000000000000000000000000000000 fe1490d099d3beb8aa1ca96ebdd9d9bd1cff011e A	api_webgisclient/qwc-service/search-icons/ch.so.agi.av.grundstuecke.projektierte.svg
+:000000 100755 0000000000000000000000000000000000000000 fe1490d099d3beb8aa1ca96ebdd9d9bd1cff011e A	api_webgisclient/qwc-service/search-icons/ch.so.agi.av.grundstuecke.rechtskraeftig.svg
+:000000 100755 0000000000000000000000000000000000000000 ed8ff30969c2f964726cc3d25547d2daa43715e5 A	api_webgisclient/qwc-service/search-icons/ch.so.agi.av.nomenklatur.flurnamen.svg
+:000000 100755 0000000000000000000000000000000000000000 ed8ff30969c2f964726cc3d25547d2daa43715e5 A	api_webgisclient/qwc-service/search-icons/ch.so.agi.av.nomenklatur.gelaendenamen.svg
+:000000 100644 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.agi.bezirksgrenzen.svg
+:000000 100644 0000000000000000000000000000000000000000 8d9ee3bdcbb78942d38779e2769d0cdaec3a901b A	api_webgisclient/qwc-service/search-icons/ch.so.agi.gemeindegrenzen.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.alw.bienenstandorte_und_sperrgebiete.bienenstandorte.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.alw.landwirtschaft_tierhaltung.kultur_punktelement_bff_qualitaetsstufe_I.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.alw.landwirtschaft_tierhaltung.kulturflaechen_hauptkategorien.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.arp.baugis.geschaefte.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.arp.naturreservate.reservate.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.avt.kantonsstrassen_achsen.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.avt.kantonsstrassen_bezugspunkte.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.avt.oev.haltestellen.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.avt.verkehrszaehlstellen.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.awjf.bestandeskarte_wald_flaechen.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.awjf.fischereiliche_nutzung.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.awjf.schutzwald_hauptgefahrenpotentiale.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.awjf.schutzwaldausscheidung.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.awjf.waldplan.waldeigentum.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.awjf.waldplan.waldfunktion.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.awjf.waldplan.waldplantyp.svg
+:000000 100755 0000000000000000000000000000000000000000 c919d7137e317c6600131e44ef344611f75abbd2 A	api_webgisclient/qwc-service/search-icons/dataproduct.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/feature.svg
+:000000 100755 0000000000000000000000000000000000000000 915722cfd4576cea36d5957f0c53de34beabdff5 A	api_webgisclient/qwc-service/search-icons/gebaeude.svg
+:000000 100644 0000000000000000000000000000000000000000 4a587356a0c55e6e2e3c130a557150dfff5c05d4 A	api_webgisclient/qwc-service/search-icons/layergroup_close.svg
+:000000 100644 0000000000000000000000000000000000000000 52e47293882308e6ae08e89df199eaf4d749393f A	api_webgisclient/qwc-service/search-icons/layergroup_open.svg
+commit 70368f4b2eea06cb23b194eee94e74b93a14aea9
+tree c6a64cdedcabc37ba88a8296e8961bdb4127c6a8
+parent 1aaa29b34ba2a6dcee3747b0a70f801004a914fa
+author uncoyote <jeker.git@outlook.de> 2022-09-19 20:31:15 +0200
+committer uncoyote <jeker.git@outlook.de> 2022-09-19 20:31:15 +0200
+
+    v2 coalesce title, description
+
+
+:100644 100644 5ced1a2469cb238af942f414b2f8f0a37509f6a8 4c4933f3d0415328ebe4af6d5662c99fb649906c M	api_webgisclient/qgis-server/sql2json/wfs-qgs-content/wfs_layer.sql
+:100644 100644 d860ec10aa8bca3c13dca12d4c4f856d0fd78bd9 1c417fc7cb1b68e60ce775dd3da5d04d5350b370 M	api_webgisclient/qwc-service/sql2json/foreground_map.sql
+commit 1aaa29b34ba2a6dcee3747b0a70f801004a914fa
+tree 18901fe7f482a6b954f443f0d33fd6839dbb187e
+parent 675cdf1d6735fff869ab69402549a32450d01068
+author uncoyote <jeker.git@outlook.de> 2022-09-19 17:41:20 +0200
+committer uncoyote <jeker.git@outlook.de> 2022-09-19 17:41:20 +0200
+
+    adapted to v2 wgc_exposed flag
+
+
+:100644 100644 8f19f7d443342c839be0a57b0c042976a500291c f3f1d3757308015edc302fe7c3ff27951809a225 M	api_webgisclient/data-service/sql2json/tableview.sql
+:100644 100644 a7e7f1e45c998157987533bbbb664a9e0de7d016 5ced1a2469cb238af942f414b2f8f0a37509f6a8 M	api_webgisclient/qgis-server/sql2json/wfs-qgs-content/wfs_layer.sql
+:100644 100644 4e26d5372efa9abcf36552f91a2dbbdb7a2bfd69 d860ec10aa8bca3c13dca12d4c4f856d0fd78bd9 M	api_webgisclient/qwc-service/sql2json/foreground_map.sql
+commit 675cdf1d6735fff869ab69402549a32450d01068
+tree d5e9fd9696df8314f0e29fb01df84e1e971dcfc8
+parent 681f5c217c7265a6495c2bf89a8bd4fa577bc9c0
+author pfeimich <mpfeiffer1975@gmail.com> 2022-09-19 13:55:27 +0200
+committer pfeimich <mpfeiffer1975@gmail.com> 2022-09-19 13:55:27 +0200
+
+    [qwc-service] remove test link for favicon
+
+
+:100644 100644 5b4cb53e6fdf651a41cea65642d46bfb26501df6 5f3aaa53c6d6ce2ed116ceb3faa9b474e84f3562 M	api_webgisclient/qwc-service/index.html
+commit 7d17349541737e42540e0cd4779229d858e7c240
+tree 5326e86eca7caf70a259721d2e1285304bd24f1c
+parent 63ab46679167d441f0e543c64121305146113a13
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-15 17:47:09 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-15 17:47:09 +0200
+
+    [api-gateway] upgrade file denial from ch.swisstopo.lk to ch.swisstopo
+
+
+:100644 100644 192e06e24aa5c25c2f7048d80dfd82c9e8dd35b0 558422ce8a3aec79afcd2b79c6c58f5c2c7b56b9 M	api_webgisclient/api-gateway/resources.yaml
+commit 681f5c217c7265a6495c2bf89a8bd4fa577bc9c0
+tree f6a51aff1d951c3d634c67fcb87451dc9516a049
+parent 6f5c9200900ba82dd7871d93fe666b88a66b66e6
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-15 17:35:33 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-15 17:35:33 +0200
+
+    [qwc-service] added link to favicon for testing purposes
+
+
+:100644 100644 5f3aaa53c6d6ce2ed116ceb3faa9b474e84f3562 5b4cb53e6fdf651a41cea65642d46bfb26501df6 M	api_webgisclient/qwc-service/index.html
+commit 6f5c9200900ba82dd7871d93fe666b88a66b66e6
+tree d5e9fd9696df8314f0e29fb01df84e1e971dcfc8
+parent a43931208d49dbb609034a5f010bf49413e82d86
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-15 15:45:23 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-15 15:45:23 +0200
+
+    [qwc-service] add search-icon ch.so.agi.av.bodenbedeckung
+
+
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.agi.av.bodenbedeckung.svg
+commit a43931208d49dbb609034a5f010bf49413e82d86
+tree ef4ea999ed343e952452e53c9f2b448df4886e63
+parent 24118b747e3add5f3a243763189f377a835fb3eb
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-15 15:17:59 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-15 15:17:59 +0200
+
+    [qwc-service] added search-icons (only for manual sync not for use in pipeline)
+
+
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.ada.adagisa.flaechenfundstellen_geschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.ada.adagisa.punktfundstellen_geschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.ada.adagisa.punktfundstellen_ungeschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.abbaustellen.abbaustellen.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.altlasten.standorte.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.altlasten.standorte_geschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.bodeninformationen.bodenprofilstandorte.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.fliessgewaesser.netz.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.geotope.aufschluss.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.geotope.erratiker.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.geotope.fundstelle_grabung_geschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.geotope.hoehle.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.geotope.landschaftsform.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.geotope.quelle.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.gewaesserschutz_lw.stall.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.gewaesserschutz_lw.standort_mit_erhebung.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.gewaesserschutz_lw.standort_ohne_erhebung.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.tankanlage.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.fassung.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.fassung_geschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.grundwasserwaermenutzung.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.grundwasserwaermenutzung_geschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.quellen.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.quellen_geschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.sondierung.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.sondierung_geschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.trinkwasserversorgung_geschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.versickerungsschacht.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.versickerungsschacht_geschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.afu.wasserbewirtschaftung.weitere_einbauten_geschuetzt.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.agi.av.gb2av.controlling_mutationen.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.agi.av.gb2av.controlling_vollzugsmeldungen.svg
+:000000 100755 0000000000000000000000000000000000000000 5c16469f773ea9b13861fbc0bfeb083d308cf10f A	api_webgisclient/qwc-service/search-icons/ch.so.agi.av.gebaeudeadressen.gebaeudeeingaenge.svg
+:000000 100755 0000000000000000000000000000000000000000 fe1490d099d3beb8aa1ca96ebdd9d9bd1cff011e A	api_webgisclient/qwc-service/search-icons/ch.so.agi.av.grundstuecke.projektierte.svg
+:000000 100755 0000000000000000000000000000000000000000 fe1490d099d3beb8aa1ca96ebdd9d9bd1cff011e A	api_webgisclient/qwc-service/search-icons/ch.so.agi.av.grundstuecke.rechtskraeftig.svg
+:000000 100755 0000000000000000000000000000000000000000 ed8ff30969c2f964726cc3d25547d2daa43715e5 A	api_webgisclient/qwc-service/search-icons/ch.so.agi.av.nomenklatur.flurnamen.svg
+:000000 100755 0000000000000000000000000000000000000000 ed8ff30969c2f964726cc3d25547d2daa43715e5 A	api_webgisclient/qwc-service/search-icons/ch.so.agi.av.nomenklatur.gelaendenamen.svg
+:000000 100644 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.agi.bezirksgrenzen.svg
+:000000 100644 0000000000000000000000000000000000000000 8d9ee3bdcbb78942d38779e2769d0cdaec3a901b A	api_webgisclient/qwc-service/search-icons/ch.so.agi.gemeindegrenzen.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.alw.bienenstandorte_und_sperrgebiete.bienenstandorte.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.alw.landwirtschaft_tierhaltung.kultur_punktelement_bff_qualitaetsstufe_I.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.alw.landwirtschaft_tierhaltung.kulturflaechen_hauptkategorien.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.arp.baugis.geschaefte.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.arp.naturreservate.reservate.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.avt.kantonsstrassen_achsen.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.avt.kantonsstrassen_bezugspunkte.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.avt.oev.haltestellen.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.avt.verkehrszaehlstellen.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.awjf.bestandeskarte_wald_flaechen.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.awjf.fischereiliche_nutzung.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.awjf.schutzwald_hauptgefahrenpotentiale.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.awjf.schutzwaldausscheidung.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.awjf.waldplan.waldeigentum.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.awjf.waldplan.waldfunktion.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/ch.so.awjf.waldplan.waldplantyp.svg
+:000000 100755 0000000000000000000000000000000000000000 c919d7137e317c6600131e44ef344611f75abbd2 A	api_webgisclient/qwc-service/search-icons/dataproduct.svg
+:000000 100755 0000000000000000000000000000000000000000 62671b1e905daae4486da0c7d590070136d8bb1d A	api_webgisclient/qwc-service/search-icons/feature.svg
+:000000 100755 0000000000000000000000000000000000000000 915722cfd4576cea36d5957f0c53de34beabdff5 A	api_webgisclient/qwc-service/search-icons/gebaeude.svg
+:000000 100644 0000000000000000000000000000000000000000 4a587356a0c55e6e2e3c130a557150dfff5c05d4 A	api_webgisclient/qwc-service/search-icons/layergroup_close.svg
+:000000 100644 0000000000000000000000000000000000000000 52e47293882308e6ae08e89df199eaf4d749393f A	api_webgisclient/qwc-service/search-icons/layergroup_open.svg
+commit 24118b747e3add5f3a243763189f377a835fb3eb
+tree 9c19a470109b8a55f448c8ee20171276a45f5031
+parent d32fb6ddcd12e680d2d4b9ef65bdb1476609badb
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-15 14:58:48 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-15 14:58:48 +0200
+
+    [qwc-service] remove <create search icons>
+
+
+:100644 100644 c0b3fe5a69999e5a76380af0e062c12d60b8febf 163c4207f8a0d0aefb9c6f2556ea0d2af4de403c M	api_webgisclient/qwc-service/Jenkinsfile
+commit d32fb6ddcd12e680d2d4b9ef65bdb1476609badb
+tree 2da83f63605bf29b5077c707fde1d980efd1340f
+parent e2950e713ccf6e4ea0c01dd20416986de9a6c1a7
+author uncoyote <jeker.git@outlook.de> 2022-09-15 13:47:48 +0200
+committer uncoyote <jeker.git@outlook.de> 2022-09-15 13:47:48 +0200
+
+    merged all db-view defs into simi repo
+
+
+:100644 000000 c6df5526129200c1404267b29359fc62d6ceec08 0000000000000000000000000000000000000000 D	api_webgisclient/sql2json/doc/publication_overview.sql
+:100644 000000 8e7631279140b7c37f52b6450e61e2c1a789d91a 0000000000000000000000000000000000000000 D	api_webgisclient/sql2json/doc/view_dependencies.png
+:100644 000000 8b6e49d2636056396a06a462d143ab617e5dc17b 0000000000000000000000000000000000000000 D	api_webgisclient/sql2json/doc/view_dependencies.puml
+:100644 100644 15968f29548cbc9ecfb59f559098e05616c9104c 15968f29548cbc9ecfb59f559098e05616c9104c R100	api_webgisclient/sql2json/doc/readme.md	api_webgisclient/sql2json/readme.md
+:100644 100644 c9eb4ee951a7eb5bae3aa79ddcc08b977babb522 70732e1e2bd6cd443b1e6b6afa4cf95e7ab162e1 M	api_webgisclient/sql2json/views/README.md
+:100644 000000 fef822f03724a7fb1a3c5e7e6c3733f768c3520c 0000000000000000000000000000000000000000 D	api_webgisclient/sql2json/views/solr/drop_solr_views.sql
+:100644 000000 7a56b793970f2405c95115bf9878d817d7fdc3ad 0000000000000000000000000000000000000000 D	api_webgisclient/sql2json/views/solr/grant_solr_views.sql
+:100644 000000 45b99cbdc40165b0c942abfad3685a3ba72922ea 0000000000000000000000000000000000000000 D	api_webgisclient/sql2json/views/solr/solr_layer_background_v.sql
+:100644 000000 bfd4eb7aa4ef9111616b63e1998cf42920c33107 0000000000000000000000000000000000000000 D	api_webgisclient/sql2json/views/solr/solr_layer_base_v.sql
+:100644 000000 8ce52cf4a9c4b84ac702b7c08a54ccc030a27753 0000000000000000000000000000000000000000 D	api_webgisclient/sql2json/views/solr/solr_layer_foreground_v.sql
+:100644 000000 69810cf70ca336a01eb60e21c6939f06b649a82f 0000000000000000000000000000000000000000 D	api_webgisclient/sql2json/views/trafo/drop_trafo_views.sql
+:100644 000000 58b5a2976af39470a28b3b63f1105febfc272e41 0000000000000000000000000000000000000000 D	api_webgisclient/sql2json/views/trafo/grant_trafo_views.sql
+:100644 000000 058ecb043f14ba68d3093207bf680ce34f034ba1 0000000000000000000000000000000000000000 D	api_webgisclient/sql2json/views/trafo/trafo_published_dp_v.sql
+:100644 000000 92b0db40703b9504a3df13f3e4a53e49a92f72a4 0000000000000000000000000000000000000000 D	api_webgisclient/sql2json/views/trafo/trafo_resource_role_v.sql
+:100644 000000 cd2a884be8f543c790dfb33182cfe3dbcb12e5c7 0000000000000000000000000000000000000000 D	api_webgisclient/sql2json/views/trafo/trafo_tableview_attr_with_geo_v.sql
+:100644 000000 fbf1283de9ffe471eea38fa349078ba402b9d5b6 0000000000000000000000000000000000000000 D	api_webgisclient/sql2json/views/trafo/trafo_wms_geotable_v.sql
+:100644 000000 331113185adfc9771564f92ffdbfe49fe8e8da1e 0000000000000000000000000000000000000000 D	api_webgisclient/sql2json/views/trafo/trafo_wms_layer_v.sql
+:100644 000000 7501dc14265a7ce9672df822996950664b3876f9 0000000000000000000000000000000000000000 D	api_webgisclient/sql2json/views/trafo/trafo_wms_rootlayer_v.sql
+:100644 000000 c83ca49462f6e6fa226ebcee6bd0bf45a074baa9 0000000000000000000000000000000000000000 D	api_webgisclient/sql2json/views/trafo/trafo_wms_tableview_v.sql
+commit e2950e713ccf6e4ea0c01dd20416986de9a6c1a7
+tree 025b3a39a5b4104f66309ea3eebef657352ca97f
+parent d435d8407b2dee754eee71edce89f3b753a38e70
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-14 17:20:09 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-14 17:20:09 +0200
+
+    [qwc-service] escape shell variable
+
+
+:100644 100644 b9edc293d96c9b05885024555798d224a2392c40 c0b3fe5a69999e5a76380af0e062c12d60b8febf M	api_webgisclient/qwc-service/Jenkinsfile
+commit d435d8407b2dee754eee71edce89f3b753a38e70
+tree f8a654e10f1df709f3b765d0f8f3e4652ca4ec49
+parent 545e47f8a156a5909cd69dfe826c18a9e5260b21
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-14 15:13:00 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-14 15:13:00 +0200
+
+    [qwc-service] added task <create search icons>
+
+
+:100644 100644 ef140f4942c1f2883c9d3e7cb79dd0ec50f17d5f b9edc293d96c9b05885024555798d224a2392c40 M	api_webgisclient/qwc-service/Jenkinsfile
+commit 545e47f8a156a5909cd69dfe826c18a9e5260b21
+tree d363d048e069c2108603f01554ebc072bc90086b
+parent 417d7b686257600a01934ccb4dde691516155329
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-14 13:21:51 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-14 13:21:51 +0200
+
+    [qwc-service] test new task
+
+
+:100644 100644 163c4207f8a0d0aefb9c6f2556ea0d2af4de403c ef140f4942c1f2883c9d3e7cb79dd0ec50f17d5f M	api_webgisclient/qwc-service/Jenkinsfile
+commit 417d7b686257600a01934ccb4dde691516155329
+tree 3ac951c4c04a6a57cb8c2f285db6681bcadbd4d8
+parent 2c74bbf26aa258b61f52ef52250033359225e8db
+author pfeimich <mpfeiffer1975@gmail.com> 2022-09-12 12:20:38 +0200
+committer pfeimich <mpfeiffer1975@gmail.com> 2022-09-12 12:20:38 +0200
+
+    [qwc-service] remove read-only and change mountpoint for qwc-assets-claim
+
+
+:100644 100644 a3bb70538d2dcf0cf14db3902bb71609808beacb 79f7acb66e895a81c7845dde53b553559a74d564 M	api_webgisclient/qwc-service/deployment/deploymentconfig.yaml
+commit 2c74bbf26aa258b61f52ef52250033359225e8db
+tree c78842e6d08a1271fc02433e0633c26518a81433
+parent 42d24882488b13ac689ebdf710355d5723ffa5be
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-08 12:25:13 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-08 12:25:13 +0200
+
+    [qwc-service] optimized sql syntax
+
+
+:100644 100644 31ab0bf7caf9062fa7a7afae9713b96c98df00e4 4e26d5372efa9abcf36552f91a2dbbdb7a2bfd69 M	api_webgisclient/qwc-service/sql2json/foreground_map.sql
+commit 42d24882488b13ac689ebdf710355d5723ffa5be
+tree e2f5263dcffd824552e59635889c1f7d625ab2b1
+parent bbbc206e32b7184d30cfdf7955a86ef1b55593e7
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-07 18:01:18 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-07 18:01:18 +0200
+
+    [qwc-service] change param name
+
+
+:100644 100644 4d445276a9201d3cbe3b9d95a2c332e3656283e8 31ab0bf7caf9062fa7a7afae9713b96c98df00e4 M	api_webgisclient/qwc-service/sql2json/foreground_map.sql
+commit bbbc206e32b7184d30cfdf7955a86ef1b55593e7
+tree 22794c97f250780f8ac0ff63618f2615383902a5
+parent ac96a9a72050854e0b3438341cee713fe11bc5df
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-07 17:48:08 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-07 17:48:08 +0200
+
+    [qwc-service] fixed logical wrong sql syntax
+
+
+:100644 100644 98b59227e39cbf757fe5e2f3d1a1aeb7ecdf81fb 4d445276a9201d3cbe3b9d95a2c332e3656283e8 M	api_webgisclient/qwc-service/sql2json/foreground_map.sql
+commit ac96a9a72050854e0b3438341cee713fe11bc5df
+tree e3a128c760001efe9bea3a071fbffc622c1a0643
+parent 87ab224445c3d856be1d5f393efc1ee0256819f3
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-07 17:19:02 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-07 17:19:02 +0200
+
+    [qwc-service] remove jsonb_strip_nulls
+
+
+:100644 100644 cbef9227836e92a7fd5127e8033cba489a18ad99 98b59227e39cbf757fe5e2f3d1a1aeb7ecdf81fb M	api_webgisclient/qwc-service/sql2json/foreground_map.sql
+commit 87ab224445c3d856be1d5f393efc1ee0256819f3
+tree 1ae9f3ed126458ba56107e4b742c464c53afbe96
+parent d0c3735a9b6dab3ab1528c3363d15a789b21b042
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-07 17:07:03 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-07 17:07:03 +0200
+
+    [qwc-service] fixed syntax error
+
+
+:100644 100644 52a5559f64638f8d8ee65508e7ad61cc3968a4a3 cbef9227836e92a7fd5127e8033cba489a18ad99 M	api_webgisclient/qwc-service/sql2json/foreground_map.sql
+commit d0c3735a9b6dab3ab1528c3363d15a789b21b042
+tree 46cfbfc4e4833b8c6df2928c0d7c988f46764916
+parent aa22d6b65407bfa7d8a8d5e1782b9a8663c12c07
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-07 16:57:40 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-07 16:57:40 +0200
+
+    [qwc-service] add searchterm to sublayers
+
+
+:100644 100644 ff754208bf070d5a8ad597cc10d6a10ad4ca367b 52a5559f64638f8d8ee65508e7ad61cc3968a4a3 M	api_webgisclient/qwc-service/sql2json/foreground_map.sql
+commit aa22d6b65407bfa7d8a8d5e1782b9a8663c12c07
+tree 75aeb6bd39d9783c26bc62e78467ea63056fdb96
+parent 5a1fb194db5e4b35b9c76c6152060b17cb7ab983
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-06 17:58:48 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-06 17:58:48 +0200
+
+    [qwc-service] enable displayInlineImages
+
+
+:100644 100644 13ed3eef2de3be55643b144bef906f9adce97e90 2686c41c825fd5fbeba11f6ec5d55bd4a0180d11 M	api_webgisclient/qwc-service/sql2json/template.json
+commit 5a1fb194db5e4b35b9c76c6152060b17cb7ab983
+tree a0427dc2455d4712c10bb48658477ca9cbf4713f
+parent a70598ac269f5c5bfba5c4688bc67ecf6836a2c6
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-06 17:45:36 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-06 17:45:36 +0200
+
+    [update requirements] mapviewer and featureinfo-service
+
+
+:100644 100644 c9b1063ccd80540533f9edb5b4dd1d73a7957eb1 ac5c6bf27e73ddffdff9603adf2bffb86c0c1d36 M	api_webgisclient/requirements.txt
+commit a70598ac269f5c5bfba5c4688bc67ecf6836a2c6
+tree 62e34bd424f769fffa32f25b43c7ba891f889698
+parent 73638fcd609f508b9bfd9780a90dbb9d5849f74f
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-06 11:16:50 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-06 11:16:50 +0200
+
+    [sql2json] fixed regressions branch ext_in_group_akt and attr_alias_wms
+
+
+:100644 100644 01b4c4fd731c11280555c534c358d2a4ee1fb6bd bfd4eb7aa4ef9111616b63e1998cf42920c33107 M	api_webgisclient/sql2json/views/solr/solr_layer_base_v.sql
+:100644 100644 22c2a28935f29ec52f31afa04e6d34f924acb2d9 331113185adfc9771564f92ffdbfe49fe8e8da1e M	api_webgisclient/sql2json/views/trafo/trafo_wms_layer_v.sql
+:100644 100644 a2f156bdf1abd5952c0e0c37d8caae2a32f7016a c83ca49462f6e6fa226ebcee6bd0bf45a074baa9 M	api_webgisclient/sql2json/views/trafo/trafo_wms_tableview_v.sql
+commit 73638fcd609f508b9bfd9780a90dbb9d5849f74f
+tree 0765fa1786dc68a0ab16d714fdb0ed82a2ba6c7a
+parent 31527ffec5526f8b42010733dfe58d7bfdefee24
+author uncoyote <jeker.git@outlook.de> 2022-08-31 12:59:59 +0200
+committer uncoyote <jeker.git@outlook.de> 2022-08-31 12:59:59 +0200
+
+    groom trafo drop and grant sql
+
+
+:100644 100644 08662421bfd3a702117b4296711267ad4b883e60 c9eb4ee951a7eb5bae3aa79ddcc08b977babb522 M	api_webgisclient/sql2json/views/README.md
+:100644 100644 d43950e791d9f69f86daaae3289ea7ccbe8d573b 69810cf70ca336a01eb60e21c6939f06b649a82f M	api_webgisclient/sql2json/views/trafo/drop_trafo_views.sql
+:100644 100644 a16f14dd7fdd74189328e2bfc90b256550ce22ea 58b5a2976af39470a28b3b63f1105febfc272e41 M	api_webgisclient/sql2json/views/trafo/grant_trafo_views.sql
+commit 31527ffec5526f8b42010733dfe58d7bfdefee24
+tree 63d83133d02ca2be159b64a665b08f55389308e4
+parent 12f7e98b5f136f5cfc67c74a5399f5ee75e6c867
+author uncoyote <jeker.git@outlook.de> 2022-08-31 11:50:41 +0200
+committer uncoyote <jeker.git@outlook.de> 2022-08-31 11:50:41 +0200
+
+    created single psql cmd for views
+
+
+:100644 100644 deb3d8a84ab8427f72a066de6b79ad59b1563188 08662421bfd3a702117b4296711267ad4b883e60 M	api_webgisclient/sql2json/views/README.md
+:000000 100644 0000000000000000000000000000000000000000 fef822f03724a7fb1a3c5e7e6c3733f768c3520c A	api_webgisclient/sql2json/views/solr/drop_solr_views.sql
+:000000 100644 0000000000000000000000000000000000000000 7a56b793970f2405c95115bf9878d817d7fdc3ad A	api_webgisclient/sql2json/views/solr/grant_solr_views.sql
+:100644 100644 4587e0873a94078250e082a61ac99192489ff012 45b99cbdc40165b0c942abfad3685a3ba72922ea M	api_webgisclient/sql2json/views/solr/solr_layer_background_v.sql
+:100644 100644 d0a558e7ff2259a7a4f99dd3008d4dbf5bed73c5 01b4c4fd731c11280555c534c358d2a4ee1fb6bd M	api_webgisclient/sql2json/views/solr/solr_layer_base_v.sql
+:100644 100644 57482e5ee01f407c48f40eee344a04d700773039 8ce52cf4a9c4b84ac702b7c08a54ccc030a27753 M	api_webgisclient/sql2json/views/solr/solr_layer_foreground_v.sql
+:000000 100644 0000000000000000000000000000000000000000 d43950e791d9f69f86daaae3289ea7ccbe8d573b A	api_webgisclient/sql2json/views/trafo/drop_trafo_views.sql
+:000000 100644 0000000000000000000000000000000000000000 a16f14dd7fdd74189328e2bfc90b256550ce22ea A	api_webgisclient/sql2json/views/trafo/grant_trafo_views.sql
+:100644 100644 bbfca2d173db8d76359e28f5e98bd86f196caba7 058ecb043f14ba68d3093207bf680ce34f034ba1 M	api_webgisclient/sql2json/views/trafo/trafo_published_dp_v.sql
+:100644 100644 5e589f566443ebe0427af781ed12472eb4b69ce7 92b0db40703b9504a3df13f3e4a53e49a92f72a4 M	api_webgisclient/sql2json/views/trafo/trafo_resource_role_v.sql
+:100644 100644 84b040160ca1c6f0c6ecdf72f0fe34cbc12f6c83 cd2a884be8f543c790dfb33182cfe3dbcb12e5c7 M	api_webgisclient/sql2json/views/trafo/trafo_tableview_attr_with_geo_v.sql
+:100644 100644 1f2ad456ace26854b6dd1ad1fa56eb3f0400e828 fbf1283de9ffe471eea38fa349078ba402b9d5b6 M	api_webgisclient/sql2json/views/trafo/trafo_wms_geotable_v.sql
+:100644 100644 0fcb2721486922f63bf98c9d49942e44aca445a2 22c2a28935f29ec52f31afa04e6d34f924acb2d9 M	api_webgisclient/sql2json/views/trafo/trafo_wms_layer_v.sql
+:100644 100644 6cde9b84c598a8d35d4882741b9c9c9422f768af 7501dc14265a7ce9672df822996950664b3876f9 M	api_webgisclient/sql2json/views/trafo/trafo_wms_rootlayer_v.sql
+:100644 100644 35e7d664f8efe12c784c51e51203d106f977ee89 a2f156bdf1abd5952c0e0c37d8caae2a32f7016a M	api_webgisclient/sql2json/views/trafo/trafo_wms_tableview_v.sql
+commit 12f7e98b5f136f5cfc67c74a5399f5ee75e6c867
+tree d4dac28edae0df1260cd8045b3e3274afae0070f
+parent 8f49591a0bebef14b5a9e719ddfa6162ae1c5089
+author uncoyote <jeker.git@outlook.de> 2022-08-16 15:47:33 +0200
+committer uncoyote <jeker.git@outlook.de> 2022-08-16 15:47:33 +0200
+
+    search service
+
+
+:100644 100644 83d6b844258c74fa076658cb1d0fdc7e2a1c78b4 2a57bae5e26b95d3ee37dacc604faa7cb85f4945 M	api_webgisclient/search-service/sql2json/facets.sql
+commit 8f49591a0bebef14b5a9e719ddfa6162ae1c5089
+tree 4334dcc001ef06ffff07f92287330a6f7fd48333
+parent 6eb4ffe772f7a762ad20c2a56338720683914fdd
+author uncoyote <jeker.git@outlook.de> 2022-08-16 15:46:02 +0200
+committer uncoyote <jeker.git@outlook.de> 2022-08-16 15:46:02 +0200
+
+    qwc service
+
+
+:100644 100644 f37f3e9fc157b5d4f25a5775481f843141cc7250 ff754208bf070d5a8ad597cc10d6a10ad4ca367b M	api_webgisclient/qwc-service/sql2json/foreground_map.sql
+commit 6eb4ffe772f7a762ad20c2a56338720683914fdd
+tree 78f512eabc2de03d2703700ca6d5530b5db57866
+parent 52ec09bd26b59e88163d55a228ec18d610e3f207
+author uncoyote <jeker.git@outlook.de> 2022-08-16 15:39:26 +0200
+committer uncoyote <jeker.git@outlook.de> 2022-08-16 15:39:26 +0200
+
+    upd qgs json
+
+
+:100644 100644 107e35a771049215ee883176f3ab75eb990f52a0 a7e7f1e45c998157987533bbbb664a9e0de7d016 M	api_webgisclient/qgis-server/sql2json/wfs-qgs-content/wfs_layer.sql
+commit 52ec09bd26b59e88163d55a228ec18d610e3f207
+tree 515f2a0431c80c2769d9fa6510d512947ada2820
+parent 45fd834b955cce27b1aeb827006f275b5d1527ad
+author uncoyote <jeker.git@outlook.de> 2022-08-16 15:35:36 +0200
+committer uncoyote <jeker.git@outlook.de> 2022-08-16 15:35:36 +0200
+
+    upd permissions
+
+
+:100644 100644 80e7f4575f7bc11b07df201724750bd8e2883e38 1c47880d9205cfcc5ca61e5e097250da2b5847cd M	api_webgisclient/permission/sql2json/dataprod_properties.sql
+:100644 100644 dcabb042943a714ecf9306021a03dd872c54f3ff 8cad28614d0402e5ce6600c928de99414f4bd328 M	api_webgisclient/permission/sql2json/role_permissions.sql
+commit 45fd834b955cce27b1aeb827006f275b5d1527ad
+tree 665bf960518d72c5ab84c47981f68dab88ecf9f3
+parent 00f54ce4e109596d010a721b52cccbb90f16b583
+author uncoyote <jeker.git@outlook.de> 2022-08-16 15:31:54 +0200
+committer uncoyote <jeker.git@outlook.de> 2022-08-16 15:31:54 +0200
+
+    upd ogc srv
+
+
+:100644 100644 68b726b6f80c1ea8041c11e1b25f6f3dce5b0c69 3caaaaf110dd46eddbb1a7e7de45a835794246db M	api_webgisclient/ogc-service/sql2json/wfs_layer.sql
+commit 00f54ce4e109596d010a721b52cccbb90f16b583
+tree f96083da01eb8f9ea4ded27fa3f5fc72df09ac51
+parent 1b0924aadf7871003a2aa8417fac0148550750fc
+author uncoyote <jeker.git@outlook.de> 2022-08-16 15:26:05 +0200
+committer uncoyote <jeker.git@outlook.de> 2022-08-16 15:26:05 +0200
+
+    upd feat info
+
+
+:100644 100644 d1fcc82a70a5a9ffff694edb63cd8d9fa015e57c a3cf9202b0e33c177cc9bfde7fc9f4bb722df288 M	api_webgisclient/featureinfo-service/sql2json/feat_info.sql
+commit 1b0924aadf7871003a2aa8417fac0148550750fc
+tree e9c8fbf39c8897f63a07030f3b1c28c2dd687418
+parent c849025cd2d838d670105da5885e2f686e624e24
+author uncoyote <jeker.git@outlook.de> 2022-08-16 15:22:11 +0200
+committer uncoyote <jeker.git@outlook.de> 2022-08-16 15:22:11 +0200
+
+    dprod
+
+
+:100644 100644 9e251a1b775c037326f3c6b9ec663f32506b5ef6 6e9349bfd0a472898ae808532a5feecc240a893c M	api_webgisclient/dataproduct-service/sql2json/dataprod.sql
+commit c849025cd2d838d670105da5885e2f686e624e24
+tree f217e781fa5fe494ec9c26d8fe3faa06a3acd65d
+parent 948c49a1c8db24a4a54b87213674f315be464e99
+author uncoyote <jeker.git@outlook.de> 2022-08-16 15:14:43 +0200
+committer uncoyote <jeker.git@outlook.de> 2022-08-16 15:14:43 +0200
+
+    upd datasrv
+
+
+:100644 100644 08eb8c2925324befedfe08458e4493aab9b66551 8f19f7d443342c839be0a57b0c042976a500291c M	api_webgisclient/data-service/sql2json/tableview.sql
+commit 948c49a1c8db24a4a54b87213674f315be464e99
+tree 9da1a2c7467823c526783c8d384e565f75bd0d3f
+parent c3a8a657cb9ef780a6d86015829b12d0e34da736
+author uncoyote <jeker.git@outlook.de> 2022-08-16 15:12:55 +0200
+committer uncoyote <jeker.git@outlook.de> 2022-08-16 15:12:55 +0200
+
+    upd trafo views
+
+
+:100644 100644 3fa33ddb490eb644a16be88510c056c10a11afa6 bbfca2d173db8d76359e28f5e98bd86f196caba7 M	api_webgisclient/sql2json/views/trafo/trafo_published_dp_v.sql
+:100644 100644 91eb87d3201875b52e57cd2590e81d9b0919808c 1f2ad456ace26854b6dd1ad1fa56eb3f0400e828 M	api_webgisclient/sql2json/views/trafo/trafo_wms_geotable_v.sql
+:100644 100644 e8d55500f02bd1b5bfa3fe57f441d457846bd80f 0fcb2721486922f63bf98c9d49942e44aca445a2 M	api_webgisclient/sql2json/views/trafo/trafo_wms_layer_v.sql
+:100644 100644 f3389508d64df065552b7a77c2d1d2f802eb9f90 35e7d664f8efe12c784c51e51203d106f977ee89 M	api_webgisclient/sql2json/views/trafo/trafo_wms_tableview_v.sql
+commit c3a8a657cb9ef780a6d86015829b12d0e34da736
+tree 44c687244b8848cce2a7b7a1b7b24b7f1acf72f5
+parent 9a162dd92f8f3c97aefddc0066ce97d8a8e5102b
+author uncoyote <jeker.git@outlook.de> 2022-08-16 13:44:55 +0200
+committer uncoyote <jeker.git@outlook.de> 2022-08-16 13:44:55 +0200
+
+    upd solr view
+
+
+:100644 100644 8fb2faeb096c097dbb2affd5b0fccf7b77a0aa45 d0a558e7ff2259a7a4f99dd3008d4dbf5bed73c5 M	api_webgisclient/sql2json/views/solr/solr_layer_base_v.sql

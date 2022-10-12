@@ -1,0 +1,35 @@
+commit f6b9c1452481dd1542f0d6c8de70c50e9c72a89f
+tree e8b32264a58290277677129ed7a8ae81ba91c202
+parent 6ddbc4ba113346c982c2c2202b871fd1480dfe42
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-13 12:32:00 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-13 12:32:00 +0200
+
+    [mapcache] Don't set a CPU limit
+
+
+:100644 100644 6246b5442730b4d0c1114a6ce4fc8bd923ba84cc e688d5d5ff9349aaf8141fb32a82f92b770af71d M	mapcache/mapcache_production.params
+:100644 100644 f833f179efca35b90b0b1451fb18400197e0ae90 51394a64e609ff517d29ec4cd7773128e7f5bf6a M	mapcache/qgis-server_production.params
+commit 6ddbc4ba113346c982c2c2202b871fd1480dfe42
+tree ce6819f5b36032c8a8204b305251fd3aa1aec621
+parent eebbcd9c50a089472a8cbc5160963c9b5d5621e2
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-12 18:01:41 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-12 18:01:41 +0200
+
+    [mapcache] Add Jenkinsfile
+
+
+:000000 100644 0000000000000000000000000000000000000000 68e36a04bdc508fdd0b9154a26136658f3f0dbcc A	mapcache/Jenkinsfile
+commit eebbcd9c50a089472a8cbc5160963c9b5d5621e2
+tree 66cbab9bc7a901be86ad1e108745c24e644112f4
+parent 2d5c61e24bd30d7f3b846c767db6f37151908286
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-12 15:28:54 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-12 15:28:54 +0200
+
+    [mapcache] Update qgis-server deploymentconfig
+
+
+:100644 100644 21f27e12c7f93e48856c0ca1bc83eb46ea63cd26 73fc4acb3e549c6078e263a5b62a5ea940fe41cc M	mapcache/README.md
+:100644 100644 b128d13b1dd67e6ceff3c61d14be54c210ab1b05 f760895d0ca79584892f71987bf9ae99c49b3434 M	mapcache/qgis-server.yaml
+:000000 100644 0000000000000000000000000000000000000000 3030ca86a61c6da1c4229d66ec2f4692a482328f A	mapcache/qgis-server_development.params
+:000000 100644 0000000000000000000000000000000000000000 f833f179efca35b90b0b1451fb18400197e0ae90 A	mapcache/qgis-server_production.params
+:000000 100644 0000000000000000000000000000000000000000 78dc8c6692054cde829980591db729102184f0ad A	mapcache/qgis-server_test.params

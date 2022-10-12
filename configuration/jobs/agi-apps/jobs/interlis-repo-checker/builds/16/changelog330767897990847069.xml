@@ -1,0 +1,21 @@
+commit 75ac9cc6a56148b04b6e9c9c9d4be9b9b04139b8
+tree 3bae1c63b71995e52b0a36408d4c09a6cedf79cb
+parent 3b9a643a4d1460e3b7de7697ebd4dbee432d0687
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 12:04:50 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 12:04:50 +0200
+
+    [interlis-repo-checker] Fix image tag
+
+
+:100644 100644 be4331757179e042ea98a36179cf87ceda7b5b6c 1f59409b0f4463f129ac9aa4787012ed839d395b M	interlis-repo-checker/interlis-repo-checker_integration.params
+:100644 100644 93ff4650b87242907dea0a6c6659fdd81939de10 c11c08736d872f6d0b789594073b417fcd247c89 M	interlis-repo-checker/interlis-repo-checker_production.params
+commit 3b9a643a4d1460e3b7de7697ebd4dbee432d0687
+tree 5b1ab1376e50fcb89aa603687d883d798f195290
+parent c13c6756d51fba4fdc06b3fec5b911b1d2d68020
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 12:03:48 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 12:03:48 +0200
+
+    [interlis-repo-checker] Fixup: Increase cpu limit (prod) instead
+
+
+:100644 100644 a79dfb436e257441f984239670ae5c954607f46b 93ff4650b87242907dea0a6c6659fdd81939de10 M	interlis-repo-checker/interlis-repo-checker_production.params

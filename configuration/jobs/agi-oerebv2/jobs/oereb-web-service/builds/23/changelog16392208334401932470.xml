@@ -1,0 +1,9 @@
+commit cf92a1c927ef52c6c67a4bd7d335eae9c54b382b
+tree 1847da8e027c24e77cd54e2588e5e6887dc1086e
+parent 7e3320dea8f9ff87790f5fe9ba8b9e8c959a13fa
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-11 10:04:57 +0200
+committer GitHub <noreply@github.com> 2022-10-11 10:04:57 +0200
+
+    [oereb-web-service] bump prod version
+
+:100644 100644 531d647984fdc7007cab8f47c2d6122cc65a6875 05c4e058b61f766cb456f081ddd8482b8794b0fe M	oereb-web-service/oereb-web-service_production.params

@@ -1,0 +1,21 @@
+commit 469315365027df9b26d1eb62c6bd289ed6bf6b5e
+tree e6cfc9047c9f6223f87816415ea5e7ee510211be
+parent 6c084fdc6e16f886fa8356c6d02d21b6467f10b4
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-05 09:08:04 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-05 09:08:04 +0200
+
+    [sodata-preview] Update image tag
+
+
+:100644 100644 7e2fbc3e807a6cf060151b300cc0c3a88a48c90c e9e51cc6250779a5b865adf71b6808cdcea5b23b M	sodata-preview/sodata-preview_integration.params
+:100644 100644 df70e649635a437e6b67ff2059cb837db49788ad 11f8b421a047204c57c70ace1fa81f9c1b5adffd M	sodata-preview/sodata-preview_production.params
+commit 6c084fdc6e16f886fa8356c6d02d21b6467f10b4
+tree e1046a2d09a96ea536647e1a7d688659496f2e96
+parent a602ba4867002cf1ea51ea935624bd2eca6acddc
+author edigonzales <edi.gonzales@gmail.com> 2022-09-05 08:40:54 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-05 08:40:54 +0200
+
+    [modelfinder] update image tag
+
+
+:100644 100644 148b7391f329393f7b731ce5ac7db44ab59483a4 6e85f0460658b9f756e9e6e4f9e5c2f60743969a M	modelfinder/modelfinder_production.params

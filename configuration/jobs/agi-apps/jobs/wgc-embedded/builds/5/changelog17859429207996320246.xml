@@ -1,0 +1,408 @@
+commit adb27b6ee6c3edf6178ff02c81246e32f0de79bd
+tree 76a991675e070f3cc055133e25c6e97228ebd153
+parent 97132edbcdc719636c52a1c1534deaeacdfcbf6f
+author edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:51:45 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:51:45 +0200
+
+    [standortkarte] bump version
+
+
+:100644 100644 9b23d26aa6f11ed067fc2125ee8be6897a8451aa 1e4a15327887f0dae789ca119e35f2cf528850f3 M	standortkarte/standortkarte_integration.params
+:100644 100644 da9902f7d99ad6d4761ed215f1c892bf189eeb91 a8be20639c3a58b049443ff751bcd37d035a378d M	standortkarte/standortkarte_production.params
+commit 97132edbcdc719636c52a1c1534deaeacdfcbf6f
+tree 27f1dc159d22bb69ef0faf80a99823409d6de7cf
+parent 2f650dc514a31f122d4f817851b1c3045a478c42
+author edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:45:29 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:45:29 +0200
+
+    [modelfinder] bump version
+
+
+:100644 100644 24c6bb7f8f90950171dd3fec9e3beaafe2737098 0b81445a0bd513c1bd8548010b8cd3831c5ae1f2 M	modelfinder/modelfinder_integration.params
+:100644 100644 6e85f0460658b9f756e9e6e4f9e5c2f60743969a efacc09fad61e2a5191c9d04c399847008f463fe M	modelfinder/modelfinder_production.params
+commit 2f650dc514a31f122d4f817851b1c3045a478c42
+tree 1a3df274ce093e231d9b38d989c74317863f3646
+parent 4a714674ac23bd8f2bd9eecf19689ebd0ada14da
+author edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:34:14 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:34:14 +0200
+
+    [standortkarte] bump version
+
+
+:100644 100644 96b7a78a4a7317cf906beec5c2f889917765cc0f 9b23d26aa6f11ed067fc2125ee8be6897a8451aa M	standortkarte/standortkarte_integration.params
+:100644 100644 1196808fb1d1b3012b0129b25fb77662b210074d da9902f7d99ad6d4761ed215f1c892bf189eeb91 M	standortkarte/standortkarte_production.params
+commit 8a43f846f227bcb71ab478bf3644ac37c5f2a625
+tree c456918e164bf7dfcf6e8202bb30d4e619658885
+parent 489a7ffd215f6fa85367c60428d5a7b7f9089b0b
+author edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:12:15 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:12:15 +0200
+
+    [sodata-preview] bump version
+
+
+:100644 100644 5dae2fa65d897d2327cb55d16ba9f1f9f73a6851 563fd56c57022891abcae60eb73292bf9a5b7b9a M	sodata-preview/sodata-preview_integration.params
+:100644 100644 8734dc40c5cd2661eeb6d796a35ac7d9fff14c63 f0062b713ce0414e66c8bc7914b9eace7993ee1f M	sodata-preview/sodata-preview_production.params
+commit c5015340489545bd9d72db6e52978d2aa1c78232
+tree b2b1c4917220a296aa8eb0c88a7ea712b7b4559d
+parent 6f6a37adf3f48545dc2aa9c5f82fdeab4380eb08
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-08 09:17:56 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-08 09:17:56 +0200
+
+    [gretl] Set tag for gretl-2.2 pod template to 2.2.258
+
+
+:100644 100644 fb96ee7a00d346e3bb2e7cd709b22eacad6bc1ec 45a82ea3a6987a336b6939eaf7f561259604ef12 M	gretl/gretl_integration.params
+:100644 100644 7fc3fb394b665e934110ca95a9354bef66f60f4a 297561c7378647dc8bd14c91fc91ab9210f554af M	gretl/gretl_production.params
+commit 6f6a37adf3f48545dc2aa9c5f82fdeab4380eb08
+tree f849cc2eec1159a0f35fbad4ccc374ece064417a
+parent 489a7ffd215f6fa85367c60428d5a7b7f9089b0b
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-08 09:06:21 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-08 09:06:21 +0200
+
+    [gretl] Add parameter for pod template name for additional GRETL version
+    
+    Pod template name can now be independent from image tag
+
+
+:100644 100644 a8c7cdc1499b5cbe1de845aaf0a7764fd654a554 f0fcae29dff9a1edaa525634fca0704292e95891 M	gretl/gretl-pod-template.yaml
+:100644 100644 e5093a199231bff6f1e644a28d38de00e7520b72 fb96ee7a00d346e3bb2e7cd709b22eacad6bc1ec M	gretl/gretl_integration.params
+:100644 100644 8ac0f9773a6623b006f1839a31be7659756a0cef 7fc3fb394b665e934110ca95a9354bef66f60f4a M	gretl/gretl_production.params
+:100644 100644 ba23d883433b32843f431a9fdaff3b653fe1a091 550db9996fee96b3aba2665431e2ff0573308b78 M	gretl/gretl_test.params
+commit 489a7ffd215f6fa85367c60428d5a7b7f9089b0b
+tree dab49ff825cf39f8ed91e19b567b0dddc536e0ba
+parent c8a8b7607aef1eb286ac916788a3080003aeaaa2
+author edigonzales <edi.gonzales@gmail.com> 2022-09-07 09:55:59 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-07 09:55:59 +0200
+
+    [sodata-preview] bump version
+
+
+:100644 100644 e9e51cc6250779a5b865adf71b6808cdcea5b23b 5dae2fa65d897d2327cb55d16ba9f1f9f73a6851 M	sodata-preview/sodata-preview_integration.params
+:100644 100644 11f8b421a047204c57c70ace1fa81f9c1b5adffd 8734dc40c5cd2661eeb6d796a35ac7d9fff14c63 M	sodata-preview/sodata-preview_production.params
+commit 920c280c52de158d65df1d53ca2a86d5e840b15d
+tree e6cfc9047c9f6223f87816415ea5e7ee510211be
+parent 6c084fdc6e16f886fa8356c6d02d21b6467f10b4
+author edigonzales <edi.gonzales@gmail.com> 2022-09-05 09:14:38 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-05 09:14:38 +0200
+
+    [sodata-preview] update version
+
+
+:100644 100644 7e2fbc3e807a6cf060151b300cc0c3a88a48c90c e9e51cc6250779a5b865adf71b6808cdcea5b23b M	sodata-preview/sodata-preview_integration.params
+:100644 100644 df70e649635a437e6b67ff2059cb837db49788ad 11f8b421a047204c57c70ace1fa81f9c1b5adffd M	sodata-preview/sodata-preview_production.params
+commit 469315365027df9b26d1eb62c6bd289ed6bf6b5e
+tree e6cfc9047c9f6223f87816415ea5e7ee510211be
+parent 6c084fdc6e16f886fa8356c6d02d21b6467f10b4
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-05 09:08:04 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-05 09:08:04 +0200
+
+    [sodata-preview] Update image tag
+
+
+:100644 100644 7e2fbc3e807a6cf060151b300cc0c3a88a48c90c e9e51cc6250779a5b865adf71b6808cdcea5b23b M	sodata-preview/sodata-preview_integration.params
+:100644 100644 df70e649635a437e6b67ff2059cb837db49788ad 11f8b421a047204c57c70ace1fa81f9c1b5adffd M	sodata-preview/sodata-preview_production.params
+commit 6c084fdc6e16f886fa8356c6d02d21b6467f10b4
+tree e1046a2d09a96ea536647e1a7d688659496f2e96
+parent a602ba4867002cf1ea51ea935624bd2eca6acddc
+author edigonzales <edi.gonzales@gmail.com> 2022-09-05 08:40:54 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-05 08:40:54 +0200
+
+    [modelfinder] update image tag
+
+
+:100644 100644 148b7391f329393f7b731ce5ac7db44ab59483a4 6e85f0460658b9f756e9e6e4f9e5c2f60743969a M	modelfinder/modelfinder_production.params
+commit a602ba4867002cf1ea51ea935624bd2eca6acddc
+tree c0a056072c37361c21029b6c1f5b3628ea40ad2d
+parent a30310c4de1610c6fbd32b619a162fa525ff0a2e
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-02 11:07:51 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-02 11:36:05 +0200
+
+    [sodata-preview] Add sodata-preview
+
+
+:000000 100644 0000000000000000000000000000000000000000 bcd68f6b6dad132a99dfe71eb47abc0672b65419 A	sodata-preview/README.md
+:000000 100644 0000000000000000000000000000000000000000 cefc742d444f4efff2dc3d39edb94dfd7dcac06a A	sodata-preview/sodata-preview.yaml
+:000000 100644 0000000000000000000000000000000000000000 7e2fbc3e807a6cf060151b300cc0c3a88a48c90c A	sodata-preview/sodata-preview_integration.params
+:000000 100644 0000000000000000000000000000000000000000 df70e649635a437e6b67ff2059cb837db49788ad A	sodata-preview/sodata-preview_production.params
+:000000 100644 0000000000000000000000000000000000000000 9876c7e74c879684eb9874efdb83112fb44beda8 A	sodata-preview/sodata-preview_test.params
+commit a30310c4de1610c6fbd32b619a162fa525ff0a2e
+tree c38fc150f1c19269ae9a77496c6b5cc00da49a00
+parent 8ed57c82da632fdf9b0a1d465f812565708bd416
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 14:38:53 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 14:38:53 +0200
+
+    [interlis-repo-checker] Reset CPU limit
+
+
+:100644 100644 8968e59aab9805b78edea626c7992f507630f233 0ef2d1569845796c515f8dd7707bf6ecbc8e8949 M	interlis-repo-checker/interlis-repo-checker_production.params
+commit 8ed57c82da632fdf9b0a1d465f812565708bd416
+tree d757e91a4ccc14adb587142d8b86ae6a9ab0df2b
+parent 75ac9cc6a56148b04b6e9c9c9d4be9b9b04139b8
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 14:01:16 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 14:01:16 +0200
+
+    [interlis-repo-checker] Expose log level env vars
+
+
+:100644 100644 db414d406bae3305ba2a711a2d58e969fd54d7f5 a04db42060a411b7ac0d0fc3307b04e3160a920b M	interlis-repo-checker/interlis-repo-checker.yaml
+:100644 100644 1f59409b0f4463f129ac9aa4787012ed839d395b 0ef2d1569845796c515f8dd7707bf6ecbc8e8949 M	interlis-repo-checker/interlis-repo-checker_integration.params
+:100644 100644 c11c08736d872f6d0b789594073b417fcd247c89 8968e59aab9805b78edea626c7992f507630f233 M	interlis-repo-checker/interlis-repo-checker_production.params
+:100644 100644 63583b387e285974383cb2a0b399d029f9a21a3e b7165c9d277a51945d5abb1c2ba8cce17dc2f787 M	interlis-repo-checker/interlis-repo-checker_test.params
+commit 75ac9cc6a56148b04b6e9c9c9d4be9b9b04139b8
+tree 3bae1c63b71995e52b0a36408d4c09a6cedf79cb
+parent 3b9a643a4d1460e3b7de7697ebd4dbee432d0687
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 12:04:50 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 12:04:50 +0200
+
+    [interlis-repo-checker] Fix image tag
+
+
+:100644 100644 be4331757179e042ea98a36179cf87ceda7b5b6c 1f59409b0f4463f129ac9aa4787012ed839d395b M	interlis-repo-checker/interlis-repo-checker_integration.params
+:100644 100644 93ff4650b87242907dea0a6c6659fdd81939de10 c11c08736d872f6d0b789594073b417fcd247c89 M	interlis-repo-checker/interlis-repo-checker_production.params
+commit 3b9a643a4d1460e3b7de7697ebd4dbee432d0687
+tree 5b1ab1376e50fcb89aa603687d883d798f195290
+parent c13c6756d51fba4fdc06b3fec5b911b1d2d68020
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 12:03:48 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 12:03:48 +0200
+
+    [interlis-repo-checker] Fixup: Increase cpu limit (prod) instead
+
+
+:100644 100644 a79dfb436e257441f984239670ae5c954607f46b 93ff4650b87242907dea0a6c6659fdd81939de10 M	interlis-repo-checker/interlis-repo-checker_production.params
+commit c13c6756d51fba4fdc06b3fec5b911b1d2d68020
+tree a5e0a2007f008fbe325b2ef86e010a3204f4db7d
+parent 20a7bde9b9d5e14643e79f24347fdf1032df4125
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 11:58:07 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 11:58:07 +0200
+
+    [interlis-repo-checker] Increase memory limit (prod)
+    
+    For shorter initialization time
+
+
+:100644 100644 be4331757179e042ea98a36179cf87ceda7b5b6c a79dfb436e257441f984239670ae5c954607f46b M	interlis-repo-checker/interlis-repo-checker_production.params
+commit 20a7bde9b9d5e14643e79f24347fdf1032df4125
+tree e423babe5e5144c3ea36b79a3284b0b0bcfb537a
+parent 91745cd23f799b2b8b9bcd9d5b830da04cdaf8d4
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 11:53:28 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 11:53:28 +0200
+
+    [interlis-repo-checker] Enable app
+
+
+:100644 100644 f5a6afb9da2085e2d10389eca1277b8aa6eda7df be4331757179e042ea98a36179cf87ceda7b5b6c M	interlis-repo-checker/interlis-repo-checker_integration.params
+:100644 100644 abb40d377668c7ad324a673062ab0c3e6cd66608 be4331757179e042ea98a36179cf87ceda7b5b6c M	interlis-repo-checker/interlis-repo-checker_production.params
+:100644 100644 08df8198f2330233ddb17bb266f6b2ced98265e1 63583b387e285974383cb2a0b399d029f9a21a3e M	interlis-repo-checker/interlis-repo-checker_test.params
+commit 91745cd23f799b2b8b9bcd9d5b830da04cdaf8d4
+tree d1d8a38ae339833c285984e9c47361ad805cd637
+parent 1b429d93fb22aa0293ad6ce3ea2a70764e9c34dd
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-08-31 16:40:15 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-08-31 16:40:15 +0200
+
+    [simi-schemareader] Set tag to 2.0(integration)
+
+
+:100644 100644 96b152baacf8f4e6e8872b8c8718b28d11b3a8f8 31552efa1e2b230366c707803121d57fe959ea17 M	simi-schemareader/simi-schemareader_integration.params
+commit 1b429d93fb22aa0293ad6ce3ea2a70764e9c34dd
+tree 5f4dedfa296c9ac5def7b5ebec077cc2663ef686
+parent e463dc87f134ac9a1e99e9be3f5b80d5a3728f60
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-08-31 16:37:44 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-08-31 16:37:44 +0200
+
+    [simi] Set tag to 2.0(integration)
+
+
+:100644 100644 d37872bd57592e7d7a28d830383a4ef2aa468e4b ea2d7796c554b74eb4f2e2eadfafb32f7c2486e5 M	simi/simi_integration.params
+commit e463dc87f134ac9a1e99e9be3f5b80d5a3728f60
+tree 482d555ae23ce99c3e7f27eae76b4d13e8191d7e
+parent 41230662a6ee04b802a271cd0874e74cdbc3bad5
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-08-30 15:33:33 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-08-30 15:33:33 +0200
+
+    [simi] Set tag to 2.0(test)
+
+
+:100644 100644 60cbd26e66a20f93f0da44b24ae629b3164849e5 d434658ca56d8bd9fe44fa1ada27495d245aea43 M	simi/simi_test.params
+commit 41230662a6ee04b802a271cd0874e74cdbc3bad5
+tree e364d55b45b8519401e74bbc52d67c5ab94646a6
+parent 17516e556646c176a0ef35114d2c06caee73ea2d
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-30 11:02:20 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-30 11:02:20 +0200
+
+    [simi-schemareader] Set tag to 2.0 (test)
+
+
+:100644 100644 abb429f34746d645d3f7ca930281a54ad36cbedc 0d749ccbd13e4069340871453212209310d150d7 M	simi-schemareader/simi-schemareader_test.params
+commit 17516e556646c176a0ef35114d2c06caee73ea2d
+tree 9cce871890a92194d6cee6c654d0c4e06bf75d38
+parent 9c4ff6901873bb4920e9e68f84614338066c07d3
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-29 16:11:58 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-29 16:11:58 +0200
+
+    [interlis-repo-checker] Disable app
+    
+    Due to a memory leak
+
+
+:100644 100644 be4331757179e042ea98a36179cf87ceda7b5b6c f5a6afb9da2085e2d10389eca1277b8aa6eda7df M	interlis-repo-checker/interlis-repo-checker_integration.params
+:100644 100644 27ff118a194e65924e5aa8b85c851cd64aac35c8 abb40d377668c7ad324a673062ab0c3e6cd66608 M	interlis-repo-checker/interlis-repo-checker_production.params
+:100644 100644 63583b387e285974383cb2a0b399d029f9a21a3e 08df8198f2330233ddb17bb266f6b2ced98265e1 M	interlis-repo-checker/interlis-repo-checker_test.params
+commit 9c4ff6901873bb4920e9e68f84614338066c07d3
+tree 0e67a8b6356e037488a4f4e13488b86e50a95e38
+parent 9fdf0870827fb6a23c54e1983891d4af6470bc15
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-29 14:01:24 +0200
+committer GitHub <noreply@github.com> 2022-08-29 14:01:24 +0200
+
+    [interlis-repo-checker] Add interlis-repo-checker (#44)
+    
+
+
+:000000 100644 0000000000000000000000000000000000000000 6d5176e2cf9ee99ab91ca1d66f84ff4a4d0dd5d4 A	interlis-repo-checker/README.md
+:000000 100644 0000000000000000000000000000000000000000 db414d406bae3305ba2a711a2d58e969fd54d7f5 A	interlis-repo-checker/interlis-repo-checker.yaml
+:000000 100644 0000000000000000000000000000000000000000 be4331757179e042ea98a36179cf87ceda7b5b6c A	interlis-repo-checker/interlis-repo-checker_integration.params
+:000000 100644 0000000000000000000000000000000000000000 27ff118a194e65924e5aa8b85c851cd64aac35c8 A	interlis-repo-checker/interlis-repo-checker_production.params
+:000000 100644 0000000000000000000000000000000000000000 63583b387e285974383cb2a0b399d029f9a21a3e A	interlis-repo-checker/interlis-repo-checker_test.params
+commit 9fdf0870827fb6a23c54e1983891d4af6470bc15
+tree a2b87423482069b1fd67629e7086c5b2f703ba06
+parent 26a47966c8bda785b68a64bc63c98e52aa65a38e
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-16 13:06:30 +0200
+committer GitHub <noreply@github.com> 2022-08-16 13:06:30 +0200
+
+    Add SIMI Schemareader (#43)
+    
+
+
+:000000 100644 0000000000000000000000000000000000000000 eb510027fdd977da2259b0f785514c962e1a7a0e A	simi-schemareader/README.md
+:000000 100644 0000000000000000000000000000000000000000 41cd1520dd9f78311793200a5a6592e07c634c92 A	simi-schemareader/simi-schemareader.yaml
+:000000 100644 0000000000000000000000000000000000000000 96b152baacf8f4e6e8872b8c8718b28d11b3a8f8 A	simi-schemareader/simi-schemareader_integration.params
+:000000 100644 0000000000000000000000000000000000000000 96b152baacf8f4e6e8872b8c8718b28d11b3a8f8 A	simi-schemareader/simi-schemareader_production.params
+:000000 100644 0000000000000000000000000000000000000000 abb429f34746d645d3f7ca930281a54ad36cbedc A	simi-schemareader/simi-schemareader_test.params
+commit 26a47966c8bda785b68a64bc63c98e52aa65a38e
+tree d4c95dcd92df53a75433c480e93e5a5cf896089a
+parent 305f3ecbaf20b72b7f4a31ee3af896b5ecaa813b
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-15 17:44:20 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-15 17:44:20 +0200
+
+    [simi] Fix Simi integration and production tag
+
+
+:100644 100644 3cf036d582463895fc19a1683bf0b2cd327c751b d37872bd57592e7d7a28d830383a4ef2aa468e4b M	simi/simi_integration.params
+:100644 100644 f9dfd98be17f031674b79b171e68cebc8a1c712f 10a53a6cdddcf462f98eccb24c76ac43b6966c06 M	simi/simi_production.params
+commit 305f3ecbaf20b72b7f4a31ee3af896b5ecaa813b
+tree 6937b38e31d0169fd996b31731e78fce720462bf
+parent e08dc1bf9bc5bb5fd12aab619520c0239d48fe93
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-15 16:18:33 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-15 16:31:34 +0200
+
+    [simi] Add simi
+
+
+:000000 100644 0000000000000000000000000000000000000000 6ab2b26e03472d74da25d7feb7c6be834a35238a A	simi/README.md
+:000000 100644 0000000000000000000000000000000000000000 b79cbabd8eef8d6385f949ef50cb050e9ba21f03 A	simi/simi.yaml
+:000000 100644 0000000000000000000000000000000000000000 3cf036d582463895fc19a1683bf0b2cd327c751b A	simi/simi_integration.params
+:000000 100644 0000000000000000000000000000000000000000 f9dfd98be17f031674b79b171e68cebc8a1c712f A	simi/simi_production.params
+:000000 100644 0000000000000000000000000000000000000000 60cbd26e66a20f93f0da44b24ae629b3164849e5 A	simi/simi_test.params
+commit e08dc1bf9bc5bb5fd12aab619520c0239d48fe93
+tree 3c1b8a55d5506eb1788ff5a941c5d896cb822ab5
+parent 92594419a7a1c06799286edc4415f65873db010f
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-15 14:11:47 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-15 14:11:47 +0200
+
+    [gretl] Fix GRETL image tag
+
+
+:100644 100644 25a189e5cdcfe628ccf9c7f51509fdb5acbe548b e5093a199231bff6f1e644a28d38de00e7520b72 M	gretl/gretl_integration.params
+:100644 100644 4571f8f570317812e7cee45b7fb36a1ec7548e91 8ac0f9773a6623b006f1839a31be7659756a0cef M	gretl/gretl_production.params
+commit 92594419a7a1c06799286edc4415f65873db010f
+tree b404091578ad158cbd60556eed64a1256b2e2618
+parent f70fe8957c0c6153da36870e22a0e48a8ce29afc
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-15 12:11:55 +0200
+committer GitHub <noreply@github.com> 2022-08-15 12:11:55 +0200
+
+    [gretl] Add GRETL (#41)
+    
+
+
+:000000 100644 0000000000000000000000000000000000000000 e3b405a78974c6b62dff8d21630a1ad4107718dc A	gretl/Jenkinsfile
+:000000 100644 0000000000000000000000000000000000000000 c6801db3cdd4750160ed8914d5203de253f35d88 A	gretl/README.md
+:000000 100644 0000000000000000000000000000000000000000 a8c7cdc1499b5cbe1de845aaf0a7764fd654a554 A	gretl/gretl-pod-template.yaml
+:000000 100644 0000000000000000000000000000000000000000 25a189e5cdcfe628ccf9c7f51509fdb5acbe548b A	gretl/gretl_integration.params
+:000000 100644 0000000000000000000000000000000000000000 4571f8f570317812e7cee45b7fb36a1ec7548e91 A	gretl/gretl_production.params
+:000000 100644 0000000000000000000000000000000000000000 ba23d883433b32843f431a9fdaff3b653fe1a091 A	gretl/gretl_test.params
+commit f70fe8957c0c6153da36870e22a0e48a8ce29afc
+tree 677e07f140c45bd361a9354d8e9378529b695a42
+parent 6d28c6dd398917c406acd898ff3f3cf30ccdbec7
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-09 15:19:47 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-11 08:56:54 +0200
+
+    [ldap2pg] Fixup: Add namespace parameter
+
+
+:100644 100644 3b0849d6c4c962d9d89bfe31bf5567130ee71035 7160ce2cad09388c229e30f58549f37037c659ca M	ldap2pg/Jenkinsfile
+:100644 100644 453fddc3eeab8814ae459d74c14bd54965b755f0 dfa3e172c0387e671ff798e6d5bcdd88f1ac2b76 M	ldap2pg/README.md
+commit 6d28c6dd398917c406acd898ff3f3cf30ccdbec7
+tree 2408f6c6edaca50080afd36a06b9fc957183db8c
+parent e6661786c7b89f0ee142d5d9432bc721ea8a9349
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-09 15:11:56 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-11 08:56:54 +0200
+
+    [ldap2pg] Reset SCHEDULE parameter
+
+
+:100644 100644 cf5b4928403a934a41ce8a8106a2bc26c408158b fc532688947f7ce8819d4e380db71df8bbb06608 M	ldap2pg/ldap2pg_test.params
+commit e6661786c7b89f0ee142d5d9432bc721ea8a9349
+tree d8992d832715ce9872b6157e64de07885637b0a3
+parent 0b9ede15f61a63199c952c9f3512a56d106795dc
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-09 15:11:25 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-11 08:56:54 +0200
+
+    [ldap2pg] Fix commands for running manually
+
+
+:100644 100644 6eebf39c860cfadacbad741e97da67de7c12a4e9 453fddc3eeab8814ae459d74c14bd54965b755f0 M	ldap2pg/README.md
+commit 0b9ede15f61a63199c952c9f3512a56d106795dc
+tree 7c95c27c56054fc6100bc3be03d4a9d32140c66f
+parent e12e194f0be8fd878ef232961c5cb881e56880e9
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-09 15:14:07 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-11 08:56:54 +0200
+
+    [ldap2pg] Don't do any retry for now
+
+
+:100644 100644 da0c09404a19941a80a93fad27f6b9ea577b3f89 1b7b00842e257094ec112c5a48540d088148aeca M	ldap2pg/ldap2pg.yaml
+commit e12e194f0be8fd878ef232961c5cb881e56880e9
+tree db43acf663ef83563069befbaeb81a771838312a
+parent 935c714759e916af3f1e23fa3657b265b153aa89
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-07-22 13:49:02 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-11 08:56:54 +0200
+
+    [ldap2pg] No need to reassign objects before dropping a role
+
+
+:100644 100644 50d1e06dc3aaa332e5b7d8fc34b308e31ca875e5 da0c09404a19941a80a93fad27f6b9ea577b3f89 M	ldap2pg/ldap2pg.yaml
+commit 935c714759e916af3f1e23fa3657b265b153aa89
+tree e9766906f06394647256fc32b958b273f68c6dd2
+parent fe84c19c7792d3f98a4a3c78385a063ab00fd008
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-07-18 16:51:12 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-11 08:56:54 +0200
+
+    [ldap2pg] Add ldap2pg
+
+
+:000000 100644 0000000000000000000000000000000000000000 3b0849d6c4c962d9d89bfe31bf5567130ee71035 A	ldap2pg/Jenkinsfile
+:000000 100644 0000000000000000000000000000000000000000 6eebf39c860cfadacbad741e97da67de7c12a4e9 A	ldap2pg/README.md
+:000000 100644 0000000000000000000000000000000000000000 50d1e06dc3aaa332e5b7d8fc34b308e31ca875e5 A	ldap2pg/ldap2pg.yaml
+:000000 100644 0000000000000000000000000000000000000000 fc532688947f7ce8819d4e380db71df8bbb06608 A	ldap2pg/ldap2pg_integration.params
+:000000 100644 0000000000000000000000000000000000000000 fc532688947f7ce8819d4e380db71df8bbb06608 A	ldap2pg/ldap2pg_production.params
+:000000 100644 0000000000000000000000000000000000000000 cf5b4928403a934a41ce8a8106a2bc26c408158b A	ldap2pg/ldap2pg_test.params
+commit fe84c19c7792d3f98a4a3c78385a063ab00fd008
+tree b1d200e918608e826919c4477813664295c9d427
+parent 269c53128ff3b93204e4e4b65ed6ee4c753a4791
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-09 10:58:10 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-09 11:17:57 +0200
+
+    [oereb-web-service] Set connection pool log level to debug
+
+
+:100644 100644 8574931f00438e8decd856d9e9e69fb04a7799df 4d00ba68d56e50cbfac2d6533449d1940f834cc3 M	oereb-web-service/oereb-web-service_production.params
+:100644 100644 daed9e9bb8690b95b937e15bc71347de5dba87c6 21205ea184a48a35e4e33f873d801e738e21eb9e M	oereb-web-service/oereb-web-service_test.params

@@ -1,0 +1,54 @@
+commit 650a3b421a19fdb9afa2d8b8d929cd32f191a8c5
+tree 5c09aba3b6ed09b4786359b80dcff091bc35dba9
+parent 2a70658ec621bd6cfe59bd8549f774f0515dbad8
+author edigonzales <edi.gonzales@gmail.com> 2022-09-09 14:31:22 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-09 14:31:22 +0200
+
+    [sodata-preview] bump version
+
+
+:100644 100644 563fd56c57022891abcae60eb73292bf9a5b7b9a e3e29dd10a0cc8e908deca74c2de8bd0342d423c M	sodata-preview/sodata-preview_integration.params
+:100644 100644 f0062b713ce0414e66c8bc7914b9eace7993ee1f 49978af6e79d03b1fca3f29c483932500f7de30e M	sodata-preview/sodata-preview_production.params
+commit 2a70658ec621bd6cfe59bd8549f774f0515dbad8
+tree f68aca169d5625e0c380b8a29d9ab5fb071917bd
+parent bca2743bddb5c1e20448c2fbe2a7c73ddeade2ec
+author edigonzales <edi.gonzales@gmail.com> 2022-09-09 14:05:43 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-09 14:05:43 +0200
+
+    [modelfinder] bump version
+
+
+:100644 100644 0b81445a0bd513c1bd8548010b8cd3831c5ae1f2 3f3131b6ed85be856c2d9491d12e633b48f76d22 M	modelfinder/modelfinder_integration.params
+:100644 100644 efacc09fad61e2a5191c9d04c399847008f463fe 1ccf0fc26db01579f2978bfbc5165cd732a363eb M	modelfinder/modelfinder_production.params
+commit bca2743bddb5c1e20448c2fbe2a7c73ddeade2ec
+tree 13adf9af72faeb5303a9b92fbfd93eaa20e8a428
+parent adb27b6ee6c3edf6178ff02c81246e32f0de79bd
+author edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:55:24 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:55:24 +0200
+
+    [wgc-embedded] set version
+
+
+:100644 100644 8cd510e2d258dce28154eaf95321f0ed9f8234e1 d85b77258ccaf0cc26fd4dcb08775e32a652d33e M	wgc-embedded/wgc-embedded_production.params
+commit adb27b6ee6c3edf6178ff02c81246e32f0de79bd
+tree 76a991675e070f3cc055133e25c6e97228ebd153
+parent 97132edbcdc719636c52a1c1534deaeacdfcbf6f
+author edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:51:45 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:51:45 +0200
+
+    [standortkarte] bump version
+
+
+:100644 100644 9b23d26aa6f11ed067fc2125ee8be6897a8451aa 1e4a15327887f0dae789ca119e35f2cf528850f3 M	standortkarte/standortkarte_integration.params
+:100644 100644 da9902f7d99ad6d4761ed215f1c892bf189eeb91 a8be20639c3a58b049443ff751bcd37d035a378d M	standortkarte/standortkarte_production.params
+commit 97132edbcdc719636c52a1c1534deaeacdfcbf6f
+tree 27f1dc159d22bb69ef0faf80a99823409d6de7cf
+parent 2f650dc514a31f122d4f817851b1c3045a478c42
+author edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:45:29 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:45:29 +0200
+
+    [modelfinder] bump version
+
+
+:100644 100644 24c6bb7f8f90950171dd3fec9e3beaafe2737098 0b81445a0bd513c1bd8548010b8cd3831c5ae1f2 M	modelfinder/modelfinder_integration.params
+:100644 100644 6e85f0460658b9f756e9e6e4f9e5c2f60743969a efacc09fad61e2a5191c9d04c399847008f463fe M	modelfinder/modelfinder_production.params

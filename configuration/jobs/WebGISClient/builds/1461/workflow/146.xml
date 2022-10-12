@@ -1,0 +1,174 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.94">
+    <parentIds>
+      <string>118</string>
+    </parentIds>
+    <id>146</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.support.steps.build.BuildTriggerStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.94">
+      <arguments>
+        <entry>
+          <string>propagate</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>wait</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>job</string>
+          <string>gdi/legend-service</string>
+        </entry>
+        <entry>
+          <string>parameters</string>
+          <list>
+            <org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+              <symbol>string</symbol>
+              <arguments class="linked-hash-map">
+                <entry>
+                  <string>name</string>
+                  <string>vDeployImage</string>
+                </entry>
+                <entry>
+                  <string>value</string>
+                  <string>2.0.22</string>
+                </entry>
+              </arguments>
+              <interpolatedStrings>
+                <string>2.0.22</string>
+              </interpolatedStrings>
+            </org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+            <org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+              <symbol>string</symbol>
+              <arguments class="linked-hash-map">
+                <entry>
+                  <string>name</string>
+                  <string>vBaseImage</string>
+                </entry>
+                <entry>
+                  <string>value</string>
+                  <string>v2.0.4</string>
+                </entry>
+              </arguments>
+              <interpolatedStrings>
+                <string>v2.0.4</string>
+              </interpolatedStrings>
+            </org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+            <org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+              <symbol>string</symbol>
+              <arguments class="linked-hash-map">
+                <entry>
+                  <string>name</string>
+                  <string>namespace</string>
+                </entry>
+                <entry>
+                  <string>value</string>
+                  <string>gdi-integration</string>
+                </entry>
+              </arguments>
+              <interpolatedStrings>
+                <string>gdi-integration</string>
+              </interpolatedStrings>
+            </org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+            <org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+              <symbol>booleanParam</symbol>
+              <arguments class="linked-hash-map">
+                <entry>
+                  <string>name</string>
+                  <string>configs</string>
+                </entry>
+                <entry>
+                  <string>value</string>
+                  <boolean>true</boolean>
+                </entry>
+              </arguments>
+              <interpolatedStrings/>
+            </org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+            <org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+              <symbol>string</symbol>
+              <arguments class="linked-hash-map">
+                <entry>
+                  <string>name</string>
+                  <string>jobName</string>
+                </entry>
+                <entry>
+                  <string>value</string>
+                  <string>WebGISClient</string>
+                </entry>
+              </arguments>
+              <interpolatedStrings>
+                <string>WebGISClient</string>
+              </interpolatedStrings>
+            </org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+            <org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+              <symbol>string</symbol>
+              <arguments class="linked-hash-map">
+                <entry>
+                  <string>name</string>
+                  <string>buildNumber</string>
+                </entry>
+                <entry>
+                  <string>value</string>
+                  <string>1461</string>
+                </entry>
+              </arguments>
+              <interpolatedStrings>
+                <string>1461</string>
+              </interpolatedStrings>
+            </org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+            <org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+              <symbol>string</symbol>
+              <arguments class="linked-hash-map">
+                <entry>
+                  <string>name</string>
+                  <string>replicas</string>
+                </entry>
+                <entry>
+                  <string>value</string>
+                  <string>1</string>
+                </entry>
+              </arguments>
+              <interpolatedStrings>
+                <string>1</string>
+              </interpolatedStrings>
+            </org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+            <org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+              <symbol>string</symbol>
+              <arguments class="linked-hash-map">
+                <entry>
+                  <string>name</string>
+                  <string>branch</string>
+                </entry>
+                <entry>
+                  <string>value</string>
+                  <string>master</string>
+                </entry>
+              </arguments>
+              <interpolatedStrings>
+                <string>master</string>
+              </interpolatedStrings>
+            </org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+          </list>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.47">
+      <startTime>1665495007501</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+    <wf.a.LabelAction plugin="workflow-api@2.47">
+      <displayName>Building gdi » legend-service</displayName>
+    </wf.a.LabelAction>
+    <io.jenkins.blueocean.listeners.NodeDownstreamBuildAction plugin="blueocean-pipeline-api-impl@1.25.1">
+      <link plugin="blueocean-rest@1.25.1">
+        <href>/blue/rest/organizations/jenkins/pipelines/gdi/pipelines/legend-service/runs/1297/</href>
+      </link>
+      <description>gdi » legend-service #1297</description>
+    </io.jenkins.blueocean.listeners.NodeDownstreamBuildAction>
+  </actions>
+</Tag>

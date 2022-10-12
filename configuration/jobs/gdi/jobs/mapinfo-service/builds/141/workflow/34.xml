@@ -1,0 +1,99 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2.94">
+    <parentIds>
+      <string>33</string>
+    </parentIds>
+    <id>34</id>
+    <descriptorId>org.jenkinsci.plugins.credentialsbinding.impl.BindingStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.94">
+      <arguments>
+        <entry>
+          <string>bindings</string>
+          <list>
+            <org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+              <symbol>usernamePassword</symbol>
+              <arguments class="linked-hash-map">
+                <entry>
+                  <string>credentialsId</string>
+                  <string>agi-apps-production-pw-ogc-server</string>
+                </entry>
+                <entry>
+                  <string>usernameVariable</string>
+                  <string>DbUserOgcServer</string>
+                </entry>
+                <entry>
+                  <string>passwordVariable</string>
+                  <string>PwdOgcServer</string>
+                </entry>
+              </arguments>
+              <interpolatedStrings/>
+            </org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+            <org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+              <symbol>usernamePassword</symbol>
+              <arguments class="linked-hash-map">
+                <entry>
+                  <string>credentialsId</string>
+                  <string>agi-apps-production-pw-sogis-service</string>
+                </entry>
+                <entry>
+                  <string>usernameVariable</string>
+                  <string>DbUserSogisService</string>
+                </entry>
+                <entry>
+                  <string>passwordVariable</string>
+                  <string>PwdSogisService</string>
+                </entry>
+              </arguments>
+              <interpolatedStrings/>
+            </org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+            <org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+              <symbol>usernamePassword</symbol>
+              <arguments class="linked-hash-map">
+                <entry>
+                  <string>credentialsId</string>
+                  <string>agi-apps-production-pw-sogis-service-write</string>
+                </entry>
+                <entry>
+                  <string>usernameVariable</string>
+                  <string>DbUserSogisServiceWrite</string>
+                </entry>
+                <entry>
+                  <string>passwordVariable</string>
+                  <string>PwdSogisServiceWrite</string>
+                </entry>
+              </arguments>
+              <interpolatedStrings/>
+            </org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+            <org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+              <symbol>usernamePassword</symbol>
+              <arguments class="linked-hash-map">
+                <entry>
+                  <string>credentialsId</string>
+                  <string>jenkinsApi</string>
+                </entry>
+                <entry>
+                  <string>usernameVariable</string>
+                  <string>apiUser</string>
+                </entry>
+                <entry>
+                  <string>passwordVariable</string>
+                  <string>PwdApiUser</string>
+                </entry>
+              </arguments>
+              <interpolatedStrings/>
+            </org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+          </list>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.47">
+      <startTime>1663068017936</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

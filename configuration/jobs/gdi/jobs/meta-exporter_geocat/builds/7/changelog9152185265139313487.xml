@@ -1,0 +1,10 @@
+commit 3220ea003d32fb23af7baf7107d565267a790840
+tree a1f739579d76bb6090236e8d873f6b9d506850a9
+parent 23eb27819d6dcd7fd74946de411f84950f80d8dc
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 12:54:01 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 12:54:01 +0200
+
+    [metaexporter_geocat] add sftp commands
+
+
+:100644 100644 2864515f19291cd2eab1fcaed1fcb48f44be7f8b f1661d90a9cffc94e1f646d757b143e136f87e66 M	api_webgisclient/meta-exporter_geocat/Jenkinsfile

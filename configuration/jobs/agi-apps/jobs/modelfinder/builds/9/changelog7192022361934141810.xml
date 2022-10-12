@@ -1,0 +1,11 @@
+commit 9069871c32e7f60ca776cf9f5574d8c9e09cd50d
+tree dee7a4dc39b144eb31c3fbf3d1dea708effce3e7
+parent b153892a208f34880598901921ef7e0ecf46c746
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-13 11:35:16 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-13 11:35:16 +0200
+
+    [modelfinder] update to 0.0.70
+
+
+:100644 100644 d5c471651ddb5fb5c0ee4747e394a7cd5f45eaa8 47d9d21f82e88ba48aebc4574acf79a4fbee1a7c M	modelfinder/modelfinder_integration.params
+:100644 100644 2e14ae4b112fa6cc4921ed15c8298472e2e75714 bc3defd9e67df3b667b402ccba85eeb4db601f98 M	modelfinder/modelfinder_production.params

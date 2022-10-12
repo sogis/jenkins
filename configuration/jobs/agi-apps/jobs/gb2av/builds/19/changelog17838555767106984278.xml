@@ -1,0 +1,60 @@
+commit 46108d44e10fe99ee0b29c70e9b4330b3ea57fab
+tree 8f216e3483ef34e8e814c9fcbb35535b6e8799f0
+parent 7ccbe641e267a5a5678841bd071d4c507f834933
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-27 08:36:25 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-27 08:36:25 +0200
+
+    [sodata] change image and version
+
+
+:100644 100644 300349814b3e923383ab634e36cf73824b959bfd 174feb68634946dfd9adbac16b434145efd56a4a M	sodata/sodata_test.params
+commit 7ccbe641e267a5a5678841bd071d4c507f834933
+tree ea3a6082c41dc5b2b4b73ed02917fd2924a9a699
+parent 22494101488389b421985f69684e4533e11a74ff
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-26 15:31:25 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-26 16:11:11 +0200
+
+    [simi] Update test and integration to 2.1
+
+
+:100644 100644 8a52ae2bded6dc69f69f5d615ad9944e79b661f3 c335c91d27b94a7ac299517be0d1eaf5580e8c55 M	simi/simi_integration.params
+:100644 100644 096f16b12a85ffbf1b9348a83bad867f3df117f0 a701bad341af137334a25f6dd2b3312e7dea28a3 M	simi/simi_test.params
+commit 22494101488389b421985f69684e4533e11a74ff
+tree 0d5ad1462acf82d2122e93132b8dd84f83b0252d
+parent a5565a891286bce890fdf3f4f3878b7a7b8c5da9
+author pfeimich <mpfeiffer1975@gmail.com> 2022-09-26 12:28:11 +0200
+committer pfeimich <mpfeiffer1975@gmail.com> 2022-09-26 12:28:11 +0200
+
+    [sodata] change image version
+
+
+:100644 100644 b55a5511a4de7059265965a6b2b28b1a86c9f3d3 300349814b3e923383ab634e36cf73824b959bfd M	sodata/sodata_test.params
+commit a5565a891286bce890fdf3f4f3878b7a7b8c5da9
+tree 2a579004517f2d40d26c168bffc2abc013a544e6
+parent 180550ed2050f800db38f11b5d3401d3abbb1f34
+author pfeimich <mpfeiffer1975@gmail.com> 2022-09-26 12:07:42 +0200
+committer pfeimich <mpfeiffer1975@gmail.com> 2022-09-26 12:07:42 +0200
+
+    [sodata] Initialimport
+
+
+:000000 100644 0000000000000000000000000000000000000000 332baedb83cfc2edaad27de813e700a6664c0dfa A	sodata/README.md
+:000000 100644 0000000000000000000000000000000000000000 73b262ca7ca71cb5e6a874527f624c79494db3d0 A	sodata/sodata.yaml
+:000000 100644 0000000000000000000000000000000000000000 a5f1e2756e481aad1985bf78f47da1efde58fa4f A	sodata/sodata_integration.params
+:000000 100644 0000000000000000000000000000000000000000 31f5a380dfae8b7406e4548b15fc34c760c86004 A	sodata/sodata_production.params
+:000000 100644 0000000000000000000000000000000000000000 b55a5511a4de7059265965a6b2b28b1a86c9f3d3 A	sodata/sodata_test.params
+commit 180550ed2050f800db38f11b5d3401d3abbb1f34
+tree 5926cc1a5aee76a51a78d6f0751e5d8b04a50c69
+parent ef9b6e8c1ce44075c7c0c78fa1c7c068fedb43c3
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-23 15:29:08 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-26 11:42:27 +0200
+
+    [mapcache] Upgrade to MapCache 1.12
+    
+    Requires a switch to sogis/mapache image
+
+
+:100644 100644 6a22fadf802f3f52945aabcdf5bb23e447b202cb 7a8cdd7afd4cba0a206316047947af3378a53b4a M	mapcache/mapcache.yaml
+:100644 100644 9001803631d27aae4683ad3e17c9a5dbc23b150f baf843097cf4973a4889fb5aa3e2af0deea538ad M	mapcache/mapcache_development.params
+:100644 100644 1544eb665edc5f4a484356345f0aac276f949720 7dfa2cc693f537763205bbc0087e4fa196711df0 M	mapcache/mapcache_production.params
+:100644 100644 61eb55576672cddaea14c4d9063fb2455e7a03b2 758759d851ab5d39b50cf925744fb48408f2c1dc M	mapcache/mapcache_test.params

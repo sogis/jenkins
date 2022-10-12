@@ -1,0 +1,11 @@
+commit d620021fb468a1491d41969355b5ef842b4199d5
+tree 0c7662419f88823d2e96eb6adbc00364ca260cf0
+parent f3f159368cc20b0eda1f058b1aad0165ef55ace9
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-03 14:02:54 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-03 14:14:20 +0200
+
+    [plotinfo-service] Route directly to oereb-web-service
+
+
+:100644 100644 40c6ab147baacd9043245a665fc44d6b1edee345 6585ec186eda617bdd55170bd14b5d0037c14c21 M	api_webgisclient/plotinfo-service/Jenkinsfile
+:100644 100644 7656cafab56ba3a9fab59d77475643c165568005 e06651836e93cdd8fb5f369168e58f0e1087db75 M	api_webgisclient/plotinfo-service/deployment/deploymentconfig.yaml

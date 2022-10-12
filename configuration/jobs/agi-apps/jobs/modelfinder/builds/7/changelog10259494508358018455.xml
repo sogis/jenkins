@@ -1,0 +1,20 @@
+commit c53fa37a324b5bc02c0f752fe1a5d3cd294bec4d
+tree 8c531a6fbc19f42d8ba2a586cda6b8881166c376
+parent 58a1c38558f28a81501f63af3190700857ae0c87
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-07-07 16:10:49 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-07-07 16:42:49 +0200
+
+    [modelfinder] Remove dobule quotes, and switch to single quotes
+
+
+:100644 100644 4da5e577ea41652a543343e2b12ae2b981590f94 5fd9544e53dbcda1e8aaf9abd18bafdd0dbe6473 M	modelfinder/modelfinder.yaml
+commit 58a1c38558f28a81501f63af3190700857ae0c87
+tree 4db62e355006f023d7cae53abeca3b51b9c01354
+parent cd0a1a2953152eecd7d190106867cf1b4573e64e
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-07-07 15:56:57 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-07-07 16:42:49 +0200
+
+    [template] Remove dobule quotes, and switch to single quotes
+
+
+:100644 100644 0bf8b5be5427b52133e6a8049553a7d0d8045b53 a9e23968270b269e1e0f3886d736d3daa9db1b48 M	vorlagen/vorlage_app-template.yaml

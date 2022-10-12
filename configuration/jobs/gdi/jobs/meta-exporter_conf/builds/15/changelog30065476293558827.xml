@@ -1,0 +1,10 @@
+commit 2db414402a9ee903a09f7b0849a1222205c29bd7
+tree 7e0b6cd118a65883cbfdcf2ded94a060f2e08df1
+parent 45d52bf3b015b9d90163236a2d9c169db2bee3ea
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:12:36 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:12:36 +0200
+
+    [meta-exporter_conf] rollback hardcoded podname
+
+
+:100644 100644 c87a4e6f173e488d1bba44e22c021d4c059283a8 6ed48fe5837bf3c5559920795cbbb3f455a254ba M	api_webgisclient/meta-exporter_conf/Jenkinsfile

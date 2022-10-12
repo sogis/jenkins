@@ -1,0 +1,30 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.94">
+    <parentIds>
+      <string>24</string>
+    </parentIds>
+    <id>25</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.94">
+      <arguments>
+        <entry>
+          <string>script</string>
+          <string>
+        oc process -f https://raw.githubusercontent.com/sogis/pipelines/master/api_webgisclient/qgis-server-daily/deployment/deploymentconfig.yaml -p NAMESPACE=gdi-production -p TAG=2.0.17 -p REPLICAS=6 -p CPU_REQUEST=2000m -p CPU_LIMIT=4000m -p MEMORY_REQUEST=8192Mi -p MEMORY_LIMIT=16384Mi -p ENVIRONMENT=-prod | oc apply -n gdi-production -f-
+        oc rollout latest -n gdi-production qgis-server
+        oc rollout status -n gdi-production dc qgis-server
+    </string>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.47">
+      <startTime>1665198003694</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

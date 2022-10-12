@@ -1,0 +1,36 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.94">
+    <parentIds>
+      <string>54</string>
+    </parentIds>
+    <id>55</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.94">
+      <arguments>
+        <entry>
+          <string>script</string>
+          <string>   
+       oc process -f https://raw.githubusercontent.com/sogis/pipelines/master/api_webgisclient/featureinfo-service/deployment/buildconfig.yaml -p BASETAG=v2.0.11 -p DEPLOYTAG=2.0.29 | oc apply -n gdi-integration -f- 
+       oc start-build featureinfo-service -n gdi-integration --from-repo=qwc_services --wait 
+       rm -rf qwc_services/* rm -rf qwc_services/.git
+    </string>
+        </entry>
+      </arguments>
+      <sensitiveVariables>
+        <string>PwdSogisService</string>
+        <string>PwdSogisServiceWrite</string>
+        <string>PwdApiUser</string>
+        <string>PwdOgcServer</string>
+        <string>apiUser</string>
+      </sensitiveVariables>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.47">
+      <startTime>1665498432961</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

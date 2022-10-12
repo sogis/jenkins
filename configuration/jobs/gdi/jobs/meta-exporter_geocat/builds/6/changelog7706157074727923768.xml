@@ -1,0 +1,10 @@
+commit 23eb27819d6dcd7fd74946de411f84950f80d8dc
+tree 7afcbd7315e2a084ebc64688d23e153f4d990c5d
+parent 070ad89d7dd9963ed431cdfae3ad48b68404afbf
+author pfeimich <mpfeiffer1975@gmail.com> 2022-10-10 14:19:15 +0200
+committer pfeimich <mpfeiffer1975@gmail.com> 2022-10-10 14:19:15 +0200
+
+    [meta-exporter_geocat] added user to scp command
+
+
+:100644 100644 4a31712409a9e6d7e997ce02fd6fc5cdb8b00b3b 2864515f19291cd2eab1fcaed1fcb48f44be7f8b M	api_webgisclient/meta-exporter_geocat/Jenkinsfile

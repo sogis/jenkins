@@ -1,0 +1,92 @@
+commit 63ab46679167d441f0e543c64121305146113a13
+tree b2f526a88eadcf1349ce337bf10f015ff523ae4f
+parent bc25678228f6a82f9d7c999e35ac3222ffdbd7a1
+author pfeimich <mpfeiffer1975@gmail.com> 2022-09-12 12:03:43 +0200
+committer pfeimich <mpfeiffer1975@gmail.com> 2022-09-12 12:03:43 +0200
+
+    [qwc-service] remove read-only from qwc-assets mount
+
+
+:100644 100644 e41c8dc1cd621b4b81e1269f62c5522d90464163 79f7acb66e895a81c7845dde53b553559a74d564 M	api_webgisclient/qwc-service/deployment/deploymentconfig.yaml
+commit bc25678228f6a82f9d7c999e35ac3222ffdbd7a1
+tree c548332fa034c4cac5c19073863459d53f1e73d5
+parent f19eda4a1d767cc09827e410d47696a866bcc394
+author pfeimich <mpfeiffer1975@gmail.com> 2022-09-12 09:58:37 +0200
+committer pfeimich <mpfeiffer1975@gmail.com> 2022-09-12 09:58:37 +0200
+
+    [qwc-service] change mountpoint for qwc-assets claim
+
+
+:100644 100644 a3bb70538d2dcf0cf14db3902bb71609808beacb e41c8dc1cd621b4b81e1269f62c5522d90464163 M	api_webgisclient/qwc-service/deployment/deploymentconfig.yaml
+commit f19eda4a1d767cc09827e410d47696a866bcc394
+tree 5a90087449dc88440b246fdba4153cd3171a206c
+parent d0dee2521afc02349e368f7b15b7bd48b24e2f90
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-07 11:17:44 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-07 11:17:44 +0200
+
+    [qwc-service/featureinfo-service] new version released
+
+
+:100644 100644 13ed3eef2de3be55643b144bef906f9adce97e90 2686c41c825fd5fbeba11f6ec5d55bd4a0180d11 M	api_webgisclient/qwc-service/sql2json/template.json
+:100644 100644 c9b1063ccd80540533f9edb5b4dd1d73a7957eb1 ac5c6bf27e73ddffdff9603adf2bffb86c0c1d36 M	api_webgisclient/requirements.txt
+commit be158ba536d27a56a9031bc0e41292de6deb1081
+tree cf3c3844df6cf338ffcfc256d37c798e7e14182c
+parent 36347ff114419113f97b509fec19757a90306979
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-02 14:20:06 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-05 09:14:42 +0200
+
+    [api-gateway] Add location for datenabgabe
+
+
+:100644 100644 40ec67da58169248f869f11a819abb8195642836 192e06e24aa5c25c2f7048d80dfd82c9e8dd35b0 M	api_webgisclient/api-gateway/resources.yaml
+commit 36347ff114419113f97b509fec19757a90306979
+tree 08b1a448e541318274813bec6530dd6ad87d4b38
+parent 38154e6a50e0cf3537931617287da5f66a22e02b
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 11:27:33 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 11:27:33 +0200
+
+    [api-gateway] Re-enable repochecker
+
+
+:100644 100644 854e7406c718a13251d518f4aaac3132d303927f 40ec67da58169248f869f11a819abb8195642836 M	api_webgisclient/api-gateway/resources.yaml
+commit 38154e6a50e0cf3537931617287da5f66a22e02b
+tree db126b57385efabec516633bc9f67c377218e81b
+parent 5451eae02f51b8085e95d5eaae1dba7e81cc79de
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 11:26:10 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 11:26:10 +0200
+
+    [api-gateway] Remove superfluous blanks
+
+
+:100644 100644 62dcc72cee92bd86b68223a0e73b8e162a413c17 854e7406c718a13251d518f4aaac3132d303927f M	api_webgisclient/api-gateway/resources.yaml
+commit 632053b2d0b78da86aa88a28682dccef152ebfba
+tree f1b3022f60ece1c62bc91c7a40a5c48a94322a22
+parent 8b9b3a39d51753bb0ab366d8392bdc798542f452
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-14 16:05:16 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-14 16:05:16 +0200
+
+    [sql2json] use attribute names in qgs instead of alias names
+
+
+:100644 100644 93ce476d3641f793be80c6f0d602b49a4dd58351 f2caffbe75b43a70b15c447eb66746772d8f8333 M	api_webgisclient/sql2json/views/trafo/trafo_wms_layer_v.sql
+:100644 100644 b7430f3c49faec0827155b6b11c044963cff5c87 653e044f88e9ae462bd2a76e5c150372dafd9bcc M	api_webgisclient/sql2json/views/trafo/trafo_wms_tableview_v.sql
+commit 37a2c362277f75d39745aee7272c2a7525d18aa4
+tree dfe71a7f99269fb6085062099e28f07dace9f0c7
+parent 9e6711333eeb7609a4c54e7d9503e215b04bd0c0
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-05 12:42:22 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-05 12:42:22 +0200
+
+    [views/solr] add cascade
+
+
+:100644 100644 ec77671829067a1c7144b1742aaa9a73eb94461f fd0764459578b523c3e86a4aa3f08ac572d790b7 M	api_webgisclient/sql2json/views/solr/solr_layer_base_v.sql
+commit 723c374b3f083c79974033ce3b4b784337f8008d
+tree 877b9583faeb26103eb0edb449349b81b792ecd1
+parent ef98ae570431ab399f89afe696bde64b43a1523c
+author uncoyote <jeker.git@outlook.de> 2021-12-20 13:01:17 +0100
+committer uncoyote <jeker.git@outlook.de> 2021-12-20 13:01:17 +0100
+
+    solr_layer_base_v: generalized datasetview, facadelayer, ... to singleactor
+
+
+:100644 100644 8fb914a221b4f577d2a4f0e5fec5c844a2f88f1f ec77671829067a1c7144b1742aaa9a73eb94461f M	api_webgisclient/sql2json/views/solr/solr_layer_base_v.sql

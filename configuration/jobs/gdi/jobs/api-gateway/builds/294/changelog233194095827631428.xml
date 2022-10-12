@@ -1,0 +1,10 @@
+commit f3f159368cc20b0eda1f058b1aad0165ef55ace9
+tree 531e4b1068bb3524e76300e347ddda4c95ed8cc4
+parent 82b5e0156a3dcf4b206ffc259d4e7b6174112a60
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-29 09:21:53 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-29 09:21:53 +0200
+
+    [api-gateway] added rate limit for oereb
+
+
+:100644 100644 c72c643ec3c28c220bb8acd311f17c5d6f1baa0d f2fe5242f44f0da6b1f45dc026f235fcd66f8960 M	api_webgisclient/api-gateway/resources.yaml

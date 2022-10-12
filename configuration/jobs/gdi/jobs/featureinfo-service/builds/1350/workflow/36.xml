@@ -1,0 +1,51 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.94">
+    <parentIds>
+      <string>35</string>
+    </parentIds>
+    <id>36</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.94">
+      <arguments>
+        <entry>
+          <string>script</string>
+          <string> 
+        if [ -d &quot;sql2json&quot; ]; then
+          rm -rf sql2json/* rm -rf sql2json/.git
+        fi
+        
+        if [ ! -d  &quot;config/default&quot; ]; then
+          mkdir -p config/default
+        fi
+
+        # if not exists get the sql2json.jar and set the necessary permissions
+        if [ ! -f &quot;sql2json.jar&quot; ]; then
+          wget https://github.com/sogis/simi-sql2json/releases/download/v1.1.35/sql2json.jar
+          chmod u+x sql2json.jar
+        fi
+
+        # sql2json command to create the config file
+        java -jar sql2json.jar -c jdbc:postgresql://geodb-i.rootso.org:5432/simi -u ${apiUser} -p ${PwdSogisService} -t https://raw.githubusercontent.com/sogis/pipelines/master/api_webgisclient/featureinfo-service/sql2json/template.json -o /var/lib/jenkins/jobs/gdi/jobs/featureinfo-service/workspace/config/default/featureInfoConfig.json -s https://raw.githubusercontent.com/qwc-services/qwc-feature-info-service/master/schemas/qwc-feature-info-service.json
+        
+        # grep for qgis-server pod name
+    </string>
+        </entry>
+      </arguments>
+      <sensitiveVariables>
+        <string>PwdSogisService</string>
+        <string>PwdSogisServiceWrite</string>
+        <string>PwdApiUser</string>
+        <string>PwdOgcServer</string>
+        <string>apiUser</string>
+      </sensitiveVariables>
+      <isUnmodifiedBySanitization>false</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.47">
+      <startTime>1665498355106</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

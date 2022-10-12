@@ -1,0 +1,10 @@
+commit 66af947b89ad6896a9e2a1738cd1a3453b03408c
+tree d2b39a4b532f59180bcca0f0311a9c7de5c33de6
+parent d4c2878e942505966abd494d4e6bbfe0c9148548
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 15:10:33 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 15:10:33 +0200
+
+    [meta-exporter_conf] add upload to sodata pod
+
+
+:100644 100644 aa5b84395a34fbf25401b484032e047da6c3c9ac c79b2bdaa1b65c81766c1a8b5a7ab73b0b588ab7 M	api_webgisclient/meta-exporter_conf/Jenkinsfile

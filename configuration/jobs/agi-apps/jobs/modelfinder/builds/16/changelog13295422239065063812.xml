@@ -1,0 +1,92 @@
+commit 97132edbcdc719636c52a1c1534deaeacdfcbf6f
+tree 27f1dc159d22bb69ef0faf80a99823409d6de7cf
+parent 2f650dc514a31f122d4f817851b1c3045a478c42
+author edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:45:29 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:45:29 +0200
+
+    [modelfinder] bump version
+
+
+:100644 100644 24c6bb7f8f90950171dd3fec9e3beaafe2737098 0b81445a0bd513c1bd8548010b8cd3831c5ae1f2 M	modelfinder/modelfinder_integration.params
+:100644 100644 6e85f0460658b9f756e9e6e4f9e5c2f60743969a efacc09fad61e2a5191c9d04c399847008f463fe M	modelfinder/modelfinder_production.params
+commit 2f650dc514a31f122d4f817851b1c3045a478c42
+tree 1a3df274ce093e231d9b38d989c74317863f3646
+parent 4a714674ac23bd8f2bd9eecf19689ebd0ada14da
+author edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:34:14 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:34:14 +0200
+
+    [standortkarte] bump version
+
+
+:100644 100644 96b7a78a4a7317cf906beec5c2f889917765cc0f 9b23d26aa6f11ed067fc2125ee8be6897a8451aa M	standortkarte/standortkarte_integration.params
+:100644 100644 1196808fb1d1b3012b0129b25fb77662b210074d da9902f7d99ad6d4761ed215f1c892bf189eeb91 M	standortkarte/standortkarte_production.params
+commit 8a43f846f227bcb71ab478bf3644ac37c5f2a625
+tree c456918e164bf7dfcf6e8202bb30d4e619658885
+parent 489a7ffd215f6fa85367c60428d5a7b7f9089b0b
+author edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:12:15 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:12:15 +0200
+
+    [sodata-preview] bump version
+
+
+:100644 100644 5dae2fa65d897d2327cb55d16ba9f1f9f73a6851 563fd56c57022891abcae60eb73292bf9a5b7b9a M	sodata-preview/sodata-preview_integration.params
+:100644 100644 8734dc40c5cd2661eeb6d796a35ac7d9fff14c63 f0062b713ce0414e66c8bc7914b9eace7993ee1f M	sodata-preview/sodata-preview_production.params
+commit c5015340489545bd9d72db6e52978d2aa1c78232
+tree b2b1c4917220a296aa8eb0c88a7ea712b7b4559d
+parent 6f6a37adf3f48545dc2aa9c5f82fdeab4380eb08
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-08 09:17:56 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-08 09:17:56 +0200
+
+    [gretl] Set tag for gretl-2.2 pod template to 2.2.258
+
+
+:100644 100644 fb96ee7a00d346e3bb2e7cd709b22eacad6bc1ec 45a82ea3a6987a336b6939eaf7f561259604ef12 M	gretl/gretl_integration.params
+:100644 100644 7fc3fb394b665e934110ca95a9354bef66f60f4a 297561c7378647dc8bd14c91fc91ab9210f554af M	gretl/gretl_production.params
+commit 6f6a37adf3f48545dc2aa9c5f82fdeab4380eb08
+tree f849cc2eec1159a0f35fbad4ccc374ece064417a
+parent 489a7ffd215f6fa85367c60428d5a7b7f9089b0b
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-08 09:06:21 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-08 09:06:21 +0200
+
+    [gretl] Add parameter for pod template name for additional GRETL version
+    
+    Pod template name can now be independent from image tag
+
+
+:100644 100644 a8c7cdc1499b5cbe1de845aaf0a7764fd654a554 f0fcae29dff9a1edaa525634fca0704292e95891 M	gretl/gretl-pod-template.yaml
+:100644 100644 e5093a199231bff6f1e644a28d38de00e7520b72 fb96ee7a00d346e3bb2e7cd709b22eacad6bc1ec M	gretl/gretl_integration.params
+:100644 100644 8ac0f9773a6623b006f1839a31be7659756a0cef 7fc3fb394b665e934110ca95a9354bef66f60f4a M	gretl/gretl_production.params
+:100644 100644 ba23d883433b32843f431a9fdaff3b653fe1a091 550db9996fee96b3aba2665431e2ff0573308b78 M	gretl/gretl_test.params
+commit 489a7ffd215f6fa85367c60428d5a7b7f9089b0b
+tree dab49ff825cf39f8ed91e19b567b0dddc536e0ba
+parent c8a8b7607aef1eb286ac916788a3080003aeaaa2
+author edigonzales <edi.gonzales@gmail.com> 2022-09-07 09:55:59 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-07 09:55:59 +0200
+
+    [sodata-preview] bump version
+
+
+:100644 100644 e9e51cc6250779a5b865adf71b6808cdcea5b23b 5dae2fa65d897d2327cb55d16ba9f1f9f73a6851 M	sodata-preview/sodata-preview_integration.params
+:100644 100644 11f8b421a047204c57c70ace1fa81f9c1b5adffd 8734dc40c5cd2661eeb6d796a35ac7d9fff14c63 M	sodata-preview/sodata-preview_production.params
+commit 920c280c52de158d65df1d53ca2a86d5e840b15d
+tree e6cfc9047c9f6223f87816415ea5e7ee510211be
+parent 6c084fdc6e16f886fa8356c6d02d21b6467f10b4
+author edigonzales <edi.gonzales@gmail.com> 2022-09-05 09:14:38 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-05 09:14:38 +0200
+
+    [sodata-preview] update version
+
+
+:100644 100644 7e2fbc3e807a6cf060151b300cc0c3a88a48c90c e9e51cc6250779a5b865adf71b6808cdcea5b23b M	sodata-preview/sodata-preview_integration.params
+:100644 100644 df70e649635a437e6b67ff2059cb837db49788ad 11f8b421a047204c57c70ace1fa81f9c1b5adffd M	sodata-preview/sodata-preview_production.params
+commit 469315365027df9b26d1eb62c6bd289ed6bf6b5e
+tree e6cfc9047c9f6223f87816415ea5e7ee510211be
+parent 6c084fdc6e16f886fa8356c6d02d21b6467f10b4
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-05 09:08:04 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-05 09:08:04 +0200
+
+    [sodata-preview] Update image tag
+
+
+:100644 100644 7e2fbc3e807a6cf060151b300cc0c3a88a48c90c e9e51cc6250779a5b865adf71b6808cdcea5b23b M	sodata-preview/sodata-preview_integration.params
+:100644 100644 df70e649635a437e6b67ff2059cb837db49788ad 11f8b421a047204c57c70ace1fa81f9c1b5adffd M	sodata-preview/sodata-preview_production.params

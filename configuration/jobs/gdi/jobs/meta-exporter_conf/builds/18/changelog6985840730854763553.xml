@@ -1,0 +1,80 @@
+commit 66af947b89ad6896a9e2a1738cd1a3453b03408c
+tree d2b39a4b532f59180bcca0f0311a9c7de5c33de6
+parent d4c2878e942505966abd494d4e6bbfe0c9148548
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 15:10:33 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 15:10:33 +0200
+
+    [meta-exporter_conf] add upload to sodata pod
+
+
+:100644 100644 aa5b84395a34fbf25401b484032e047da6c3c9ac c79b2bdaa1b65c81766c1a8b5a7ab73b0b588ab7 M	api_webgisclient/meta-exporter_conf/Jenkinsfile
+commit d4c2878e942505966abd494d4e6bbfe0c9148548
+tree eac91f33c06000c64c5a1dd8e0531209fa32bc74
+parent 3220ea003d32fb23af7baf7107d565267a790840
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 12:59:36 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 12:59:36 +0200
+
+    [meta-exporter_geocat] fixed syntax for put
+
+
+:100644 100644 f1661d90a9cffc94e1f646d757b143e136f87e66 466b85fc49a824521c1e7b27441f74dee2c4bc53 M	api_webgisclient/meta-exporter_geocat/Jenkinsfile
+commit 3220ea003d32fb23af7baf7107d565267a790840
+tree a1f739579d76bb6090236e8d873f6b9d506850a9
+parent 23eb27819d6dcd7fd74946de411f84950f80d8dc
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 12:54:01 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 12:54:01 +0200
+
+    [metaexporter_geocat] add sftp commands
+
+
+:100644 100644 2864515f19291cd2eab1fcaed1fcb48f44be7f8b f1661d90a9cffc94e1f646d757b143e136f87e66 M	api_webgisclient/meta-exporter_geocat/Jenkinsfile
+commit 23eb27819d6dcd7fd74946de411f84950f80d8dc
+tree 7afcbd7315e2a084ebc64688d23e153f4d990c5d
+parent 070ad89d7dd9963ed431cdfae3ad48b68404afbf
+author pfeimich <mpfeiffer1975@gmail.com> 2022-10-10 14:19:15 +0200
+committer pfeimich <mpfeiffer1975@gmail.com> 2022-10-10 14:19:15 +0200
+
+    [meta-exporter_geocat] added user to scp command
+
+
+:100644 100644 4a31712409a9e6d7e997ce02fd6fc5cdb8b00b3b 2864515f19291cd2eab1fcaed1fcb48f44be7f8b M	api_webgisclient/meta-exporter_geocat/Jenkinsfile
+commit 070ad89d7dd9963ed431cdfae3ad48b68404afbf
+tree d638c3acf990901bca18c8985e02cbb6e150ceb6
+parent e3850e254603dde8316e725401545d4287ca6ab2
+author pfeimich <mpfeiffer1975@gmail.com> 2022-10-10 14:15:08 +0200
+committer pfeimich <mpfeiffer1975@gmail.com> 2022-10-10 14:15:08 +0200
+
+    [meta-exporter_geocat] change from sftp to scp
+
+
+:100644 100644 7a45b7ea53dbae84e9d99a835dbda3d1fc3f1090 4a31712409a9e6d7e997ce02fd6fc5cdb8b00b3b M	api_webgisclient/meta-exporter_geocat/Jenkinsfile
+commit e3850e254603dde8316e725401545d4287ca6ab2
+tree 003a84d3821ce9c25a22e69672b511192bf4288d
+parent 61e675efc320c7feecf188ef82cd0107488a4339
+author pfeimich <mpfeiffer1975@gmail.com> 2022-10-10 13:31:46 +0200
+committer pfeimich <mpfeiffer1975@gmail.com> 2022-10-10 13:31:46 +0200
+
+    [meta-exporter_geocat] fixed typo in sftp command
+
+
+:100644 100644 ff5ffc8f642fc545ef30fb11de928ee8f05e8872 7a45b7ea53dbae84e9d99a835dbda3d1fc3f1090 M	api_webgisclient/meta-exporter_geocat/Jenkinsfile
+commit 61e675efc320c7feecf188ef82cd0107488a4339
+tree 7e48c32b7d4eebc069dbc3e43cca345e1f499daa
+parent ec6a2c69898d4286fc45ed4fcfa9da4df014bf49
+author pfeimich <mpfeiffer1975@gmail.com> 2022-10-10 12:37:36 +0200
+committer pfeimich <mpfeiffer1975@gmail.com> 2022-10-10 12:37:36 +0200
+
+    [meta-exporter_geocat] added login to sftp server
+
+
+:100644 100644 eb52e3d30a84fa0a548914f8e14841691e0b0bb0 ff5ffc8f642fc545ef30fb11de928ee8f05e8872 M	api_webgisclient/meta-exporter_geocat/Jenkinsfile
+commit ec6a2c69898d4286fc45ed4fcfa9da4df014bf49
+tree a8802d420885d5a7cf9210c038800a1131b412e2
+parent 115173f75f79826636ea9f5739208790b40bc25c
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-06 18:00:25 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-06 18:00:25 +0200
+
+    [meta-exporter_geocat] change stage name
+
+
+:100644 100644 8e21c2d66c4315eb1b5c2adbb72277e14225cc1d eb52e3d30a84fa0a548914f8e14841691e0b0bb0 M	api_webgisclient/meta-exporter_geocat/Jenkinsfile

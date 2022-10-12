@@ -1,0 +1,11 @@
+commit 9d570735eeba6c63ff25e804c1deb648f2ffe268
+tree ac9150798a42a6f70c1fef5c693c4853396d9d44
+parent 66af947b89ad6896a9e2a1738cd1a3453b03408c
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 18:15:19 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 18:15:19 +0200
+
+    [meta-exporter..] change secret name
+
+
+:100644 100644 c79b2bdaa1b65c81766c1a8b5a7ab73b0b588ab7 5e44cc919937efbc75d909b871f24aa3ac0f30cf M	api_webgisclient/meta-exporter_conf/Jenkinsfile
+:100644 100644 466b85fc49a824521c1e7b27441f74dee2c4bc53 66fe898b0ed1c1d9634f9fe6210a83f76b19b9bc M	api_webgisclient/meta-exporter_geocat/Jenkinsfile

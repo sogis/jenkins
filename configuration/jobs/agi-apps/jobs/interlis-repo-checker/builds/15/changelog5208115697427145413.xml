@@ -1,0 +1,12 @@
+commit c13c6756d51fba4fdc06b3fec5b911b1d2d68020
+tree a5e0a2007f008fbe325b2ef86e010a3204f4db7d
+parent 20a7bde9b9d5e14643e79f24347fdf1032df4125
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 11:58:07 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 11:58:07 +0200
+
+    [interlis-repo-checker] Increase memory limit (prod)
+    
+    For shorter initialization time
+
+
+:100644 100644 be4331757179e042ea98a36179cf87ceda7b5b6c a79dfb436e257441f984239670ae5c954607f46b M	interlis-repo-checker/interlis-repo-checker_production.params

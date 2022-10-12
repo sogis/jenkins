@@ -1,0 +1,32 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2.94">
+    <parentIds>
+      <string>9</string>
+    </parentIds>
+    <id>10</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.EnvStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.94">
+      <arguments>
+        <entry>
+          <string>overrides</string>
+          <list>
+            <string>GIT_BRANCH=origin/master</string>
+            <string>GIT_COMMIT=c13c6756d51fba4fdc06b3fec5b911b1d2d68020</string>
+            <string>GIT_PREVIOUS_COMMIT=20a7bde9b9d5e14643e79f24347fdf1032df4125</string>
+            <string>GIT_PREVIOUS_SUCCESSFUL_COMMIT=20a7bde9b9d5e14643e79f24347fdf1032df4125</string>
+            <string>GIT_URL=https://github.com/sogis/openshift-templates.git</string>
+          </list>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.47">
+      <startTime>1662026328152</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

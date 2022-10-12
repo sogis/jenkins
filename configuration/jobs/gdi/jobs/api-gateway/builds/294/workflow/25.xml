@@ -1,0 +1,28 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.94">
+    <parentIds>
+      <string>24</string>
+    </parentIds>
+    <id>25</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.94">
+      <arguments>
+        <entry>
+          <string>script</string>
+          <string>
+       oc process -f https://raw.githubusercontent.com/sogis/pipelines/master/api_webgisclient/api-gateway/resources.yaml -p ENVIRONMENT=test -p BASEURL=geo-t.so.ch -p WMTS_URL=mapcache.agi-mapcache-test.svc -p NAMESPACE=gdi-test -p MATOMO_URL=analytics-i.apps.ocp.so.ch -p NO_SES_URL=geotest -p BASICAUTH=d21zYXV0aDpyNlRVcEhVQkJuZ0lTSVphRUFkSA== | oc apply -n ${namespace} -f- 
+    </string>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.47">
+      <startTime>1664436134400</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

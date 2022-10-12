@@ -1,0 +1,11 @@
+commit ac6cf54e76701b14991cb82f65eb9d2e23e347aa
+tree 71d6c0d71c316413a7b33826896ef278a47aba80
+parent 7bf765c4c66d74bacf9f196b65d867d3f333e289
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-09 22:35:30 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-09 22:35:30 +0200
+
+    [gretl] Update jenkins imagestream name
+
+
+:100644 100644 b31a11d6c13ef24e3083a385e0c7ab26826344b1 f224e3315cc1fbe7754d96f02259085fbaad012a M	gretl/Jenkinsfile
+:100644 100644 622f9dea9f69566226a17adc050ffc9db799ed03 7a3d8f77484b78eefa766ab8eefa01d347168996 M	gretl/gretl.yaml

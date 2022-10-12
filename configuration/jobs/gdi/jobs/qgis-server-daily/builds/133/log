@@ -1,0 +1,129 @@
+Started by timer
+Checking out git https://github.com/sogis/pipelines.git into /var/lib/jenkins/jobs/gdi/jobs/qgis-server-daily/workspace@script to read api_webgisclient/qgis-server-daily/Jenkinsfile
+The recommended git tool is: git
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/jobs/gdi/jobs/qgis-server-daily/workspace@script/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sogis/pipelines.git # timeout=10
+Fetching upstream changes from https://github.com/sogis/pipelines.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/sogis/pipelines.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision 6ab0aa26dd6cbb1b6a1f1198f42230f576b5b3b5 (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6ab0aa26dd6cbb1b6a1f1198f42230f576b5b3b5 # timeout=10
+Commit message: "[meta-exporter_geocat] Initialimport"
+ > git rev-list --no-walk 02bd5a89c82dbbec461f43f76f9d8f95aa701f43 # timeout=10
+[8mha:////4IZv91CJqeUCAWo9ck9BVKh65/LumSNWSnryjT7AKhk0AAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4Gvb8ff7+zUJN0sTymTbuqoRQQ5rfqKCYwtOT8imTWLpAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbaGmsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfya1RxvAAAAA==[0m[Pipeline] library
+Loading library jenkins-shared-libs@master
+Attempting to resolve master from remote references...
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git ls-remote -- https://github.com/sogis/jenkins-shared-libs.git # timeout=10
+Found match: refs/heads/master revision 3459e1770a518a80984f743e0cd0471c31eea966
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/jobs/gdi/jobs/qgis-server-daily/workspace@libs/jenkins-shared-libs/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sogis/jenkins-shared-libs.git # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/sogis/jenkins-shared-libs.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --no-tags --force --progress -- https://github.com/sogis/jenkins-shared-libs.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking out Revision 3459e1770a518a80984f743e0cd0471c31eea966 (master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3459e1770a518a80984f743e0cd0471c31eea966 # timeout=10
+Commit message: "fixed wrong parameter name"
+ > git rev-list --no-walk 3459e1770a518a80984f743e0cd0471c31eea966 # timeout=10
+[8mha:////4EoHRThWbpad6taEuKKrC6ms+Y7BZ4lyb8nakz/HhfnbAAAApR+LCAAAAAAAAP9tjUEKwjAURH8qXbh16SFSEHfiym3IxhPEJMa04f82SW1XnsireQejBVcODMwMDO/5gjpFOFJ0vLXYeUza8z6MriQ+UeyugSbe0oVrwkTBcmknScaeliopW1jEKlgJWFvUgZJHl2EjWnVXTVDomnOOZTsIqLwZ4AFMFHJWMX/LHGF7G00i/HH+AmDuM7Bd8f7zq9/WVBy+wAAAAA==[0m[Pipeline] node
+Running on [8mha:////4LBgOhqKJGJElaTk2oYj7t8ESRC/z/RoPQ3eebNqQmjGAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/lib/jenkins/jobs/gdi/jobs/qgis-server-daily/workspace
+[8mha:////4M2wjJBcTt6l0j05cB3fhNNde3QV0ipQsYN6E93uEx3ZAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] {
+[8mha:////4DfYJV9i63ZlmHDPdVbO87w3NbgDo/9lAugxpaw8hxAsAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] stage
+[8mha:////4APJoCCrlhCDIOUlMVg4IS+ixVjOy5kJWF3GTqpe7JTQAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4HEkyzR5ONdCR2417ULwjQCMTy557XNUWI3lg886KyZSAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbamKsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4geKI23CvAAAAA==[0m[Pipeline] checkout
+The recommended git tool is: git
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/jobs/gdi/jobs/qgis-server-daily/workspace/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sogis/pipelines.git # timeout=10
+Fetching upstream changes from https://github.com/sogis/pipelines.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/sogis/pipelines.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision 6ab0aa26dd6cbb1b6a1f1198f42230f576b5b3b5 (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6ab0aa26dd6cbb1b6a1f1198f42230f576b5b3b5 # timeout=10
+Commit message: "[meta-exporter_geocat] Initialimport"
+[8mha:////4Dhc5aq6Mfo6/9XUEt2GePmDZayEGMt7XzxTlc48VLCAAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbGmOsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzDEWYIfa/Qdlmg9gvAAAAA==[0m[Pipeline] }
+[8mha:////4AfGcZi0psEkx3gg6gJ94paliQ00R9egyRLtyejy3x9CAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiJoY+NY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfId1tBtv8AqUpLPL0AAAA=[0m[Pipeline] // stage
+[8mha:////4NvF5NEFLqjI5q8BFAj+44g8yuBeYuDPZAhm6l+uJgx3AAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BKWgpeYSjFFSIitZywwtMbIwT6y7YF5KKF/E1/oAhEhVb7ay0mucLqhThQNGJzmLvMbVeDGF0uYmJYn8JNImOzqIlTBSsUHZSZOxxQUVsYUlRwkrC2mIbKHl0DBvZ6buug0ZXnzjmbS+h9OYGDyhkNrOO/IU5wvY6mkT48/wVwDwwFDuGsmk+x+oN0+j4W8EAAAA=[0m[Pipeline] withEnv
+[8mha:////4OOacfizf4v2Ymvmi4PzoSg4GvitQSaI8OF/jB+SU/ErAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] {
+[8mha:////4PRr4iqmP0UJMHkWWE7Pp/oD96jLXUPeNEITLkMvrKb3AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] timeout
+Timeout set to expire in 35 min
+[8mha:////4I9IyhDDfgAnBHZcmX31Hm99JwolNo06xE9qmrXySYk1AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAbNWnxXCAAAA[0m[Pipeline] {
+[8mha:////4Ej6zv0D7SnMmOaAfmz0GlMlqOtKtN08Xk/M+NeF6IFqAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] stage
+[8mha:////4FHvnGO8P18ICD5kmLEJv3oHpPUpDN7YFzSXGIgkw4q1AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/s94rDCAAAA[0m[Pipeline] { (Ask for Version)
+[8mha:////4I+NjRSEoMSd1ili2Q9XqlSRAuwtDBQQw7eMr2EHM8q9AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] script
+[8mha:////4B5AWaX8+T03KHNR1nJ4PceMXi8dquLJOfsh7ADHx4JxAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] {
+[8mha:////4EekelOfUZ9SXg9Sirn5hbFAVafvLfeCD27wAx4LB4pJAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiOhCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7ndf2r3BkN+Pj++AAAA[0m[Pipeline] }
+[8mha:////4Addif7ZcnmNmdWSzkaDhYmTCLcE0yAkXLF0IIEWwGacAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICNBQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AGHKGa5vgAAAA==[0m[Pipeline] // script
+[8mha:////4DYuzDh3ilPPysUtxfjkh0Tjt7rD7QZD8W6rJl+T31BlAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiUNAgqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AG0yz0FvgAAAA==[0m[Pipeline] }
+[8mha:////4Ebelc+1TcrtWS4zNh6tyyM0W2/Cj9xAGQx+wOCEC/RyAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRkagQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AGg6KAavgAAAA==[0m[Pipeline] // stage
+[8mha:////4NxLunqCRpyN5OtwDxNwgNpQo7dulo7/sOtGAHTim5dvAAAAqB+LCAAAAAAAAP9tjT0OwjAUg1+LOrAycohU/GyoE2vUhROEJoSk0XslSUknTsTVuAOBSkx4sGxL1vd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCg3+2zb3edZvQEVaUkQwgAAAA==[0m[Pipeline] stage
+[8mha:////4KOP1o2LEFexvlI8y4s8Yvc++jimn0DHoRbidOpI9El3AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAd6e6VPCAAAA[0m[Pipeline] { (Deploy qgis-server)
+[8mha:////4AMOK5WNp7PEriCfpzOGyLOtJirQzOCbjdr5BFX3nAtdAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIagQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN38C26S+AAAA[0m[Pipeline] sh
++ oc process -f https://raw.githubusercontent.com/sogis/pipelines/master/api_webgisclient/qgis-server-daily/deployment/deploymentconfig.yaml -p NAMESPACE=gdi-production -p TAG=2.0.17 -p REPLICAS=6 -p CPU_REQUEST=2000m -p CPU_LIMIT=4000m -p MEMORY_REQUEST=8192Mi -p MEMORY_LIMIT=16384Mi -p ENVIRONMENT=-prod
++ oc apply -n gdi-production -f-
+deploymentconfig.apps.openshift.io/qgis-server configured
++ oc rollout latest -n gdi-production qgis-server
+deploymentconfig.apps.openshift.io/qgis-server rolled out
++ oc rollout status -n gdi-production dc qgis-server
+Waiting for rollout to finish: 0 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 0 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 0 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 1 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 1 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 1 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 1 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 1 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 1 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 2 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 2 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 2 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 2 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 3 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 3 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 3 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 3 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 4 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 4 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 4 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 4 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 5 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 5 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 5 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 5 out of 6 new replicas have been updated...
+Waiting for rollout to finish: 5 of 6 updated replicas are available...
+replication controller "qgis-server-183" successfully rolled out
+[8mha:////4CLzzaWixwMwcdUhlqxF+3hAIJLv4n7hKxWcMRiH0RQLAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIUSDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQHjyRvdvgAAAA==[0m[Pipeline] }
+[8mha:////4Go1o24wQ5zU9Qr9X6JazRG0Q5k8j/RWd4hSrV+qJrcnAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQUGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQHljyOIvgAAAA==[0m[Pipeline] // stage
+[8mha:////4A6OJUlnMecVckyTSxd+h8pc9/m+KThGMVYIPCIsNtHIAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUIAYk1Ik16sIJQhNC0uj/kqSkEyfiatyBQCUmPFi2Jes9X1AFDw15zazC3mDoDBvcqHNiiXx/cZSYpTPrCAM5xVqVWpLqONeWooJZRQkLDkuFnaNgUEdYcSvuonYCdX2KPm8HDqWRN3hAwTM5Ch+/ZfKwvo4yEP44fwEwDRHKzS7bdv95Vm/WmY56wgAAAA==[0m[Pipeline] stage
+[8mha:////4D37c6LN3Yq7gd/ujoBbtq6DnrtI2LYMe1wgRutHLsUwAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgIhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0QKVszCAAAA[0m[Pipeline] { (Declarative: Post Actions)
+[8mha:////4DrgbTfxI4/dzw5NtQDc1aySkkzyIMnFHypjdvSEWZ5zAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCoEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AHN/bm5vgAAAA==[0m[Pipeline] sh
++ rm -rf /var/lib/jenkins/jobs/gdi/qgis-server-daily/workspace@script
++ rm -rf /var/lib/jenkins/jobs/gdi/qgis-server-daily/workspace@libs
++ rm -rf /var/lib/jenkins/jobs/gdi/jobs/qgis-server-daily/workspace/api_webgisclient /var/lib/jenkins/jobs/gdi/jobs/qgis-server-daily/workspace/createGlobalVar.png /var/lib/jenkins/jobs/gdi/jobs/qgis-server-daily/workspace/README.md /var/lib/jenkins/jobs/gdi/jobs/qgis-server-daily/workspace/setBranchesToBuild.png
+[8mha:////4BaRqvksmWBb5c6MiM2Keyk5h6bQqNGLcgtTjRkju+NMAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AFSjtgYvgAAAA==[0m[Pipeline] }
+[8mha:////4IE2L4WJhzPm7qM8neqbvfKSs2jR8HdZzf/ZK/ps1peUAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihQYJUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5r3PVhw9qzEvpvgAAAA==[0m[Pipeline] // stage
+[8mha:////4KtZsJs53dW5nKorHh8WzJWCPsr4LfzALaDNODMXHItuAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRCh2iSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BGVd59ofPicAjAC+AAAA[0m[Pipeline] }
+[8mha:////4K+sX9BhdpxwyayYWf6yu+9LcIm42ZFuX2BnjkMkasRiAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRCh2iSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BGV9yLWvPzyl7YO+AAAA[0m[Pipeline] // timeout
+[8mha:////4Id4w8Dxova7q4tisUCri4dWzW/9iPn4d+C2bqQ7+D9YAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Idd29wEPRrY/vgAAAA==[0m[Pipeline] }
+[8mha:////4GudQoukzgFwIXNHe53wqpfQ4+e7qRygr7yZ1g2IndGXAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiCIkGUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5P+Sq6w8bZSsgvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4OHW9W/keGpJOTIX38/KceHIBO94L5oP1OLSiQMoSjBWAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpEKJAVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Nu9INt9AAhmqlq9AAAA[0m[Pipeline] }
+[8mha:////4FekMAEJuY22WNfdYgpIrRr9DITZw3rtkUo4o5HvImloAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpoEBCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Nu9INt9AE/B/a+9AAAA[0m[Pipeline] // node
+[8mha:////4PU+dWYPaHmAmx/7hDHaOsHUo4WcjTIevh+0FjFlV/+DAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRoEKIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcXZNsPyk3+e70AAAA=[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

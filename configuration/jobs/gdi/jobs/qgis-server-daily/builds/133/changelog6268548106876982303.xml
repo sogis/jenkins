@@ -1,0 +1,164 @@
+commit 6ab0aa26dd6cbb1b6a1f1198f42230f576b5b3b5
+tree 93fd724025c4d5d8f03d22390e4d34bf91179a63
+parent 2ae6d53b2cace032d3a958eae894d11bb0575710
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:49:23 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:49:23 +0200
+
+    [meta-exporter_geocat] Initialimport
+
+
+:000000 100644 0000000000000000000000000000000000000000 f3cc600a9ffd3f546cd28aa1515002399a504b0a A	api_webgisclient/meta-exporter_geocat/Jenkinsfile
+commit 2ae6d53b2cace032d3a958eae894d11bb0575710
+tree f61d9179b8a71f2ce99ec9bf3b88f543ba952a40
+parent 2db414402a9ee903a09f7b0849a1222205c29bd7
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:41:56 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:41:56 +0200
+
+    [meta-exporter_conf] uncomment rsync part
+
+
+:100644 100644 6ed48fe5837bf3c5559920795cbbb3f455a254ba ddf9d2aa36499182150e4eda923310cecec3e794 M	api_webgisclient/meta-exporter_conf/Jenkinsfile
+commit 2db414402a9ee903a09f7b0849a1222205c29bd7
+tree 7e0b6cd118a65883cbfdcf2ded94a060f2e08df1
+parent 45d52bf3b015b9d90163236a2d9c169db2bee3ea
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:12:36 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:12:36 +0200
+
+    [meta-exporter_conf] rollback hardcoded podname
+
+
+:100644 100644 c87a4e6f173e488d1bba44e22c021d4c059283a8 6ed48fe5837bf3c5559920795cbbb3f455a254ba M	api_webgisclient/meta-exporter_conf/Jenkinsfile
+commit 45d52bf3b015b9d90163236a2d9c169db2bee3ea
+tree f22401e830f6b7611fd64cba1d7685eac5b9f378
+parent 903e5bd29f56b7e16b119e987e331f4be03692de
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:10:37 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:10:37 +0200
+
+    [meta-exporter_conf] added script part
+
+
+:100644 100644 16021aaee68fa8320d544e2dd208e988bfeda08c c87a4e6f173e488d1bba44e22c021d4c059283a8 M	api_webgisclient/meta-exporter_conf/Jenkinsfile
+commit 903e5bd29f56b7e16b119e987e331f4be03692de
+tree f967201363b85be230d6946f485beb8b8704fc8e
+parent de4985504159ede942ee3d22e76c561f79fb0438
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:05:07 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:05:07 +0200
+
+    [meta-exporter_conf] hardcode podname for debugging
+
+
+:100644 100644 37a08d9243798f91b8b84b4027157d827046eb9c 16021aaee68fa8320d544e2dd208e988bfeda08c M	api_webgisclient/meta-exporter_conf/Jenkinsfile
+commit de4985504159ede942ee3d22e76c561f79fb0438
+tree fd4ca15b3d1aa6dfd711313a50a2fc303cbf213e
+parent a48bf7142d36b7c96fda3149fe012d194f222924
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 16:46:13 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 16:46:13 +0200
+
+    [meta-exporter_conf] added missing bracket
+
+
+:100644 100644 380950e240d2e47e5e92561e6996679abdf68654 37a08d9243798f91b8b84b4027157d827046eb9c M	api_webgisclient/meta-exporter_conf/Jenkinsfile
+commit a48bf7142d36b7c96fda3149fe012d194f222924
+tree 4c7666038b3dd693df4e45b250ae52f1dc4d0b3a
+parent 245ac252596597276eeafaa9ed0fef0d57a18f5b
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 16:44:27 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 16:44:27 +0200
+
+    [meta-exporter_conf] added sync to sodata Pod
+
+
+:100644 100644 fe59c3c1de99b71e4b7e6fda450654de2298ad8f 380950e240d2e47e5e92561e6996679abdf68654 M	api_webgisclient/meta-exporter_conf/Jenkinsfile
+commit 245ac252596597276eeafaa9ed0fef0d57a18f5b
+tree 92d31d9d2d5ae535f5152dd73a1a9a268b348953
+parent d367d396135d66349008d3e4f78a49eab250541e
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 15:32:37 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 15:32:37 +0200
+
+    [meta-exporter_conf] change db username to simi
+
+
+:100644 100644 2fe0edfbd0b598a26f389af3d5fdd30b5d79e661 fe59c3c1de99b71e4b7e6fda450654de2298ad8f M	api_webgisclient/meta-exporter_conf/Jenkinsfile
+commit d367d396135d66349008d3e4f78a49eab250541e
+tree 5bf7e0cc71385e2d47408ec4ddf669d0c353fc70
+parent 5b0d127fca82a7a9538d50b97eaf4036cfafdfce
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 15:23:57 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 15:23:57 +0200
+
+    [meta-exporter_conf] change default value for namespace
+
+
+:100644 100644 cbb723294ec58d9fc3ca2720c5532f7a2a3e49a1 2fe0edfbd0b598a26f389af3d5fdd30b5d79e661 M	api_webgisclient/meta-exporter_conf/Jenkinsfile
+commit 5b0d127fca82a7a9538d50b97eaf4036cfafdfce
+tree ed110854903ecf668e231c520ef133eb78f23a33
+parent 8f7de30fa633089f44ce3f5a246c6acc77ac4e2d
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 15:21:18 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 15:21:18 +0200
+
+    [meta-exporter_conf] change naming
+
+
+:100644 100644 fc224dadc9be4a5b4f0ff1841edfb033a6f684ba cbb723294ec58d9fc3ca2720c5532f7a2a3e49a1 R097	api_webgisclient/metaexport_conf/Jenkinsfile	api_webgisclient/meta-exporter_conf/Jenkinsfile
+commit 8f7de30fa633089f44ce3f5a246c6acc77ac4e2d
+tree b16e26fbfbc4af687dc147d6e50b478e6dfba561
+parent 6acbc74e02eb3ee4d6c1ea85fb09fccae67706bf
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 15:19:38 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 15:19:38 +0200
+
+    [metaexporter_conf] added credentials to step Create Datensuche Conf File
+
+
+:100644 100644 3920afa0f70dd44baa6dadbea04673f433bd2367 fc224dadc9be4a5b4f0ff1841edfb033a6f684ba M	api_webgisclient/metaexport_conf/Jenkinsfile
+commit 6acbc74e02eb3ee4d6c1ea85fb09fccae67706bf
+tree d0319b45e46ad43f5a3ee64df08437fc5f922998
+parent 4d1c2c5c43c9eb6ff2c3594fcfcbdf6c9243d0b6
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 15:14:10 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 15:14:10 +0200
+
+    [metaexport_conf] change param syntax
+
+
+:100644 100644 1554b898e9833a453bae736807939ec32601274e 3920afa0f70dd44baa6dadbea04673f433bd2367 M	api_webgisclient/metaexport_conf/Jenkinsfile
+commit 4d1c2c5c43c9eb6ff2c3594fcfcbdf6c9243d0b6
+tree 279bf6fd7c01aa45f5e1001e380bf3a15b73146d
+parent 6e8644c7a64c0bdb744f70d5f412f6170c0648e8
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 13:07:44 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 13:07:44 +0200
+
+    [metaexport_conf] added java command to create xml
+
+
+:100644 100644 3071c722804a2912190d1fef3c3792fe3473efb8 1554b898e9833a453bae736807939ec32601274e M	api_webgisclient/metaexport_conf/Jenkinsfile
+commit 6e8644c7a64c0bdb744f70d5f412f6170c0648e8
+tree 8c4f852316dcbf0d3f535d674c9341946029db7a
+parent 6f817d62f86dea6703fb7037eddf1c5c764af6c8
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 12:53:59 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 12:53:59 +0200
+
+    [metaexport_conf] added missing stage
+
+
+:100644 100644 c62b2271757ec4d0e5652f3eb301b0ffa84ff1c9 3071c722804a2912190d1fef3c3792fe3473efb8 M	api_webgisclient/metaexport_conf/Jenkinsfile
+commit 6f817d62f86dea6703fb7037eddf1c5c764af6c8
+tree 0e8512620911e96feb88f6d67e9292050e7a5039
+parent e01bc7aef9639b6e2521eac6e746a354a75876f6
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 12:48:10 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 12:48:10 +0200
+
+    [metaexport_conf] Initialimport
+
+
+:000000 100644 0000000000000000000000000000000000000000 c62b2271757ec4d0e5652f3eb301b0ffa84ff1c9 A	api_webgisclient/metaexport_conf/Jenkinsfile
+commit e01bc7aef9639b6e2521eac6e746a354a75876f6
+tree 58868b9f70a94d1e62143a6544be2a58f461f82b
+parent 02bd5a89c82dbbec461f43f76f9d8f95aa701f43
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-05 09:10:51 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-05 09:10:51 +0200
+
+    Revert "[plotinfo-service] Route directly to oereb-web-service"
+    
+    This reverts commit d620021fb468a1491d41969355b5ef842b4199d5. The change
+    isn't needed anymore, and it didn't fully work.
+
+
+:100644 100644 6585ec186eda617bdd55170bd14b5d0037c14c21 40c6ab147baacd9043245a665fc44d6b1edee345 M	api_webgisclient/plotinfo-service/Jenkinsfile
+:100644 100644 e06651836e93cdd8fb5f369168e58f0e1087db75 7656cafab56ba3a9fab59d77475643c165568005 M	api_webgisclient/plotinfo-service/deployment/deploymentconfig.yaml

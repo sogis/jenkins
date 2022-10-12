@@ -1,0 +1,38 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2.94">
+    <parentIds>
+      <string>57</string>
+    </parentIds>
+    <id>58</id>
+    <descriptorId>org.csanchez.jenkins.plugins.kubernetes.pipeline.PodTemplateStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.94">
+      <arguments>
+        <entry>
+          <string>inheritFrom</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>label</string>
+          <string>json2qgs-agent</string>
+        </entry>
+        <entry>
+          <string>idleMinutes</string>
+          <int>600</int>
+        </entry>
+        <entry>
+          <string>yaml</string>
+          <wf.a.ArgumentsAction_-NotStoredReason>OVERSIZE_VALUE</wf.a.ArgumentsAction_-NotStoredReason>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>false</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.47">
+      <startTime>1665498439909</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

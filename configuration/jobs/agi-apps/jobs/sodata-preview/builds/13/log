@@ -1,0 +1,213 @@
+Started by user [8mha:////4PRhxaeahchDTPapGBMr1SxlMZgOrlrttEgYsBil9EdzAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgY+/dLi1CL9pKzisvKqzFQADLWRbcMAAAA=[0mZiegler Stefan
+Obtained Jenkinsfile from git https://github.com/sogis/openshift-templates.git
+[8mha:////4IZv91CJqeUCAWo9ck9BVKh65/LumSNWSnryjT7AKhk0AAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4HHgYYa5KBwDaDsSI0fedbp02SxS+btDIrvo1ARFNS4rAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4LBgOhqKJGJElaTk2oYj7t8ESRC/z/RoPQ3eebNqQmjGAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/lib/jenkins/jobs/agi-apps/jobs/sodata-preview/workspace
+[8mha:////4OD/7XoghmcD3pjjbz4PofN1EPXx5yCRwJTfoIVyQgGQAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4M2wjJBcTt6l0j05cB3fhNNde3QV0ipQsYN6E93uEx3ZAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4DfYJV9i63ZlmHDPdVbO87w3NbgDo/9lAugxpaw8hxAsAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4Ghi1xt4uQ8gdPycHHyAQwXyQwSlznZ0fp0rXu3pwp6WAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+The recommended git tool is: git
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/jobs/agi-apps/jobs/sodata-preview/workspace/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sogis/openshift-templates.git # timeout=10
+Fetching upstream changes from https://github.com/sogis/openshift-templates.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/sogis/openshift-templates.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 1a34c2ad9146498a5237874630e1b36115fb7eb8 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git read-tree -mu HEAD # timeout=10
+ > git config core.sparsecheckout false # timeout=10
+ > git checkout -f 1a34c2ad9146498a5237874630e1b36115fb7eb8 # timeout=10
+Commit message: "[sodata-preview] bump version"
+ > git rev-list --no-walk 1a34c2ad9146498a5237874630e1b36115fb7eb8 # timeout=10
+[8mha:////4HMazXeOn40xNOwd//6oT9IqBYXaS5xhWCGLdIDByycxAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4MVrHeTLwsYjWdheZEeFYL9S/2qJSEo0UzEbVl5e2krGAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4ItfW+8sjOWiuCvF70kIfiryVYfOS47WjxKiUSNvC1XqAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
+[8mha:////4BTtFpcWBia86DCeMmjVjbfZbflafBqmiPI76VnX/xO5AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4OOacfizf4v2Ymvmi4PzoSg4GvitQSaI8OF/jB+SU/ErAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] stage
+[8mha:////4PRr4iqmP0UJMHkWWE7Pp/oD96jLXUPeNEITLkMvrKb3AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] { (Checkout branch)
+[8mha:////4IYKVMtKCWdGA+1GQ+/wvCP28ByaF0S4H0DSP4Rd3MuXAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBgq0rvS+AAAA[0m[Pipeline] checkout
+The recommended git tool is: git
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/jobs/agi-apps/jobs/sodata-preview/workspace/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sogis/openshift-templates.git # timeout=10
+Using shallow fetch with depth 1
+Fetching upstream changes from https://github.com/sogis/openshift-templates.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --no-tags --force --progress --depth=1 -- https://github.com/sogis/openshift-templates.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 1a34c2ad9146498a5237874630e1b36115fb7eb8 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git config core.sparsecheckout true # timeout=10
+ > git read-tree -mu HEAD # timeout=10
+ > git checkout -f 1a34c2ad9146498a5237874630e1b36115fb7eb8 # timeout=10
+Commit message: "[sodata-preview] bump version"
+[8mha:////4EivEwcDh2Bruh9XowUZtoPLMrdkuwswh/NIeS8Jd+E5AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N7BnLt++AAAA[0m[Pipeline] }
+[8mha:////4Ile7BGUsr5ouzxbIafa7qMdIVEk9bygXzbSjYqXewfyAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N4glvS6+AAAA[0m[Pipeline] // stage
+[8mha:////4HRXrO8W+Fj/3wsnN4QKo13If9EMgdiqhCJVKMIYeErLAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUnRgQE2uUhROEJoSk0f9tkpJOnIircQdaKjHhwbItWe/1hioGOFEwzGnsLMbWst6PZk4sU+hunjJzdGUtYSSvmdBZkNLntQpKGlYVJWw4bDW2nqJFk2DHnXzI2ks09SWFeTtyKK0a4AkFn8lJhvQtU4D9fVSR8Mf5C4CpT1A2zWKH5Vl9ANydZ8vCAAAA[0m[Pipeline] stage
+[8mha:////4B5AWaX8+T03KHNR1nJ4PceMXi8dquLJOfsh7ADHx4JxAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] { (Restart the pods)
+Stage "Restart the pods" skipped due to when conditional
+[8mha:////4EekelOfUZ9SXg9Sirn5hbFAVafvLfeCD27wAx4LB4pJAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiOhCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7ndf2r3BkN+Pj++AAAA[0m[Pipeline] }
+[8mha:////4Addif7ZcnmNmdWSzkaDhYmTCLcE0yAkXLF0IIEWwGacAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICNBQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AGHKGa5vgAAAA==[0m[Pipeline] // stage
+[8mha:////4IUzQmh1RJ1XEbTk7rtIk3ZHlm2a+hHCw1PWZVXQRBLOAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYUVMrFEWThCSENJG/5ckpZ04EVfjDgQqMeHBsi1Z7/mCJkU4UHSss9h7TNqzIYyuJDZR7C+BJtbRmWnCRMEyaSdJxh6XKilbWFTVsBKwtqgDJY8uw0Z06q7aoNC1pxzLthdQe3ODB1SikLOK+VvmCNvraBLhj/MXAPOQoea82I5/ns0bXGTWLMIAAAA=[0m[Pipeline] stage
+[8mha:////4AbGmUZoCH4jNoQVogRVDWuEBnnKNBDcUo8kkPZg+WstAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUdEVMrFEXThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbyhjgRMFwp7GzGFvLez+aOfFMobt5ytzRlbeEkbzmjc4NKX1ea0NJw6qCwUbAVmPrKVo0CXbCyYesvERTXVKYt6MAZtUATyjETE4ypG+ZAuzvo4qEP85fAEx9AlYfFquXZ/kBAsTc3cIAAAA=[0m[Pipeline] { (Update ImageStream tags)
+[8mha:////4GNhRu9zb2Ad8BC1Oehp+NjWxNE6SVDAB2cJ3uZldAJoAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyE0vHypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzD5B3baf2vs3w5BRkb4AAAA=[0m[Pipeline] sh
++ oc import-image sodata-preview --all --confirm -o name -n agi-apps-production
+imagestream.image.openshift.io/sodata-preview
+[8mha:////4FkufSGUZbxrH7LS3k9XScBsZenpFGNfSsYWOYFaAflfAAAApB+LCAAAAAAAAP9tjbEOwiAURV9rHFwd/QiaNG7GyZWw+AXYIkLJexSodPKL/DX/QbSJk3e4uecu5/mCdQxwpKCZVTgYjJ1h3k26LJYpDFdHmVm6sI4wklNMqCyoV6cFBSUFS6oaVhw2CjtH0aBOsOVW3mXjJOrmnEL5Dhxq04/wgIoXc5IhfWEOsLtNfST8ef4KYPY+Qd3uP9W+Ad3NsHm+AAAA[0m[Pipeline] }
+[8mha:////4MRspDsS+65cqgb8OqlsYrRA1YqHQXKdNHl83zIH6bhDAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN8JP5Su+AAAA[0m[Pipeline] // stage
+[8mha:////4EJqtGkcnUMxec6UwLlY5jS50T9pKyHOfXpFXVdvcXi0AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZWBBTF2jLpwgNCEkjf4vSUo6cSKuxh0IVGLCg2Vbst7zBVXwcCSvmVU4GAy9YaObdE4skR8ujhKzdGY9YSCnWKdSR1K1S+0oKlhUlLDisFbYOwoGdYQNt+IuaidQ16fo83bgUBp5gwcUPJOj8PFbZg/b6yQD4Y/zFwDzGKFsmmy7/edZvQHkVNMxwgAAAA==[0m[Pipeline] stage
+[8mha:////4OUubGkLhxHox0+ockPDiC3ZsFa8mY6W2/TfGDUNuZ5YAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYoABMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAyQCqkwgAAAA==[0m[Pipeline] { (Apply configuration)
+[8mha:////4KfgnKkucRdH6BG+aE9waWy1XQKjoImcf4RKQ3sTpxkSAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi0YCEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAGvZp0gvgAAAA==[0m[Pipeline] sh
++ oc process -f sodata-preview/sodata-preview.yaml --param-file=sodata-preview/sodata-preview_production.params
++ oc apply -f - -n agi-apps-production
+imagestream.image.openshift.io/sodata-preview configured
+deploymentconfig.apps.openshift.io/sodata-preview configured
+service/sodata-preview unchanged
+[8mha:////4HJpnpgvLpcx/N23t6ylJIiF2ZVkZVDPN4XNtD+UsWa1AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi0SCEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQGMKkS1vgAAAA==[0m[Pipeline] }
+[8mha:////4G2wI6bGFL1nnwNVvVMUd9tLodDWg7IVihek2mwILiMKAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCQKJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw9mQDtDvgAAAA==[0m[Pipeline] // stage
+[8mha:////4ImMlGxyiIsTIRFmauFXcMDK6TSwTbr6jeMh1MNYtVQBAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUESNiYo2ycIKQhJA2+r8kKe3EibgadyBQiQkPlm3Jes8XNCnCgaJjncXeY9KeDWF0JbGJYn8JNLGOzkwTJgqWSTtJMva4VEnZwqKqhpWAtUUdKHl0GTaiU3fVBoWuPeVYtr2A2psbPKAShZxVzN8yR9heR5MIf5y/AJiHDDXnxXb882ze6G+hisIAAAA=[0m[Pipeline] stage
+[8mha:////4AgM/axYH8wWo5bQkWQasH9dpwGyxLJauoVADezDMWxoAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+2YMO4MIAAAA=[0m[Pipeline] { (Wait for rollout to finish)
+[8mha:////4PFgfLFvwnypUE9QJ4uQ8FXTyJAH/j8cM1oSi4EgplHHAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikRJR0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMPkEZb3/VO3favo5XL4AAAA=[0m[Pipeline] sh
++ sleep 2
++ oc rollout status dc/sodata-preview --timeout=90s -n agi-apps-production
+Waiting for rollout to finish: 0 out of 2 new replicas have been updated...
+Waiting for rollout to finish: 0 out of 2 new replicas have been updated...
+Waiting for rollout to finish: 1 out of 2 new replicas have been updated...
+Waiting for rollout to finish: 1 out of 2 new replicas have been updated...
+Waiting for rollout to finish: 1 out of 2 new replicas have been updated...
+Waiting for rollout to finish: 1 out of 2 new replicas have been updated...
+Waiting for rollout to finish: 1 old replicas are pending termination...
+Waiting for rollout to finish: 1 old replicas are pending termination...
+Waiting for latest deployment config spec to be observed by the controller loop...
+replication controller "sodata-preview-5" successfully rolled out
+[8mha:////4FrXx7wnf92EbtlmljbpytUNYxpFEg2XwD7PhCDuvoqDAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAR2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7Bij33Ma+AAAA[0m[Pipeline] }
+[8mha:////4KuVDxgtMdIwwD4gU77AjboPfh/mmtb61fNzI96cmm8PAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbNzd1iZS+AAAA[0m[Pipeline] // stage
+[8mha:////4NR04E50wYUfCxkOzxvg65WjElk6t/HDJzTtMgQrgzi0AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUFRILYuoadeEEoQkhafR/SVLSiRNxNe5AoBITHizbkvWeL6iChyN5zazCwWDoDRvdpHNiifxwcZSYpTPrCQM5xTqVOpKqXWpHUcGiooQVh7XC3lEwqCNsuBV3UTuBuj5Fn7cDh9LIGzyg4JkchY/fMnvYXicZCH+cvwCYxwhl02Tb7T/P6g1QX6SXwgAAAA==[0m[Pipeline] stage
+[8mha:////4Gb2beu7k8xoiqeTfJopDIUNC0ak0/xP6Acctq4YlQdXAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QIIBMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfADpB/iZwgAAAA==[0m[Pipeline] { (Declarative: Post Actions)
+[8mha:////4Nj3M4KL/leiNkagpF5WIE1FUnc9P8pkS17I5QAbq7E2AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSUICEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAEGDPXtvgAAAA==[0m[Pipeline] sh
++ oc status --suggest -n agi-apps-production
+In project agi-apps-production on server https://100.68.0.1:443
+
+svc/avgbs2mtab-web-service - 100.68.50.243:80 -> 8080
+  dc/avgbs2mtab-web-service deploys istag/avgbs2mtab-web-service:1.2.24 
+    deployment #5 deployed 2 months ago - 1 pod
+    deployment #4 deployed 2 months ago
+    deployment #3 deployed 9 months ago
+
+svc/cadastral-data-disposal - 100.68.205.241:80 -> 8080
+  dc/cadastral-data-disposal deploys istag/cadastral-data-disposal:1.2.37 
+    deployment #4 deployed 2 months ago - 1 pod
+    deployment #3 failed 2 months ago: newer deployment was found running
+    deployment #2 deployed 9 months ago
+
+svc/gb2av - 100.68.53.201:80 -> 8080
+  dc/gb2av deploys istag/gb2av:1.1.6 
+    deployment #2 deployed 9 months ago - 1 pod
+    deployment #1 deployed 10 months ago
+
+svc/heatdrill-service - 100.68.168.125:80 -> 8080
+  dc/heatdrill-service deploys istag/heatdrill-service:1.0.1 
+    deployment #5 deployed 9 months ago - 1 pod
+
+svc/ili2gpkg-web-service - 100.68.245.125:80 -> 8080
+  dc/ili2gpkg-web-service deploys istag/ili2gpkg-web-service:1.0.41 
+    deployment #1 deployed 10 months ago - 1 pod
+
+svc/ilivalidator-service - 100.68.120.48:80 -> 8888
+  dc/ilivalidator-web-service deploys istag/ilivalidator-web-service:1.3.117 
+    deployment #10 deployed 2 months ago - 1 pod
+    deployment #9 failed 2 months ago: newer deployment was found running
+    deployment #8 deployed 6 months ago
+
+svc/interlis-repo-checker - 100.68.219.140:80 -> 8080
+  dc/interlis-repo-checker deploys istag/interlis-repo-checker:0.0.15 
+    deployment #10 deployed 11 days ago - 1 pod
+    deployment #9 deployed 11 days ago
+    deployment #8 deployed 11 days ago
+
+svc/interlis-repository - 100.68.149.42:80 -> 8080
+  dc/interlis-repository deploys istag/interlis-repository:latest 
+    deployment #209 deployed 19 hours ago - 2 pods
+    deployment #208 deployed 20 hours ago
+    deployment #207 deployed 20 hours ago
+
+svc/jenkins-jnlp - 100.68.56.2:50000
+https://jenkins-agi-apps-production.apps.ocp.so.ch (redirects) (svc/jenkins)
+  dc/jenkins deploys istag/custom-jenkins:latest <-
+    bc/custom-jenkins-build source builds https://github.com/sogis/jenkins on istag/jenkins:v4.7 
+    deployment #5 deployed 6 months ago - 1 pod
+    deployment #4 failed 6 months ago: newer deployment was found running
+    deployment #3 deployed 10 months ago
+
+svc/lidar-browser - 100.68.202.133:80 -> 8080
+  dc/lidar-browser deploys istag/lidar-browser:latest 
+    deployment #2 failed 4 months ago: manual change
+    deployment #1 deployed 10 months ago
+
+svc/modelfinder - 100.68.118.203:80 -> 8080
+  dc/modelfinder deploys istag/modelfinder:0.0.85 
+    deployment #5 deployed 3 days ago - 1 pod
+    deployment #4 deployed 8 days ago
+    deployment #3 deployed 2 months ago
+
+svc/sodata-preview - 100.68.224.26:80 -> 8080
+  dc/sodata-preview deploys istag/sodata-preview:0.0.100 
+    deployment #5 deployed 38 seconds ago - 2 pods
+    deployment #4 deployed 3 days ago
+    deployment #3 deployed 3 days ago
+
+svc/standortkarte - 100.68.136.187:80 -> 8080
+  dc/standortkarte deploys istag/standortkarte:2.0.24 
+    deployment #8 deployed 3 days ago - 2 pods
+    deployment #7 deployed 3 days ago
+    deployment #6 deployed 2 months ago
+
+svc/wgc-embedded - 100.68.28.134:80 -> 8080
+  dc/wgc-embedded deploys istag/wgc-embedded:0.0.85 
+    deployment #31 deployed 3 days ago - 1 pod
+    deployment #30 deployed 6 weeks ago
+    deployment #29 deployed 3 months ago
+
+job/ldap2pg-27716340 manages image-registry.openshift-image-registry.svc:5000/agi-apps-production/ldap2pg:5.8
+  created 21 hours ago 1/1 completed 0 running
+
+job/ldap2pg-27713460 manages image-registry.openshift-image-registry.svc:5000/agi-apps-production/ldap2pg:5.8
+  created 2 days ago 1/1 completed 0 running
+
+job/ldap2pg-manual manages image-registry.openshift-image-registry.svc:5000/agi-apps-production/ldap2pg:5.8
+  created 2 weeks ago 1/1 completed 0 running
+
+job/ldap2pg-27714900 manages image-registry.openshift-image-registry.svc:5000/agi-apps-production/ldap2pg:5.8
+  created 45 hours ago 1/1 completed 0 running
+
+pod/maven-c51mx runs docker.io/openshift/jenkins-agent-maven-35-centos7:v4.0
+
+Warnings:
+  * pod/interlis-repo-checker-10-rgbcg has restarted 12 times
+
+Info:
+  * dc/lidar-browser has no readiness probe to verify pods are ready to accept traffic or ensure deployment is successful.
+    try: oc set probe dc/lidar-browser --readiness ...
+  * dc/lidar-browser has no liveness probe to verify pods are still running.
+    try: oc set probe dc/lidar-browser --liveness ...
+
+View details with 'oc describe <resource>/<name>' or list resources with 'oc get all'.
+[8mha:////4HbTlt2GDPhkECj7icmOU7lYJKKFPescTgtjeVYYBpEGAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YEAIMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfABZuXxiwgAAAA==[0m[Pipeline] script
+[8mha:////4CanSOH9x1pmI0L/RjaAN47sGTGnQDnUktXa+1YiQjc0AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUCRaEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g0Z/aLSwgAAAA==[0m[Pipeline] {
+[8mha:////4MGHW39leuW2m93dBtelz2cII6cRTmcvk5o6/xse6wHkAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICEh2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nffWr7Bv6v+fK+AAAA[0m[Pipeline] }
+[8mha:////4MJdUZQ1VG6Be/P+8lZV/15gaA+FeAADtXpBXdPxD1+jAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAQ1CqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw8z8/BCvgAAAA==[0m[Pipeline] // script
+[8mha:////4MZEwHIhS3gFjS59Dqa2hibdZmLNwb37iGUpdbgA39cFAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSBIkCUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5r3PVhw+RDRRuvgAAAA==[0m[Pipeline] }
+[8mha:////4J5itgM3V/e5qacO5Tk+WRZejGHTrOdZlQb427c2d5efAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIpiGgQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AG/DRYEvgAAAA==[0m[Pipeline] // stage
+[8mha:////4FfKYcO8bDfAkGB76jiItign0Nc4NuvG04KnKPstlRKpAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiSFAhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3h1x1/QE7KRhjvgAAAA==[0m[Pipeline] }
+[8mha:////4DxM+6S8tvDbrm0d5mAxtU1eSYbqkdlEgf7/+HnWWUAKAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICEqJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuD7l22w8Da4uSvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4NhFPXqo9EQUOLhj4XAjwuSc7A0FKxycaE66sioCVyBsAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IsJA7GybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FebkXZOUHJmaoML0AAAA=[0m[Pipeline] }
+[8mha:////4DP70h/bEyML8VGiZdyIraqQQ6Gygd2nrMkn1bR8YBLtAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpoEBCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Lu9INt+AFRknCy9AAAA[0m[Pipeline] // node
+[8mha:////4Azq9vHEN+f0UBzyb48LB1QBa5CyMvRcD2pfhfFHzslLAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKREA1CVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Lu9INt+AHJ9+2a9AAAA[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

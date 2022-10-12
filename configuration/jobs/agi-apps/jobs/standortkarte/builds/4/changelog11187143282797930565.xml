@@ -1,0 +1,14 @@
+commit 9d7c9775ff53edcf9d387fb4aabd408e9bb6f771
+tree d9072f133f3a473ab8be0c7dc725476289e73182
+parent c53fa37a324b5bc02c0f752fe1a5d3cd294bec4d
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-07-07 15:50:53 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-07-08 15:43:32 +0200
+
+    [standortkarte] Switch to pipeline
+
+
+:100644 100644 f9b18e07d7aa436941426d0fddb4aced14f4bc31 1342fc594fa325772c552e73d13183d2cf4cd901 M	standortkarte/README.md
+:100644 100644 aa95cc0aefb7762009169bfbe81a797bfbde21b4 be6a705dbe9bb633dd3857516cf37c0028f69244 M	standortkarte/standortkarte.yaml
+:000000 100644 0000000000000000000000000000000000000000 96b7a78a4a7317cf906beec5c2f889917765cc0f A	standortkarte/standortkarte_integration.params
+:000000 100644 0000000000000000000000000000000000000000 1196808fb1d1b3012b0129b25fb77662b210074d A	standortkarte/standortkarte_production.params
+:000000 100644 0000000000000000000000000000000000000000 1a2df92a27f0758a3b0846d641cb5fcdedd7c11e A	standortkarte/standortkarte_test.params

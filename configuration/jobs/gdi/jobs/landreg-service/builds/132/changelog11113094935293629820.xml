@@ -1,0 +1,67 @@
+commit 9a162dd92f8f3c97aefddc0066ce97d8a8e5102b
+tree 5fd15d8b7bfa6f60a1d0be500556ca56fe07be1b
+parent 1c16bb6ff7969ffddfd3f3bd71f0ced42d7aaf11
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-27 12:08:15 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-27 12:08:15 +0200
+
+    [sql2json] added read permissions for simi_read
+
+
+:100644 100644 7f13dcc6fe088ba6bae1e0499ae7052cdc0d83ac 3fa33ddb490eb644a16be88510c056c10a11afa6 M	api_webgisclient/sql2json/views/trafo/trafo_published_dp_v.sql
+:100644 100644 04cdc9b3582b60285742e706cf6fa74b3acce802 5e589f566443ebe0427af781ed12472eb4b69ce7 M	api_webgisclient/sql2json/views/trafo/trafo_resource_role_v.sql
+:100644 100644 9306ab3d4940596817b8571292916fcff0d53ec9 91eb87d3201875b52e57cd2590e81d9b0919808c M	api_webgisclient/sql2json/views/trafo/trafo_wms_geotable_v.sql
+:100644 100644 93ce476d3641f793be80c6f0d602b49a4dd58351 e8d55500f02bd1b5bfa3fe57f441d457846bd80f M	api_webgisclient/sql2json/views/trafo/trafo_wms_layer_v.sql
+:100644 100644 d60a5d83cd51e8dc2b1b73cd401a1ac832676e66 6cde9b84c598a8d35d4882741b9c9c9422f768af M	api_webgisclient/sql2json/views/trafo/trafo_wms_rootlayer_v.sql
+:100644 100644 b7430f3c49faec0827155b6b11c044963cff5c87 f3389508d64df065552b7a77c2d1d2f802eb9f90 M	api_webgisclient/sql2json/views/trafo/trafo_wms_tableview_v.sql
+commit 1c16bb6ff7969ffddfd3f3bd71f0ced42d7aaf11
+tree 0a047a9e7336f47757cb5d12c9850ad767d0ec53
+parent 50da4e6c677987e0b26ee3d963206ff9e69e1dac
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-20 17:52:01 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-20 17:52:01 +0200
+
+    [api-gateway] set olddir in logrotate conf
+
+
+:100644 100644 4a89248d139e6ae0e1096b7d04beec88e84bcd53 f0a21a0fb3d0478cc5fa4704c3ffb21700549668 M	api_webgisclient/api-gateway/resources.yaml
+commit 50da4e6c677987e0b26ee3d963206ff9e69e1dac
+tree ad0cdf44482898c872d9ec87315bf3bcca84f4d1
+parent e7c2cbe45cb71e40a5065442f0f0f946b26a0f86
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-20 17:47:13 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-20 17:47:13 +0200
+
+    [api-gateway] logrotate set rotate=1 and set oldlogdir to /tmp
+
+
+:100644 100644 394f169eb51bc5ef730928b24840ce7f71c25405 e696d3ea20c287d157b2d6dd85bcf80c021cc531 M	api_webgisclient/api-gateway/deploymentconfig.yaml
+:100644 100644 460f4852f629837ad0e476411c1003770cec5458 4a89248d139e6ae0e1096b7d04beec88e84bcd53 M	api_webgisclient/api-gateway/resources.yaml
+commit e7c2cbe45cb71e40a5065442f0f0f946b26a0f86
+tree dda56aa1715453833ff222f5ee68e35a4fa3bc38
+parent a9f18fca623064d804bbd891dba6944f87873d0d
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-20 16:04:31 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-20 16:04:31 +0200
+
+    [api-gateway] set env var LOGROTATE_COPIES to 0
+
+
+:100644 100644 cf39408f18379d4220f878b4a7388f542ba0b7c0 394f169eb51bc5ef730928b24840ce7f71c25405 M	api_webgisclient/api-gateway/deploymentconfig.yaml
+commit a9f18fca623064d804bbd891dba6944f87873d0d
+tree 6ae178aa75cd8c89445d45e90b85b9946a260bf3
+parent 473ff32f926b0174e0d28d3b8e7d3359aec16ea2
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-20 15:49:07 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-20 15:49:07 +0200
+
+    [api-gateway] logrotate set rotate=0
+
+
+:100644 100644 4a89248d139e6ae0e1096b7d04beec88e84bcd53 460f4852f629837ad0e476411c1003770cec5458 M	api_webgisclient/api-gateway/resources.yaml
+commit 473ff32f926b0174e0d28d3b8e7d3359aec16ea2
+tree 66803cfa98fa5d668fd78f359399ba3df26b06a5
+parent 8b9b3a39d51753bb0ab366d8392bdc798542f452
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-07-14 15:13:20 +0200
+committer GitHub <noreply@github.com> 2022-07-14 15:13:20 +0200
+
+    [api-gateway] Add X-FORWARDED-PREFIX header for modelfinder (#33)
+    
+
+
+:100644 100644 5b9593f7d9addfa41ddc0c09aff68cd51cf8a260 4a89248d139e6ae0e1096b7d04beec88e84bcd53 M	api_webgisclient/api-gateway/resources.yaml

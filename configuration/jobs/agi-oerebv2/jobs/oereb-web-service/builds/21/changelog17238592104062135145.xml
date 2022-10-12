@@ -1,0 +1,11 @@
+commit e4cd8e1fe1348a3cce53de9bf45e576ee06f4a52
+tree 894dff0e7e7d4405abba20f13f55be7474d837c0
+parent 885d0dce2ced103d567aa19dde7483c1e818bb94
+author edigonzales <edi.gonzales@gmail.com> 2022-10-04 15:04:33 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-10-04 15:04:33 +0200
+
+    [sodata-preview] bump version
+
+
+:100644 100644 ddf1a1cbd02af7c22a0372ffd9bbbc3dfcd7a9db 09104f5302850a456c5fdbc1c7f1f6e1ecc27400 M	sodata-preview/sodata-preview_integration.params
+:100644 100644 37e7d0ffdaa5c6fd68105b0dd9034ebf1930e9be 6d8530d9401642941c1e62ed693e04fbce493b50 M	sodata-preview/sodata-preview_production.params

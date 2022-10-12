@@ -1,0 +1,416 @@
+Started by upstream project "[8mha:////4LQ5KnGey+aH5ryAlNwOnhq1aJNEB2NF+G1vnOIWUULNAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6WflJ+uGpSe6ewc45mal5JfoAY/FWcMcAAAA=[0mWebGISClient" build number [8mha:////4CWlkF/84w7LajnHXsSV16K0+47DkNPw1rm1Bpmk0nOUAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYx/az8JP3w1CR3z2DnnMzUvBJ9QxMzAwCG6nCRywAAAA==[0m1460
+originally caused by:
+ Started by user unknown or anonymous
+Checking out git https://github.com/sogis/pipelines.git into /var/lib/jenkins/jobs/gdi/jobs/qwc-service/workspace@script to read api_webgisclient/qwc-service/Jenkinsfile
+The recommended git tool is: git
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/jobs/gdi/jobs/qwc-service/workspace@script/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sogis/pipelines.git # timeout=10
+Fetching upstream changes from https://github.com/sogis/pipelines.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/sogis/pipelines.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision 66af947b89ad6896a9e2a1738cd1a3453b03408c (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 66af947b89ad6896a9e2a1738cd1a3453b03408c # timeout=10
+Commit message: "[meta-exporter_conf] add upload to sodata pod"
+ > git rev-list --no-walk d4c2878e942505966abd494d4e6bbfe0c9148548 # timeout=10
+[8mha:////4IZv91CJqeUCAWo9ck9BVKh65/LumSNWSnryjT7AKhk0AAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4Gvb8ff7+zUJN0sTymTbuqoRQQ5rfqKCYwtOT8imTWLpAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbaGmsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfya1RxvAAAAA==[0m[Pipeline] library
+Loading library jenkins-shared-libs@master
+Attempting to resolve master from remote references...
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git ls-remote -- https://github.com/sogis/jenkins-shared-libs.git # timeout=10
+Found match: refs/heads/master revision 3459e1770a518a80984f743e0cd0471c31eea966
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/jobs/gdi/jobs/qwc-service/workspace@libs/jenkins-shared-libs/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sogis/jenkins-shared-libs.git # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/sogis/jenkins-shared-libs.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --no-tags --force --progress -- https://github.com/sogis/jenkins-shared-libs.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking out Revision 3459e1770a518a80984f743e0cd0471c31eea966 (master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3459e1770a518a80984f743e0cd0471c31eea966 # timeout=10
+Commit message: "fixed wrong parameter name"
+ > git rev-list --no-walk 3459e1770a518a80984f743e0cd0471c31eea966 # timeout=10
+[8mha:////4EoHRThWbpad6taEuKKrC6ms+Y7BZ4lyb8nakz/HhfnbAAAApR+LCAAAAAAAAP9tjUEKwjAURH8qXbh16SFSEHfiym3IxhPEJMa04f82SW1XnsireQejBVcODMwMDO/5gjpFOFJ0vLXYeUza8z6MriQ+UeyugSbe0oVrwkTBcmknScaeliopW1jEKlgJWFvUgZJHl2EjWnVXTVDomnOOZTsIqLwZ4AFMFHJWMX/LHGF7G00i/HH+AmDuM7Bd8f7zq9/WVBy+wAAAAA==[0m[Pipeline] node
+Running on [8mha:////4LBgOhqKJGJElaTk2oYj7t8ESRC/z/RoPQ3eebNqQmjGAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/lib/jenkins/jobs/gdi/jobs/qwc-service/workspace
+[8mha:////4M2wjJBcTt6l0j05cB3fhNNde3QV0ipQsYN6E93uEx3ZAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] {
+[8mha:////4DfYJV9i63ZlmHDPdVbO87w3NbgDo/9lAugxpaw8hxAsAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] stage
+[8mha:////4APJoCCrlhCDIOUlMVg4IS+ixVjOy5kJWF3GTqpe7JTQAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4HEkyzR5ONdCR2417ULwjQCMTy557XNUWI3lg886KyZSAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbamKsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4geKI23CvAAAAA==[0m[Pipeline] checkout
+The recommended git tool is: git
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/jobs/gdi/jobs/qwc-service/workspace/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sogis/pipelines.git # timeout=10
+Fetching upstream changes from https://github.com/sogis/pipelines.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/sogis/pipelines.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision 66af947b89ad6896a9e2a1738cd1a3453b03408c (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 66af947b89ad6896a9e2a1738cd1a3453b03408c # timeout=10
+Commit message: "[meta-exporter_conf] add upload to sodata pod"
+[8mha:////4Dhc5aq6Mfo6/9XUEt2GePmDZayEGMt7XzxTlc48VLCAAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbGmOsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzDEWYIfa/Qdlmg9gvAAAAA==[0m[Pipeline] }
+[8mha:////4AfGcZi0psEkx3gg6gJ94paliQ00R9egyRLtyejy3x9CAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiJoY+NY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfId1tBtv8AqUpLPL0AAAA=[0m[Pipeline] // stage
+[8mha:////4NvF5NEFLqjI5q8BFAj+44g8yuBeYuDPZAhm6l+uJgx3AAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BKWgpeYSjFFSIitZywwtMbIwT6y7YF5KKF/E1/oAhEhVb7ay0mucLqhThQNGJzmLvMbVeDGF0uYmJYn8JNImOzqIlTBSsUHZSZOxxQUVsYUlRwkrC2mIbKHl0DBvZ6buug0ZXnzjmbS+h9OYGDyhkNrOO/IU5wvY6mkT48/wVwDwwFDuGsmk+x+oN0+j4W8EAAAA=[0m[Pipeline] withEnv
+[8mha:////4OOacfizf4v2Ymvmi4PzoSg4GvitQSaI8OF/jB+SU/ErAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] {
+[8mha:////4PRr4iqmP0UJMHkWWE7Pp/oD96jLXUPeNEITLkMvrKb3AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] timeout
+Timeout set to expire in 10 min
+[8mha:////4I9IyhDDfgAnBHZcmX31Hm99JwolNo06xE9qmrXySYk1AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAbNWnxXCAAAA[0m[Pipeline] {
+[8mha:////4Ej6zv0D7SnMmOaAfmz0GlMlqOtKtN08Xk/M+NeF6IFqAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] stage
+[8mha:////4FHvnGO8P18ICD5kmLEJv3oHpPUpDN7YFzSXGIgkw4q1AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/s94rDCAAAA[0m[Pipeline] { (Ask for Version)
+[8mha:////4I+NjRSEoMSd1ili2Q9XqlSRAuwtDBQQw7eMr2EHM8q9AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] script
+[8mha:////4B5AWaX8+T03KHNR1nJ4PceMXi8dquLJOfsh7ADHx4JxAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] {
+[8mha:////4EekelOfUZ9SXg9Sirn5hbFAVafvLfeCD27wAx4LB4pJAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiOhCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7ndf2r3BkN+Pj++AAAA[0m[Pipeline] }
+[8mha:////4Addif7ZcnmNmdWSzkaDhYmTCLcE0yAkXLF0IIEWwGacAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICNBQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AGHKGa5vgAAAA==[0m[Pipeline] // script
+[8mha:////4DYuzDh3ilPPysUtxfjkh0Tjt7rD7QZD8W6rJl+T31BlAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiUNAgqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AG0yz0FvgAAAA==[0m[Pipeline] }
+[8mha:////4Ebelc+1TcrtWS4zNh6tyyM0W2/Cj9xAGQx+wOCEC/RyAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRkagQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AGg6KAavgAAAA==[0m[Pipeline] // stage
+[8mha:////4NxLunqCRpyN5OtwDxNwgNpQo7dulo7/sOtGAHTim5dvAAAAqB+LCAAAAAAAAP9tjT0OwjAUg1+LOrAycohU/GyoE2vUhROEJoSk0XslSUknTsTVuAOBSkx4sGxL1vd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCg3+2zb3edZvQEVaUkQwgAAAA==[0m[Pipeline] stage
+[8mha:////4KOP1o2LEFexvlI8y4s8Yvc++jimn0DHoRbidOpI9El3AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAd6e6VPCAAAA[0m[Pipeline] { (Configure Ressources)
+[8mha:////4EiZzo+kT1bocLGqBD2QLGmHBsnJqor/44+lC+zkPSa9AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQjAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/hYjrHCAAAA[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PwdOgcServer or $PwdSogisService or $apiUser or $PwdApiUser
+[8mha:////4My27QX6f7BAzgbPA/8SliCKjrzIw+yqsQYK0F00f7fxAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQoIFMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfACW9ZT2wgAAAA==[0m[Pipeline] {
+[8mha:////4CMLktixVmrl0dBCMju3tnAR+0Lv5BH1pUKh74YY2JP8AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUUCBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAHUcXIBvgAAAA==[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PwdSogisService, PwdOgcServer, apiUser]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ oc process -f https://raw.githubusercontent.com/sogis/pipelines/master/api_webgisclient/qwc-service/deployment/resources.yaml -p DB_SERVER=geodb-i.rootso.org -p GEO_DB_SERVER=geodb-t.verw.rootso.org -p DB_PUB=pub -p DB_EDIT=edit -p DB_CONFIG=soconfig -p DB_OEREB=oereb_v2 -p DB_SOGIS=sogis -p USER_OGC_SERVER=ogc_server -p PW_OGC_SERVER=**** -p USER_SOGIS_SERVICE=**** -p PW_SOGIS_SERVICE=**** -p NAMESPACE=gdi-integration
++ oc apply -n gdi-integration -f-
+secret/qwc-service-pg-config configured
+service/qwc-service unchanged
+[8mha:////4LV2Zk6M8CAcv49+kaUd74ttR4ejdEptNMMSobP72zy+AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUSAkRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g2/yR8JvgAAAA==[0m[Pipeline] }
+[8mha:////4KvqgYnbLbDHwHZgwDjSlIVD0L+/Ck81cLy+1xK1/G1VAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIVEgRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g2gS0pbvgAAAA==[0m[Pipeline] // withCredentials
+[8mha:////4DWz0VPOozNOJLCIirzL6R5L4wyOK80zNony4f/41bF6AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCgA6lorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYhQrnf5todPkohNa2+AAAA[0m[Pipeline] }
+[8mha:////4AWCi5U92/xlV4o4NxTUEFaj86WPbSpD8A1Bh2guFOkZAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiSImo0lppeIGJjXFi3RnbIal4EV/jD1hEomKL1c4283rDOgY4cTDYaxosxc6id6PJCycOw9XxhD1fsGOK7DS2empZ6WbBlpOGJUUJKwEbTZ3jaMkk2IpePmTlJJnqnEL+jgJKq+7whEJkc5IhfWEOsLuNKjL9PH8FMHufoKz3uQ71B0xnDfi+AAAA[0m[Pipeline] // stage
+[8mha:////4HoGmwYco5ZBNC0g6+Kk5nrjR3Pkkyb/AcY0SBISHKyvAAAAqB+LCAAAAAAAAP9tjT0OwjAUg1+LOrAycohU/GyoE2vUhROEJoSk0XslSUknTsTVuAOBSkx4sGxL1vd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCg3+2y77edZvQEEsWJ9wgAAAA==[0m[Pipeline] stage
+[8mha:////4Bdk3A83GRTTm5+WC2Jjl/CUf7Ynze0w4VHAyEiKxcpNAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUoiNiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsPfTawssIAAAA=[0m[Pipeline] { (Create configs)
+[8mha:////4C9Xds1QYrr2qhYCnNd+64i+cr1OOfyMGuec/Eqw7H14AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KBtiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPBdk7bsIAAAA=[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PwdOgcServer or $PwdSogisService or $apiUser or $PwdApiUser
+[8mha:////4H6eqKStkJJqxHmZKCe8rRigXiybMG39nIr8R8lfGEYpAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ACbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASMfXIzCAAAA[0m[Pipeline] {
+[8mha:////4G7MdLmpwbV9WbpVIqWXY9F2iqvpskV2ImMs8e/HWtzPAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN6Ew6eS+AAAA[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PwdSogisService, apiUser]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ '[' -d sql2json ']'
++ '[' '!' -d config/default ']'
++ mkdir -p config/default
++ '[' '!' -f sql2json.jar ']'
++ wget https://github.com/sogis/simi-sql2json/releases/download/v1.1.35/sql2json.jar
+--2022-10-11 13:15:59--  https://github.com/sogis/simi-sql2json/releases/download/v1.1.35/sql2json.jar
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/329196788/8ca9c855-9c88-42a9-88ee-04ce37182144?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20221011%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221011T131540Z&X-Amz-Expires=300&X-Amz-Signature=32789f499feda72086adaf0c1336b16683973c53c9e3c00e64cff01cb6e8b80d&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=329196788&response-content-disposition=attachment%3B%20filename%3Dsql2json.jar&response-content-type=application%2Foctet-stream [following]
+--2022-10-11 13:16:00--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/329196788/8ca9c855-9c88-42a9-88ee-04ce37182144?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20221011%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221011T131540Z&X-Amz-Expires=300&X-Amz-Signature=32789f499feda72086adaf0c1336b16683973c53c9e3c00e64cff01cb6e8b80d&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=329196788&response-content-disposition=attachment%3B%20filename%3Dsql2json.jar&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.111.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 11462559 (11M) [application/octet-stream]
+Saving to: ‘sql2json.jar’
+
+     0K .......... .......... .......... .......... ..........  0% 3.61M 3s
+    50K .......... .......... .......... .......... ..........  0% 11.8M 2s
+   100K .......... .......... .......... .......... ..........  1% 6.39M 2s
+   150K .......... .......... .......... .......... ..........  1% 25.6M 1s
+   200K .......... .......... .......... .......... ..........  2% 6.86M 2s
+   250K .......... .......... .......... .......... ..........  2% 29.8M 1s
+   300K .......... .......... .......... .......... ..........  3% 51.5M 1s
+   350K .......... .......... .......... .......... ..........  3% 29.3M 1s
+   400K .......... .......... .......... .......... ..........  4% 29.4M 1s
+   450K .......... .......... .......... .......... ..........  4% 60.4M 1s
+   500K .......... .......... .......... .......... ..........  4% 9.97M 1s
+   550K .......... .......... .......... .......... ..........  5% 28.8M 1s
+   600K .......... .......... .......... .......... ..........  5%  346M 1s
+   650K .......... .......... .......... .......... ..........  6% 57.7M 1s
+   700K .......... .......... .......... .......... ..........  6% 41.5M 1s
+   750K .......... .......... .......... .......... ..........  7%  101M 1s
+   800K .......... .......... .......... .......... ..........  7% 67.1M 1s
+   850K .......... .......... .......... .......... ..........  8%  365M 1s
+   900K .......... .......... .......... .......... ..........  8% 54.6M 1s
+   950K .......... .......... .......... .......... ..........  8% 81.6M 1s
+  1000K .......... .......... .......... .......... ..........  9% 63.5M 1s
+  1050K .......... .......... .......... .......... ..........  9% 12.4M 1s
+  1100K .......... .......... .......... .......... .......... 10% 49.4M 1s
+  1150K .......... .......... .......... .......... .......... 10%  283M 0s
+  1200K .......... .......... .......... .......... .......... 11% 56.2M 0s
+  1250K .......... .......... .......... .......... .......... 11%  284M 0s
+  1300K .......... .......... .......... .......... .......... 12%  323M 0s
+  1350K .......... .......... .......... .......... .......... 12% 74.5M 0s
+  1400K .......... .......... .......... .......... .......... 12%  192M 0s
+  1450K .......... .......... .......... .......... .......... 13% 55.6M 0s
+  1500K .......... .......... .......... .......... .......... 13%  295M 0s
+  1550K .......... .......... .......... .......... .......... 14%  149M 0s
+  1600K .......... .......... .......... .......... .......... 14%  178M 0s
+  1650K .......... .......... .......... .......... .......... 15%  159M 0s
+  1700K .......... .......... .......... .......... .......... 15%  128M 0s
+  1750K .......... .......... .......... .......... .......... 16%  139M 0s
+  1800K .......... .......... .......... .......... .......... 16%  143M 0s
+  1850K .......... .......... .......... .......... .......... 16%  288M 0s
+  1900K .......... .......... .......... .......... .......... 17%  148M 0s
+  1950K .......... .......... .......... .......... .......... 17%  164M 0s
+  2000K .......... .......... .......... .......... .......... 18%  237M 0s
+  2050K .......... .......... .......... .......... .......... 18%  194M 0s
+  2100K .......... .......... .......... .......... .......... 19%  164M 0s
+  2150K .......... .......... .......... .......... .......... 19%  230M 0s
+  2200K .......... .......... .......... .......... .......... 20% 13.2M 0s
+  2250K .......... .......... .......... .......... .......... 20% 65.6M 0s
+  2300K .......... .......... .......... .......... .......... 20%  242M 0s
+  2350K .......... .......... .......... .......... .......... 21%  380M 0s
+  2400K .......... .......... .......... .......... .......... 21%  180M 0s
+  2450K .......... .......... .......... .......... .......... 22% 89.1M 0s
+  2500K .......... .......... .......... .......... .......... 22%  240M 0s
+  2550K .......... .......... .......... .......... .......... 23%  314M 0s
+  2600K .......... .......... .......... .......... .......... 23%  246M 0s
+  2650K .......... .......... .......... .......... .......... 24%  259M 0s
+  2700K .......... .......... .......... .......... .......... 24%  263M 0s
+  2750K .......... .......... .......... .......... .......... 25%  248M 0s
+  2800K .......... .......... .......... .......... .......... 25%  290M 0s
+  2850K .......... .......... .......... .......... .......... 25%  265M 0s
+  2900K .......... .......... .......... .......... .......... 26%  281M 0s
+  2950K .......... .......... .......... .......... .......... 26%  112M 0s
+  3000K .......... .......... .......... .......... .......... 27%  220M 0s
+  3050K .......... .......... .......... .......... .......... 27%  300M 0s
+  3100K .......... .......... .......... .......... .......... 28%  269M 0s
+  3150K .......... .......... .......... .......... .......... 28%  280M 0s
+  3200K .......... .......... .......... .......... .......... 29%  239M 0s
+  3250K .......... .......... .......... .......... .......... 29%  315M 0s
+  3300K .......... .......... .......... .......... .......... 29%  260M 0s
+  3350K .......... .......... .......... .......... .......... 30%  309M 0s
+  3400K .......... .......... .......... .......... .......... 30%  224M 0s
+  3450K .......... .......... .......... .......... .......... 31%  299M 0s
+  3500K .......... .......... .......... .......... .......... 31%  246M 0s
+  3550K .......... .......... .......... .......... .......... 32%  216M 0s
+  3600K .......... .......... .......... .......... .......... 32%  258M 0s
+  3650K .......... .......... .......... .......... .......... 33%  243M 0s
+  3700K .......... .......... .......... .......... .......... 33%  239M 0s
+  3750K .......... .......... .......... .......... .......... 33%  267M 0s
+  3800K .......... .......... .......... .......... .......... 34%  210M 0s
+  3850K .......... .......... .......... .......... .......... 34%  261M 0s
+  3900K .......... .......... .......... .......... .......... 35%  295M 0s
+  3950K .......... .......... .......... .......... .......... 35%  255M 0s
+  4000K .......... .......... .......... .......... .......... 36%  224M 0s
+  4050K .......... .......... .......... .......... .......... 36%  267M 0s
+  4100K .......... .......... .......... .......... .......... 37%  235M 0s
+  4150K .......... .......... .......... .......... .......... 37%  304M 0s
+  4200K .......... .......... .......... .......... .......... 37%  292M 0s
+  4250K .......... .......... .......... .......... .......... 38%  394M 0s
+  4300K .......... .......... .......... .......... .......... 38%  355M 0s
+  4350K .......... .......... .......... .......... .......... 39%  371M 0s
+  4400K .......... .......... .......... .......... .......... 39%  314M 0s
+  4450K .......... .......... .......... .......... .......... 40% 22.8M 0s
+  4500K .......... .......... .......... .......... .......... 40%  314M 0s
+  4550K .......... .......... .......... .......... .......... 41%  237M 0s
+  4600K .......... .......... .......... .......... .......... 41% 68.7M 0s
+  4650K .......... .......... .......... .......... .......... 41%  205M 0s
+  4700K .......... .......... .......... .......... .......... 42%  245M 0s
+  4750K .......... .......... .......... .......... .......... 42%  311M 0s
+  4800K .......... .......... .......... .......... .......... 43%  219M 0s
+  4850K .......... .......... .......... .......... .......... 43%  351M 0s
+  4900K .......... .......... .......... .......... .......... 44%  394M 0s
+  4950K .......... .......... .......... .......... .......... 44%  207M 0s
+  5000K .......... .......... .......... .......... .......... 45%  134M 0s
+  5050K .......... .......... .......... .......... .......... 45%  226M 0s
+  5100K .......... .......... .......... .......... .......... 46%  313M 0s
+  5150K .......... .......... .......... .......... .......... 46%  218M 0s
+  5200K .......... .......... .......... .......... .......... 46%  237M 0s
+  5250K .......... .......... .......... .......... .......... 47%  186M 0s
+  5300K .......... .......... .......... .......... .......... 47%  181M 0s
+  5350K .......... .......... .......... .......... .......... 48%  214M 0s
+  5400K .......... .......... .......... .......... .......... 48%  193M 0s
+  5450K .......... .......... .......... .......... .......... 49%  281M 0s
+  5500K .......... .......... .......... .......... .......... 49%  273M 0s
+  5550K .......... .......... .......... .......... .......... 50%  297M 0s
+  5600K .......... .......... .......... .......... .......... 50%  269M 0s
+  5650K .......... .......... .......... .......... .......... 50%  334M 0s
+  5700K .......... .......... .......... .......... .......... 51%  262M 0s
+  5750K .......... .......... .......... .......... .......... 51%  295M 0s
+  5800K .......... .......... .......... .......... .......... 52%  238M 0s
+  5850K .......... .......... .......... .......... .......... 52%  310M 0s
+  5900K .......... .......... .......... .......... .......... 53%  243M 0s
+  5950K .......... .......... .......... .......... .......... 53%  300M 0s
+  6000K .......... .......... .......... .......... .......... 54%  206M 0s
+  6050K .......... .......... .......... .......... .......... 54%  297M 0s
+  6100K .......... .......... .......... .......... .......... 54%  286M 0s
+  6150K .......... .......... .......... .......... .......... 55%  258M 0s
+  6200K .......... .......... .......... .......... .......... 55%  208M 0s
+  6250K .......... .......... .......... .......... .......... 56%  323M 0s
+  6300K .......... .......... .......... .......... .......... 56%  256M 0s
+  6350K .......... .......... .......... .......... .......... 57%  300M 0s
+  6400K .......... .......... .......... .......... .......... 57%  293M 0s
+  6450K .......... .......... .......... .......... .......... 58%  219M 0s
+  6500K .......... .......... .......... .......... .......... 58%  256M 0s
+  6550K .......... .......... .......... .......... .......... 58%  305M 0s
+  6600K .......... .......... .......... .......... .......... 59%  207M 0s
+  6650K .......... .......... .......... .......... .......... 59%  364M 0s
+  6700K .......... .......... .......... .......... .......... 60%  399M 0s
+  6750K .......... .......... .......... .......... .......... 60%  356M 0s
+  6800K .......... .......... .......... .......... .......... 61%  337M 0s
+  6850K .......... .......... .......... .......... .......... 61%  396M 0s
+  6900K .......... .......... .......... .......... .......... 62%  360M 0s
+  6950K .......... .......... .......... .......... .......... 62%  390M 0s
+  7000K .......... .......... .......... .......... .......... 62%  321M 0s
+  7050K .......... .......... .......... .......... .......... 63%  390M 0s
+  7100K .......... .......... .......... .......... .......... 63%  348M 0s
+  7150K .......... .......... .......... .......... .......... 64%  282M 0s
+  7200K .......... .......... .......... .......... .......... 64%  282M 0s
+  7250K .......... .......... .......... .......... .......... 65%  368M 0s
+  7300K .......... .......... .......... .......... .......... 65% 52.9M 0s
+  7350K .......... .......... .......... .......... .......... 66%  231M 0s
+  7400K .......... .......... .......... .......... .......... 66%  279M 0s
+  7450K .......... .......... .......... .......... .......... 67%  396M 0s
+  7500K .......... .......... .......... .......... .......... 67%  340M 0s
+  7550K .......... .......... .......... .......... .......... 67%  305M 0s
+  7600K .......... .......... .......... .......... .......... 68%  238M 0s
+  7650K .......... .......... .......... .......... .......... 68%  256M 0s
+  7700K .......... .......... .......... .......... .......... 69%  297M 0s
+  7750K .......... .......... .......... .......... .......... 69%  252M 0s
+  7800K .......... .......... .......... .......... .......... 70%  173M 0s
+  7850K .......... .......... .......... .......... .......... 70%  305M 0s
+  7900K .......... .......... .......... .......... .......... 71%  214M 0s
+  7950K .......... .......... .......... .......... .......... 71%  230M 0s
+  8000K .......... .......... .......... .......... .......... 71%  207M 0s
+  8050K .......... .......... .......... .......... .......... 72%  290M 0s
+  8100K .......... .......... .......... .......... .......... 72%  260M 0s
+  8150K .......... .......... .......... .......... .......... 73%  291M 0s
+  8200K .......... .......... .......... .......... .......... 73%  220M 0s
+  8250K .......... .......... .......... .......... .......... 74%  255M 0s
+  8300K .......... .......... .......... .......... .......... 74%  276M 0s
+  8350K .......... .......... .......... .......... .......... 75%  259M 0s
+  8400K .......... .......... .......... .......... .......... 75%  271M 0s
+  8450K .......... .......... .......... .......... .......... 75%  221M 0s
+  8500K .......... .......... .......... .......... .......... 76%  263M 0s
+  8550K .......... .......... .......... .......... .......... 76%  385M 0s
+  8600K .......... .......... .......... .......... .......... 77%  202M 0s
+  8650K .......... .......... .......... .......... .......... 77%  305M 0s
+  8700K .......... .......... .......... .......... .......... 78%  301M 0s
+  8750K .......... .......... .......... .......... .......... 78%  395M 0s
+  8800K .......... .......... .......... .......... .......... 79%  237M 0s
+  8850K .......... .......... .......... .......... .......... 79%  262M 0s
+  8900K .......... .......... .......... .......... .......... 79%  280M 0s
+  8950K .......... .......... .......... .......... .......... 80%  367M 0s
+  9000K .......... .......... .......... .......... .......... 80%  227M 0s
+  9050K .......... .......... .......... .......... .......... 81%  323M 0s
+  9100K .......... .......... .......... .......... .......... 81%  258M 0s
+  9150K .......... .......... .......... .......... .......... 82%  337M 0s
+  9200K .......... .......... .......... .......... .......... 82%  284M 0s
+  9250K .......... .......... .......... .......... .......... 83%  240M 0s
+  9300K .......... .......... .......... .......... .......... 83%  332M 0s
+  9350K .......... .......... .......... .......... .......... 83%  258M 0s
+  9400K .......... .......... .......... .......... .......... 84%  225M 0s
+  9450K .......... .......... .......... .......... .......... 84%  276M 0s
+  9500K .......... .......... .......... .......... .......... 85%  249M 0s
+  9550K .......... .......... .......... .......... .......... 85%  295M 0s
+  9600K .......... .......... .......... .......... .......... 86%  249M 0s
+  9650K .......... .......... .......... .......... .......... 86%  296M 0s
+  9700K .......... .......... .......... .......... .......... 87%  283M 0s
+  9750K .......... .......... .......... .......... .......... 87%  297M 0s
+  9800K .......... .......... .......... .......... .......... 87%  284M 0s
+  9850K .......... .......... .......... .......... .......... 88% 21.7M 0s
+  9900K .......... .......... .......... .......... .......... 88%  190M 0s
+  9950K .......... .......... .......... .......... .......... 89%  178M 0s
+ 10000K .......... .......... .......... .......... .......... 89%  213M 0s
+ 10050K .......... .......... .......... .......... .......... 90%  258M 0s
+ 10100K .......... .......... .......... .......... .......... 90%  327M 0s
+ 10150K .......... .......... .......... .......... .......... 91%  286M 0s
+ 10200K .......... .......... .......... .......... .......... 91%  215M 0s
+ 10250K .......... .......... .......... .......... .......... 92%  240M 0s
+ 10300K .......... .......... .......... .......... .......... 92%  217M 0s
+ 10350K .......... .......... .......... .......... .......... 92%  269M 0s
+ 10400K .......... .......... .......... .......... .......... 93%  226M 0s
+ 10450K .......... .......... .......... .......... .......... 93%  297M 0s
+ 10500K .......... .......... .......... .......... .......... 94%  329M 0s
+ 10550K .......... .......... .......... .......... .......... 94%  312M 0s
+ 10600K .......... .......... .......... .......... .......... 95%  228M 0s
+ 10650K .......... .......... .......... .......... .......... 95%  282M 0s
+ 10700K .......... .......... .......... .......... .......... 96%  277M 0s
+ 10750K .......... .......... .......... .......... .......... 96%  389M 0s
+ 10800K .......... .......... .......... .......... .......... 96%  340M 0s
+ 10850K .......... .......... .......... .......... .......... 97%  370M 0s
+ 10900K .......... .......... .......... .......... .......... 97%  382M 0s
+ 10950K .......... .......... .......... .......... .......... 98%  385M 0s
+ 11000K .......... .......... .......... .......... .......... 98%  328M 0s
+ 11050K .......... .......... .......... .......... .......... 99%  372M 0s
+ 11100K .......... .......... .......... .......... .......... 99%  375M 0s
+ 11150K .......... .......... .......... .......... ...       100%  365M=0.1s
+
+2022-10-11 13:16:00 (101 MB/s) - ‘sql2json.jar’ saved [11462559/11462559]
+
++ chmod u+x sql2json.jar
++ java -jar sql2json.jar -c jdbc:postgresql://geodb-i.rootso.org:5432/simi -u **** -p **** -t https://raw.githubusercontent.com/sogis/pipelines/master/api_webgisclient/qwc-service/sql2json/template.json -o /var/lib/jenkins/jobs/gdi/jobs/qwc-service/workspace/config/default/mapViewerConfig.json -s https://raw.githubusercontent.com/qwc-services/qwc-map-viewer/master/schemas/qwc-map-viewer.json
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -Dsun.zip.disableMemoryMapping=true
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -t
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -o
+[main] INFO ch.so.agi.sql2json.tag.ListTag - foreground_map.sql: Starting sql execution
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -c
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -u
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -p
+[main] INFO ch.so.agi.sql2json.tag.ListTag - foreground_map.sql: Processed 33 rows.
+[main] INFO ch.so.agi.sql2json.Application - Output json written to /var/lib/jenkins/jobs/gdi/jobs/qwc-service/workspace/config/default/mapViewerConfig.json
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -s
+[main] INFO ch.so.agi.sql2json.Application - Validating against schema https://raw.githubusercontent.com/qwc-services/qwc-map-viewer/master/schemas/qwc-map-viewer.json
+[main] INFO ch.so.agi.sql2json.validation.Validator - Validation against json schema passed.
+[8mha:////4LDkjpuAiNgZ/k0imkaz/IOLKqJezK63EJfBp8Q6KiB1AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIESBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAHgAfL9vgAAAA==[0m[Pipeline] sh
++ cp -R api_webgisclient/qwc-service/index.html config/default
+[8mha:////4AIxg4IGpOySLu01g+j0E5jgsdLbYkU89iYZbqJlU/NnAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSICQkRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYMpTb3af24Q0vHWp6vgAAAA==[0m[Pipeline] sh
++ oc get pods -o custom-columns=POD:.metadata.name --no-headers -n gdi-integration
++ grep -v -E -m 1 'featureinfo|build|print|deploy'
++ grep qgis-server
+[8mha:////4OXKRbn85giO6+tZB1aZCFoYTuJzdkCnPXir5pfrrluaAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIAqEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAFuLHFjvgAAAA==[0m[Pipeline] sh
++ oc rsync -n gdi-integration config/ qgis-server-741-q6z94:/data/config
+sending incremental file list
+default/index.html
+default/mapViewerConfig.json
+
+sent 3,643 bytes  received 5,191 bytes  17,668.00 bytes/sec
+total size is 717,997  speedup is 81.28
+[8mha:////4OKsiQwY0DUcOZr9YPN+PpnGH2JSz+dFfDu2dts1bZOUAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCBFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AGigfy3vgAAAA==[0m[Pipeline] archiveArtifacts
+Archiving artifacts
+[8mha:////4DLRtAnwFthhR6ZGaHSA7BXSdsxwaHNHEZD8Mv5A6e72AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AHjsOeuvgAAAA==[0m[Pipeline] sh
++ rm -rf /var/lib/jenkins/jobs/gdi/jobs/qwc-service/workspace/config
+[8mha:////4PwVZQymyDl0eWBSrSY32+7ZAm2DeX/ZeQAimoa/V0ToAAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGIj8alQKlrLDScwiTFOrN1gOzgVJ+Jq3AGLSFRMMZo3zXu9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw8Yv0ZLvgAAAA==[0m[Pipeline] }
+[8mha:////4FwY1WdMxZW/ZsMMpMHxGGCILd4/tf3dI2wp0RKjB/ZoAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIpkg5R0VppeIGJjXFi3Tn2haTiRXyNP2ARiYotVjvbzOsN2xThRNGK3uDgMHVOBD/ZvMRMcbh5mkVPV9ERJvJGtGZuSZvzii2xgTVFCRsJO4Odp+TQMuxlrx6q8gptdeGYv6OE0ukRnlDIbGYV+QtLhMN90onw5/krgCUEhrKpc9XNBytcHfe+AAAA[0m[Pipeline] // withCredentials
+[8mha:////4GaoC2cr5gaLTH/Pp4xpa2V0c3Z5dTLrUyG2dGLGWBlvAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIpkg5R0VppeIGJjXFi3Tn2haTiRXyNP2ARiYotVjvbzOsN2xThRNGK3uDgMHVOBD/ZvMRMcbh5mkVPV9ERJvJGtGZuSZvzii2xgTVFCRsJO4Odp+TQMuxlrx6q8gptdeGYv6OE0ukRnlDIbGYV+QtLhMN90onw5/krgCUEhrJpctX1BzD5fHS+AAAA[0m[Pipeline] }
+[8mha:////4LDgLXd15n6UsFEwLJfRLAQ+3ZzuFwixHQvB0P0Og1MvAAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGIj8alQKlrLDScwiTFOrN1gOzgVJ+Jq3AGLSFRMMZo3zXu9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuD7l22w8DGifIvgAAAA==[0m[Pipeline] // stage
+[8mha:////4A5o+NN3bJawzaM90M+nWhW1O+FdnWYabB/wK3+mH/teAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSBULYuoaZeEEIQkhbfR/SVLaiRNxNe5AoBITHizbkvWeL6higCMFyzqDvcOoHBv8aHNiE4X+4mliHZ2ZIozkDRNmEqRNu1RBycCiooQVh7VB5Sk6tAk2vJN3WXuJtj6lkLcDh9LpGzyg4JmcZEjfMgfYXkcdCX+cvwCYhwTlrsnW7D/P6g2czVQjwgAAAA==[0m[Pipeline] stage
+[8mha:////4EdPdFIG5HRUVW0Ezu+DpZAQaivXmNcyQAU1N5p3cPmvAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QTAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD+jQxyjCAAAA[0m[Pipeline] { (Deploy qwc-service in Test env)
+[8mha:////4EmiOKng5OzK3F0wZee5sqwDQ/D/W9NwxvPLqLgs+BQIAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSIIGEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAGaE3/ivgAAAA==[0m[Pipeline] sh
++ oc process -f https://raw.githubusercontent.com/sogis/pipelines/master/api_webgisclient/qwc-service/deployment/deploymentconfig.yaml -p NAMESPACE=gdi-integration -p TAG=v2.0.29 -p REPLICAS=1 -p CPU_REQUEST=80m -p CPU_LIMIT=160m -p MEMORY_REQUEST=75Mi -p MEMORY_LIMIT=150Mi -p WMTS_URL=https://geo.so.ch
++ oc apply -n gdi-integration -f-
+deploymentconfig.apps.openshift.io/qwc-service unchanged
++ oc rollout latest -n gdi-integration qwc-service
+deploymentconfig.apps.openshift.io/qwc-service rolled out
++ oc rollout status -n gdi-integration dc qwc-service
+Waiting for rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for rollout to finish: 1 old replicas are pending termination...
+Waiting for rollout to finish: 1 old replicas are pending termination...
+Waiting for latest deployment config spec to be observed by the controller loop...
+replication controller "qwc-service-746" successfully rolled out
+[8mha:////4HH7lggOOBd96MjhFAwG45i9383+tWhAiXxnWBTVb9/dAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSICGEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQEwuM6AvgAAAA==[0m[Pipeline] }
+[8mha:////4Af+XecOq14e3J0OZvUXEFw9izdaA3WcX1VPrYW7z/7gAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCATQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AHa0rF2vgAAAA==[0m[Pipeline] // stage
+[8mha:////4AXQa+TMPNMH762bkvMeRnCiWFZxFym28yu2OAZPqjrTAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUlWBCTF2jLpwgNCEkjf4vSUo6cSKuxh0IVGLCg2Vbst7zBVXwcCSvmVU4GAy9YaObdE4skR8ujhKzdGY9YSCnWKdSR1K1S+0oKlhUlLDisFbYOwoGdYQNt+IuaidQ16fo83bgUBp5gwcUPJOj8PFbZg/b6yQD4Y/zFwDzGKFsdtn2zedZvQGQ9iaYwgAAAA==[0m[Pipeline] stage
+[8mha:////4NXZZtsAQLcI9oULZ8W4MoZ6dSFgVdBLBVHKmv5407p7AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUIDEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LDwMT42zCAAAA[0m[Pipeline] { (Declarative: Post Actions)
+[8mha:////4PKdQPPJvN5FNYfFy6N8GLhxDt37jn+rviSgNRB1+bKNAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigagQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO63n9qFN1+P256+AAAA[0m[Pipeline] sh
++ rm -rf /var/lib/jenkins/jobs/gdi/qwc-service/workspace@script
++ rm -rf /var/lib/jenkins/jobs/gdi/qwc-service/workspace@libs
++ rm -rf /var/lib/jenkins/jobs/gdi/jobs/qwc-service/workspace/api_webgisclient /var/lib/jenkins/jobs/gdi/jobs/qwc-service/workspace/createGlobalVar.png /var/lib/jenkins/jobs/gdi/jobs/qwc-service/workspace/README.md /var/lib/jenkins/jobs/gdi/jobs/qwc-service/workspace/setBranchesToBuild.png /var/lib/jenkins/jobs/gdi/jobs/qwc-service/workspace/sql2json.jar
+[8mha:////4E+9cmeUUYUUqZWXbc/01Cu89J5PAkptEG2HOsjCSI6KAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIagQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcr97lPbN5RlVvO+AAAA[0m[Pipeline] }
+[8mha:////4EOIAeymorcq1PCs/uaEGYmpa8n8z/Usa0kzVPjPnwBmAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiilSIitZKwwtMYowd686xHZyKF/E1/kAgEhVbrHa2mecL1jHAkYNGq6g3FFuD3o16Xpg59FfHGS1fsGWK7BQ2KjfcqdOCDScFS4oSVgI2ilrH0ZBOsBVW3mXlJOnqnML8HQSUphvgAYWYzUmG9IUpwO42dpHp5/krgMn7BGVdf2r/BovnA6G+AAAA[0m[Pipeline] // stage
+[8mha:////4LtpDoj4StWNnGSI9Fsn0HmJ6gHp7bxAE6Gy1AcQREW7AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJKBBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuD7m2uw+upJEzvgAAAA==[0m[Pipeline] }
+[8mha:////4GyTEiCn9xYXNmBv+0Ju3kRIi1W/pKAWSSbqBNEHcMkSAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihBAFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryf8i13X0AqOKpZr4AAAA=[0m[Pipeline] // timeout
+[8mha:////4DvGcNOVKjvNU0AQB6QNQGEfN389U2MVEeBjXNYCUj4VAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikJCQUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKU+0Ou7e4D62D44L4AAAA=[0m[Pipeline] }
+[8mha:////4GyDPYds3ekYrBgvR7CNjI+LSvXRZPaGa8wM4cktls/XAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiFBQIUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5P+Sq6w/04q2yvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4GIQ0O03bHtq4/s6amvfGHGeBLdFDR04W+l1uc1075QlAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiLYaONY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfI91tBtvsAqytHuL0AAAA=[0m[Pipeline] }
+[8mha:////4FeZcjX8v+Q1Xxk4UVg9jpsjglzeOMb9oSsuX70zmqaZAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIREqJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5PutINt9AI0yIPK9AAAA[0m[Pipeline] // node
+[8mha:////4I10Y8zd+UvvevEhy6pu0qyUO6KjKfGvGY8KkMUOQzWSAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkDC7GybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8F+b4UZOUHaO3jXL0AAAA=[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

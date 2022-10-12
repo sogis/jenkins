@@ -1,0 +1,110 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepEndNode" plugin="workflow-cps@2.94">
+    <parentIds>
+      <string>93</string>
+    </parentIds>
+    <id>94</id>
+    <startId>12</startId>
+  </node>
+  <actions>
+    <wf.a.BodyInvocationAction plugin="workflow-api@2.47"/>
+    <wf.a.TimingAction plugin="workflow-api@2.47">
+      <startTime>1665498395514</startTime>
+    </wf.a.TimingAction>
+    <wf.a.ErrorAction plugin="workflow-api@2.47">
+      <error class="org.jenkinsci.plugins.workflow.steps.FlowInterruptedException" plugin="workflow-step-api@2.24">
+        <stackTrace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution.interrupt(CpsFlowExecution.java:1147)</trace>
+          <trace>org.jenkinsci.plugins.workflow.job.WorkflowRun$2.lambda$interrupt$0(WorkflowRun.java:396)</trace>
+          <trace>jenkins.security.ImpersonatingScheduledExecutorService$1.run(ImpersonatingScheduledExecutorService.java:67)</trace>
+          <trace>java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)</trace>
+          <trace>java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)</trace>
+          <trace>java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)</trace>
+          <trace>java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)</trace>
+          <trace>java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)</trace>
+          <trace>java.base/java.lang.Thread.run(Thread.java:829)</trace>
+        </stackTrace>
+        <suppressedExceptions class="empty-list"/>
+        <result>
+          <name>ABORTED</name>
+          <ordinal>4</ordinal>
+          <color>ABORTED</color>
+          <completeBuild>false</completeBuild>
+        </result>
+        <causes class="java.util.Arrays$ArrayList">
+          <a class="jenkins.model.CauseOfInterruption-array">
+            <org.jenkinsci.plugins.workflow.support.steps.build.BuildTriggerCancelledCause plugin="pipeline-build-step@2.15">
+              <cause class="org.jenkinsci.plugins.workflow.steps.FlowInterruptedException" plugin="workflow-step-api@2.24">
+                <stackTrace>
+                  <trace>org.jenkinsci.plugins.workflow.cps.CpsBodyExecution.cancel(CpsBodyExecution.java:253)</trace>
+                  <trace>org.jenkinsci.plugins.workflow.steps.BodyExecution.cancel(BodyExecution.java:76)</trace>
+                  <trace>org.jenkinsci.plugins.workflow.cps.steps.ParallelStepExecution.stop(ParallelStepExecution.java:68)</trace>
+                  <trace>org.jenkinsci.plugins.workflow.cps.CpsThread.stop(CpsThread.java:319)</trace>
+                  <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution$6.onSuccess(CpsFlowExecution.java:1161)</trace>
+                  <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution$6.onSuccess(CpsFlowExecution.java:1150)</trace>
+                  <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution$4$1.run(CpsFlowExecution.java:917)</trace>
+                  <trace>org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$1.run(CpsVmExecutorService.java:38)</trace>
+                  <trace>java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)</trace>
+                  <trace>java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)</trace>
+                  <trace>hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:139)</trace>
+                  <trace>jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)</trace>
+                  <trace>jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)</trace>
+                  <trace>java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)</trace>
+                  <trace>java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)</trace>
+                  <trace>java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)</trace>
+                  <trace>java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)</trace>
+                  <trace>java.base/java.lang.Thread.run(Thread.java:829)</trace>
+                </stackTrace>
+                <suppressedExceptions class="empty-list"/>
+                <result>
+                  <name>ABORTED</name>
+                  <ordinal>4</ordinal>
+                  <color>ABORTED</color>
+                  <completeBuild>false</completeBuild>
+                </result>
+                <causes class="java.util.Arrays$ArrayList">
+                  <a class="jenkins.model.CauseOfInterruption-array">
+                    <org.jenkinsci.plugins.workflow.steps.ExceptionCause>
+                      <t class="org.jenkinsci.plugins.workflow.steps.FlowInterruptedException">
+                        <stackTrace>
+                          <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution.interrupt(CpsFlowExecution.java:1147)</trace>
+                          <trace>org.jenkinsci.plugins.workflow.job.WorkflowRun$2.lambda$interrupt$0(WorkflowRun.java:396)</trace>
+                          <trace>jenkins.security.ImpersonatingScheduledExecutorService$1.run(ImpersonatingScheduledExecutorService.java:67)</trace>
+                          <trace>java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)</trace>
+                          <trace>java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)</trace>
+                          <trace>java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)</trace>
+                          <trace>java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)</trace>
+                          <trace>java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)</trace>
+                          <trace>java.base/java.lang.Thread.run(Thread.java:829)</trace>
+                        </stackTrace>
+                        <suppressedExceptions class="empty-list"/>
+                        <result>
+                          <name>NOT_BUILT</name>
+                          <ordinal>3</ordinal>
+                          <color>NOTBUILT</color>
+                          <completeBuild>false</completeBuild>
+                        </result>
+                        <causes class="java.util.Arrays$ArrayList">
+                          <a class="jenkins.model.CauseOfInterruption-array">
+                            <org.jenkinsci.plugins.pipeline.milestone.CancelledCause plugin="pipeline-milestone-step@1.3.2">
+                              <newerBuild>WebGISClient#1464</newerBuild>
+                              <displayName>WebGISClient#1464</displayName>
+                            </org.jenkinsci.plugins.pipeline.milestone.CancelledCause>
+                          </a>
+                        </causes>
+                        <actualInterruption>true</actualInterruption>
+                      </t>
+                    </org.jenkinsci.plugins.workflow.steps.ExceptionCause>
+                  </a>
+                </causes>
+                <actualInterruption>true</actualInterruption>
+              </cause>
+            </org.jenkinsci.plugins.workflow.support.steps.build.BuildTriggerCancelledCause>
+          </a>
+        </causes>
+        <actualInterruption>true</actualInterruption>
+      </error>
+    </wf.a.ErrorAction>
+  </actions>
+</Tag>

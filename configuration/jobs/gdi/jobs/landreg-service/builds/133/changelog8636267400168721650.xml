@@ -1,0 +1,60 @@
+commit 5451eae02f51b8085e95d5eaae1dba7e81cc79de
+tree c28032cd436abb5a86a9ebe8fc2042c34d37f01f
+parent 0cc453868c06c3d708bab2154335579ca0c60fac
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-29 16:09:49 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-29 16:09:49 +0200
+
+    [api-gateway] Disable repochecker
+
+
+:100644 100644 5cf3a40b49e5310401076a76ad5eaca98775b572 62dcc72cee92bd86b68223a0e73b8e162a413c17 M	api_webgisclient/api-gateway/resources.yaml
+commit 0cc453868c06c3d708bab2154335579ca0c60fac
+tree fc136ebfc6eb0818468f63b15d748f66b3ecd9a0
+parent 4c9dbc1db12504f7d6b43cfb34198e6a60081ea7
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-29 14:58:06 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-29 14:58:06 +0200
+
+    [api-gateway] Update repochecker
+
+
+:100644 100644 41a2af59069b54865c1722cce2abfd4055c9a170 5cf3a40b49e5310401076a76ad5eaca98775b572 M	api_webgisclient/api-gateway/resources.yaml
+commit 4c9dbc1db12504f7d6b43cfb34198e6a60081ea7
+tree 501a1e8d4e06a7a12001721d0a5cdce4af71dc37
+parent c658c335fa870f54e16275c0120781fd2e4bf983
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-29 14:13:02 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-29 14:16:42 +0200
+
+    [api-gateway] Add repochecker
+
+
+:100644 100644 2f4c802b8e3874d4a63caa70996c7663c0204a6f 41a2af59069b54865c1722cce2abfd4055c9a170 M	api_webgisclient/api-gateway/resources.yaml
+commit c658c335fa870f54e16275c0120781fd2e4bf983
+tree 20eae7fe65fbc9b0a9b1f888e3d96b4cf8d58326
+parent 59e4ee39022945f56ba2e144174e35dab13ee704
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-23 11:24:20 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-23 11:24:20 +0200
+
+    [api-gateway] Be ready for blocking second IP
+
+
+:100644 100644 ee53b0238bc0a9f20586f3ee1bd00c9930e3f23d 2f4c802b8e3874d4a63caa70996c7663c0204a6f M	api_webgisclient/api-gateway/resources.yaml
+commit 59e4ee39022945f56ba2e144174e35dab13ee704
+tree 38960aeb4ab914eb73262c56061fdf5be67d4af9
+parent 6b22bc4da52a0b959101353febbbddec91bff0c4
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-23 09:51:28 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-23 09:51:28 +0200
+
+    [api-gateway] Block IP a different way
+
+
+:100644 100644 6f306d68a5a5ba08ae724aa836914ab6993f9b7b ee53b0238bc0a9f20586f3ee1bd00c9930e3f23d M	api_webgisclient/api-gateway/resources.yaml
+commit 6b22bc4da52a0b959101353febbbddec91bff0c4
+tree 7724286d77e26dc07a9541adcb423673cd17dcaf
+parent 9a162dd92f8f3c97aefddc0066ce97d8a8e5102b
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-23 09:34:59 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-23 09:34:59 +0200
+
+    [api-gateway] Block IP
+
+
+:100644 100644 f0a21a0fb3d0478cc5fa4704c3ffb21700549668 6f306d68a5a5ba08ae724aa836914ab6993f9b7b M	api_webgisclient/api-gateway/resources.yaml

@@ -1,0 +1,278 @@
+Started by user [8mha:////4KY7fuXRBWoeOtXjsASLMWN9nCQkI8pnrjPerPI8lOYDAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgY+/dLi1CL9pKzisvKCtFQAhGIQ0MMAAAA=[0mPfeiffer Michael
+Obtained Jenkinsfile from git https://github.com/sogis/openshift-templates.git
+[8mha:////4IZv91CJqeUCAWo9ck9BVKh65/LumSNWSnryjT7AKhk0AAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4HHgYYa5KBwDaDsSI0fedbp02SxS+btDIrvo1ARFNS4rAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4LBgOhqKJGJElaTk2oYj7t8ESRC/z/RoPQ3eebNqQmjGAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/lib/jenkins/jobs/simi-schemareader/workspace
+[8mha:////4OD/7XoghmcD3pjjbz4PofN1EPXx5yCRwJTfoIVyQgGQAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4M2wjJBcTt6l0j05cB3fhNNde3QV0ipQsYN6E93uEx3ZAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4DfYJV9i63ZlmHDPdVbO87w3NbgDo/9lAugxpaw8hxAsAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4Ghi1xt4uQ8gdPycHHyAQwXyQwSlznZ0fp0rXu3pwp6WAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+The recommended git tool is: git
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/jobs/simi-schemareader/workspace/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sogis/openshift-templates.git # timeout=10
+Fetching upstream changes from https://github.com/sogis/openshift-templates.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/sogis/openshift-templates.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 91745cd23f799b2b8b9bcd9d5b830da04cdaf8d4 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git read-tree -mu HEAD # timeout=10
+ > git config core.sparsecheckout false # timeout=10
+ > git checkout -f 91745cd23f799b2b8b9bcd9d5b830da04cdaf8d4 # timeout=10
+Commit message: "[simi-schemareader] Set tag to 2.0(integration)"
+ > git rev-list --no-walk 41230662a6ee04b802a271cd0874e74cdbc3bad5 # timeout=10
+[8mha:////4HMazXeOn40xNOwd//6oT9IqBYXaS5xhWCGLdIDByycxAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4MVrHeTLwsYjWdheZEeFYL9S/2qJSEo0UzEbVl5e2krGAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4ItfW+8sjOWiuCvF70kIfiryVYfOS47WjxKiUSNvC1XqAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
+[8mha:////4BTtFpcWBia86DCeMmjVjbfZbflafBqmiPI76VnX/xO5AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4OOacfizf4v2Ymvmi4PzoSg4GvitQSaI8OF/jB+SU/ErAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] stage
+[8mha:////4PRr4iqmP0UJMHkWWE7Pp/oD96jLXUPeNEITLkMvrKb3AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] { (Checkout branch)
+[8mha:////4IYKVMtKCWdGA+1GQ+/wvCP28ByaF0S4H0DSP4Rd3MuXAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBgq0rvS+AAAA[0m[Pipeline] checkout
+The recommended git tool is: git
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/jobs/simi-schemareader/workspace/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sogis/openshift-templates.git # timeout=10
+Using shallow fetch with depth 1
+Fetching upstream changes from https://github.com/sogis/openshift-templates.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --no-tags --force --progress --depth=1 -- https://github.com/sogis/openshift-templates.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 91745cd23f799b2b8b9bcd9d5b830da04cdaf8d4 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git config core.sparsecheckout true # timeout=10
+ > git read-tree -mu HEAD # timeout=10
+ > git checkout -f 91745cd23f799b2b8b9bcd9d5b830da04cdaf8d4 # timeout=10
+Commit message: "[simi-schemareader] Set tag to 2.0(integration)"
+[8mha:////4EivEwcDh2Bruh9XowUZtoPLMrdkuwswh/NIeS8Jd+E5AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N7BnLt++AAAA[0m[Pipeline] }
+[8mha:////4Ile7BGUsr5ouzxbIafa7qMdIVEk9bygXzbSjYqXewfyAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N4glvS6+AAAA[0m[Pipeline] // stage
+[8mha:////4HRXrO8W+Fj/3wsnN4QKo13If9EMgdiqhCJVKMIYeErLAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUnRgQE2uUhROEJoSk0f9tkpJOnIircQdaKjHhwbItWe/1hioGOFEwzGnsLMbWst6PZk4sU+hunjJzdGUtYSSvmdBZkNLntQpKGlYVJWw4bDW2nqJFk2DHnXzI2ks09SWFeTtyKK0a4AkFn8lJhvQtU4D9fVSR8Mf5C4CpT1A2zWKH5Vl9ANydZ8vCAAAA[0m[Pipeline] stage
+[8mha:////4B5AWaX8+T03KHNR1nJ4PceMXi8dquLJOfsh7ADHx4JxAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] { (Restart the pods)
+Stage "Restart the pods" skipped due to when conditional
+[8mha:////4EekelOfUZ9SXg9Sirn5hbFAVafvLfeCD27wAx4LB4pJAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiOhCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7ndf2r3BkN+Pj++AAAA[0m[Pipeline] }
+[8mha:////4Addif7ZcnmNmdWSzkaDhYmTCLcE0yAkXLF0IIEWwGacAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICNBQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AGHKGa5vgAAAA==[0m[Pipeline] // stage
+[8mha:////4IUzQmh1RJ1XEbTk7rtIk3ZHlm2a+hHCw1PWZVXQRBLOAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYUVMrFEWThCSENJG/5ckpZ04EVfjDgQqMeHBsi1Z7/mCJkU4UHSss9h7TNqzIYyuJDZR7C+BJtbRmWnCRMEyaSdJxh6XKilbWFTVsBKwtqgDJY8uw0Z06q7aoNC1pxzLthdQe3ODB1SikLOK+VvmCNvraBLhj/MXAPOQoea82I5/ns0bXGTWLMIAAAA=[0m[Pipeline] stage
+[8mha:////4AbGmUZoCH4jNoQVogRVDWuEBnnKNBDcUo8kkPZg+WstAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUdEVMrFEXThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbyhjgRMFwp7GzGFvLez+aOfFMobt5ytzRlbeEkbzmjc4NKX1ea0NJw6qCwUbAVmPrKVo0CXbCyYesvERTXVKYt6MAZtUATyjETE4ypG+ZAuzvo4qEP85fAEx9AlYfFquXZ/kBAsTc3cIAAAA=[0m[Pipeline] { (Update ImageStream tags)
+[8mha:////4GNhRu9zb2Ad8BC1Oehp+NjWxNE6SVDAB2cJ3uZldAJoAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyE0vHypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzD5B3baf2vs3w5BRkb4AAAA=[0m[Pipeline] sh
++ oc import-image simi-schemareader --all --confirm -o name -n gdi-integration
+imagestream.image.openshift.io/simi-schemareader
+[8mha:////4FkufSGUZbxrH7LS3k9XScBsZenpFGNfSsYWOYFaAflfAAAApB+LCAAAAAAAAP9tjbEOwiAURV9rHFwd/QiaNG7GyZWw+AXYIkLJexSodPKL/DX/QbSJk3e4uecu5/mCdQxwpKCZVTgYjJ1h3k26LJYpDFdHmVm6sI4wklNMqCyoV6cFBSUFS6oaVhw2CjtH0aBOsOVW3mXjJOrmnEL5Dhxq04/wgIoXc5IhfWEOsLtNfST8ef4KYPY+Qd3uP9W+Ad3NsHm+AAAA[0m[Pipeline] }
+[8mha:////4MRspDsS+65cqgb8OqlsYrRA1YqHQXKdNHl83zIH6bhDAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN8JP5Su+AAAA[0m[Pipeline] // stage
+[8mha:////4EJqtGkcnUMxec6UwLlY5jS50T9pKyHOfXpFXVdvcXi0AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZWBBTF2jLpwgNCEkjf4vSUo6cSKuxh0IVGLCg2Vbst7zBVXwcCSvmVU4GAy9YaObdE4skR8ujhKzdGY9YSCnWKdSR1K1S+0oKlhUlLDisFbYOwoGdYQNt+IuaidQ16fo83bgUBp5gwcUPJOj8PFbZg/b6yQD4Y/zFwDzGKFsmmy7/edZvQHkVNMxwgAAAA==[0m[Pipeline] stage
+[8mha:////4OUubGkLhxHox0+ockPDiC3ZsFa8mY6W2/TfGDUNuZ5YAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYoABMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAyQCqkwgAAAA==[0m[Pipeline] { (Apply configuration)
+[8mha:////4KfgnKkucRdH6BG+aE9waWy1XQKjoImcf4RKQ3sTpxkSAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi0YCEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAGvZp0gvgAAAA==[0m[Pipeline] sh
++ oc process -f simi-schemareader/simi-schemareader.yaml --param-file=simi-schemareader/simi-schemareader_integration.params
++ oc apply -f - -n gdi-integration
+imagestream.image.openshift.io/simi-schemareader configured
+deploymentconfig.apps.openshift.io/simi-schemareader configured
+service/simi-schemareader unchanged
+[8mha:////4HJpnpgvLpcx/N23t6ylJIiF2ZVkZVDPN4XNtD+UsWa1AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi0SCEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQGMKkS1vgAAAA==[0m[Pipeline] }
+[8mha:////4G2wI6bGFL1nnwNVvVMUd9tLodDWg7IVihek2mwILiMKAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCQKJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw9mQDtDvgAAAA==[0m[Pipeline] // stage
+[8mha:////4ImMlGxyiIsTIRFmauFXcMDK6TSwTbr6jeMh1MNYtVQBAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUESNiYo2ycIKQhJA2+r8kKe3EibgadyBQiQkPlm3Jes8XNCnCgaJjncXeY9KeDWF0JbGJYn8JNLGOzkwTJgqWSTtJMva4VEnZwqKqhpWAtUUdKHl0GTaiU3fVBoWuPeVYtr2A2psbPKAShZxVzN8yR9heR5MIf5y/AJiHDDXnxXb882ze6G+hisIAAAA=[0m[Pipeline] stage
+[8mha:////4AgM/axYH8wWo5bQkWQasH9dpwGyxLJauoVADezDMWxoAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+2YMO4MIAAAA=[0m[Pipeline] { (Wait for rollout to finish)
+[8mha:////4PFgfLFvwnypUE9QJ4uQ8FXTyJAH/j8cM1oSi4EgplHHAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikRJR0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMPkEZb3/VO3favo5XL4AAAA=[0m[Pipeline] sh
++ sleep 2
++ oc rollout status dc/simi-schemareader --timeout=90s -n gdi-integration
+Waiting for rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for rollout to finish: 1 old replicas are pending termination...
+Waiting for rollout to finish: 1 old replicas are pending termination...
+Waiting for latest deployment config spec to be observed by the controller loop...
+replication controller "simi-schemareader-11" successfully rolled out
+[8mha:////4FrXx7wnf92EbtlmljbpytUNYxpFEg2XwD7PhCDuvoqDAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAR2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7Bij33Ma+AAAA[0m[Pipeline] }
+[8mha:////4KuVDxgtMdIwwD4gU77AjboPfh/mmtb61fNzI96cmm8PAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbNzd1iZS+AAAA[0m[Pipeline] // stage
+[8mha:////4NR04E50wYUfCxkOzxvg65WjElk6t/HDJzTtMgQrgzi0AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUFRILYuoadeEEoQkhafR/SVLSiRNxNe5AoBITHizbkvWeL6iChyN5zazCwWDoDRvdpHNiifxwcZSYpTPrCQM5xTqVOpKqXWpHUcGiooQVh7XC3lEwqCNsuBV3UTuBuj5Fn7cDh9LIGzyg4JkchY/fMnvYXicZCH+cvwCYxwhl02Tb7T/P6g1QX6SXwgAAAA==[0m[Pipeline] stage
+[8mha:////4Gb2beu7k8xoiqeTfJopDIUNC0ak0/xP6Acctq4YlQdXAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QIIBMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfADpB/iZwgAAAA==[0m[Pipeline] { (Declarative: Post Actions)
+[8mha:////4Nj3M4KL/leiNkagpF5WIE1FUnc9P8pkS17I5QAbq7E2AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSUICEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAEGDPXtvgAAAA==[0m[Pipeline] sh
++ oc status --suggest -n gdi-integration
+In project gdi-integration on server https://100.68.0.1:443
+
+http://agdi.apps.ocp.so.ch to pod port 80 (svc/agdi)
+  dc/agdi deploys image-registry.openshift-image-registry.svc:5000/gdi-integration/agdi:latest (manual)
+    deployment #12 deployed 2 months ago - 0 pods
+    deployment #11 deployed 2 months ago
+    deployment #10 deployed 7 months ago
+
+https://geo-i.so.ch (reencrypt) to pod port 443-tcp (svc/api-gateway)
+https://geoint.apps.ocp.so.ch (reencrypt) to pod port 443-tcp
+  dc/api-gateway deploys (manual)
+    image-registry.openshift-image-registry.svc:5000/gdi-integration/api-gateway:2.0.24
+    deployment #51 deployed 2 days ago - 1 pod
+    deployment #50 deployed 2 days ago
+    image-registry.openshift-image-registry.svc:5000/gdi-integration/filebeat:2.0.24
+    deployment #51 deployed 2 days ago - 1 pod
+    deployment #50 deployed 2 days ago
+    docker.io/blacklabelops/logrotate:1.3
+    deployment #51 deployed 2 days ago - 1 pod
+    deployment #50 deployed 2 days ago
+    docker.io/library/busybox:1.35
+    deployment #51 deployed 2 days ago - 1 pod
+    deployment #50 deployed 2 days ago
+
+svc/auth-service - 100.68.161.112:80 -> 9090
+  dc/auth-service deploys docker.io/sourcepole/sogis-auth-service:v3.0.1 (manual)
+    deployment #20 deployed 2 months ago - 1 pod
+    deployment #19 deployed 2 months ago
+
+svc/ccc-config - 100.68.67.23:80 -> 9090
+  dc/ccc-config deploys docker.io/sourcepole/sogis-ccc-config:v2.0.1 (manual)
+    deployment #16 deployed 2 months ago - 1 pod
+    deployment #15 deployed 2 months ago
+
+svc/data-service - 100.68.200.126:80 -> 9090
+  dc/data-service deploys docker.io/sourcepole/qwc-data-service:v2.0.7 (manual)
+    deployment #664 deployed 56 minutes ago - 1 pod
+    deployment #663 deployed about an hour ago
+
+svc/dataproduct-service - 100.68.90.75:80 -> 9090
+  dc/dataproduct-service deploys docker.io/sourcepole/sogis-dataproduct-service:v2.0.11 (manual)
+    deployment #668 deployed 56 minutes ago - 1 pod
+    deployment #667 deployed about an hour ago
+
+svc/document-service - 100.68.73.54:80 -> 9090
+  dc/document-service deploys docker.io/sourcepole/qwc-document-service:v2.0.3 (manual)
+    deployment #38 deployed 4 weeks ago - 1 pod
+    deployment #37 deployed 7 weeks ago
+
+svc/elevation-service - 100.68.204.251:80 -> 9090
+  dc/elevation-service deploys docker.io/sourcepole/qwc-elevation-service:v2.0.0 (manual)
+    deployment #18 deployed 2 months ago - 1 pod
+    deployment #17 deployed 2 months ago
+
+svc/featureinfo-service - 100.68.104.221:80 -> 9090
+  dc/featureinfo-service deploys image-registry.openshift-image-registry.svc:5000/gdi-integration/featureinfo-service:2.0.28 (manual)
+    deployment #653 deployed 55 minutes ago - 1 pod
+    deployment #652 deployed about an hour ago
+
+svc/jasper-reporting-service - 100.68.114.20:80 -> 8080
+  dc/jasper-reporting-service deploys docker.io/sogis/jasper-reporting-service:135 (manual)
+    deployment #14 deployed 2 months ago - 1 pod
+    deployment #13 deployed 2 months ago
+
+svc/landreg-service - 100.68.27.248:80 -> 9090
+  dc/landreg-service deploys docker.io/sourcepole/sogis-landreg-service:v2.0.0 (manual)
+    deployment #17 deployed 2 months ago - 1 pod
+    deployment #16 deployed 2 months ago
+
+svc/legend-service - 100.68.125.98:80 -> 9090
+  dc/legend-service deploys docker.io/sourcepole/qwc-legend-service:v2.0.4 (manual)
+    deployment #665 deployed 56 minutes ago - 1 pod
+    deployment #664 deployed about an hour ago
+
+svc/mapinfo-service - 100.68.105.142:80 -> 9090
+  dc/mapinfo-service deploys docker.io/sourcepole/qwc-mapinfo-service:v2.0.0 (manual)
+    deployment #21 deployed 2 months ago - 1 pod
+    deployment #20 deployed 2 months ago
+
+svc/ogc-service - 100.68.24.27:80 -> 9090
+  dc/ogc-service deploys docker.io/sourcepole/qwc-ogc-service:v2.0.8 (manual)
+    deployment #672 deployed 56 minutes ago - 1 pod
+    deployment #671 deployed about an hour ago
+
+http://permalink-int.apps.ocp.so.ch to pod port 80 (svc/permalink-service)
+  dc/permalink-service deploys docker.io/sourcepole/qwc-permalink-service:v2.0.0 (manual)
+    deployment #23 deployed 2 months ago - 1 pod
+    deployment #22 deployed 2 months ago
+
+svc/plotinfo-service - 100.68.105.201:80 -> 9090
+  dc/plotinfo-service deploys docker.io/sourcepole/sogis-plotinfo-service:v2022.03.16 (manual)
+    deployment #25 deployed 2 months ago - 1 pod
+    deployment #24 deployed 2 months ago
+
+svc/print-service - 100.68.55.154:80 -> 9090
+  dc/print-service deploys docker.io/sourcepole/qwc-print-service:v2.0.2 (manual)
+    deployment #19 deployed 2 months ago - 1 pod
+    deployment #18 deployed 2 months ago
+
+http://qgis-server-int.apps.ocp.so.ch to pod port 80 (svc/qgis-server)
+  dc/qgis-server deploys docker.io/sogis/qgis-server:2.0.17 (manual)
+    deployment #682 deployed 55 minutes ago - 1 pod
+    deployment #681 deployed about an hour ago
+
+svc/qgis-server-featureinfo - 100.68.227.78:80
+  dc/qgis-server-featureinfo deploys docker.io/sogis/qgis-server:2.0.17 
+    deployment #625 deployed 54 minutes ago - 1 pod
+    deployment #624 deployed about an hour ago
+
+http://qgis-server-print.apps.ocp.so.ch to pod port 80 (svc/qgis-server-print)
+  dc/qgis-server-print deploys docker.io/sogis/qgis-server:2.0.17 (manual)
+    deployment #629 deployed 53 minutes ago - 2 pods
+    deployment #628 deployed about an hour ago
+
+svc/qwc-service - 100.68.216.238:80 -> 9090
+  dc/qwc-service deploys docker.io/sourcepole/sogis-map-viewer:v2.0.27 (manual)
+    deployment #677 deployed 56 minutes ago - 1 pod
+    deployment #676 deployed about an hour ago
+
+svc/search-service - 100.68.212.32:80 -> 9090
+  dc/search-service deploys docker.io/sourcepole/qwc-fulltext-search-service:v2.1.2 (manual)
+    deployment #664 deployed 56 minutes ago - 1 pod
+    deployment #663 deployed about an hour ago
+
+https://simi-integration.apps.ocp.so.ch (redirects) (svc/simi)
+  dc/simi deploys istag/simi:2.0 
+    deployment #40 deployed 3 minutes ago - 1 pod
+    deployment #39 deployed 2 weeks ago
+    deployment #38 deployed 2 weeks ago
+
+svc/simi-schemareader - 100.68.248.32:80 -> 8080
+  dc/simi-schemareader deploys istag/simi-schemareader:2.0 
+    deployment #11 deployed 51 seconds ago - 1 pod
+    deployment #10 deployed 2 weeks ago
+    deployment #9 deployed 2 months ago
+
+bc/api-gateway docker builds https://github.com/sogis/qwc_services.git#master on docker.io/nginxinc/nginx-unprivileged:mainline
+  -> istag/api-gateway:2.0.24
+  build #14 succeeded 4 months ago - b474bb3: Merge pull request #4 from sogis/amplify (Michael Pfeiffer <michael.pfeiffer@bd.so.ch>)
+  build #10 failed 5 months ago - be5a7d0: fixed typo (bjsvwpfe <michael.pfeiffer@bd.so.ch>)
+
+bc/featureinfo-service docker builds https://github.com/sogis/qwc_services.git#locale on docker.io/sourcepole/qwc-feature-info-service:v2.0.10
+  -> istag/featureinfo-service:2.0.28
+  build #656 succeeded 55 minutes ago - 5285db5: [filebeat] parametrize loadbalance and ssl (bjsvwpfe <michael.pfeiffer@bd.so.ch>)
+  build #380 failed 4 months ago - be5a7d0: fixed typo (bjsvwpfe <michael.pfeiffer@bd.so.ch>)
+
+bc/filebeat docker builds https://github.com/sogis/qwc_services.git#master on docker.io/library/debian:11
+  -> istag/filebeat:2.0.24
+  build #3 succeeded 3 months ago - 5285db5: [filebeat] parametrize loadbalance and ssl (bjsvwpfe <michael.pfeiffer@bd.so.ch>)
+
+Warnings:
+  * pod/jasper-reporting-service-14-8rf5c has restarted 22 times
+  * dc/auth-service references a volume which may only be used in a single pod at a time - this may lead to hung deployments
+  * dc/ccc-config references a volume which may only be used in a single pod at a time - this may lead to hung deployments
+  * dc/data-service references a volume which may only be used in a single pod at a time - this may lead to hung deployments
+  * dc/dataproduct-service references a volume which may only be used in a single pod at a time - this may lead to hung deployments
+  * dc/document-service references a volume which may only be used in a single pod at a time - this may lead to hung deployments
+  * dc/elevation-service references a volume which may only be used in a single pod at a time - this may lead to hung deployments
+  * dc/featureinfo-service references a volume which may only be used in a single pod at a time - this may lead to hung deployments
+  * dc/landreg-service references a volume which may only be used in a single pod at a time - this may lead to hung deployments
+  * dc/legend-service references a volume which may only be used in a single pod at a time - this may lead to hung deployments
+  * dc/mapinfo-service references a volume which may only be used in a single pod at a time - this may lead to hung deployments
+  * dc/ogc-service references a volume which may only be used in a single pod at a time - this may lead to hung deployments
+  * dc/permalink-service references a volume which may only be used in a single pod at a time - this may lead to hung deployments
+  * dc/plotinfo-service references a volume which may only be used in a single pod at a time - this may lead to hung deployments
+  * dc/print-service references a volume which may only be used in a single pod at a time - this may lead to hung deployments
+  * dc/qgis-server-print references a volume which may only be used in a single pod at a time - this may lead to hung deployments
+  * dc/qwc-service references a volume which may only be used in a single pod at a time - this may lead to hung deployments
+  * dc/search-service references a volume which may only be used in a single pod at a time - this may lead to hung deployments
+  * route/agdi has a port specified (80) but svc/agdi has no such targetPort.
+    try: oc patch route/agdi -p '{"spec":{"port":{"targetPort": 9090}}}'
+  * route/permalink has a port specified (80) but svc/permalink-service has no such targetPort.
+    try: oc patch route/permalink -p '{"spec":{"port":{"targetPort": 9090}}}'
+
+View details with 'oc describe <resource>/<name>' or list resources with 'oc get all'.
+[8mha:////4HbTlt2GDPhkECj7icmOU7lYJKKFPescTgtjeVYYBpEGAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YEAIMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfABZuXxiwgAAAA==[0m[Pipeline] script
+[8mha:////4CanSOH9x1pmI0L/RjaAN47sGTGnQDnUktXa+1YiQjc0AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUCRaEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g0Z/aLSwgAAAA==[0m[Pipeline] {
+[8mha:////4MGHW39leuW2m93dBtelz2cII6cRTmcvk5o6/xse6wHkAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICEh2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nffWr7Bv6v+fK+AAAA[0m[Pipeline] }
+[8mha:////4MJdUZQ1VG6Be/P+8lZV/15gaA+FeAADtXpBXdPxD1+jAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAQ1CqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw8z8/BCvgAAAA==[0m[Pipeline] // script
+[8mha:////4MZEwHIhS3gFjS59Dqa2hibdZmLNwb37iGUpdbgA39cFAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSBIkCUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5r3PVhw+RDRRuvgAAAA==[0m[Pipeline] }
+[8mha:////4J5itgM3V/e5qacO5Tk+WRZejGHTrOdZlQb427c2d5efAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIpiGgQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AG/DRYEvgAAAA==[0m[Pipeline] // stage
+[8mha:////4FfKYcO8bDfAkGB76jiItign0Nc4NuvG04KnKPstlRKpAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiSFAhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3h1x1/QE7KRhjvgAAAA==[0m[Pipeline] }
+[8mha:////4DxM+6S8tvDbrm0d5mAxtU1eSYbqkdlEgf7/+HnWWUAKAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICEqJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuD7l22w8Da4uSvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4NhFPXqo9EQUOLhj4XAjwuSc7A0FKxycaE66sioCVyBsAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IsJA7GybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FebkXZOUHJmaoML0AAAA=[0m[Pipeline] }
+[8mha:////4DP70h/bEyML8VGiZdyIraqQQ6Gygd2nrMkn1bR8YBLtAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpoEBCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Lu9INt+AFRknCy9AAAA[0m[Pipeline] // node
+[8mha:////4Azq9vHEN+f0UBzyb48LB1QBa5CyMvRcD2pfhfFHzslLAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKREA1CVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Lu9INt+AHJ9+2a9AAAA[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

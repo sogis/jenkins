@@ -1,0 +1,10 @@
+commit bca2743bddb5c1e20448c2fbe2a7c73ddeade2ec
+tree 13adf9af72faeb5303a9b92fbfd93eaa20e8a428
+parent adb27b6ee6c3edf6178ff02c81246e32f0de79bd
+author edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:55:24 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:55:24 +0200
+
+    [wgc-embedded] set version
+
+
+:100644 100644 8cd510e2d258dce28154eaf95321f0ed9f8234e1 d85b77258ccaf0cc26fd4dcb08775e32a652d33e M	wgc-embedded/wgc-embedded_production.params

@@ -1,0 +1,10 @@
+commit 2ae6d53b2cace032d3a958eae894d11bb0575710
+tree f61d9179b8a71f2ce99ec9bf3b88f543ba952a40
+parent 2db414402a9ee903a09f7b0849a1222205c29bd7
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:41:56 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-05 17:41:56 +0200
+
+    [meta-exporter_conf] uncomment rsync part
+
+
+:100644 100644 6ed48fe5837bf3c5559920795cbbb3f455a254ba ddf9d2aa36499182150e4eda923310cecec3e794 M	api_webgisclient/meta-exporter_conf/Jenkinsfile

@@ -1,0 +1,48 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.94">
+    <parentIds>
+      <string>2</string>
+    </parentIds>
+    <id>3</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.libs.LibraryStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.94">
+      <arguments>
+        <entry>
+          <string>retriever</string>
+          <org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+            <symbol>modernSCM</symbol>
+            <arguments class="linked-hash-map">
+              <entry>
+                <string>&lt;anonymous&gt;</string>
+                <linked-hash-map>
+                  <entry>
+                    <string>$class</string>
+                    <string>GitSCMSource</string>
+                  </entry>
+                  <entry>
+                    <string>remote</string>
+                    <string>https://github.com/sogis/jenkins-shared-libs.git</string>
+                  </entry>
+                </linked-hash-map>
+              </entry>
+            </arguments>
+            <interpolatedStrings/>
+          </org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+        </entry>
+        <entry>
+          <string>identifier</string>
+          <string>jenkins-shared-libs@master</string>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.47">
+      <startTime>1665071899148</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

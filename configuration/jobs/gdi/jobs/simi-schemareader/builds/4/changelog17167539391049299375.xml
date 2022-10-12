@@ -1,0 +1,39 @@
+commit 41230662a6ee04b802a271cd0874e74cdbc3bad5
+tree e364d55b45b8519401e74bbc52d67c5ab94646a6
+parent 17516e556646c176a0ef35114d2c06caee73ea2d
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-30 11:02:20 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-30 11:02:20 +0200
+
+    [simi-schemareader] Set tag to 2.0 (test)
+
+
+:100644 100644 abb429f34746d645d3f7ca930281a54ad36cbedc 0d749ccbd13e4069340871453212209310d150d7 M	simi-schemareader/simi-schemareader_test.params
+commit 17516e556646c176a0ef35114d2c06caee73ea2d
+tree 9cce871890a92194d6cee6c654d0c4e06bf75d38
+parent 9c4ff6901873bb4920e9e68f84614338066c07d3
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-29 16:11:58 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-29 16:11:58 +0200
+
+    [interlis-repo-checker] Disable app
+    
+    Due to a memory leak
+
+
+:100644 100644 be4331757179e042ea98a36179cf87ceda7b5b6c f5a6afb9da2085e2d10389eca1277b8aa6eda7df M	interlis-repo-checker/interlis-repo-checker_integration.params
+:100644 100644 27ff118a194e65924e5aa8b85c851cd64aac35c8 abb40d377668c7ad324a673062ab0c3e6cd66608 M	interlis-repo-checker/interlis-repo-checker_production.params
+:100644 100644 63583b387e285974383cb2a0b399d029f9a21a3e 08df8198f2330233ddb17bb266f6b2ced98265e1 M	interlis-repo-checker/interlis-repo-checker_test.params
+commit 9c4ff6901873bb4920e9e68f84614338066c07d3
+tree 0e67a8b6356e037488a4f4e13488b86e50a95e38
+parent 9fdf0870827fb6a23c54e1983891d4af6470bc15
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-29 14:01:24 +0200
+committer GitHub <noreply@github.com> 2022-08-29 14:01:24 +0200
+
+    [interlis-repo-checker] Add interlis-repo-checker (#44)
+    
+
+
+:000000 100644 0000000000000000000000000000000000000000 6d5176e2cf9ee99ab91ca1d66f84ff4a4d0dd5d4 A	interlis-repo-checker/README.md
+:000000 100644 0000000000000000000000000000000000000000 db414d406bae3305ba2a711a2d58e969fd54d7f5 A	interlis-repo-checker/interlis-repo-checker.yaml
+:000000 100644 0000000000000000000000000000000000000000 be4331757179e042ea98a36179cf87ceda7b5b6c A	interlis-repo-checker/interlis-repo-checker_integration.params
+:000000 100644 0000000000000000000000000000000000000000 27ff118a194e65924e5aa8b85c851cd64aac35c8 A	interlis-repo-checker/interlis-repo-checker_production.params
+:000000 100644 0000000000000000000000000000000000000000 63583b387e285974383cb2a0b399d029f9a21a3e A	interlis-repo-checker/interlis-repo-checker_test.params

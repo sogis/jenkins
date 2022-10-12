@@ -1,0 +1,13 @@
+commit 8ed57c82da632fdf9b0a1d465f812565708bd416
+tree d757e91a4ccc14adb587142d8b86ae6a9ab0df2b
+parent 75ac9cc6a56148b04b6e9c9c9d4be9b9b04139b8
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 14:01:16 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-01 14:01:16 +0200
+
+    [interlis-repo-checker] Expose log level env vars
+
+
+:100644 100644 db414d406bae3305ba2a711a2d58e969fd54d7f5 a04db42060a411b7ac0d0fc3307b04e3160a920b M	interlis-repo-checker/interlis-repo-checker.yaml
+:100644 100644 1f59409b0f4463f129ac9aa4787012ed839d395b 0ef2d1569845796c515f8dd7707bf6ecbc8e8949 M	interlis-repo-checker/interlis-repo-checker_integration.params
+:100644 100644 c11c08736d872f6d0b789594073b417fcd247c89 8968e59aab9805b78edea626c7992f507630f233 M	interlis-repo-checker/interlis-repo-checker_production.params
+:100644 100644 63583b387e285974383cb2a0b399d029f9a21a3e b7165c9d277a51945d5abb1c2ba8cce17dc2f787 M	interlis-repo-checker/interlis-repo-checker_test.params

@@ -1,0 +1,2375 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.42">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>namespace</name>
+          <description>Bitte namespace auswählen</description>
+          <value>gdi-integration</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>replicas</name>
+          <description>Anzahl der Replicas</description>
+          <value>1</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>branch</name>
+          <description>Bitte Branch auswählen, der für die Pipeline verwendet werden soll</description>
+          <value>master</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>AuswahlRollout</name>
+          <description>Was soll ausgerollt werden?</description>
+          <value>Datasets/Dataproducts</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>namespace</string>
+        <string>replicas</string>
+        <string>branch</string>
+        <string>AuswahlRollout</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.0.2.8">
+      <queuingDurationMillis>2</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>0</buildableDurationMillis>
+      <waitingDurationMillis>0</waitingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <hudson.plugins.git.util.BuildData plugin="git@4.9.0">
+      <buildsByBranchName>
+        <entry>
+          <string>origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>66af947b89ad6896a9e2a1738cd1a3453b03408c</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>1460</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>origin/sort_pipelines</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>7a3bb79dfc638482770d112d2819d14309efcd07</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/sort_pipelines</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision plugin="git-client@3.10.0">
+              <sha1 reference="../../marked/sha1"/>
+              <branches class="list">
+                <hudson.plugins.git.Branch reference="../../../marked/branches/hudson.plugins.git.Branch"/>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>1414</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>origin/simi_v2</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>703236f3d9af280c29d102c5fb82b5edcdd34fe0</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/simi_v2</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision plugin="git-client@3.10.0">
+              <sha1 reference="../../marked/sha1"/>
+              <branches class="list">
+                <hudson.plugins.git.Branch reference="../../../marked/branches/hudson.plugins.git.Branch"/>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>1413</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>origin/featureinf</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>4473cae6ab74d9d62e98bcd6028fe310f29123ca</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/featureinf</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision plugin="git-client@3.10.0">
+              <sha1 reference="../../marked/sha1"/>
+              <branches class="list">
+                <hudson.plugins.git.Branch reference="../../../marked/branches/hudson.plugins.git.Branch"/>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>665</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/sogis/pipelines.git</string>
+      </remoteUrls>
+      <index>3</index>
+    </hudson.plugins.git.util.BuildData>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.13">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/sogis/pipelines.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+        <entry>
+          <string>git https://github.com/sogis/jenkins-shared-libs.git</string>
+          <hudson.scm.SCMRevisionState_-None reference="../../entry/hudson.scm.SCMRevisionState_-None"/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@1.9.2">
+      <stagesUUID>f155c59e-e2c9-4200-85d3-ae1089a79c88</stagesUUID>
+      <pipelineDefs>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@1.9.2">
+          <stages>
+            <stages>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Stop Old Build</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>milestone</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>label</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string"></value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>ordinal</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                <value class="string">${Integer.parseInt(env.BUILD_ID)-1}</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>milestone</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>label</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string"></value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>ordinal</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                <value class="string">${Integer.parseInt(env.BUILD_ID)}</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Ask for Version</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                        <name>script</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scriptBlock</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">namespace = params.namespace
+                    AuswahlRollout = params.AuswahlRollout
+                    replicas = params.replicas
+                    branch = params.branch
+                    if ( namespace == &apos;gdi-test&apos; ) {
+                        solrEnv = &apos;test&apos;
+                        }
+                    else if ( namespace == &apos;gdi-integration&apos; ) {
+                        solrEnv = &apos;integration&apos;
+                        }
+                    else if ( namespace == &apos;gdi-production&apos; ) {
+                        solrEnv = &apos;production&apos;
+                        }
+                    else {
+                        solrEnv = &apos;test&apos;
+                        }</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>update Solr Metadaten</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                        <name>script</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scriptBlock</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">url = &quot;http://indexupdater-${solrEnv}.apps.ocp.so.ch/queue?ds=foreground,background&quot;
+                    response = sh(script: &quot;curl -X POST \&quot;$url\&quot; -d \&quot;dih=solr/gdi/dih_metadata\&quot;&quot;, returnStdout: true).trim()
+                    echo response</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>get requirements</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                        <name>script</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scriptBlock</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">serviceMap = [:]
+                    workDir = &quot;$WORKSPACE/api_webgisclient&quot;
+                    dir (workDir) {
+                        def req = readFile(file: &apos;requirements.txt&apos;)
+                        def services = req.split(&apos;\n&apos;)
+                        services.each { item -&gt;
+                            serviceNameBaseImage = item.split(&apos;:&apos;)[0]+&apos;-baseImage&apos;
+                            serviceVersionBaseImage = item.split(&apos;:&apos;)[1]
+                            serviceNameDeployImage = item.split(&apos;:&apos;)[0]+&apos;-deployImage&apos; 
+                            serviceVersionDeployImage = item.split(&apos;:&apos;)[2]
+                            serviceMap.put((serviceNameBaseImage), (serviceVersionBaseImage))
+                            serviceMap.put((serviceNameDeployImage), (serviceVersionDeployImage))
+                            }
+                        }</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <when>
+                  <conditions>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                      <name>expression</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>scriptBlock</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Datasets/Dataproducts&apos;</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                  </conditions>
+                </when>
+                <name>Update permissions</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>build</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>job</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">gdi/permission</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>parameters</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                <value class="string">${[ string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;deploy&apos;, value: true), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ]}</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                            </entry>
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>wait</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="boolean">true</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>propagate</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="boolean">true</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Deploy Services</name>
+                <branches/>
+                <parallel>
+                  <stages>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <when>
+                        <conditions>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                            <name>expression</name>
+                            <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                              <arguments class="linked-hash-map">
+                                <entry>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <key>scriptBlock</key>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                    <value class="string">AuswahlRollout == &apos;Alles&apos;</value>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                </entry>
+                              </arguments>
+                            </args>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                        </conditions>
+                      </when>
+                      <name>Deploy ccc-service</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>build</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>job</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">gdi/ccc-config-service</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>parameters</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                      <value class="string">${[ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;sogis-ccc-config-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;sogis-ccc-config-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;) ]}</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>wait</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>propagate</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <when>
+                        <conditions>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                            <name>expression</name>
+                            <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                              <arguments class="linked-hash-map">
+                                <entry>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <key>scriptBlock</key>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                    <value class="string">AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos;</value>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                </entry>
+                              </arguments>
+                            </args>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                        </conditions>
+                      </when>
+                      <name>Deploy auth-service</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>build</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>job</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">gdi/auth-service</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>parameters</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                      <value class="string">${[ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;sogis-auth-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;sogis-auth-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;) ]}</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>wait</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>propagate</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <when>
+                        <conditions>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                            <name>expression</name>
+                            <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                              <arguments class="linked-hash-map">
+                                <entry>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <key>scriptBlock</key>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                    <value class="string">AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Datasets/Dataproducts&apos;</value>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                </entry>
+                              </arguments>
+                            </args>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                        </conditions>
+                      </when>
+                      <name>Deploy qwc-service</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>build</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>job</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">gdi/qwc-service</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>parameters</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                      <value class="string">${[ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;sogis-map-viewer-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;sogis-map-viewer-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ]}</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>wait</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>propagate</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <when>
+                        <conditions>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                            <name>expression</name>
+                            <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                              <arguments class="linked-hash-map">
+                                <entry>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <key>scriptBlock</key>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                    <value class="string">AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Datasets/Dataproducts&apos; || AuswahlRollout == &apos;Nur Darstellung&apos;</value>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                </entry>
+                              </arguments>
+                            </args>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                        </conditions>
+                      </when>
+                      <name>Deploy qgis-server</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>build</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>job</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">gdi/qgis-server</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>parameters</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                      <value class="string">${[ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-qgis-server-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-qgis-server-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ]}</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>wait</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>propagate</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <when>
+                        <conditions>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                            <name>expression</name>
+                            <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                              <arguments class="linked-hash-map">
+                                <entry>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <key>scriptBlock</key>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                    <value class="string">AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Datasets/Dataproducts&apos;</value>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                </entry>
+                              </arguments>
+                            </args>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                        </conditions>
+                      </when>
+                      <name>Deploy data-service</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>build</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>job</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">gdi/data-service</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>parameters</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                      <value class="string">${[ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-data-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-data-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ]}</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>wait</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>propagate</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <when>
+                        <conditions>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                            <name>expression</name>
+                            <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                              <arguments class="linked-hash-map">
+                                <entry>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <key>scriptBlock</key>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                    <value class="string">AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Datasets/Dataproducts&apos;</value>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                </entry>
+                              </arguments>
+                            </args>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                        </conditions>
+                      </when>
+                      <name>Deploy dataproduct-service</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>build</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>job</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">gdi/dataproduct-service</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>parameters</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                      <value class="string">${[ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;sogis-dataproduct-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;sogis-dataproduct-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ]}</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>wait</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>propagate</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <when>
+                        <conditions>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                            <name>expression</name>
+                            <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                              <arguments class="linked-hash-map">
+                                <entry>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <key>scriptBlock</key>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                    <value class="string">AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Templates&apos;</value>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                </entry>
+                              </arguments>
+                            </args>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                        </conditions>
+                      </when>
+                      <name>Deploy document-service</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>build</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>job</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">gdi/document-service</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>parameters</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                      <value class="string">${[ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-document-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-document-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ]}</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>wait</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>propagate</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <when>
+                        <conditions>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                            <name>expression</name>
+                            <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                              <arguments class="linked-hash-map">
+                                <entry>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <key>scriptBlock</key>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                    <value class="string">AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos;</value>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                </entry>
+                              </arguments>
+                            </args>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                        </conditions>
+                      </when>
+                      <name>Deploy elevation-service</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>build</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>job</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">gdi/elevation-service</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>parameters</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                      <value class="string">${[ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-elevation-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-elevation-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ]}</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>wait</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>propagate</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <when>
+                        <conditions>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                            <name>expression</name>
+                            <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                              <arguments class="linked-hash-map">
+                                <entry>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <key>scriptBlock</key>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                    <value class="string">AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Datasets/Dataproducts&apos;</value>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                </entry>
+                              </arguments>
+                            </args>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                        </conditions>
+                      </when>
+                      <name>Deploy featureinfo-service</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>build</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>job</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">gdi/featureinfo-service</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>parameters</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                      <value class="string">${[ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-feature-info-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-feature-info-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ]}</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>wait</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>propagate</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <when>
+                        <conditions>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                            <name>expression</name>
+                            <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                              <arguments class="linked-hash-map">
+                                <entry>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <key>scriptBlock</key>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                    <value class="string">AuswahlRollout == &apos;Alles&apos;</value>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                </entry>
+                              </arguments>
+                            </args>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                        </conditions>
+                      </when>
+                      <name>Deploy jasper-reporting-service</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>build</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>job</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">gdi/jasper-reporting-service</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>parameters</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                      <value class="string">${[ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;jasper-reporting-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;jasper-reporting-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ]}</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>wait</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>propagate</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <when>
+                        <conditions>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                            <name>expression</name>
+                            <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                              <arguments class="linked-hash-map">
+                                <entry>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <key>scriptBlock</key>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                    <value class="string">AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos;</value>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                </entry>
+                              </arguments>
+                            </args>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                        </conditions>
+                      </when>
+                      <name>Deploy landreg-service</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>build</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>job</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">gdi/landreg-service</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>parameters</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                      <value class="string">${[ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;sogis-landreg-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;sogis-landreg-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ]}</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>wait</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>propagate</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <when>
+                        <conditions>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                            <name>expression</name>
+                            <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                              <arguments class="linked-hash-map">
+                                <entry>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <key>scriptBlock</key>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                    <value class="string">AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Datasets/Dataproducts&apos;</value>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                </entry>
+                              </arguments>
+                            </args>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                        </conditions>
+                      </when>
+                      <name>Deploy legend-service</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>build</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>job</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">gdi/legend-service</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>parameters</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                      <value class="string">${[ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-legend-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-legend-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ]}</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>wait</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>propagate</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <when>
+                        <conditions>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                            <name>expression</name>
+                            <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                              <arguments class="linked-hash-map">
+                                <entry>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <key>scriptBlock</key>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                    <value class="string">AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos;</value>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                </entry>
+                              </arguments>
+                            </args>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                        </conditions>
+                      </when>
+                      <name>Deploy mapinfo-service</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>build</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>job</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">gdi/mapinfo-service</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>parameters</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                      <value class="string">${[ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-mapinfo-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-mapinfo-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ]}</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>wait</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>propagate</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <when>
+                        <conditions>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                            <name>expression</name>
+                            <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                              <arguments class="linked-hash-map">
+                                <entry>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <key>scriptBlock</key>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                    <value class="string">AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Datasets/Dataproducts&apos;</value>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                </entry>
+                              </arguments>
+                            </args>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                        </conditions>
+                      </when>
+                      <name>Deploy ogc-service</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>build</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>job</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">gdi/ogc-service</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>parameters</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                      <value class="string">${[ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-ogc-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-ogc-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ]}</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>wait</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>propagate</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <when>
+                        <conditions>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                            <name>expression</name>
+                            <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                              <arguments class="linked-hash-map">
+                                <entry>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <key>scriptBlock</key>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                    <value class="string">AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos;</value>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                </entry>
+                              </arguments>
+                            </args>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                        </conditions>
+                      </when>
+                      <name>Deploy permalink-service</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>build</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>job</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">gdi/permalink-service</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>parameters</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                      <value class="string">${[ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-permalink-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-permalink-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ]}</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>wait</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>propagate</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <when>
+                        <conditions>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                            <name>expression</name>
+                            <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                              <arguments class="linked-hash-map">
+                                <entry>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <key>scriptBlock</key>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                    <value class="string">AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos;</value>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                </entry>
+                              </arguments>
+                            </args>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                        </conditions>
+                      </when>
+                      <name>Deploy plotinfo-service</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>build</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>job</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">gdi/plotinfo-service</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>parameters</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                      <value class="string">${[ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;sogis-plotinfo-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;sogis-plotinfo-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ]}</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>wait</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>propagate</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <when>
+                        <conditions>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                            <name>expression</name>
+                            <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                              <arguments class="linked-hash-map">
+                                <entry>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <key>scriptBlock</key>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                    <value class="string">AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos;</value>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                </entry>
+                              </arguments>
+                            </args>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                        </conditions>
+                      </when>
+                      <name>Deploy print-service</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>build</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>job</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">gdi/print-service</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>parameters</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                      <value class="string">${[ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-print-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-print-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ]}</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>wait</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>propagate</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <when>
+                        <conditions>
+                          <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                            <name>expression</name>
+                            <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                              <arguments class="linked-hash-map">
+                                <entry>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <key>scriptBlock</key>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                    <value class="string">AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Datasets/Dataproducts&apos;</value>
+                                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                </entry>
+                              </arguments>
+                            </args>
+                          </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                        </conditions>
+                      </when>
+                      <name>Deploy search-service</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>build</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>job</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">gdi/search-service</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>parameters</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                      <value class="string">${[ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-fulltext-search-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-fulltext-search-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ]}</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>wait</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>propagate</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="boolean">true</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                  </stages>
+                  <uuid>55392bbc-dd2f-47a1-995d-a2959a20b3eb</uuid>
+                </parallel>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <when>
+                  <conditions>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                      <name>expression</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>scriptBlock</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Datasets/Dataproducts&apos;</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                  </conditions>
+                </when>
+                <name>Deploy qgis-server-featureinfo</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>build</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>job</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">gdi/qgis-server-featureinfo</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>parameters</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                <value class="string">${[ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-qgis-server-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-qgis-server-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ]}</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                            </entry>
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>wait</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="boolean">true</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>propagate</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="boolean">true</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <when>
+                  <conditions>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                      <name>expression</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>scriptBlock</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Datasets/Dataproducts&apos;</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenExpression>
+                  </conditions>
+                </when>
+                <name>Deploy qgis-server-print</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>build</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>job</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">gdi/qgis-server-print</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>parameters</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                <value class="string">${[ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-qgis-server-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-qgis-server-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ]}</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                            </entry>
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>wait</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="boolean">true</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>propagate</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="boolean">true</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            </stages>
+            <uuid>f155c59e-e2c9-4200-85d3-ae1089a79c88</uuid>
+          </stages>
+          <postBuild>
+            <conditions>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildCondition>
+                <condition>cleanup</condition>
+                <branch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>sh</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>script</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                              <value class="string">&quot;&quot;&quot;
+                rm -rf $JENKINS_HOME/jobs/$JOB_NAME/workspace\\@script 
+                rm -rf $JENKINS_HOME/jobs/$JOB_NAME/workspace\\@libs 
+                rm -rf $WORKSPACE/*
+            &quot;&quot;&quot;</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                  </steps>
+                </branch>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildCondition>
+            </conditions>
+          </postBuild>
+          <agent>
+            <variables class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+              <value class="string">master</value>
+            </variables>
+            <agentType>
+              <key>label</key>
+            </agentType>
+          </agent>
+          <options>
+            <options>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTOption>
+                <name>timeout</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>time</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="int">35</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>unit</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">MINUTES</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTOption>
+            </options>
+            <inStage>false</inStage>
+          </options>
+          <parameters>
+            <parameters>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+                <name>string</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>defaultValue</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">gdi-integration</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>description</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Bitte namespace auswählen</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>name</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">namespace</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+                <name>string</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>defaultValue</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">1</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>description</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Anzahl der Replicas</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>name</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">replicas</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+                <name>string</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>defaultValue</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">master</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>description</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Bitte Branch auswählen, der für die Pipeline verwendet werden soll</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>name</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">branch</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+                <name>choice</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>choices</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$GStringValue">
+                      <value class="string">${[&apos;Datasets/Dataproducts&apos;,&apos;Permissions&apos;,&apos;Nur Darstellung&apos;, &apos;Templates&apos;,&apos;Alles&apos;]}</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>description</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">Was soll ausgerollt werden?</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                    <key>
+                      <key>name</key>
+                    </key>
+                    <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                      <value class="string">AuswahlRollout</value>
+                    </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKeyValueOrMethodCallPair>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildParameter>
+            </parameters>
+          </parameters>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
+      </pipelineDefs>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.94">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.21">
+      <libraries>
+        <org.jenkinsci.plugins.workflow.libs.LibraryRecord>
+          <name>jenkins-shared-libs</name>
+          <version>master</version>
+          <variables class="sorted-set">
+            <string>buildImage</string>
+            <string>configureRessources</string>
+            <string>createConfigMaps</string>
+            <string>createConfigs</string>
+            <string>deployImage</string>
+          </variables>
+          <trusted>false</trusted>
+          <changelog>true</changelog>
+        </org.jenkinsci.plugins.workflow.libs.LibraryRecord>
+      </libraries>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <hudson.plugins.git.util.BuildData plugin="git@4.9.0">
+      <buildsByBranchName>
+        <entry>
+          <string>master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>3459e1770a518a80984f743e0cd0471c31eea966</sha1>
+              <branches class="singleton-set">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>1460</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/sogis/jenkins-shared-libs.git</string>
+      </remoteUrls>
+      <index>2</index>
+    </hudson.plugins.git.util.BuildData>
+    <jenkins.metrics.impl.SubTaskTimeInQueueAction plugin="metrics@4.0.2.8">
+      <queuingDurationMillis>4</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>2</buildableDurationMillis>
+      <waitingDurationMillis>0</waitingDurationMillis>
+      <executingDurationMillis>303317</executingDurationMillis>
+      <workUnitCount>1</workUnitCount>
+    </jenkins.metrics.impl.SubTaskTimeInQueueAction>
+  </actions>
+  <queueId>37296</queueId>
+  <timestamp>1665494107006</timestamp>
+  <startTime>1665494107012</startTime>
+  <result>SUCCESS</result>
+  <duration>325393</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>library identifier: &quot;jenkins-shared-libs@${JENKINS_SHARED_LIBS_BRANCH}&quot;, retriever: modernSCM(
+    [$class: &apos;GitSCMSource&apos;,
+     remote: &apos;https://github.com/sogis/jenkins-shared-libs.git&apos;])
+credentials = [
+    usernamePassword(credentialsId: &apos;jenkinsApi&apos;                          , usernameVariable: &apos;apiUser&apos;                 , passwordVariable: &apos;PwdApiUser&apos;),
+    ]
+pipeline {
+    agent { label &apos;master&apos; } 
+    options {
+        // set a timeout of 15 minutes for this pipeline
+        timeout(time: 35, unit: &apos;MINUTES&apos;)
+        // disableConcurrentBuilds()
+    }
+    parameters {
+        string(defaultValue: &quot;gdi-integration&quot;,
+               description: &apos;Bitte namespace auswählen&apos;,
+               name: &apos;namespace&apos;
+              )
+        string(defaultValue: &apos;1&apos;,
+               description: &apos;Anzahl der Replicas&apos;,
+               name: &apos;replicas&apos;
+               )
+        string(defaultValue: &quot;master&quot;,
+               description: &apos;Bitte Branch auswählen, der für die Pipeline verwendet werden soll&apos;,
+               name: &apos;branch&apos;
+               )
+        choice(choices: [&apos;Datasets/Dataproducts&apos;,&apos;Permissions&apos;,&apos;Nur Darstellung&apos;, &apos;Templates&apos;,&apos;Alles&apos;],
+               description: &apos;Was soll ausgerollt werden?&apos;,
+               name: &apos;AuswahlRollout&apos;
+               )
+        }
+    stages {
+        stage(&apos;Stop Old Build&apos;) {
+            steps {
+                milestone label: &apos;&apos;, ordinal:  Integer.parseInt(env.BUILD_ID) - 1
+                milestone label: &apos;&apos;, ordinal:  Integer.parseInt(env.BUILD_ID)
+                }
+            }
+        stage (&apos;Ask for Version&apos;) {
+            steps {
+                script {
+                    namespace = params.namespace
+                    AuswahlRollout = params.AuswahlRollout
+                    replicas = params.replicas
+                    branch = params.branch
+                    if ( namespace == &apos;gdi-test&apos; ) {
+                        solrEnv = &apos;test&apos;
+                        }
+                    else if ( namespace == &apos;gdi-integration&apos; ) {
+                        solrEnv = &apos;integration&apos;
+                        }
+                    else if ( namespace == &apos;gdi-production&apos; ) {
+                        solrEnv = &apos;production&apos;
+                        }
+                    else {
+                        solrEnv = &apos;test&apos;
+                        }
+                    }
+                }
+            }
+        stage(&apos;update Solr Metadaten&apos;) {
+            steps {
+                script {
+                    url = &quot;http://indexupdater-${solrEnv}.apps.ocp.so.ch/queue?ds=foreground,background&quot;
+                    response = sh(script: &quot;curl -X POST \&quot;$url\&quot; -d \&quot;dih=solr/gdi/dih_metadata\&quot;&quot;, returnStdout: true).trim()
+                    echo response
+                    }
+                }
+            }
+        stage(&apos;get requirements&apos;) {
+            steps {
+                script {    
+                    serviceMap = [:]
+                    workDir = &quot;$WORKSPACE/api_webgisclient&quot;
+                    dir (workDir) {
+                        def req = readFile(file: &apos;requirements.txt&apos;)
+                        def services = req.split(&apos;\n&apos;)
+                        services.each { item -&gt;
+                            serviceNameBaseImage = item.split(&apos;:&apos;)[0]+&apos;-baseImage&apos;
+                            serviceVersionBaseImage = item.split(&apos;:&apos;)[1]
+                            serviceNameDeployImage = item.split(&apos;:&apos;)[0]+&apos;-deployImage&apos; 
+                            serviceVersionDeployImage = item.split(&apos;:&apos;)[2]
+                            serviceMap.put((serviceNameBaseImage), (serviceVersionBaseImage))
+                            serviceMap.put((serviceNameDeployImage), (serviceVersionDeployImage))
+                            }
+                        }
+                    }
+                }
+            }
+        stage(&apos;Update permissions&apos;) {
+            when {
+                expression { AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Datasets/Dataproducts&apos; }
+                }
+            steps {
+                build job: &apos;gdi/permission&apos;, parameters: [ string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;deploy&apos;, value: true), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ], wait: true, propagate: true
+                }
+            }
+        stage(&apos;Deploy Services&apos;) {
+            parallel {
+                 stage (&apos;Deploy ccc-service&apos;) {
+                    when {
+                        expression { AuswahlRollout == &apos;Alles&apos; }
+                    }
+                    steps {
+                        build job: &apos;gdi/ccc-config-service&apos;, parameters: [ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;sogis-ccc-config-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;sogis-ccc-config-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;) ], wait: true, propagate: true
+                        }
+                    }
+                 stage (&apos;Deploy auth-service&apos;) {
+                    when {
+                        expression { AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; }
+                    }
+                    steps {
+                        build job: &apos;gdi/auth-service&apos;, parameters: [ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;sogis-auth-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;sogis-auth-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;) ], wait: true, propagate: true
+                        }
+                    }
+                 stage (&apos;Deploy qwc-service&apos;) {
+                    when {
+                        expression { AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Datasets/Dataproducts&apos; }
+                    }
+                    steps {
+                        build job: &apos;gdi/qwc-service&apos;, parameters: [ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;sogis-map-viewer-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;sogis-map-viewer-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ], wait: true, propagate: true 
+                        }
+                    }
+                stage (&apos;Deploy qgis-server&apos;) {
+                    when {
+                        expression { AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Datasets/Dataproducts&apos; || AuswahlRollout == &apos;Nur Darstellung&apos; }
+                    }
+                    steps {
+                        build job: &apos;gdi/qgis-server&apos;, parameters: [ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-qgis-server-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-qgis-server-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ], wait: true, propagate: true 
+                        }
+                    }
+                stage (&apos;Deploy data-service&apos;) {
+                    when {
+                        expression { AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Datasets/Dataproducts&apos; }
+                    }
+                    steps {
+                        build job: &apos;gdi/data-service&apos;, parameters: [ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-data-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-data-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ], wait: true, propagate: true
+                        }
+                    }
+                stage (&apos;Deploy dataproduct-service&apos;) {
+                    when {
+                        expression { AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Datasets/Dataproducts&apos; }
+                    }
+                    steps {
+                        build job: &apos;gdi/dataproduct-service&apos;, parameters: [ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;sogis-dataproduct-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;sogis-dataproduct-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ], wait: true, propagate: true 
+                        }
+                    }
+                stage (&apos;Deploy document-service&apos;) {
+                    when {
+                        expression { AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Templates&apos; }
+                    }
+                    steps {
+                        build job: &apos;gdi/document-service&apos;, parameters: [ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-document-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-document-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ], wait: true, propagate: true 
+                        }
+                    }
+                stage (&apos;Deploy elevation-service&apos;) {
+                    when {
+                        expression { AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; }
+                    }
+                    steps {
+                        build job: &apos;gdi/elevation-service&apos;, parameters: [ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-elevation-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-elevation-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ], wait: true, propagate: true 
+                        }
+                    }
+                stage (&apos;Deploy featureinfo-service&apos;) {
+                    when {
+                        expression { AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Datasets/Dataproducts&apos; }
+                    }
+                    steps {
+                        build job: &apos;gdi/featureinfo-service&apos;, parameters: [ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-feature-info-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-feature-info-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ], wait: true, propagate: true 
+                        }
+                    } 
+                stage (&apos;Deploy jasper-reporting-service&apos;) {
+                    when {
+                        expression { AuswahlRollout == &apos;Alles&apos; }
+                    }
+                    steps {
+                        build job: &apos;gdi/jasper-reporting-service&apos;, parameters: [ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;jasper-reporting-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;jasper-reporting-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ], wait: true, propagate: true 
+                        }
+                    }
+                stage (&apos;Deploy landreg-service&apos;) {
+                    when {
+                        expression { AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; }
+                    }
+                    steps {
+                        build job: &apos;gdi/landreg-service&apos;, parameters: [ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;sogis-landreg-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;sogis-landreg-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ], wait: true, propagate: true 
+                        }
+                    }
+                stage (&apos;Deploy legend-service&apos;) {
+                    when {
+                        expression { AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Datasets/Dataproducts&apos; }
+                    }
+                    steps {
+                        build job: &apos;gdi/legend-service&apos;, parameters: [ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-legend-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-legend-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ], wait: true, propagate: true 
+                        }
+                    }
+                stage (&apos;Deploy mapinfo-service&apos;) {
+                    when {
+                        expression { AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; }
+                    }
+                    steps {
+                        build job: &apos;gdi/mapinfo-service&apos;, parameters: [ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-mapinfo-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-mapinfo-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ], wait: true, propagate: true 
+                        }
+                    }
+                stage (&apos;Deploy ogc-service&apos;) {
+                    when {
+                        expression { AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Datasets/Dataproducts&apos; }
+                    }
+                    steps {
+                        build job: &apos;gdi/ogc-service&apos;, parameters: [ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-ogc-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-ogc-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ], wait: true, propagate: true 
+                        }
+                    }
+                stage (&apos;Deploy permalink-service&apos;) {
+                    when {
+                        expression { AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; }
+                    }
+                    steps {
+                        build job: &apos;gdi/permalink-service&apos;, parameters: [ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-permalink-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-permalink-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ], wait: true, propagate: true 
+                        }
+                    }
+                stage (&apos;Deploy plotinfo-service&apos;) {
+                    when {
+                        expression { AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; }
+                    }
+                    steps {
+                        build job: &apos;gdi/plotinfo-service&apos;, parameters: [ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;sogis-plotinfo-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;sogis-plotinfo-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ], wait: true, propagate: true 
+                        }
+                    }
+                stage (&apos;Deploy print-service&apos;) {
+                    when {
+                        expression { AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; }
+                    }
+                    steps {
+                        build job: &apos;gdi/print-service&apos;, parameters: [ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-print-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-print-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ], wait: true, propagate: true 
+                        }
+                    }
+                stage (&apos;Deploy search-service&apos;) {
+                    when {
+                        expression { AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Datasets/Dataproducts&apos; }
+                    }
+                    steps {
+                        build job: &apos;gdi/search-service&apos;, parameters: [ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-fulltext-search-service-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-fulltext-search-service-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ], wait: true, propagate: true 
+                        }
+                    }
+                } 
+            }
+        stage (&apos;Deploy qgis-server-featureinfo&apos;) {
+            when {
+                expression { AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Datasets/Dataproducts&apos; }
+            }
+            steps {
+                build job: &apos;gdi/qgis-server-featureinfo&apos;, parameters: [ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-qgis-server-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-qgis-server-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ], wait: true, propagate: true 
+                }
+            }
+        stage (&apos;Deploy qgis-server-print&apos;) {
+            when {
+                expression { AuswahlRollout == &apos;Permissions&apos; || AuswahlRollout == &apos;Alles&apos; || AuswahlRollout == &apos;Datasets/Dataproducts&apos; }
+            }
+            steps {
+                build job: &apos;gdi/qgis-server-print&apos;, parameters: [ string(name: &apos;vDeployImage&apos;, value: &quot;${serviceMap[&apos;qwc-qgis-server-deployImage&apos;]}&quot;), string(name: &apos;vBaseImage&apos;, value: &quot;${serviceMap[&apos;qwc-qgis-server-baseImage&apos;]}&quot;), string(name: &apos;namespace&apos;, value: &quot;${namespace}&quot;), booleanParam(name: &apos;configs&apos;, value: true), string(name: &apos;jobName&apos;, value: &quot;${JOB_NAME}&quot;), string(name: &apos;buildNumber&apos;, value: &quot;${BUILD_NUMBER}&quot;), string(name: &apos;replicas&apos;, value: &quot;${replicas}&quot;), string(name: &apos;branch&apos;, value: &quot;${branch}&quot;)  ], wait: true, propagate: true 
+                }
+            }
+        }
+    post {
+        // Clean after build
+        cleanup {
+            sh &quot;&quot;&quot;
+                rm -rf $JENKINS_HOME/jobs/$JOB_NAME/workspace\\@script 
+                rm -rf $JENKINS_HOME/jobs/$JOB_NAME/workspace\\@libs 
+                rm -rf $WORKSPACE/*
+            &quot;&quot;&quot;
+            }
+        }
+    }
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>1514918693</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>596136639</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>4887724583</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>867588423</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>1177451432</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>217</iota>
+    <head>1:217</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.9.0">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/sogis/pipelines.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>$branch_webgisclient</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions/>
+      </scm>
+      <node></node>
+      <workspace>/var/lib/jenkins/jobs/WebGISClient/workspace@script</workspace>
+      <changelogFile>/var/lib/jenkins/jobs/WebGISClient/builds/1460/changelog9218559751241163584.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.9.0">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <name>origin</name>
+            <refspec>+refs/heads/*:refs/remotes/origin/*</refspec>
+            <url>https://github.com/sogis/jenkins-shared-libs.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches class="singleton-list">
+          <hudson.plugins.git.BranchSpec>
+            <name>master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions>
+          <jenkins.plugins.git.GitSCMSourceDefaults>
+            <includeTags>false</includeTags>
+          </jenkins.plugins.git.GitSCMSourceDefaults>
+          <hudson.plugins.git.extensions.impl.BuildChooserSetting>
+            <buildChooser class="jenkins.plugins.git.AbstractGitSCMSource$SpecificRevisionBuildChooser">
+              <revision reference="../../../../../../../actions/hudson.plugins.git.util.BuildData[2]/buildsByBranchName/entry/hudson.plugins.git.util.Build/marked"/>
+            </buildChooser>
+          </hudson.plugins.git.extensions.impl.BuildChooserSetting>
+        </extensions>
+      </scm>
+      <node></node>
+      <workspace>/var/lib/jenkins/jobs/WebGISClient/workspace@libs/jenkins-shared-libs</workspace>
+      <changelogFile>/var/lib/jenkins/jobs/WebGISClient/builds/1460/changelog10207801950198858589.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" reference="../../org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout/scm"/>
+      <node></node>
+      <workspace>/var/lib/jenkins/jobs/WebGISClient/workspace</workspace>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

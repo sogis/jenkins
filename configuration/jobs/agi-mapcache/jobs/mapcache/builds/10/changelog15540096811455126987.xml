@@ -1,0 +1,9 @@
+commit 32d43eb77f2044e3710fa66b46bd7b88ebecb36c
+tree 10c107400e90217177155affe54dd2c34aa0d968
+parent 265c7ea8653a1ddec0232cb30f57b54b401cc384
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-21 20:47:36 +0200
+committer GitHub <noreply@github.com> 2022-09-21 20:47:36 +0200
+
+    [mapcache] Set CPU limit
+
+:100644 100644 51394a64e609ff517d29ec4cd7773128e7f5bf6a f833f179efca35b90b0b1451fb18400197e0ae90 M	mapcache/qgis-server_production.params

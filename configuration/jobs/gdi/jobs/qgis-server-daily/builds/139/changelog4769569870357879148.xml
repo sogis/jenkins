@@ -1,0 +1,41 @@
+commit 9d570735eeba6c63ff25e804c1deb648f2ffe268
+tree ac9150798a42a6f70c1fef5c693c4853396d9d44
+parent 66af947b89ad6896a9e2a1738cd1a3453b03408c
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 18:15:19 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 18:15:19 +0200
+
+    [meta-exporter..] change secret name
+
+
+:100644 100644 c79b2bdaa1b65c81766c1a8b5a7ab73b0b588ab7 5e44cc919937efbc75d909b871f24aa3ac0f30cf M	api_webgisclient/meta-exporter_conf/Jenkinsfile
+:100644 100644 466b85fc49a824521c1e7b27441f74dee2c4bc53 66fe898b0ed1c1d9634f9fe6210a83f76b19b9bc M	api_webgisclient/meta-exporter_geocat/Jenkinsfile
+commit 66af947b89ad6896a9e2a1738cd1a3453b03408c
+tree d2b39a4b532f59180bcca0f0311a9c7de5c33de6
+parent d4c2878e942505966abd494d4e6bbfe0c9148548
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 15:10:33 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 15:10:33 +0200
+
+    [meta-exporter_conf] add upload to sodata pod
+
+
+:100644 100644 aa5b84395a34fbf25401b484032e047da6c3c9ac c79b2bdaa1b65c81766c1a8b5a7ab73b0b588ab7 M	api_webgisclient/meta-exporter_conf/Jenkinsfile
+commit d4c2878e942505966abd494d4e6bbfe0c9148548
+tree eac91f33c06000c64c5a1dd8e0531209fa32bc74
+parent 3220ea003d32fb23af7baf7107d565267a790840
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 12:59:36 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 12:59:36 +0200
+
+    [meta-exporter_geocat] fixed syntax for put
+
+
+:100644 100644 f1661d90a9cffc94e1f646d757b143e136f87e66 466b85fc49a824521c1e7b27441f74dee2c4bc53 M	api_webgisclient/meta-exporter_geocat/Jenkinsfile
+commit 3220ea003d32fb23af7baf7107d565267a790840
+tree a1f739579d76bb6090236e8d873f6b9d506850a9
+parent 23eb27819d6dcd7fd74946de411f84950f80d8dc
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 12:54:01 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 12:54:01 +0200
+
+    [metaexporter_geocat] add sftp commands
+
+
+:100644 100644 2864515f19291cd2eab1fcaed1fcb48f44be7f8b f1661d90a9cffc94e1f646d757b143e136f87e66 M	api_webgisclient/meta-exporter_geocat/Jenkinsfile

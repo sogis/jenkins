@@ -1,0 +1,141 @@
+commit 97bcc335d3b1a9bd7fbe8b563fffc9947c3d1316
+tree 1090cbc90b48fef8071f7df7007673d3a6053634
+parent cbf174ed8871f92875ee7eb00bdcdac21586fa1a
+author edigonzales <edi.gonzales@gmail.com> 2022-09-22 10:08:44 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-22 10:08:44 +0200
+
+    [sodata-preview] bump version
+
+
+:100644 100644 e5f93dea1540843372c3b9711e0912e8d2ab4470 ddf1a1cbd02af7c22a0372ffd9bbbc3dfcd7a9db M	sodata-preview/sodata-preview_integration.params
+:100644 100644 54660a731688603394b621673ea756c065b4b353 37e7d0ffdaa5c6fd68105b0dd9034ebf1930e9be M	sodata-preview/sodata-preview_production.params
+commit cbf174ed8871f92875ee7eb00bdcdac21586fa1a
+tree cff58b0563e3defecd7707bfedd3c58fb0e93e03
+parent 32d43eb77f2044e3710fa66b46bd7b88ebecb36c
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-21 21:13:44 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-21 21:13:44 +0200
+
+    [mapcache] Fix seeding instructions
+
+
+:100644 100644 dddceb5aebd684da4d7a58f3d57c61c5d322121f 87157bb4e241ae29591f571f19ec3a722ef0e07b M	mapcache/README.md
+commit 32d43eb77f2044e3710fa66b46bd7b88ebecb36c
+tree 10c107400e90217177155affe54dd2c34aa0d968
+parent 265c7ea8653a1ddec0232cb30f57b54b401cc384
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-21 20:47:36 +0200
+committer GitHub <noreply@github.com> 2022-09-21 20:47:36 +0200
+
+    [mapcache] Set CPU limit
+
+:100644 100644 51394a64e609ff517d29ec4cd7773128e7f5bf6a f833f179efca35b90b0b1451fb18400197e0ae90 M	mapcache/qgis-server_production.params
+commit 265c7ea8653a1ddec0232cb30f57b54b401cc384
+tree e08dc2b79b1dc645e3129440c680a1771517b132
+parent 8cf070af4dc12d38e9f8fa7298228d62df66b65e
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-21 20:25:16 +0200
+committer GitHub <noreply@github.com> 2022-09-21 20:25:16 +0200
+
+    [mapcache] Increase CPU request and limit
+
+:100644 100644 0f896e4b621fe2f0a7d293185b8f267deb27799e 1544eb665edc5f4a484356345f0aac276f949720 M	mapcache/mapcache_production.params
+commit 8cf070af4dc12d38e9f8fa7298228d62df66b65e
+tree 5318d272149872aeaf437e932de1ba6b6aa54b9b
+parent 1127055b634fb3781690a2232faf96012116dfe5
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-20 17:28:39 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-20 17:28:39 +0200
+
+    [simi-schemareader] update to v2.0
+
+
+:100644 100644 96b152baacf8f4e6e8872b8c8718b28d11b3a8f8 31552efa1e2b230366c707803121d57fe959ea17 M	simi-schemareader/simi-schemareader_production.params
+commit 1127055b634fb3781690a2232faf96012116dfe5
+tree f10e09e8de74867f9d12ed024ac6f7d0363db9a1
+parent cbc64188277d240d9f23c85c1853522211fed814
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-20 17:27:34 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-20 17:27:34 +0200
+
+    [simi] update production to v2.0
+
+
+:100644 100644 1c63dc5bd2bdf9b7a07aef7724493a74c6176789 e8c147650ab551bf6bc6ff8aee66045573be3650 M	simi/simi_production.params
+commit cbc64188277d240d9f23c85c1853522211fed814
+tree 6093a67ed1bf6859782d6e6fdf20a5fd82b57e34
+parent 6b445253be7bb3fa2e46cd59e9e726def99d854f
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-20 15:50:48 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-20 15:50:48 +0200
+
+    [solr] adjust image versions
+
+
+:100644 100644 3f149bf97a218117996acd6920075fa9ec2a4f94 7b9617732bcda309b06eea841fde4e83e4efeaa4 M	solr/6_exporter-deployment.yaml
+commit 6b445253be7bb3fa2e46cd59e9e726def99d854f
+tree 6b7ca850442eee57bc2f8629e5706311eb22211e
+parent 9b973c497bb22b9ac60f873010820f31bf5ba8fc
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-19 11:29:47 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-19 11:29:47 +0200
+
+    [gretl] Remove CPU limits
+
+
+:100644 100644 f0fcae29dff9a1edaa525634fca0704292e95891 2dd4a701e37c78039538674be2ca1f2b57e61eae M	gretl/gretl-pod-template.yaml
+commit 9b973c497bb22b9ac60f873010820f31bf5ba8fc
+tree c5ebb30ac71531a1f3a911f919b4104fc160d9ce
+parent e047ec4b6a3c518e04e54e14bb3eb6eb0aa9b8c6
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-19 09:10:56 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-19 09:10:56 +0200
+
+    [simi] Remove route
+
+
+:100644 100644 b79cbabd8eef8d6385f949ef50cb050e9ba21f03 4f0dad391886d3e11b3345329802f97d95bb3f8c M	simi/simi.yaml
+:100644 100644 ea2d7796c554b74eb4f2e2eadfafb32f7c2486e5 d1899103cfa59a25cc56c245aad06d60fbf08a1c M	simi/simi_integration.params
+:100644 100644 10a53a6cdddcf462f98eccb24c76ac43b6966c06 1c63dc5bd2bdf9b7a07aef7724493a74c6176789 M	simi/simi_production.params
+:100644 100644 d434658ca56d8bd9fe44fa1ada27495d245aea43 096f16b12a85ffbf1b9348a83bad867f3df117f0 M	simi/simi_test.params
+commit e047ec4b6a3c518e04e54e14bb3eb6eb0aa9b8c6
+tree 91f683ef7e41071cdf5fe7d4547f1fca41e48e79
+parent e1c7e9e15c00a9d370f2a48c7cd20ff054f66d48
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-15 15:29:43 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-15 15:29:43 +0200
+
+    [mapcache] Docs on seeding manually
+
+
+:100644 100644 8408a5865d4b8b3c02d7aa31ad88c48308492f9e dddceb5aebd684da4d7a58f3d57c61c5d322121f M	mapcache/README.md
+commit e1c7e9e15c00a9d370f2a48c7cd20ff054f66d48
+tree 5d46faa0265d59921e942facb24f93c3e87b1a04
+parent 8384df98ec952f0846ce12d9cd43ef1f68f826c9
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-15 14:14:55 +0200
+committer GitHub <noreply@github.com> 2022-09-15 14:14:55 +0200
+
+    [mapcache] Reduce timeout for Rolling deployment strategy (#47)
+    
+
+
+:100644 100644 995ce10cf60a46301dcec300082ce6ce9e2bd7a0 8408a5865d4b8b3c02d7aa31ad88c48308492f9e M	mapcache/README.md
+:100644 100644 c52b18a40cb5c92c30f581d418d1bde6ec9056b4 6a22fadf802f3f52945aabcdf5bb23e447b202cb M	mapcache/mapcache.yaml
+:100644 100644 f760895d0ca79584892f71987bf9ae99c49b3434 88c33bba55a63b3c145711594aa5a30a9ab2c895 M	mapcache/qgis-server.yaml
+commit 8384df98ec952f0846ce12d9cd43ef1f68f826c9
+tree 69e191f6a9e3990bfdd3ad0801881952819a490c
+parent 1a34c2ad9146498a5237874630e1b36115fb7eb8
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-14 09:14:57 +0200
+committer GitHub <noreply@github.com> 2022-09-14 09:14:57 +0200
+
+    [mapcache] Switch to pipeline (#46)
+    
+
+
+:000000 100644 0000000000000000000000000000000000000000 68e36a04bdc508fdd0b9154a26136658f3f0dbcc A	mapcache/Jenkinsfile
+:100644 100644 b3153e3a979a84b76e13c6d17ef89d4f84902563 995ce10cf60a46301dcec300082ce6ce9e2bd7a0 M	mapcache/README.md
+:000000 100644 0000000000000000000000000000000000000000 c52b18a40cb5c92c30f581d418d1bde6ec9056b4 A	mapcache/mapcache.yaml
+:000000 100644 0000000000000000000000000000000000000000 9001803631d27aae4683ad3e17c9a5dbc23b150f A	mapcache/mapcache_development.params
+:000000 100644 0000000000000000000000000000000000000000 0f896e4b621fe2f0a7d293185b8f267deb27799e A	mapcache/mapcache_production.params
+:100644 000000 16bd045e4c2971df12ce7354e15a3dd36ab322ac 0000000000000000000000000000000000000000 D	mapcache/mapcache_template.yaml
+:000000 100644 0000000000000000000000000000000000000000 61eb55576672cddaea14c4d9063fb2455e7a03b2 A	mapcache/mapcache_test.params
+:000000 100644 0000000000000000000000000000000000000000 f760895d0ca79584892f71987bf9ae99c49b3434 A	mapcache/qgis-server.yaml
+:100644 000000 719d2fa3e900d29399fadadefcb68cf8e3374b91 0000000000000000000000000000000000000000 D	mapcache/qgis-server_deploymentconfig.yaml
+:000000 100644 0000000000000000000000000000000000000000 3030ca86a61c6da1c4229d66ec2f4692a482328f A	mapcache/qgis-server_development.params
+:000000 100644 0000000000000000000000000000000000000000 51394a64e609ff517d29ec4cd7773128e7f5bf6a A	mapcache/qgis-server_production.params
+:100644 000000 9713154c300edc53293f5905d4c3539ada8e1024 0000000000000000000000000000000000000000 D	mapcache/qgis-server_resources.yaml
+:000000 100644 0000000000000000000000000000000000000000 78dc8c6692054cde829980591db729102184f0ad A	mapcache/qgis-server_test.params
+:100644 000000 d5393e3e59ff6a7941258071931808957173685f 0000000000000000000000000000000000000000 D	mapcache/seeder-cronjob-template.yaml
+:100644 000000 a4c39f08ce88e7a4e1ef4be889ce127710d90fec 0000000000000000000000000000000000000000 D	mapcache/seeder-job-template-latest-municipalities.yaml
+:100644 000000 8667637829b7de0581c3fe6d7137029cd2266949 0000000000000000000000000000000000000000 D	mapcache/seeder-job-template.yaml

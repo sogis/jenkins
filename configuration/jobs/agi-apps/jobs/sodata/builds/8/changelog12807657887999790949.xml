@@ -1,0 +1,10 @@
+commit ba15b2b7396af05da250eb66324a3d3fc898cd59
+tree 2bf630752012984deaa66f35eb0c273f3f73621d
+parent 6953e9a021f516a231b3859ed0d09280121a105c
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 15:14:15 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-11 15:14:15 +0200
+
+    [sodata] added params
+
+
+:100644 100644 b220c9cb4db1d0046baada56d77a3aaccca75845 ac5132b03077a70e9826c2387fdee68ab593e733 M	sodata/sodata.yaml

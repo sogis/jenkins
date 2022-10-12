@@ -1,0 +1,567 @@
+commit e4cd8e1fe1348a3cce53de9bf45e576ee06f4a52
+tree 894dff0e7e7d4405abba20f13f55be7474d837c0
+parent 885d0dce2ced103d567aa19dde7483c1e818bb94
+author edigonzales <edi.gonzales@gmail.com> 2022-10-04 15:04:33 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-10-04 15:04:33 +0200
+
+    [sodata-preview] bump version
+
+
+:100644 100644 ddf1a1cbd02af7c22a0372ffd9bbbc3dfcd7a9db 09104f5302850a456c5fdbc1c7f1f6e1ecc27400 M	sodata-preview/sodata-preview_integration.params
+:100644 100644 37e7d0ffdaa5c6fd68105b0dd9034ebf1930e9be 6d8530d9401642941c1e62ed693e04fbce493b50 M	sodata-preview/sodata-preview_production.params
+commit 885d0dce2ced103d567aa19dde7483c1e818bb94
+tree e254a73baf895016ea4e51fbbb9cf874c7e09c5c
+parent 5ae404a0e0f8f2aba642d6c79f67dc8b2b348e39
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-03 12:10:47 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-03 12:24:07 +0200
+
+    [oereb-web-service] Update to tag 2.0.1692
+    
+    And update liveness and readiness probes
+
+
+:100644 100644 a32334f2fde722cdf935e62b95983aa6532efc04 b0a0a0d109dc923d97c9717b66d168c641f257fb M	oereb-web-service/oereb-web-service.yaml
+:100644 100644 ace2d72ed084a1881f2346781c7fe3c8829c7483 7ed599c4c8d25d53d0a8ff56ffffd50ec12d3d00 M	oereb-web-service/oereb-web-service_integration.params
+:100644 100644 4be103a1adc37dbd0ad9e462fd0ccb22c2ea15f8 531d647984fdc7007cab8f47c2d6122cc65a6875 M	oereb-web-service/oereb-web-service_production.params
+commit 5ae404a0e0f8f2aba642d6c79f67dc8b2b348e39
+tree 40b11a5396ac89d57d959461257dccc9bf97fd89
+parent 7f93a1b6e21f82e7fc839ed4ac0bf5c7ccbdb4eb
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-18 11:50:51 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-03 12:24:07 +0200
+
+    [oereb-web-service] Add TOMCAT_THREADS_MAX env var
+
+
+:100644 100644 269bcb50a0f64fd2a6fb3c9c0638a219f9c06b71 a32334f2fde722cdf935e62b95983aa6532efc04 M	oereb-web-service/oereb-web-service.yaml
+:100644 100644 645f1f059b9802e39c3381caac83fc041b005aad ace2d72ed084a1881f2346781c7fe3c8829c7483 M	oereb-web-service/oereb-web-service_integration.params
+:100644 100644 becc1c16f534018f045fe0a761d61df848d870a5 4be103a1adc37dbd0ad9e462fd0ccb22c2ea15f8 M	oereb-web-service/oereb-web-service_production.params
+:100644 100644 21205ea184a48a35e4e33f873d801e738e21eb9e 53f03e1ed4ec0b497bc9b8b48764f38105395119 M	oereb-web-service/oereb-web-service_test.params
+commit 7f93a1b6e21f82e7fc839ed4ac0bf5c7ccbdb4eb
+tree f68b62a5f00a4ec02e2ad4279fe28491ab15567e
+parent 0408475ddc28d534e9452ac398ee7db3e50d2206
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-03 09:19:41 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-03 09:19:41 +0200
+
+    [oereb-web-service] Increase CPU limit (production)
+
+
+:100644 100644 4d00ba68d56e50cbfac2d6533449d1940f834cc3 becc1c16f534018f045fe0a761d61df848d870a5 M	oereb-web-service/oereb-web-service_production.params
+commit 0408475ddc28d534e9452ac398ee7db3e50d2206
+tree a0dc3eb7abd03db561484b1b546e51408d5a8d2c
+parent da0e96b24638f1f015f51d19bd1ba6f90ad3da3e
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-29 11:34:29 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-29 11:34:29 +0200
+
+    Revert "[gretl] Remove CPU limits"
+    
+    This reverts commit 6b445253be7bb3fa2e46cd59e9e726def99d854f. CPU limit
+    must be higher than or equal to CPU request.
+
+
+:100644 100644 2dd4a701e37c78039538674be2ca1f2b57e61eae f0fcae29dff9a1edaa525634fca0704292e95891 M	gretl/gretl-pod-template.yaml
+commit da0e96b24638f1f015f51d19bd1ba6f90ad3da3e
+tree 095661bd820dd7d035a558583cfd9814a707011e
+parent 09846c2fcf5544ef55e4c686a562f802941a4d3b
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-27 15:58:41 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-27 15:58:41 +0200
+
+    [sodata] update params
+
+
+:100644 100644 a5f1e2756e481aad1985bf78f47da1efde58fa4f e304e7ba3305f7eee007fa57fe6ac0a90d0fdc30 M	sodata/sodata_integration.params
+:100644 100644 31f5a380dfae8b7406e4548b15fc34c760c86004 d4080676d79816f95bf3c9655b355288b1581217 M	sodata/sodata_production.params
+:100644 100644 174feb68634946dfd9adbac16b434145efd56a4a a95ff44e914bcd1715553b53393688f3ee51f897 M	sodata/sodata_test.params
+commit 09846c2fcf5544ef55e4c686a562f802941a4d3b
+tree 2ab5d2236b4037e4a13a609388c8905f54a0510c
+parent c181d7d73aa55ccbe25cd6bc1a553e885e8b3445
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-27 15:55:14 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-27 15:55:14 +0200
+
+    [sodata] update route definition for tls
+
+
+:100644 100644 73b262ca7ca71cb5e6a874527f624c79494db3d0 b220c9cb4db1d0046baada56d77a3aaccca75845 M	sodata/sodata.yaml
+commit c181d7d73aa55ccbe25cd6bc1a553e885e8b3445
+tree 76d4d4d949ad512487f641da2ea3314b24bddb95
+parent 56c8c53a350ac18d5aae791c98df399be6caca32
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-27 15:39:47 +0200
+committer GitHub <noreply@github.com> 2022-09-27 15:39:47 +0200
+
+    [gb2av] TAG=1.2.14 (#52)
+    
+
+
+:100644 100644 d582e1b06a396979f795faefa9275e5999ae787b 4aec3366e5d1e6506db271437d4c94ba39d0b50f M	gb2av/gb2av_production.params
+commit 56c8c53a350ac18d5aae791c98df399be6caca32
+tree 6f343cfe5fc8c82d8bbfd4067afe6bc88ffb4d20
+parent 46108d44e10fe99ee0b29c70e9b4330b3ea57fab
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-27 15:38:53 +0200
+committer GitHub <noreply@github.com> 2022-09-27 15:38:53 +0200
+
+    [gb2av] TAG=1.2.14 (#51)
+    
+
+
+:100644 100644 6456574231d27e59c012f398e0b3767779b7c875 ee9e0d014a2b1a57ebaf9561de46d1c24e383ccd M	gb2av/gb2av_integration.params
+commit 46108d44e10fe99ee0b29c70e9b4330b3ea57fab
+tree 8f216e3483ef34e8e814c9fcbb35535b6e8799f0
+parent 7ccbe641e267a5a5678841bd071d4c507f834933
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-27 08:36:25 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-27 08:36:25 +0200
+
+    [sodata] change image and version
+
+
+:100644 100644 300349814b3e923383ab634e36cf73824b959bfd 174feb68634946dfd9adbac16b434145efd56a4a M	sodata/sodata_test.params
+commit 7ccbe641e267a5a5678841bd071d4c507f834933
+tree ea3a6082c41dc5b2b4b73ed02917fd2924a9a699
+parent 22494101488389b421985f69684e4533e11a74ff
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-26 15:31:25 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-26 16:11:11 +0200
+
+    [simi] Update test and integration to 2.1
+
+
+:100644 100644 8a52ae2bded6dc69f69f5d615ad9944e79b661f3 c335c91d27b94a7ac299517be0d1eaf5580e8c55 M	simi/simi_integration.params
+:100644 100644 096f16b12a85ffbf1b9348a83bad867f3df117f0 a701bad341af137334a25f6dd2b3312e7dea28a3 M	simi/simi_test.params
+commit 22494101488389b421985f69684e4533e11a74ff
+tree 0d5ad1462acf82d2122e93132b8dd84f83b0252d
+parent a5565a891286bce890fdf3f4f3878b7a7b8c5da9
+author pfeimich <mpfeiffer1975@gmail.com> 2022-09-26 12:28:11 +0200
+committer pfeimich <mpfeiffer1975@gmail.com> 2022-09-26 12:28:11 +0200
+
+    [sodata] change image version
+
+
+:100644 100644 b55a5511a4de7059265965a6b2b28b1a86c9f3d3 300349814b3e923383ab634e36cf73824b959bfd M	sodata/sodata_test.params
+commit a5565a891286bce890fdf3f4f3878b7a7b8c5da9
+tree 2a579004517f2d40d26c168bffc2abc013a544e6
+parent 180550ed2050f800db38f11b5d3401d3abbb1f34
+author pfeimich <mpfeiffer1975@gmail.com> 2022-09-26 12:07:42 +0200
+committer pfeimich <mpfeiffer1975@gmail.com> 2022-09-26 12:07:42 +0200
+
+    [sodata] Initialimport
+
+
+:000000 100644 0000000000000000000000000000000000000000 332baedb83cfc2edaad27de813e700a6664c0dfa A	sodata/README.md
+:000000 100644 0000000000000000000000000000000000000000 73b262ca7ca71cb5e6a874527f624c79494db3d0 A	sodata/sodata.yaml
+:000000 100644 0000000000000000000000000000000000000000 a5f1e2756e481aad1985bf78f47da1efde58fa4f A	sodata/sodata_integration.params
+:000000 100644 0000000000000000000000000000000000000000 31f5a380dfae8b7406e4548b15fc34c760c86004 A	sodata/sodata_production.params
+:000000 100644 0000000000000000000000000000000000000000 b55a5511a4de7059265965a6b2b28b1a86c9f3d3 A	sodata/sodata_test.params
+commit 180550ed2050f800db38f11b5d3401d3abbb1f34
+tree 5926cc1a5aee76a51a78d6f0751e5d8b04a50c69
+parent ef9b6e8c1ce44075c7c0c78fa1c7c068fedb43c3
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-23 15:29:08 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-26 11:42:27 +0200
+
+    [mapcache] Upgrade to MapCache 1.12
+    
+    Requires a switch to sogis/mapache image
+
+
+:100644 100644 6a22fadf802f3f52945aabcdf5bb23e447b202cb 7a8cdd7afd4cba0a206316047947af3378a53b4a M	mapcache/mapcache.yaml
+:100644 100644 9001803631d27aae4683ad3e17c9a5dbc23b150f baf843097cf4973a4889fb5aa3e2af0deea538ad M	mapcache/mapcache_development.params
+:100644 100644 1544eb665edc5f4a484356345f0aac276f949720 7dfa2cc693f537763205bbc0087e4fa196711df0 M	mapcache/mapcache_production.params
+:100644 100644 61eb55576672cddaea14c4d9063fb2455e7a03b2 758759d851ab5d39b50cf925744fb48408f2c1dc M	mapcache/mapcache_test.params
+commit ef9b6e8c1ce44075c7c0c78fa1c7c068fedb43c3
+tree cdf3d3e4228b95c3e96d1f5b46802e2ceaa400fb
+parent b62db5a6a094f8e52359b45e328bb9671d5bfac8
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-23 14:17:12 +0200
+committer GitHub <noreply@github.com> 2022-09-23 14:17:12 +0200
+
+    Update gb2av_integration.params
+
+:100644 100644 9cd65878921998977c598b34474c40349ab8771f 6456574231d27e59c012f398e0b3767779b7c875 M	gb2av/gb2av_integration.params
+commit b62db5a6a094f8e52359b45e328bb9671d5bfac8
+tree d291502d616cebb79e7113fb3aed4be82edba1e8
+parent 68905786b7605461fdef820ce98dc7a39872331d
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-23 14:12:50 +0200
+committer GitHub <noreply@github.com> 2022-09-23 14:12:50 +0200
+
+    Update gb2av_integration.params
+
+:100644 100644 6456574231d27e59c012f398e0b3767779b7c875 9cd65878921998977c598b34474c40349ab8771f M	gb2av/gb2av_integration.params
+commit 68905786b7605461fdef820ce98dc7a39872331d
+tree cdf3d3e4228b95c3e96d1f5b46802e2ceaa400fb
+parent 2090afb80de7bb898ccd3928944fbf9f060fa59a
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-23 09:00:44 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-23 09:00:44 +0200
+
+    [mapcache] Update seeding docs
+
+
+:100644 100644 dd04198ebae31e493ef81952c6810b9170441835 90da9d8374c5429fd8599cf53ae1a71ed7ba89a5 M	mapcache/README.md
+commit 2090afb80de7bb898ccd3928944fbf9f060fa59a
+tree a8e138f0b1c51e88392cad408c946f2745ee8283
+parent be60cce2791b44b3c223a71bae361d163543742d
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-23 08:15:33 +0200
+committer GitHub <noreply@github.com> 2022-09-23 08:15:33 +0200
+
+    Update gb2av_production.params
+
+:100644 100644 627c8978486311c5fd464d9ccdf6077f07caee8c d582e1b06a396979f795faefa9275e5999ae787b M	gb2av/gb2av_production.params
+commit be60cce2791b44b3c223a71bae361d163543742d
+tree e99053c217855ba876f689f2028c57a8e6d202a8
+parent d30283aaa113b3860ec5a81031a27470158d539c
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-23 08:14:26 +0200
+committer GitHub <noreply@github.com> 2022-09-23 08:14:26 +0200
+
+    Update gb2av_integration.params
+
+:100644 100644 9cd65878921998977c598b34474c40349ab8771f 6456574231d27e59c012f398e0b3767779b7c875 M	gb2av/gb2av_integration.params
+commit d30283aaa113b3860ec5a81031a27470158d539c
+tree bb1491dce862e2d8627f8596343e48d51ea2504c
+parent 96041d2822c7711dec4787daab97ef051f112bed
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-23 08:02:09 +0200
+committer GitHub <noreply@github.com> 2022-09-23 08:02:09 +0200
+
+    Update gb2av_production.params
+
+:100644 100644 d582e1b06a396979f795faefa9275e5999ae787b 627c8978486311c5fd464d9ccdf6077f07caee8c M	gb2av/gb2av_production.params
+commit 96041d2822c7711dec4787daab97ef051f112bed
+tree f3b5f322f7d58b37a81afb6f159d73c13eacb56d
+parent 9f73c77ace3456c1c1f50cab0fdd22caa932806f
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-23 08:01:54 +0200
+committer GitHub <noreply@github.com> 2022-09-23 08:01:54 +0200
+
+    Update gb2av_integration.params
+
+:100644 100644 6456574231d27e59c012f398e0b3767779b7c875 9cd65878921998977c598b34474c40349ab8771f M	gb2av/gb2av_integration.params
+commit 9f73c77ace3456c1c1f50cab0fdd22caa932806f
+tree a8e138f0b1c51e88392cad408c946f2745ee8283
+parent b0cf7b850db4e39b394192b2f3205506d5a1a78d
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-22 17:32:19 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-22 17:32:19 +0200
+
+    [simi] set integration importPolicy to scheduled
+
+
+:100644 100644 d1899103cfa59a25cc56c245aad06d60fbf08a1c 8a52ae2bded6dc69f69f5d615ad9944e79b661f3 M	simi/simi_integration.params
+commit b0cf7b850db4e39b394192b2f3205506d5a1a78d
+tree b644453ac6ed48a2b36d939814329667e1f08930
+parent d9baf85ccbd81469c7b1602fffda926c69080a53
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-22 16:15:43 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-22 16:15:43 +0200
+
+    [mapcache] Add note on manual seed job already existing
+
+
+:100644 100644 87157bb4e241ae29591f571f19ec3a722ef0e07b dd04198ebae31e493ef81952c6810b9170441835 M	mapcache/README.md
+commit d9baf85ccbd81469c7b1602fffda926c69080a53
+tree 621f97ac3270e974569fa41fc8861908e092c96f
+parent 3ff36ce022e2e272e49ecc1bbb67541096fd930b
+author edigonzales <edi.gonzales@gmail.com> 2022-09-22 15:07:47 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-22 15:07:47 +0200
+
+    [repo-checker] use old version in prod
+
+
+:100644 100644 1219a49c87fab276037bd5664401bad617e2f8c8 0ef2d1569845796c515f8dd7707bf6ecbc8e8949 M	interlis-repo-checker/interlis-repo-checker_production.params
+commit 3ff36ce022e2e272e49ecc1bbb67541096fd930b
+tree 996a92b441c9e29334e56aca1caecd8a3c36362d
+parent 99e38f23d665878491bd43bdf809e0572abdddec
+author edigonzales <edi.gonzales@gmail.com> 2022-09-22 15:00:02 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-22 15:00:02 +0200
+
+    [repo-checker] bump version
+
+
+:100644 100644 0ef2d1569845796c515f8dd7707bf6ecbc8e8949 1219a49c87fab276037bd5664401bad617e2f8c8 M	interlis-repo-checker/interlis-repo-checker_integration.params
+:100644 100644 0ef2d1569845796c515f8dd7707bf6ecbc8e8949 1219a49c87fab276037bd5664401bad617e2f8c8 M	interlis-repo-checker/interlis-repo-checker_production.params
+commit 99e38f23d665878491bd43bdf809e0572abdddec
+tree 76a132ee3d0cc796bf497110d49541baa909bdb4
+parent 18690317bf21498a876f5f57e051a48b50b1b291
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-22 14:05:50 +0200
+committer GitHub <noreply@github.com> 2022-09-22 14:05:50 +0200
+
+    Update README.md
+
+:100644 100644 99581da8761a6b619b6c419bca6ab85ab5410b10 8092c4f12819de7eab64a2cb7df1da72cf9a4f08 M	gb2av/README.md
+commit 18690317bf21498a876f5f57e051a48b50b1b291
+tree 3fdaa371b3c3d745c1aeb2b306fe78d31ad685e3
+parent f10ef20cac68c92a3ac01ef805e0d6896bf38dfd
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-22 11:01:27 +0200
+committer GitHub <noreply@github.com> 2022-09-22 11:01:27 +0200
+
+    Update gb2av.yaml
+
+:100644 100644 57e946e33ee9ad2c7897b6a452fdcf0fe1b9a284 56ca902007bbc551c9bcabc3f302e78add48036c M	gb2av/gb2av.yaml
+commit f10ef20cac68c92a3ac01ef805e0d6896bf38dfd
+tree e03be9dcddfc59d29edeaa6951f24e2af8396b19
+parent ddce6ff6ddf0ec9f602c26a8c1e56aa3020f850a
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-22 11:00:27 +0200
+committer GitHub <noreply@github.com> 2022-09-22 11:00:27 +0200
+
+    Update gb2av_production.params
+
+:100644 100644 d584584e1ff6c53df40c1a601d68d66542194836 d582e1b06a396979f795faefa9275e5999ae787b M	gb2av/gb2av_production.params
+commit ddce6ff6ddf0ec9f602c26a8c1e56aa3020f850a
+tree 3dedaca8674e5e4f39f8ebc340300b924ae5e3f4
+parent 5ee0bfe8dd08cbb0de0619ef43a4a560d58f9a0b
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-22 11:00:11 +0200
+committer GitHub <noreply@github.com> 2022-09-22 11:00:11 +0200
+
+    Update gb2av_integration.params
+
+:100644 100644 3b7632c487c8324b468f8c60d9a94000ad724184 6456574231d27e59c012f398e0b3767779b7c875 M	gb2av/gb2av_integration.params
+commit 5ee0bfe8dd08cbb0de0619ef43a4a560d58f9a0b
+tree d08614edb38c82a88b3e8ff600bcc48e9fb087e9
+parent a2e8415ccfd10116f751db3315cc05a0048dc617
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-22 10:59:56 +0200
+committer GitHub <noreply@github.com> 2022-09-22 10:59:56 +0200
+
+    Update gb2av_test.params
+
+:100644 100644 3a7f92bde5a4ec585a8fa2eef5e97ab65d90aa93 eee1a96fdb307a91dd60fce17d12d6c4fab0ca6e M	gb2av/gb2av_test.params
+commit a2e8415ccfd10116f751db3315cc05a0048dc617
+tree 354494c16dc45fe6bdfb888bb793395c359c7d20
+parent 3cb68641487795b2524e435e61e1cfbc9d2e8fdb
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-22 10:55:00 +0200
+committer GitHub <noreply@github.com> 2022-09-22 10:55:00 +0200
+
+    Update gb2av.yaml
+
+:100644 100644 dc4fb788847c4df361a57fdbef757668843ab3bb 57e946e33ee9ad2c7897b6a452fdcf0fe1b9a284 M	gb2av/gb2av.yaml
+commit 3cb68641487795b2524e435e61e1cfbc9d2e8fdb
+tree d6ead39abf22023412c868b54cf4adb62ed62629
+parent 97bcc335d3b1a9bd7fbe8b563fffc9947c3d1316
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-22 10:51:53 +0200
+committer GitHub <noreply@github.com> 2022-09-22 10:51:53 +0200
+
+    [gb2av] Pipeline erstellt (#48)
+    
+
+
+:100644 100644 0f5cf1de236cd3ee34a705988048c76b11828082 99581da8761a6b619b6c419bca6ab85ab5410b10 M	gb2av/README.md
+:100644 100644 190df643e854cc15531f855424ecee6cae24455e dc4fb788847c4df361a57fdbef757668843ab3bb M	gb2av/gb2av.yaml
+:000000 100644 0000000000000000000000000000000000000000 3b7632c487c8324b468f8c60d9a94000ad724184 A	gb2av/gb2av_integration.params
+:000000 100644 0000000000000000000000000000000000000000 d584584e1ff6c53df40c1a601d68d66542194836 A	gb2av/gb2av_production.params
+:000000 100644 0000000000000000000000000000000000000000 3a7f92bde5a4ec585a8fa2eef5e97ab65d90aa93 A	gb2av/gb2av_test.params
+commit 97bcc335d3b1a9bd7fbe8b563fffc9947c3d1316
+tree 1090cbc90b48fef8071f7df7007673d3a6053634
+parent cbf174ed8871f92875ee7eb00bdcdac21586fa1a
+author edigonzales <edi.gonzales@gmail.com> 2022-09-22 10:08:44 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-22 10:08:44 +0200
+
+    [sodata-preview] bump version
+
+
+:100644 100644 e5f93dea1540843372c3b9711e0912e8d2ab4470 ddf1a1cbd02af7c22a0372ffd9bbbc3dfcd7a9db M	sodata-preview/sodata-preview_integration.params
+:100644 100644 54660a731688603394b621673ea756c065b4b353 37e7d0ffdaa5c6fd68105b0dd9034ebf1930e9be M	sodata-preview/sodata-preview_production.params
+commit cbf174ed8871f92875ee7eb00bdcdac21586fa1a
+tree cff58b0563e3defecd7707bfedd3c58fb0e93e03
+parent 32d43eb77f2044e3710fa66b46bd7b88ebecb36c
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-21 21:13:44 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-21 21:13:44 +0200
+
+    [mapcache] Fix seeding instructions
+
+
+:100644 100644 dddceb5aebd684da4d7a58f3d57c61c5d322121f 87157bb4e241ae29591f571f19ec3a722ef0e07b M	mapcache/README.md
+commit 32d43eb77f2044e3710fa66b46bd7b88ebecb36c
+tree 10c107400e90217177155affe54dd2c34aa0d968
+parent 265c7ea8653a1ddec0232cb30f57b54b401cc384
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-21 20:47:36 +0200
+committer GitHub <noreply@github.com> 2022-09-21 20:47:36 +0200
+
+    [mapcache] Set CPU limit
+
+:100644 100644 51394a64e609ff517d29ec4cd7773128e7f5bf6a f833f179efca35b90b0b1451fb18400197e0ae90 M	mapcache/qgis-server_production.params
+commit 265c7ea8653a1ddec0232cb30f57b54b401cc384
+tree e08dc2b79b1dc645e3129440c680a1771517b132
+parent 8cf070af4dc12d38e9f8fa7298228d62df66b65e
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-21 20:25:16 +0200
+committer GitHub <noreply@github.com> 2022-09-21 20:25:16 +0200
+
+    [mapcache] Increase CPU request and limit
+
+:100644 100644 0f896e4b621fe2f0a7d293185b8f267deb27799e 1544eb665edc5f4a484356345f0aac276f949720 M	mapcache/mapcache_production.params
+commit 8cf070af4dc12d38e9f8fa7298228d62df66b65e
+tree 5318d272149872aeaf437e932de1ba6b6aa54b9b
+parent 1127055b634fb3781690a2232faf96012116dfe5
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-20 17:28:39 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-20 17:28:39 +0200
+
+    [simi-schemareader] update to v2.0
+
+
+:100644 100644 96b152baacf8f4e6e8872b8c8718b28d11b3a8f8 31552efa1e2b230366c707803121d57fe959ea17 M	simi-schemareader/simi-schemareader_production.params
+commit 1127055b634fb3781690a2232faf96012116dfe5
+tree f10e09e8de74867f9d12ed024ac6f7d0363db9a1
+parent cbc64188277d240d9f23c85c1853522211fed814
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-20 17:27:34 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-20 17:27:34 +0200
+
+    [simi] update production to v2.0
+
+
+:100644 100644 1c63dc5bd2bdf9b7a07aef7724493a74c6176789 e8c147650ab551bf6bc6ff8aee66045573be3650 M	simi/simi_production.params
+commit cbc64188277d240d9f23c85c1853522211fed814
+tree 6093a67ed1bf6859782d6e6fdf20a5fd82b57e34
+parent 6b445253be7bb3fa2e46cd59e9e726def99d854f
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-20 15:50:48 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-20 15:50:48 +0200
+
+    [solr] adjust image versions
+
+
+:100644 100644 3f149bf97a218117996acd6920075fa9ec2a4f94 7b9617732bcda309b06eea841fde4e83e4efeaa4 M	solr/6_exporter-deployment.yaml
+commit 6b445253be7bb3fa2e46cd59e9e726def99d854f
+tree 6b7ca850442eee57bc2f8629e5706311eb22211e
+parent 9b973c497bb22b9ac60f873010820f31bf5ba8fc
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-19 11:29:47 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-19 11:29:47 +0200
+
+    [gretl] Remove CPU limits
+
+
+:100644 100644 f0fcae29dff9a1edaa525634fca0704292e95891 2dd4a701e37c78039538674be2ca1f2b57e61eae M	gretl/gretl-pod-template.yaml
+commit 9b973c497bb22b9ac60f873010820f31bf5ba8fc
+tree c5ebb30ac71531a1f3a911f919b4104fc160d9ce
+parent e047ec4b6a3c518e04e54e14bb3eb6eb0aa9b8c6
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-19 09:10:56 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-19 09:10:56 +0200
+
+    [simi] Remove route
+
+
+:100644 100644 b79cbabd8eef8d6385f949ef50cb050e9ba21f03 4f0dad391886d3e11b3345329802f97d95bb3f8c M	simi/simi.yaml
+:100644 100644 ea2d7796c554b74eb4f2e2eadfafb32f7c2486e5 d1899103cfa59a25cc56c245aad06d60fbf08a1c M	simi/simi_integration.params
+:100644 100644 10a53a6cdddcf462f98eccb24c76ac43b6966c06 1c63dc5bd2bdf9b7a07aef7724493a74c6176789 M	simi/simi_production.params
+:100644 100644 d434658ca56d8bd9fe44fa1ada27495d245aea43 096f16b12a85ffbf1b9348a83bad867f3df117f0 M	simi/simi_test.params
+commit e047ec4b6a3c518e04e54e14bb3eb6eb0aa9b8c6
+tree 91f683ef7e41071cdf5fe7d4547f1fca41e48e79
+parent e1c7e9e15c00a9d370f2a48c7cd20ff054f66d48
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-15 15:29:43 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-15 15:29:43 +0200
+
+    [mapcache] Docs on seeding manually
+
+
+:100644 100644 8408a5865d4b8b3c02d7aa31ad88c48308492f9e dddceb5aebd684da4d7a58f3d57c61c5d322121f M	mapcache/README.md
+commit e1c7e9e15c00a9d370f2a48c7cd20ff054f66d48
+tree 5d46faa0265d59921e942facb24f93c3e87b1a04
+parent 8384df98ec952f0846ce12d9cd43ef1f68f826c9
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-15 14:14:55 +0200
+committer GitHub <noreply@github.com> 2022-09-15 14:14:55 +0200
+
+    [mapcache] Reduce timeout for Rolling deployment strategy (#47)
+    
+
+
+:100644 100644 995ce10cf60a46301dcec300082ce6ce9e2bd7a0 8408a5865d4b8b3c02d7aa31ad88c48308492f9e M	mapcache/README.md
+:100644 100644 c52b18a40cb5c92c30f581d418d1bde6ec9056b4 6a22fadf802f3f52945aabcdf5bb23e447b202cb M	mapcache/mapcache.yaml
+:100644 100644 f760895d0ca79584892f71987bf9ae99c49b3434 88c33bba55a63b3c145711594aa5a30a9ab2c895 M	mapcache/qgis-server.yaml
+commit 8384df98ec952f0846ce12d9cd43ef1f68f826c9
+tree 69e191f6a9e3990bfdd3ad0801881952819a490c
+parent 1a34c2ad9146498a5237874630e1b36115fb7eb8
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-09-14 09:14:57 +0200
+committer GitHub <noreply@github.com> 2022-09-14 09:14:57 +0200
+
+    [mapcache] Switch to pipeline (#46)
+    
+
+
+:000000 100644 0000000000000000000000000000000000000000 68e36a04bdc508fdd0b9154a26136658f3f0dbcc A	mapcache/Jenkinsfile
+:100644 100644 b3153e3a979a84b76e13c6d17ef89d4f84902563 995ce10cf60a46301dcec300082ce6ce9e2bd7a0 M	mapcache/README.md
+:000000 100644 0000000000000000000000000000000000000000 c52b18a40cb5c92c30f581d418d1bde6ec9056b4 A	mapcache/mapcache.yaml
+:000000 100644 0000000000000000000000000000000000000000 9001803631d27aae4683ad3e17c9a5dbc23b150f A	mapcache/mapcache_development.params
+:000000 100644 0000000000000000000000000000000000000000 0f896e4b621fe2f0a7d293185b8f267deb27799e A	mapcache/mapcache_production.params
+:100644 000000 16bd045e4c2971df12ce7354e15a3dd36ab322ac 0000000000000000000000000000000000000000 D	mapcache/mapcache_template.yaml
+:000000 100644 0000000000000000000000000000000000000000 61eb55576672cddaea14c4d9063fb2455e7a03b2 A	mapcache/mapcache_test.params
+:000000 100644 0000000000000000000000000000000000000000 f760895d0ca79584892f71987bf9ae99c49b3434 A	mapcache/qgis-server.yaml
+:100644 000000 719d2fa3e900d29399fadadefcb68cf8e3374b91 0000000000000000000000000000000000000000 D	mapcache/qgis-server_deploymentconfig.yaml
+:000000 100644 0000000000000000000000000000000000000000 3030ca86a61c6da1c4229d66ec2f4692a482328f A	mapcache/qgis-server_development.params
+:000000 100644 0000000000000000000000000000000000000000 51394a64e609ff517d29ec4cd7773128e7f5bf6a A	mapcache/qgis-server_production.params
+:100644 000000 9713154c300edc53293f5905d4c3539ada8e1024 0000000000000000000000000000000000000000 D	mapcache/qgis-server_resources.yaml
+:000000 100644 0000000000000000000000000000000000000000 78dc8c6692054cde829980591db729102184f0ad A	mapcache/qgis-server_test.params
+:100644 000000 d5393e3e59ff6a7941258071931808957173685f 0000000000000000000000000000000000000000 D	mapcache/seeder-cronjob-template.yaml
+:100644 000000 a4c39f08ce88e7a4e1ef4be889ce127710d90fec 0000000000000000000000000000000000000000 D	mapcache/seeder-job-template-latest-municipalities.yaml
+:100644 000000 8667637829b7de0581c3fe6d7137029cd2266949 0000000000000000000000000000000000000000 D	mapcache/seeder-job-template.yaml
+commit 1a34c2ad9146498a5237874630e1b36115fb7eb8
+tree 5432242a9fda0dccbd8828f5cf79daeb432176a9
+parent 650a3b421a19fdb9afa2d8b8d929cd32f191a8c5
+author edigonzales <edi.gonzales@gmail.com> 2022-09-13 09:56:54 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-13 09:56:54 +0200
+
+    [sodata-preview] bump version
+
+
+:100644 100644 e3e29dd10a0cc8e908deca74c2de8bd0342d423c e5f93dea1540843372c3b9711e0912e8d2ab4470 M	sodata-preview/sodata-preview_integration.params
+:100644 100644 49978af6e79d03b1fca3f29c483932500f7de30e 54660a731688603394b621673ea756c065b4b353 M	sodata-preview/sodata-preview_production.params
+commit 650a3b421a19fdb9afa2d8b8d929cd32f191a8c5
+tree 5c09aba3b6ed09b4786359b80dcff091bc35dba9
+parent 2a70658ec621bd6cfe59bd8549f774f0515dbad8
+author edigonzales <edi.gonzales@gmail.com> 2022-09-09 14:31:22 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-09 14:31:22 +0200
+
+    [sodata-preview] bump version
+
+
+:100644 100644 563fd56c57022891abcae60eb73292bf9a5b7b9a e3e29dd10a0cc8e908deca74c2de8bd0342d423c M	sodata-preview/sodata-preview_integration.params
+:100644 100644 f0062b713ce0414e66c8bc7914b9eace7993ee1f 49978af6e79d03b1fca3f29c483932500f7de30e M	sodata-preview/sodata-preview_production.params
+commit 2a70658ec621bd6cfe59bd8549f774f0515dbad8
+tree f68aca169d5625e0c380b8a29d9ab5fb071917bd
+parent bca2743bddb5c1e20448c2fbe2a7c73ddeade2ec
+author edigonzales <edi.gonzales@gmail.com> 2022-09-09 14:05:43 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-09 14:05:43 +0200
+
+    [modelfinder] bump version
+
+
+:100644 100644 0b81445a0bd513c1bd8548010b8cd3831c5ae1f2 3f3131b6ed85be856c2d9491d12e633b48f76d22 M	modelfinder/modelfinder_integration.params
+:100644 100644 efacc09fad61e2a5191c9d04c399847008f463fe 1ccf0fc26db01579f2978bfbc5165cd732a363eb M	modelfinder/modelfinder_production.params
+commit bca2743bddb5c1e20448c2fbe2a7c73ddeade2ec
+tree 13adf9af72faeb5303a9b92fbfd93eaa20e8a428
+parent adb27b6ee6c3edf6178ff02c81246e32f0de79bd
+author edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:55:24 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:55:24 +0200
+
+    [wgc-embedded] set version
+
+
+:100644 100644 8cd510e2d258dce28154eaf95321f0ed9f8234e1 d85b77258ccaf0cc26fd4dcb08775e32a652d33e M	wgc-embedded/wgc-embedded_production.params
+commit adb27b6ee6c3edf6178ff02c81246e32f0de79bd
+tree 76a991675e070f3cc055133e25c6e97228ebd153
+parent 97132edbcdc719636c52a1c1534deaeacdfcbf6f
+author edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:51:45 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:51:45 +0200
+
+    [standortkarte] bump version
+
+
+:100644 100644 9b23d26aa6f11ed067fc2125ee8be6897a8451aa 1e4a15327887f0dae789ca119e35f2cf528850f3 M	standortkarte/standortkarte_integration.params
+:100644 100644 da9902f7d99ad6d4761ed215f1c892bf189eeb91 a8be20639c3a58b049443ff751bcd37d035a378d M	standortkarte/standortkarte_production.params
+commit 97132edbcdc719636c52a1c1534deaeacdfcbf6f
+tree 27f1dc159d22bb69ef0faf80a99823409d6de7cf
+parent 2f650dc514a31f122d4f817851b1c3045a478c42
+author edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:45:29 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:45:29 +0200
+
+    [modelfinder] bump version
+
+
+:100644 100644 24c6bb7f8f90950171dd3fec9e3beaafe2737098 0b81445a0bd513c1bd8548010b8cd3831c5ae1f2 M	modelfinder/modelfinder_integration.params
+:100644 100644 6e85f0460658b9f756e9e6e4f9e5c2f60743969a efacc09fad61e2a5191c9d04c399847008f463fe M	modelfinder/modelfinder_production.params
+commit 2f650dc514a31f122d4f817851b1c3045a478c42
+tree 1a3df274ce093e231d9b38d989c74317863f3646
+parent 4a714674ac23bd8f2bd9eecf19689ebd0ada14da
+author edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:34:14 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:34:14 +0200
+
+    [standortkarte] bump version
+
+
+:100644 100644 96b7a78a4a7317cf906beec5c2f889917765cc0f 9b23d26aa6f11ed067fc2125ee8be6897a8451aa M	standortkarte/standortkarte_integration.params
+:100644 100644 1196808fb1d1b3012b0129b25fb77662b210074d da9902f7d99ad6d4761ed215f1c892bf189eeb91 M	standortkarte/standortkarte_production.params
+commit 8a43f846f227bcb71ab478bf3644ac37c5f2a625
+tree c456918e164bf7dfcf6e8202bb30d4e619658885
+parent 489a7ffd215f6fa85367c60428d5a7b7f9089b0b
+author edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:12:15 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-09-09 13:12:15 +0200
+
+    [sodata-preview] bump version
+
+
+:100644 100644 5dae2fa65d897d2327cb55d16ba9f1f9f73a6851 563fd56c57022891abcae60eb73292bf9a5b7b9a M	sodata-preview/sodata-preview_integration.params
+:100644 100644 8734dc40c5cd2661eeb6d796a35ac7d9fff14c63 f0062b713ce0414e66c8bc7914b9eace7993ee1f M	sodata-preview/sodata-preview_production.params

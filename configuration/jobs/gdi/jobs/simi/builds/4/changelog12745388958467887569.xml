@@ -1,0 +1,11 @@
+commit 26a47966c8bda785b68a64bc63c98e52aa65a38e
+tree d4c95dcd92df53a75433c480e93e5a5cf896089a
+parent 305f3ecbaf20b72b7f4a31ee3af896b5ecaa813b
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-15 17:44:20 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-08-15 17:44:20 +0200
+
+    [simi] Fix Simi integration and production tag
+
+
+:100644 100644 3cf036d582463895fc19a1683bf0b2cd327c751b d37872bd57592e7d7a28d830383a4ef2aa468e4b M	simi/simi_integration.params
+:100644 100644 f9dfd98be17f031674b79b171e68cebc8a1c712f 10a53a6cdddcf462f98eccb24c76ac43b6966c06 M	simi/simi_production.params

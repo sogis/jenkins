@@ -1,0 +1,36 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.94">
+    <parentIds>
+      <string>36</string>
+    </parentIds>
+    <id>37</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.94">
+      <arguments>
+        <entry>
+          <string>returnStdout</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>script</string>
+          <string>oc get pods -o custom-columns=POD:.metadata.name --no-headers -n ${namespace} | grep qgis-server | grep -v -E -m 1 &quot;featureinfo|build|print|deploy&quot;</string>
+        </entry>
+      </arguments>
+      <sensitiveVariables>
+        <string>PwdSogisService</string>
+        <string>PwdSogisServiceWrite</string>
+        <string>PwdApiUser</string>
+        <string>PwdOgcServer</string>
+        <string>apiUser</string>
+      </sensitiveVariables>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.47">
+      <startTime>1665492210401</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

@@ -1,0 +1,32 @@
+commit 09846c2fcf5544ef55e4c686a562f802941a4d3b
+tree 2ab5d2236b4037e4a13a609388c8905f54a0510c
+parent c181d7d73aa55ccbe25cd6bc1a553e885e8b3445
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-27 15:55:14 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-09-27 15:55:14 +0200
+
+    [sodata] update route definition for tls
+
+
+:100644 100644 73b262ca7ca71cb5e6a874527f624c79494db3d0 b220c9cb4db1d0046baada56d77a3aaccca75845 M	sodata/sodata.yaml
+commit c181d7d73aa55ccbe25cd6bc1a553e885e8b3445
+tree 76d4d4d949ad512487f641da2ea3314b24bddb95
+parent 56c8c53a350ac18d5aae791c98df399be6caca32
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-27 15:39:47 +0200
+committer GitHub <noreply@github.com> 2022-09-27 15:39:47 +0200
+
+    [gb2av] TAG=1.2.14 (#52)
+    
+
+
+:100644 100644 d582e1b06a396979f795faefa9275e5999ae787b 4aec3366e5d1e6506db271437d4c94ba39d0b50f M	gb2av/gb2av_production.params
+commit 56c8c53a350ac18d5aae791c98df399be6caca32
+tree 6f343cfe5fc8c82d8bbfd4067afe6bc88ffb4d20
+parent 46108d44e10fe99ee0b29c70e9b4330b3ea57fab
+author bjsvwcur <38523407+bjsvwcur@users.noreply.github.com> 2022-09-27 15:38:53 +0200
+committer GitHub <noreply@github.com> 2022-09-27 15:38:53 +0200
+
+    [gb2av] TAG=1.2.14 (#51)
+    
+
+
+:100644 100644 6456574231d27e59c012f398e0b3767779b7c875 ee9e0d014a2b1a57ebaf9561de46d1c24e383ccd M	gb2av/gb2av_integration.params

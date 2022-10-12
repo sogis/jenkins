@@ -1,0 +1,408 @@
+Started by user [8mha:////4KY7fuXRBWoeOtXjsASLMWN9nCQkI8pnrjPerPI8lOYDAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgY+/dLi1CL9pKzisvKCtFQAhGIQ0MMAAAA=[0mPfeiffer Michael
+Checking out git https://github.com/sogis/pipelines.git into /var/lib/jenkins/jobs/gdi/jobs/meta-exporter_geocat/workspace@script to read api_webgisclient/meta-exporter_geocat/Jenkinsfile
+The recommended git tool is: git
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/jobs/gdi/jobs/meta-exporter_geocat/workspace@script/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sogis/pipelines.git # timeout=10
+Fetching upstream changes from https://github.com/sogis/pipelines.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/sogis/pipelines.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision 23eb27819d6dcd7fd74946de411f84950f80d8dc (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 23eb27819d6dcd7fd74946de411f84950f80d8dc # timeout=10
+Commit message: "[meta-exporter_geocat] added user to scp command"
+ > git rev-list --no-walk 070ad89d7dd9963ed431cdfae3ad48b68404afbf # timeout=10
+[8mha:////4IZv91CJqeUCAWo9ck9BVKh65/LumSNWSnryjT7AKhk0AAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4Gvb8ff7+zUJN0sTymTbuqoRQQ5rfqKCYwtOT8imTWLpAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbaGmsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfya1RxvAAAAA==[0m[Pipeline] library
+Loading library jenkins-shared-libs@master
+Attempting to resolve master from remote references...
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git ls-remote -- https://github.com/sogis/jenkins-shared-libs.git # timeout=10
+Found match: refs/heads/master revision 3459e1770a518a80984f743e0cd0471c31eea966
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/jobs/gdi/jobs/meta-exporter_geocat/workspace@libs/jenkins-shared-libs/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sogis/jenkins-shared-libs.git # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/sogis/jenkins-shared-libs.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --no-tags --force --progress -- https://github.com/sogis/jenkins-shared-libs.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking out Revision 3459e1770a518a80984f743e0cd0471c31eea966 (master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3459e1770a518a80984f743e0cd0471c31eea966 # timeout=10
+Commit message: "fixed wrong parameter name"
+ > git rev-list --no-walk 3459e1770a518a80984f743e0cd0471c31eea966 # timeout=10
+[8mha:////4EoHRThWbpad6taEuKKrC6ms+Y7BZ4lyb8nakz/HhfnbAAAApR+LCAAAAAAAAP9tjUEKwjAURH8qXbh16SFSEHfiym3IxhPEJMa04f82SW1XnsireQejBVcODMwMDO/5gjpFOFJ0vLXYeUza8z6MriQ+UeyugSbe0oVrwkTBcmknScaeliopW1jEKlgJWFvUgZJHl2EjWnVXTVDomnOOZTsIqLwZ4AFMFHJWMX/LHGF7G00i/HH+AmDuM7Bd8f7zq9/WVBy+wAAAAA==[0m[Pipeline] node
+Running on [8mha:////4LBgOhqKJGJElaTk2oYj7t8ESRC/z/RoPQ3eebNqQmjGAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/lib/jenkins/jobs/gdi/jobs/meta-exporter_geocat/workspace
+[8mha:////4M2wjJBcTt6l0j05cB3fhNNde3QV0ipQsYN6E93uEx3ZAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] {
+[8mha:////4DfYJV9i63ZlmHDPdVbO87w3NbgDo/9lAugxpaw8hxAsAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] stage
+[8mha:////4APJoCCrlhCDIOUlMVg4IS+ixVjOy5kJWF3GTqpe7JTQAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4HEkyzR5ONdCR2417ULwjQCMTy557XNUWI3lg886KyZSAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbamKsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4geKI23CvAAAAA==[0m[Pipeline] checkout
+The recommended git tool is: git
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/jobs/gdi/jobs/meta-exporter_geocat/workspace/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sogis/pipelines.git # timeout=10
+Fetching upstream changes from https://github.com/sogis/pipelines.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/sogis/pipelines.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision 23eb27819d6dcd7fd74946de411f84950f80d8dc (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 23eb27819d6dcd7fd74946de411f84950f80d8dc # timeout=10
+Commit message: "[meta-exporter_geocat] added user to scp command"
+[8mha:////4Dhc5aq6Mfo6/9XUEt2GePmDZayEGMt7XzxTlc48VLCAAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbGmOsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzDEWYIfa/Qdlmg9gvAAAAA==[0m[Pipeline] }
+[8mha:////4AfGcZi0psEkx3gg6gJ94paliQ00R9egyRLtyejy3x9CAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiJoY+NY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfId1tBtv8AqUpLPL0AAAA=[0m[Pipeline] // stage
+[8mha:////4NvF5NEFLqjI5q8BFAj+44g8yuBeYuDPZAhm6l+uJgx3AAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BKWgpeYSjFFSIitZywwtMbIwT6y7YF5KKF/E1/oAhEhVb7ay0mucLqhThQNGJzmLvMbVeDGF0uYmJYn8JNImOzqIlTBSsUHZSZOxxQUVsYUlRwkrC2mIbKHl0DBvZ6buug0ZXnzjmbS+h9OYGDyhkNrOO/IU5wvY6mkT48/wVwDwwFDuGsmk+x+oN0+j4W8EAAAA=[0m[Pipeline] withEnv
+[8mha:////4OOacfizf4v2Ymvmi4PzoSg4GvitQSaI8OF/jB+SU/ErAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] {
+[8mha:////4PRr4iqmP0UJMHkWWE7Pp/oD96jLXUPeNEITLkMvrKb3AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] timeout
+Timeout set to expire in 35 min
+[8mha:////4I9IyhDDfgAnBHZcmX31Hm99JwolNo06xE9qmrXySYk1AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAbNWnxXCAAAA[0m[Pipeline] {
+[8mha:////4Ej6zv0D7SnMmOaAfmz0GlMlqOtKtN08Xk/M+NeF6IFqAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] stage
+[8mha:////4FHvnGO8P18ICD5kmLEJv3oHpPUpDN7YFzSXGIgkw4q1AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/s94rDCAAAA[0m[Pipeline] { (Ask for Version)
+[8mha:////4I+NjRSEoMSd1ili2Q9XqlSRAuwtDBQQw7eMr2EHM8q9AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] script
+[8mha:////4B5AWaX8+T03KHNR1nJ4PceMXi8dquLJOfsh7ADHx4JxAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] {
+[8mha:////4EekelOfUZ9SXg9Sirn5hbFAVafvLfeCD27wAx4LB4pJAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiOhCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7ndf2r3BkN+Pj++AAAA[0m[Pipeline] }
+[8mha:////4Addif7ZcnmNmdWSzkaDhYmTCLcE0yAkXLF0IIEWwGacAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICNBQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AGHKGa5vgAAAA==[0m[Pipeline] // script
+[8mha:////4DYuzDh3ilPPysUtxfjkh0Tjt7rD7QZD8W6rJl+T31BlAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiUNAgqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AG0yz0FvgAAAA==[0m[Pipeline] }
+[8mha:////4Ebelc+1TcrtWS4zNh6tyyM0W2/Cj9xAGQx+wOCEC/RyAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRkagQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AGg6KAavgAAAA==[0m[Pipeline] // stage
+[8mha:////4NxLunqCRpyN5OtwDxNwgNpQo7dulo7/sOtGAHTim5dvAAAAqB+LCAAAAAAAAP9tjT0OwjAUg1+LOrAycohU/GyoE2vUhROEJoSk0XslSUknTsTVuAOBSkx4sGxL1vd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCg3+2zb3edZvQEVaUkQwgAAAA==[0m[Pipeline] stage
+[8mha:////4KOP1o2LEFexvlI8y4s8Yvc++jimn0DHoRbidOpI9El3AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAd6e6VPCAAAA[0m[Pipeline] { (Create XML Files)
+[8mha:////4EiZzo+kT1bocLGqBD2QLGmHBsnJqor/44+lC+zkPSa9AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQjAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/hYjrHCAAAA[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PwdSimi
+[8mha:////4My27QX6f7BAzgbPA/8SliCKjrzIw+yqsQYK0F00f7fxAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQoIFMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfACW9ZT2wgAAAA==[0m[Pipeline] {
+[8mha:////4OUubGkLhxHox0+ockPDiC3ZsFa8mY6W2/TfGDUNuZ5YAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYoABMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAyQCqkwgAAAA==[0m[Pipeline] script
+[8mha:////4H4KaJZeo8u4jgjeiaTgQgIIHGbDE0SEglCt7JHzDNloAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgEJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAnLfKUwgAAAA==[0m[Pipeline] {
+[8mha:////4M4jMgvkx6kXSQMaJFIV1EQUV24JnCQ3zGi8X0jePtn7AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUYEQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHNwcnzs++AAAA[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PwdSimi]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ '[' -d meta_exporter ']'
++ '[' '!' -d config/default ']'
++ mkdir -p config/default
++ '[' '!' -f meta2file-cli-1.0.63-all.jar ']'
++ wget https://github.com/sogis/meta2file/releases/download/v1.0.63/meta2file-cli-1.0.63-all.jar
+--2022-10-10 12:20:20--  https://github.com/sogis/meta2file/releases/download/v1.0.63/meta2file-cli-1.0.63-all.jar
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/478489748/aca564d7-243f-4002-9989-0a68bfa5626d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20221010%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221010T122020Z&X-Amz-Expires=300&X-Amz-Signature=fd596be9db342e500c1c9f71e35c2c680bd527533e25e5f09d532d9fd8e2bc9d&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=478489748&response-content-disposition=attachment%3B%20filename%3Dmeta2file-cli-1.0.63-all.jar&response-content-type=application%2Foctet-stream [following]
+--2022-10-10 12:20:20--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/478489748/aca564d7-243f-4002-9989-0a68bfa5626d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20221010%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221010T122020Z&X-Amz-Expires=300&X-Amz-Signature=fd596be9db342e500c1c9f71e35c2c680bd527533e25e5f09d532d9fd8e2bc9d&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=478489748&response-content-disposition=attachment%3B%20filename%3Dmeta2file-cli-1.0.63-all.jar&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.108.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.109.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 13622910 (13M) [application/octet-stream]
+Saving to: ‘meta2file-cli-1.0.63-all.jar’
+
+     0K .......... .......... .......... .......... ..........  0% 3.53M 4s
+    50K .......... .......... .......... .......... ..........  0% 14.3M 2s
+   100K .......... .......... .......... .......... ..........  1% 5.71M 2s
+   150K .......... .......... .......... .......... ..........  1% 19.2M 2s
+   200K .......... .......... .......... .......... ..........  1% 7.95M 2s
+   250K .......... .......... .......... .......... ..........  2% 35.8M 2s
+   300K .......... .......... .......... .......... ..........  2% 28.9M 1s
+   350K .......... .......... .......... .......... ..........  3% 53.3M 1s
+   400K .......... .......... .......... .......... ..........  3% 29.8M 1s
+   450K .......... .......... .......... .......... ..........  3% 8.12M 1s
+   500K .......... .......... .......... .......... ..........  4%  117M 1s
+   550K .......... .......... .......... .......... ..........  4% 89.7M 1s
+   600K .......... .......... .......... .......... ..........  4% 52.6M 1s
+   650K .......... .......... .......... .......... ..........  5% 38.3M 1s
+   700K .......... .......... .......... .......... ..........  5% 56.2M 1s
+   750K .......... .......... .......... .......... ..........  6%  348M 1s
+   800K .......... .......... .......... .......... ..........  6% 72.1M 1s
+   850K .......... .......... .......... .......... ..........  6% 51.1M 1s
+   900K .......... .......... .......... .......... ..........  7%  140M 1s
+   950K .......... .......... .......... .......... ..........  7% 9.07M 1s
+  1000K .......... .......... .......... .......... ..........  7%  161M 1s
+  1050K .......... .......... .......... .......... ..........  8%  163M 1s
+  1100K .......... .......... .......... .......... ..........  8% 82.1M 1s
+  1150K .......... .......... .......... .......... ..........  9% 93.8M 1s
+  1200K .......... .......... .......... .......... ..........  9%  395M 1s
+  1250K .......... .......... .......... .......... ..........  9% 98.8M 1s
+  1300K .......... .......... .......... .......... .......... 10%  107M 1s
+  1350K .......... .......... .......... .......... .......... 10% 89.0M 1s
+  1400K .......... .......... .......... .......... .......... 10%  137M 1s
+  1450K .......... .......... .......... .......... .......... 11%  137M 0s
+  1500K .......... .......... .......... .......... .......... 11%  204M 0s
+  1550K .......... .......... .......... .......... .......... 12%  123M 0s
+  1600K .......... .......... .......... .......... .......... 12%  110M 0s
+  1650K .......... .......... .......... .......... .......... 12%  127M 0s
+  1700K .......... .......... .......... .......... .......... 13%  114M 0s
+  1750K .......... .......... .......... .......... .......... 13%  174M 0s
+  1800K .......... .......... .......... .......... .......... 13%  383M 0s
+  1850K .......... .......... .......... .......... .......... 14%  143M 0s
+  1900K .......... .......... .......... .......... .......... 14%  160M 0s
+  1950K .......... .......... .......... .......... .......... 15%  367M 0s
+  2000K .......... .......... .......... .......... .......... 15% 10.1M 0s
+  2050K .......... .......... .......... .......... .......... 15%  258M 0s
+  2100K .......... .......... .......... .......... .......... 16%  249M 0s
+  2150K .......... .......... .......... .......... .......... 16%  161M 0s
+  2200K .......... .......... .......... .......... .......... 16%  251M 0s
+  2250K .......... .......... .......... .......... .......... 17%  172M 0s
+  2300K .......... .......... .......... .......... .......... 17%  210M 0s
+  2350K .......... .......... .......... .......... .......... 18%  150M 0s
+  2400K .......... .......... .......... .......... .......... 18%  250M 0s
+  2450K .......... .......... .......... .......... .......... 18%  262M 0s
+  2500K .......... .......... .......... .......... .......... 19%  319M 0s
+  2550K .......... .......... .......... .......... .......... 19%  178M 0s
+  2600K .......... .......... .......... .......... .......... 19%  196M 0s
+  2650K .......... .......... .......... .......... .......... 20%  224M 0s
+  2700K .......... .......... .......... .......... .......... 20%  288M 0s
+  2750K .......... .......... .......... .......... .......... 21%  318M 0s
+  2800K .......... .......... .......... .......... .......... 21%  129M 0s
+  2850K .......... .......... .......... .......... .......... 21%  270M 0s
+  2900K .......... .......... .......... .......... .......... 22%  262M 0s
+  2950K .......... .......... .......... .......... .......... 22%  305M 0s
+  3000K .......... .......... .......... .......... .......... 22%  336M 0s
+  3050K .......... .......... .......... .......... .......... 23%  269M 0s
+  3100K .......... .......... .......... .......... .......... 23%  258M 0s
+  3150K .......... .......... .......... .......... .......... 24%  307M 0s
+  3200K .......... .......... .......... .......... .......... 24%  266M 0s
+  3250K .......... .......... .......... .......... .......... 24%  153M 0s
+  3300K .......... .......... .......... .......... .......... 25%  401M 0s
+  3350K .......... .......... .......... .......... .......... 25%  119M 0s
+  3400K .......... .......... .......... .......... .......... 25%  319M 0s
+  3450K .......... .......... .......... .......... .......... 26%  265M 0s
+  3500K .......... .......... .......... .......... .......... 26%  315M 0s
+  3550K .......... .......... .......... .......... .......... 27%  246M 0s
+  3600K .......... .......... .......... .......... .......... 27%  298M 0s
+  3650K .......... .......... .......... .......... .......... 27%  236M 0s
+  3700K .......... .......... .......... .......... .......... 28%  320M 0s
+  3750K .......... .......... .......... .......... .......... 28%  273M 0s
+  3800K .......... .......... .......... .......... .......... 28%  370M 0s
+  3850K .......... .......... .......... .......... .......... 29%  347M 0s
+  3900K .......... .......... .......... .......... .......... 29%  402M 0s
+  3950K .......... .......... .......... .......... .......... 30%  414M 0s
+  4000K .......... .......... .......... .......... .......... 30% 13.1M 0s
+  4050K .......... .......... .......... .......... .......... 30% 4.06M 0s
+  4100K .......... .......... .......... .......... .......... 31%  188M 0s
+  4150K .......... .......... .......... .......... .......... 31%  203M 0s
+  4200K .......... .......... .......... .......... .......... 31%  194M 0s
+  4250K .......... .......... .......... .......... .......... 32%  248M 0s
+  4300K .......... .......... .......... .......... .......... 32%  360M 0s
+  4350K .......... .......... .......... .......... .......... 33%  352M 0s
+  4400K .......... .......... .......... .......... .......... 33%  219M 0s
+  4450K .......... .......... .......... .......... .......... 33%  235M 0s
+  4500K .......... .......... .......... .......... .......... 34%  211M 0s
+  4550K .......... .......... .......... .......... .......... 34%  264M 0s
+  4600K .......... .......... .......... .......... .......... 34%  168M 0s
+  4650K .......... .......... .......... .......... .......... 35%  268M 0s
+  4700K .......... .......... .......... .......... .......... 35%  227M 0s
+  4750K .......... .......... .......... .......... .......... 36%  214M 0s
+  4800K .......... .......... .......... .......... .......... 36%  170M 0s
+  4850K .......... .......... .......... .......... .......... 36%  312M 0s
+  4900K .......... .......... .......... .......... .......... 37%  275M 0s
+  4950K .......... .......... .......... .......... .......... 37%  239M 0s
+  5000K .......... .......... .......... .......... .......... 37%  269M 0s
+  5050K .......... .......... .......... .......... .......... 38%  162M 0s
+  5100K .......... .......... .......... .......... .......... 38%  198M 0s
+  5150K .......... .......... .......... .......... .......... 39%  233M 0s
+  5200K .......... .......... .......... .......... .......... 39%  246M 0s
+  5250K .......... .......... .......... .......... .......... 39%  375M 0s
+  5300K .......... .......... .......... .......... .......... 40%  392M 0s
+  5350K .......... .......... .......... .......... .......... 40%  407M 0s
+  5400K .......... .......... .......... .......... .......... 40%  377M 0s
+  5450K .......... .......... .......... .......... .......... 41%  414M 0s
+  5500K .......... .......... .......... .......... .......... 41%  417M 0s
+  5550K .......... .......... .......... .......... .......... 42%  421M 0s
+  5600K .......... .......... .......... .......... .......... 42%  351M 0s
+  5650K .......... .......... .......... .......... .......... 42%  377M 0s
+  5700K .......... .......... .......... .......... .......... 43%  392M 0s
+  5750K .......... .......... .......... .......... .......... 43%  414M 0s
+  5800K .......... .......... .......... .......... .......... 43%  380M 0s
+  5850K .......... .......... .......... .......... .......... 44%  388M 0s
+  5900K .......... .......... .......... .......... .......... 44%  372M 0s
+  5950K .......... .......... .......... .......... .......... 45%  417M 0s
+  6000K .......... .......... .......... .......... .......... 45%  337M 0s
+  6050K .......... .......... .......... .......... .......... 45%  378M 0s
+  6100K .......... .......... .......... .......... .......... 46%  392M 0s
+  6150K .......... .......... .......... .......... .......... 46%  381M 0s
+  6200K .......... .......... .......... .......... .......... 46%  364M 0s
+  6250K .......... .......... .......... .......... .......... 47%  414M 0s
+  6300K .......... .......... .......... .......... .......... 47%  419M 0s
+  6350K .......... .......... .......... .......... .......... 48%  415M 0s
+  6400K .......... .......... .......... .......... .......... 48%  335M 0s
+  6450K .......... .......... .......... .......... .......... 48%  365M 0s
+  6500K .......... .......... .......... .......... .......... 49%  395M 0s
+  6550K .......... .......... .......... .......... .......... 49%  419M 0s
+  6600K .......... .......... .......... .......... .......... 49%  388M 0s
+  6650K .......... .......... .......... .......... .......... 50%  413M 0s
+  6700K .......... .......... .......... .......... .......... 50%  404M 0s
+  6750K .......... .......... .......... .......... .......... 51%  412M 0s
+  6800K .......... .......... .......... .......... .......... 51%  350M 0s
+  6850K .......... .......... .......... .......... .......... 51%  391M 0s
+  6900K .......... .......... .......... .......... .......... 52%  397M 0s
+  6950K .......... .......... .......... .......... .......... 52%  359M 0s
+  7000K .......... .......... .......... .......... .......... 52%  366M 0s
+  7050K .......... .......... .......... .......... .......... 53% 22.2M 0s
+  7100K .......... .......... .......... .......... .......... 53%  302M 0s
+  7150K .......... .......... .......... .......... .......... 54%  149M 0s
+  7200K .......... .......... .......... .......... .......... 54%  347M 0s
+  7250K .......... .......... .......... .......... .......... 54%  236M 0s
+  7300K .......... .......... .......... .......... .......... 55%  322M 0s
+  7350K .......... .......... .......... .......... .......... 55%  401M 0s
+  7400K .......... .......... .......... .......... .......... 55%  293M 0s
+  7450K .......... .......... .......... .......... .......... 56%  137M 0s
+  7500K .......... .......... .......... .......... .......... 56%  308M 0s
+  7550K .......... .......... .......... .......... .......... 57%  227M 0s
+  7600K .......... .......... .......... .......... .......... 57%  317M 0s
+  7650K .......... .......... .......... .......... .......... 57%  238M 0s
+  7700K .......... .......... .......... .......... .......... 58%  246M 0s
+  7750K .......... .......... .......... .......... .......... 58%  334M 0s
+  7800K .......... .......... .......... .......... .......... 59%  369M 0s
+  7850K .......... .......... .......... .......... .......... 59%  417M 0s
+  7900K .......... .......... .......... .......... .......... 59%  420M 0s
+  7950K .......... .......... .......... .......... .......... 60%  772K 0s
+  8000K .......... .......... .......... .......... .......... 60%  159M 0s
+  8050K .......... .......... .......... .......... .......... 60%  355M 0s
+  8100K .......... .......... .......... .......... .......... 61%  288M 0s
+  8150K .......... .......... .......... .......... .......... 61%  555K 0s
+  8200K .......... .......... .......... .......... .......... 62% 80.4M 0s
+  8250K .......... .......... .......... .......... .......... 62%  214M 0s
+  8300K .......... .......... .......... .......... .......... 62%  121M 0s
+  8350K .......... .......... .......... .......... .......... 63% 78.4M 0s
+  8400K .......... .......... .......... .......... .......... 63% 62.5M 0s
+  8450K .......... .......... .......... .......... .......... 63% 74.9M 0s
+  8500K .......... .......... .......... .......... .......... 64% 74.8M 0s
+  8550K .......... .......... .......... .......... .......... 64%  238M 0s
+  8600K .......... .......... .......... .......... .......... 65%  185M 0s
+  8650K .......... .......... .......... .......... .......... 65%  100M 0s
+  8700K .......... .......... .......... .......... .......... 65%  223M 0s
+  8750K .......... .......... .......... .......... .......... 66%  233M 0s
+  8800K .......... .......... .......... .......... .......... 66%  232M 0s
+  8850K .......... .......... .......... .......... .......... 66%  250M 0s
+  8900K .......... .......... .......... .......... .......... 67%  280M 0s
+  8950K .......... .......... .......... .......... .......... 67%  307M 0s
+  9000K .......... .......... .......... .......... .......... 68%  345M 0s
+  9050K .......... .......... .......... .......... .......... 68%  361M 0s
+  9100K .......... .......... .......... .......... .......... 68%  385M 0s
+  9150K .......... .......... .......... .......... .......... 69%  390M 0s
+  9200K .......... .......... .......... .......... .......... 69%  299M 0s
+  9250K .......... .......... .......... .......... .......... 69%  375M 0s
+  9300K .......... .......... .......... .......... .......... 70%  395M 0s
+  9350K .......... .......... .......... .......... .......... 70%  375M 0s
+  9400K .......... .......... .......... .......... .......... 71%  325M 0s
+  9450K .......... .......... .......... .......... .......... 71%  378M 0s
+  9500K .......... .......... .......... .......... .......... 71%  383M 0s
+  9550K .......... .......... .......... .......... .......... 72%  336M 0s
+  9600K .......... .......... .......... .......... .......... 72%  304M 0s
+  9650K .......... .......... .......... .......... .......... 72%  380M 0s
+  9700K .......... .......... .......... .......... .......... 73%  381M 0s
+  9750K .......... .......... .......... .......... .......... 73%  380M 0s
+  9800K .......... .......... .......... .......... .......... 74%  348M 0s
+  9850K .......... .......... .......... .......... .......... 74%  385M 0s
+  9900K .......... .......... .......... .......... .......... 74%  392M 0s
+  9950K .......... .......... .......... .......... .......... 75%  368M 0s
+ 10000K .......... .......... .......... .......... .......... 75%  311M 0s
+ 10050K .......... .......... .......... .......... .......... 75%  381M 0s
+ 10100K .......... .......... .......... .......... .......... 76%  396M 0s
+ 10150K .......... .......... .......... .......... .......... 76%  383M 0s
+ 10200K .......... .......... .......... .......... .......... 77%  363M 0s
+ 10250K .......... .......... .......... .......... .......... 77%  384M 0s
+ 10300K .......... .......... .......... .......... .......... 77%  378M 0s
+ 10350K .......... .......... .......... .......... .......... 78%  384M 0s
+ 10400K .......... .......... .......... .......... .......... 78%  317M 0s
+ 10450K .......... .......... .......... .......... .......... 78%  387M 0s
+ 10500K .......... .......... .......... .......... .......... 79%  312M 0s
+ 10550K .......... .......... .......... .......... .......... 79%  367M 0s
+ 10600K .......... .......... .......... .......... .......... 80%  356M 0s
+ 10650K .......... .......... .......... .......... .......... 80%  400M 0s
+ 10700K .......... .......... .......... .......... .......... 80%  369M 0s
+ 10750K .......... .......... .......... .......... .......... 81%  361M 0s
+ 10800K .......... .......... .......... .......... .......... 81%  220M 0s
+ 10850K .......... .......... .......... .......... .......... 81%  363M 0s
+ 10900K .......... .......... .......... .......... .......... 82%  364M 0s
+ 10950K .......... .......... .......... .......... .......... 82%  408M 0s
+ 11000K .......... .......... .......... .......... .......... 83%  233M 0s
+ 11050K .......... .......... .......... .......... .......... 83%  326M 0s
+ 11100K .......... .......... .......... .......... .......... 83%  344M 0s
+ 11150K .......... .......... .......... .......... .......... 84%  306M 0s
+ 11200K .......... .......... .......... .......... .......... 84%  221M 0s
+ 11250K .......... .......... .......... .......... .......... 84%  354M 0s
+ 11300K .......... .......... .......... .......... .......... 85%  284M 0s
+ 11350K .......... .......... .......... .......... .......... 85%  381M 0s
+ 11400K .......... .......... .......... .......... .......... 86%  250M 0s
+ 11450K .......... .......... .......... .......... .......... 86%  325M 0s
+ 11500K .......... .......... .......... .......... .......... 86%  236M 0s
+ 11550K .......... .......... .......... .......... .......... 87%  296M 0s
+ 11600K .......... .......... .......... .......... .......... 87%  248M 0s
+ 11650K .......... .......... .......... .......... .......... 87%  311M 0s
+ 11700K .......... .......... .......... .......... .......... 88%  318M 0s
+ 11750K .......... .......... .......... .......... .......... 88%  242M 0s
+ 11800K .......... .......... .......... .......... .......... 89%  324M 0s
+ 11850K .......... .......... .......... .......... .......... 89%  377M 0s
+ 11900K .......... .......... .......... .......... .......... 89%  245M 0s
+ 11950K .......... .......... .......... .......... .......... 90%  337M 0s
+ 12000K .......... .......... .......... .......... .......... 90%  302M 0s
+ 12050K .......... .......... .......... .......... .......... 90%  237M 0s
+ 12100K .......... .......... .......... .......... .......... 91%  265M 0s
+ 12150K .......... .......... .......... .......... .......... 91%  289M 0s
+ 12200K .......... .......... .......... .......... .......... 92%  299M 0s
+ 12250K .......... .......... .......... .......... .......... 92%  746K 0s
+ 12300K .......... .......... .......... .......... .......... 92%  211M 0s
+ 12350K .......... .......... .......... .......... .......... 93%  213M 0s
+ 12400K .......... .......... .......... .......... .......... 93%  191M 0s
+ 12450K .......... .......... .......... .......... .......... 93%  394M 0s
+ 12500K .......... .......... .......... .......... .......... 94%  328M 0s
+ 12550K .......... .......... .......... .......... .......... 94% 17.6M 0s
+ 12600K .......... .......... .......... .......... .......... 95%  153M 0s
+ 12650K .......... .......... .......... .......... .......... 95%  204M 0s
+ 12700K .......... .......... .......... .......... .......... 95%  278M 0s
+ 12750K .......... .......... .......... .......... .......... 96%  404M 0s
+ 12800K .......... .......... .......... .......... .......... 96%  320M 0s
+ 12850K .......... .......... .......... .......... .......... 96%  376M 0s
+ 12900K .......... .......... .......... .......... .......... 97%  409M 0s
+ 12950K .......... .......... .......... .......... .......... 97%  420M 0s
+ 13000K .......... .......... .......... .......... .......... 98%  378M 0s
+ 13050K .......... .......... .......... .......... .......... 98%  391M 0s
+ 13100K .......... .......... .......... .......... .......... 98%  417M 0s
+ 13150K .......... .......... .......... .......... .......... 99%  418M 0s
+ 13200K .......... .......... .......... .......... .......... 99%  330M 0s
+ 13250K .......... .......... .......... .......... .......... 99%  390M 0s
+ 13300K ...                                                   100% 6910G=0.4s
+
+2022-10-10 12:20:21 (36.9 MB/s) - ‘meta2file-cli-1.0.63-all.jar’ saved [13622910/13622910]
+
++ chmod u+x meta2file-cli-1.0.63-all.jar
++ java -jar meta2file-cli-1.0.63-all.jar -c jdbc:postgresql://geodb-i.rootso.org/simi -u simi -p **** -g /var/lib/jenkins/jobs/gdi/jobs/meta-exporter_geocat/workspace/config
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -Dsun.zip.disableMemoryMapping=true
+[main] INFO ch.so.agi.meta2file.appmain.Meta2File - Output dir already exists - replacing...
+[main] INFO ch.so.agi.meta2file.appmain.Meta2File - Connecting to url jdbc:postgresql://geodb-i.rootso.org/simi with user simi
+[main] INFO ch.so.agi.meta2file.in.db.TpIterator - Processing ch.so.agi.av.mopublic
+[main] INFO ch.so.agi.meta2file.in.db.TpIterator - Processing ch.so.afu.gewaesserschutz
+[main] INFO ch.so.agi.meta2file.appmain.Meta2File - Finished exporting into folder /var/lib/jenkins/jobs/gdi/jobs/meta-exporter_geocat/workspace/config.
++ scp -i /etc/ssh-keys/id_rsa config upload-so@upload.geocat.ch:/int
+Aborted by [8mha:////4KY7fuXRBWoeOtXjsASLMWN9nCQkI8pnrjPerPI8lOYDAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgY+/dLi1CL9pKzisvKCtFQAhGIQ0MMAAAA=[0mPfeiffer Michael
+Sending interrupt signal to process
+lost connection
+script returned exit code 1
+[8mha:////4Dpo2mkMI9C88Chyby0HGMJ1mGH6RL4QI/CDEtGnIOyZAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCoEFCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw9hbYOkvgAAAA==[0m[Pipeline] }
+[8mha:////4E0zOQRjPTo1E1zfTLIXm5+QHSUvbL7jJEnqS5hEWc6sAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioKBAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw9Vo2D/vgAAAA==[0m[Pipeline] // script
+[8mha:////4M6tGOD8OEAb5pK7mujvI/+EVAVRu8+Qjon+pzLrJ+9kAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBYkGUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5r3PVhw9t4fMOvgAAAA==[0m[Pipeline] }
+[8mha:////4KVeyAF9LywmRhO1fYt/rCPscux+AOsd8ZO4kIUvxCHsAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRiKgQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AFyY6ZcvgAAAA==[0m[Pipeline] // withCredentials
+[8mha:////4Clej6JaW1vZmwiSQW9PwV9tPj6Cn1pCegFUan1+NPj8AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQTpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOWhzrWvP1xjpDa+AAAA[0m[Pipeline] }
+[8mha:////4BegqiBtwTS+pPOl3e2kK50hRIzvzzhS3oLDHIY90brrAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRiKgQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrQ659/QFaJZxjvgAAAA==[0m[Pipeline] // stage
+[8mha:////4KJIFUl8M5XWbO9+qQJuyn4sFWWFHD0se9VAGAe6o2SCAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCMSCOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK52WXb7j/P6g0S8/PmwgAAAA==[0m[Pipeline] stage
+[8mha:////4Gb2beu7k8xoiqeTfJopDIUNC0ak0/xP6Acctq4YlQdXAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QIIBMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfADpB/iZwgAAAA==[0m[Pipeline] { (Declarative: Post Actions)
+[8mha:////4Nj3M4KL/leiNkagpF5WIE1FUnc9P8pkS17I5QAbq7E2AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSUICEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAEGDPXtvgAAAA==[0m[Pipeline] sh
++ rm -rf /var/lib/jenkins/jobs/gdi/meta-exporter_geocat/workspace@script
++ rm -rf /var/lib/jenkins/jobs/gdi/meta-exporter_geocat/workspace@libs
++ rm -rf /var/lib/jenkins/jobs/gdi/jobs/meta-exporter_geocat/workspace/api_webgisclient /var/lib/jenkins/jobs/gdi/jobs/meta-exporter_geocat/workspace/config /var/lib/jenkins/jobs/gdi/jobs/meta-exporter_geocat/workspace/createGlobalVar.png /var/lib/jenkins/jobs/gdi/jobs/meta-exporter_geocat/workspace/meta2file-cli-1.0.63-all.jar /var/lib/jenkins/jobs/gdi/jobs/meta-exporter_geocat/workspace/README.md /var/lib/jenkins/jobs/gdi/jobs/meta-exporter_geocat/workspace/setBranchesToBuild.png
+[8mha:////4CX87Rtd6UmAYVHZdSFsrrZKgUiNEHIG4U8HDzlKKVdRAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSUCCEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQF5ECgKvgAAAA==[0m[Pipeline] }
+[8mha:////4HzBomFwYv//CSHN6g9LUqCcAtSMwrWqbDnGZt/jMRBWAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCBKJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw+pT4efvgAAAA==[0m[Pipeline] // stage
+[8mha:////4Nz/2WyHKwckMAPdAvN22XQT7AojLl3IvjWKhiXq7sQ3AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMJRpHSIitZKwwtMbIwT686xLyQVL+Jr/AGLSFRssdrZZl5v2KYIJ4pW9AYHh6lzIvjJ5iVmisPN0yx6uoqOMJE3ojVzS9qcV2yJDawpSthI2BnsPCWHlmEve/VQlVdoqwvH/B0llE6P8IRCZjOryF9YIhzuk06EP89fASwhMJRNnatuPqKf44i+AAAA[0m[Pipeline] }
+[8mha:////4IFq8W+nHDluQcY9N+SkV7tmPM/lbx6tGz5krdgc/RA0AAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGIjPh1KRWu54QQmMcaJtRtsB6fiRFyNO2ARiYopRvOmea83LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrDLtd2/wGveBOQvgAAAA==[0m[Pipeline] // timeout
+[8mha:////4Ow6Y1Tk2lKEu12m6c2oiyXwjZxyH9pZDSjJIIYBy0QlAAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGIjPh1KRWu54QQmMcaJtRtsB6fiRFyNO2ARiYopRvOmea83LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrDPtd29wGcm0gsvgAAAA==[0m[Pipeline] }
+[8mha:////4MDi5TAdRuOPS6L+vzBV+s+LVkPFk9xiGRMHt81wog/ZAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMJRpHSIitZKwwtMbIwT686xLyQVL+Jr/AGLSFRssdrZZl5v2KYIJ4pW9AYHh6lzIvjJ5iVmisPN0yx6uoqOMJE3ojVzS9qcV2yJDawpSthI2BnsPCWHlmEve/VQlVdoqwvH/B0llE6P8IRCZjOryF9YIhzuk06EP89fASwhMJRNk6uuP576RKi+AAAA[0m[Pipeline] // withEnv
+[8mha:////4AErrdMzlYfSnG0VmN2tg1hnQJTNqcJoMxzxKjpJVi/oAAAAoh+LCAAAAAAAAP9tjTESgjAQRT84FraWHiI0UjlWthkaTxAhxkBmF5NFqDyRV/MOMjJj5a/+e817vbFOEUeOTrWWOk+p9qoPg5ufGjl218CjavmiaqbEwarKjhU39rRgxWKxLMux0thYqgMnT06w1a15mCIYcsVZ4uwOGrlv7ngi03NZTJQvTBG729Akpl/nbwBT3wvyfSnIyg/QBW89vQAAAA==[0m[Pipeline] }
+[8mha:////4IliAGkOAFM5bC/moHYBnQZAW1k0g7g6jUVe2PP8bB+eAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiI0jI1jZZuh8QQRYgxkdjFZhMoTeTXvICMzVv7qv9e81xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL/eCrPwAlk/IDb0AAAA=[0m[Pipeline] // node
+[8mha:////4JDLe6AD2oglyFRdC2uJaJsLLbInQrfs6SxNGbxYE2sOAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKREBIFoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN/tBdn2AxPDy9m9AAAA[0m[Pipeline] End of Pipeline
+Finished: ABORTED

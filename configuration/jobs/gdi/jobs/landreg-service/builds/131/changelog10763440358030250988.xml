@@ -1,0 +1,31 @@
+commit 8b9b3a39d51753bb0ab366d8392bdc798542f452
+tree 60183fe623e42bb2010e518690520a02efaec755
+parent 747a0e660d3581ce3cfb9fad0503b04b561ad9bd
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-13 14:45:28 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-13 14:45:28 +0200
+
+    [api-gateway] added forward headers to avgbs2mtab location
+
+
+:100644 100644 b68b63c8d4f257c57ee606eefd6104209782d85a 5b9593f7d9addfa41ddc0c09aff68cd51cf8a260 M	api_webgisclient/api-gateway/resources.yaml
+commit 747a0e660d3581ce3cfb9fad0503b04b561ad9bd
+tree 8abaab013b8a6b037b11ad54f6911e3f9ca983e4
+parent b70f76771552df01e8c29004bd24b6c075f5cb43
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-13 10:29:11 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-13 10:29:11 +0200
+
+    [api-gateway] added forward header to av_datenabgabe
+
+
+:100644 100644 baca3945c0190eb802fbd58cbd83b02bbf97bab8 b68b63c8d4f257c57ee606eefd6104209782d85a M	api_webgisclient/api-gateway/resources.yaml
+commit b70f76771552df01e8c29004bd24b6c075f5cb43
+tree 7705d0c0ebb4cb2673213cb6e2a8ecf01a70a54d
+parent f038e5e3f478a693a17cd939f6d949d42d41eb92
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-12 17:27:28 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-07-12 17:27:28 +0200
+
+    [qgis-server] change replicas to 6
+
+
+:100644 100644 fa1a92e146d77157cc0958bf20627bb4a33fc9a8 cf6fa1491cf9ac8f5c68c7a928e3c011ebd880d6 M	api_webgisclient/qgis-server-daily/Jenkinsfile
+:100644 100644 10badbe46833f2446ee7ef296cb5c6fc65253bfa ab271d7749c87091f0a8f034f29faa7cdab7d4d0 M	api_webgisclient/qgis-server/Jenkinsfile

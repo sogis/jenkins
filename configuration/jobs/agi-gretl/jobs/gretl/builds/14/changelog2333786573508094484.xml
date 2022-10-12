@@ -1,0 +1,12 @@
+commit e8ff6e76782fe83323a085c3e0e9fde4e144b1a8
+tree 14fd672423a3d8e366eea2923568141cd22b3e36
+parent ac6cf54e76701b14991cb82f65eb9d2e23e347aa
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-10 07:33:58 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-10 07:33:58 +0200
+
+    [gretl] Group plugin list by plugins to update and plugins to install additionally
+    
+    The first alphabetically sorted group of plugins is updated just to avoid a couple of error messages in the Jenkins log output; the second alphabetically sorted group is additionally installed (or updated to a specific version) because they are required for GRETL-Jenkins to work
+
+
+:100644 100644 7a3d8f77484b78eefa766ab8eefa01d347168996 14c41dbd4700fe400b5650d6255a5480833d61bb M	gretl/gretl.yaml

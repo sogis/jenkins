@@ -1,0 +1,1939 @@
+Started by upstream project "[8mha:////4LQ5KnGey+aH5ryAlNwOnhq1aJNEB2NF+G1vnOIWUULNAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6WflJ+uGpSe6ewc45mal5JfoAY/FWcMcAAAA=[0mWebGISClient" build number [8mha:////4KU/v7iRRHmIwc57qo1V4VwJIWXcpzTehUAmobsP1dyJAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYx/az8JP3w1CR3z2DnnMzUvBJ9QxMzEwCfLh2WywAAAA==[0m1464
+originally caused by:
+ Started by user unknown or anonymous
+Checking out git https://github.com/sogis/pipelines.git into /var/lib/jenkins/jobs/gdi/jobs/qgis-server/workspace@script to read api_webgisclient/qgis-server/Jenkinsfile
+The recommended git tool is: git
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/jobs/gdi/jobs/qgis-server/workspace@script/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sogis/pipelines.git # timeout=10
+Fetching upstream changes from https://github.com/sogis/pipelines.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/sogis/pipelines.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision 66af947b89ad6896a9e2a1738cd1a3453b03408c (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 66af947b89ad6896a9e2a1738cd1a3453b03408c # timeout=10
+Commit message: "[meta-exporter_conf] add upload to sodata pod"
+ > git rev-list --no-walk 66af947b89ad6896a9e2a1738cd1a3453b03408c # timeout=10
+[8mha:////4IZv91CJqeUCAWo9ck9BVKh65/LumSNWSnryjT7AKhk0AAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4Gvb8ff7+zUJN0sTymTbuqoRQQ5rfqKCYwtOT8imTWLpAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbaGmsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfya1RxvAAAAA==[0m[Pipeline] library
+Loading library jenkins-shared-libs@master
+Attempting to resolve master from remote references...
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git ls-remote -- https://github.com/sogis/jenkins-shared-libs.git # timeout=10
+Found match: refs/heads/master revision 3459e1770a518a80984f743e0cd0471c31eea966
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/jobs/gdi/jobs/qgis-server/workspace@libs/jenkins-shared-libs/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sogis/jenkins-shared-libs.git # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/sogis/jenkins-shared-libs.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --no-tags --force --progress -- https://github.com/sogis/jenkins-shared-libs.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking out Revision 3459e1770a518a80984f743e0cd0471c31eea966 (master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3459e1770a518a80984f743e0cd0471c31eea966 # timeout=10
+Commit message: "fixed wrong parameter name"
+ > git rev-list --no-walk 3459e1770a518a80984f743e0cd0471c31eea966 # timeout=10
+[8mha:////4EoHRThWbpad6taEuKKrC6ms+Y7BZ4lyb8nakz/HhfnbAAAApR+LCAAAAAAAAP9tjUEKwjAURH8qXbh16SFSEHfiym3IxhPEJMa04f82SW1XnsireQejBVcODMwMDO/5gjpFOFJ0vLXYeUza8z6MriQ+UeyugSbe0oVrwkTBcmknScaeliopW1jEKlgJWFvUgZJHl2EjWnVXTVDomnOOZTsIqLwZ4AFMFHJWMX/LHGF7G00i/HH+AmDuM7Bd8f7zq9/WVBy+wAAAAA==[0m[Pipeline] node
+Running on [8mha:////4LBgOhqKJGJElaTk2oYj7t8ESRC/z/RoPQ3eebNqQmjGAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/lib/jenkins/jobs/gdi/jobs/qgis-server/workspace
+[8mha:////4M2wjJBcTt6l0j05cB3fhNNde3QV0ipQsYN6E93uEx3ZAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] {
+[8mha:////4DfYJV9i63ZlmHDPdVbO87w3NbgDo/9lAugxpaw8hxAsAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] stage
+[8mha:////4APJoCCrlhCDIOUlMVg4IS+ixVjOy5kJWF3GTqpe7JTQAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4HEkyzR5ONdCR2417ULwjQCMTy557XNUWI3lg886KyZSAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbamKsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4geKI23CvAAAAA==[0m[Pipeline] checkout
+The recommended git tool is: git
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/jobs/gdi/jobs/qgis-server/workspace/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sogis/pipelines.git # timeout=10
+Fetching upstream changes from https://github.com/sogis/pipelines.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/sogis/pipelines.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision 66af947b89ad6896a9e2a1738cd1a3453b03408c (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 66af947b89ad6896a9e2a1738cd1a3453b03408c # timeout=10
+Commit message: "[meta-exporter_conf] add upload to sodata pod"
+[8mha:////4Dhc5aq6Mfo6/9XUEt2GePmDZayEGMt7XzxTlc48VLCAAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbGmOsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzDEWYIfa/Qdlmg9gvAAAAA==[0m[Pipeline] }
+[8mha:////4AfGcZi0psEkx3gg6gJ94paliQ00R9egyRLtyejy3x9CAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiJoY+NY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfId1tBtv8AqUpLPL0AAAA=[0m[Pipeline] // stage
+[8mha:////4NvF5NEFLqjI5q8BFAj+44g8yuBeYuDPZAhm6l+uJgx3AAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BKWgpeYSjFFSIitZywwtMbIwT6y7YF5KKF/E1/oAhEhVb7ay0mucLqhThQNGJzmLvMbVeDGF0uYmJYn8JNImOzqIlTBSsUHZSZOxxQUVsYUlRwkrC2mIbKHl0DBvZ6buug0ZXnzjmbS+h9OYGDyhkNrOO/IU5wvY6mkT48/wVwDwwFDuGsmk+x+oN0+j4W8EAAAA=[0m[Pipeline] withEnv
+[8mha:////4OOacfizf4v2Ymvmi4PzoSg4GvitQSaI8OF/jB+SU/ErAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] {
+[8mha:////4PRr4iqmP0UJMHkWWE7Pp/oD96jLXUPeNEITLkMvrKb3AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] timeout
+Timeout set to expire in 35 min
+[8mha:////4I9IyhDDfgAnBHZcmX31Hm99JwolNo06xE9qmrXySYk1AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAbNWnxXCAAAA[0m[Pipeline] {
+[8mha:////4Ej6zv0D7SnMmOaAfmz0GlMlqOtKtN08Xk/M+NeF6IFqAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] stage
+[8mha:////4FHvnGO8P18ICD5kmLEJv3oHpPUpDN7YFzSXGIgkw4q1AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/s94rDCAAAA[0m[Pipeline] { (Ask for Version)
+[8mha:////4I+NjRSEoMSd1ili2Q9XqlSRAuwtDBQQw7eMr2EHM8q9AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] script
+[8mha:////4B5AWaX8+T03KHNR1nJ4PceMXi8dquLJOfsh7ADHx4JxAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] {
+[8mha:////4EekelOfUZ9SXg9Sirn5hbFAVafvLfeCD27wAx4LB4pJAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiOhCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7ndf2r3BkN+Pj++AAAA[0m[Pipeline] }
+[8mha:////4Addif7ZcnmNmdWSzkaDhYmTCLcE0yAkXLF0IIEWwGacAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICNBQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AGHKGa5vgAAAA==[0m[Pipeline] // script
+[8mha:////4DYuzDh3ilPPysUtxfjkh0Tjt7rD7QZD8W6rJl+T31BlAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiUNAgqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AG0yz0FvgAAAA==[0m[Pipeline] }
+[8mha:////4Ebelc+1TcrtWS4zNh6tyyM0W2/Cj9xAGQx+wOCEC/RyAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRkagQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AGg6KAavgAAAA==[0m[Pipeline] // stage
+[8mha:////4NxLunqCRpyN5OtwDxNwgNpQo7dulo7/sOtGAHTim5dvAAAAqB+LCAAAAAAAAP9tjT0OwjAUg1+LOrAycohU/GyoE2vUhROEJoSk0XslSUknTsTVuAOBSkx4sGxL1vd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCg3+2zb3edZvQEVaUkQwgAAAA==[0m[Pipeline] stage
+[8mha:////4KOP1o2LEFexvlI8y4s8Yvc++jimn0DHoRbidOpI9El3AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAd6e6VPCAAAA[0m[Pipeline] { (Configure Ressources)
+[8mha:////4EiZzo+kT1bocLGqBD2QLGmHBsnJqor/44+lC+zkPSa9AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQjAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/hYjrHCAAAA[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PwdOgcServer or $PwdSogisService or $apiUser or $PwdApiUser
+[8mha:////4My27QX6f7BAzgbPA/8SliCKjrzIw+yqsQYK0F00f7fxAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQoIFMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfACW9ZT2wgAAAA==[0m[Pipeline] {
+[8mha:////4CMLktixVmrl0dBCMju3tnAR+0Lv5BH1pUKh74YY2JP8AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUUCBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAHUcXIBvgAAAA==[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PwdOgcServer]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ oc process -f https://raw.githubusercontent.com/sogis/pipelines/master/api_webgisclient/qgis-server/deployment/resources.yaml -p DB_SERVER=geodb-i.rootso.org -p GEO_DB_SERVER=geodb-t.verw.rootso.org -p DB_PUB=pub -p DB_EDIT=edit -p DB_OEREB=oereb_v2 -p DB_SOGIS=sogis -p USER_OGC_SERVER=ogc_server -p PW_OGC_SERVER=**** -p NAMESPACE=gdi-integration
++ oc apply -n gdi-integration -f-
+secret/qgis-server-pg-config configured
+service/qgis-server unchanged
+[8mha:////4LV2Zk6M8CAcv49+kaUd74ttR4ejdEptNMMSobP72zy+AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUSAkRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g2/yR8JvgAAAA==[0m[Pipeline] }
+[8mha:////4KvqgYnbLbDHwHZgwDjSlIVD0L+/Ck81cLy+1xK1/G1VAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIVEgRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g2gS0pbvgAAAA==[0m[Pipeline] // withCredentials
+[8mha:////4DWz0VPOozNOJLCIirzL6R5L4wyOK80zNony4f/41bF6AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCgA6lorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYhQrnf5todPkohNa2+AAAA[0m[Pipeline] }
+[8mha:////4AWCi5U92/xlV4o4NxTUEFaj86WPbSpD8A1Bh2guFOkZAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiSImo0lppeIGJjXFi3RnbIal4EV/jD1hEomKL1c4283rDOgY4cTDYaxosxc6id6PJCycOw9XxhD1fsGOK7DS2empZ6WbBlpOGJUUJKwEbTZ3jaMkk2IpePmTlJJnqnEL+jgJKq+7whEJkc5IhfWEOsLuNKjL9PH8FMHufoKz3uQ71B0xnDfi+AAAA[0m[Pipeline] // stage
+[8mha:////4HoGmwYco5ZBNC0g6+Kk5nrjR3Pkkyb/AcY0SBISHKyvAAAAqB+LCAAAAAAAAP9tjT0OwjAUg1+LOrAycohU/GyoE2vUhROEJoSk0XslSUknTsTVuAOBSkx4sGxL1vd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCg3+2y77edZvQEEsWJ9wgAAAA==[0m[Pipeline] stage
+[8mha:////4Bdk3A83GRTTm5+WC2Jjl/CUf7Ynze0w4VHAyEiKxcpNAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUoiNiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsPfTawssIAAAA=[0m[Pipeline] { (Create configs)
+[8mha:////4C9Xds1QYrr2qhYCnNd+64i+cr1OOfyMGuec/Eqw7H14AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KBtiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPBdk7bsIAAAA=[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PwdOgcServer or $PwdSogisService or $apiUser or $PwdApiUser
+[8mha:////4H6eqKStkJJqxHmZKCe8rRigXiybMG39nIr8R8lfGEYpAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ACbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASMfXIzCAAAA[0m[Pipeline] {
+[8mha:////4G7MdLmpwbV9WbpVIqWXY9F2iqvpskV2ImMs8e/HWtzPAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN6Ew6eS+AAAA[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PwdSogisService, apiUser]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ '[' -d sql2json ']'
++ '[' '!' -d config/default ']'
++ mkdir -p config/default
++ '[' '!' -f sql2json.jar ']'
++ wget https://github.com/sogis/simi-sql2json/releases/download/v1.1.35/sql2json.jar
+--2022-10-11 14:27:00--  https://github.com/sogis/simi-sql2json/releases/download/v1.1.35/sql2json.jar
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/329196788/8ca9c855-9c88-42a9-88ee-04ce37182144?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20221011%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221011T142556Z&X-Amz-Expires=300&X-Amz-Signature=69d131c045df0b3f3ec25e64fe22a4e3ecf19435e5d9aa48ef05df8144e08990&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=329196788&response-content-disposition=attachment%3B%20filename%3Dsql2json.jar&response-content-type=application%2Foctet-stream [following]
+--2022-10-11 14:27:00--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/329196788/8ca9c855-9c88-42a9-88ee-04ce37182144?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20221011%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221011T142556Z&X-Amz-Expires=300&X-Amz-Signature=69d131c045df0b3f3ec25e64fe22a4e3ecf19435e5d9aa48ef05df8144e08990&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=329196788&response-content-disposition=attachment%3B%20filename%3Dsql2json.jar&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.111.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.109.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 11462559 (11M) [application/octet-stream]
+Saving to: ‘sql2json.jar’
+
+     0K .......... .......... .......... .......... ..........  0% 3.79M 3s
+    50K .......... .......... .......... .......... ..........  0% 12.5M 2s
+   100K .......... .......... .......... .......... ..........  1% 6.16M 2s
+   150K .......... .......... .......... .......... ..........  1% 15.8M 2s
+   200K .......... .......... .......... .......... ..........  2% 7.30M 2s
+   250K .......... .......... .......... .......... ..........  2% 50.8M 1s
+   300K .......... .......... .......... .......... ..........  3% 20.1M 1s
+   350K .......... .......... .......... .......... ..........  3% 74.6M 1s
+   400K .......... .......... .......... .......... ..........  4% 50.5M 1s
+   450K .......... .......... .......... .......... ..........  4% 46.9M 1s
+   500K .......... .......... .......... .......... ..........  4% 8.91M 1s
+   550K .......... .......... .......... .......... ..........  5% 47.2M 1s
+   600K .......... .......... .......... .......... ..........  5%  313M 1s
+   650K .......... .......... .......... .......... ..........  6% 53.6M 1s
+   700K .......... .......... .......... .......... ..........  6% 30.9M 1s
+   750K .......... .......... .......... .......... ..........  7% 88.5M 1s
+   800K .......... .......... .......... .......... ..........  7%  306M 1s
+   850K .......... .......... .......... .......... ..........  8% 63.9M 1s
+   900K .......... .......... .......... .......... ..........  8% 81.9M 1s
+   950K .......... .......... .......... .......... ..........  8% 86.8M 1s
+  1000K .......... .......... .......... .......... ..........  9% 53.9M 1s
+  1050K .......... .......... .......... .......... ..........  9% 11.3M 1s
+  1100K .......... .......... .......... .......... .......... 10% 68.7M 1s
+  1150K .......... .......... .......... .......... .......... 10%  228M 0s
+  1200K .......... .......... .......... .......... .......... 11% 96.3M 0s
+  1250K .......... .......... .......... .......... .......... 11% 90.7M 0s
+  1300K .......... .......... .......... .......... .......... 12%  357M 0s
+  1350K .......... .......... .......... .......... .......... 12%  105M 0s
+  1400K .......... .......... .......... .......... .......... 12%  115M 0s
+  1450K .......... .......... .......... .......... .......... 13% 57.1M 0s
+  1500K .......... .......... .......... .......... .......... 13%  255M 0s
+  1550K .......... .......... .......... .......... .......... 14%  256M 0s
+  1600K .......... .......... .......... .......... .......... 14%  142M 0s
+  1650K .......... .......... .......... .......... .......... 15%  130M 0s
+  1700K .......... .......... .......... .......... .......... 15%  142M 0s
+  1750K .......... .......... .......... .......... .......... 16%  124M 0s
+  1800K .......... .......... .......... .......... .......... 16%  130M 0s
+  1850K .......... .......... .......... .......... .......... 16%  234M 0s
+  1900K .......... .......... .......... .......... .......... 17%  244M 0s
+  1950K .......... .......... .......... .......... .......... 17%  140M 0s
+  2000K .......... .......... .......... .......... .......... 18%  137M 0s
+  2050K .......... .......... .......... .......... .......... 18%  329M 0s
+  2100K .......... .......... .......... .......... .......... 19%  166M 0s
+  2150K .......... .......... .......... .......... .......... 19%  190M 0s
+  2200K .......... .......... .......... .......... .......... 20% 12.9M 0s
+  2250K .......... .......... .......... .......... .......... 20% 69.7M 0s
+  2300K .......... .......... .......... .......... .......... 20%  347M 0s
+  2350K .......... .......... .......... .......... .......... 21%  359M 0s
+  2400K .......... .......... .......... .......... .......... 21%  223M 0s
+  2450K .......... .......... .......... .......... .......... 22%  189M 0s
+  2500K .......... .......... .......... .......... .......... 22%  253M 0s
+  2550K .......... .......... .......... .......... .......... 23%  129M 0s
+  2600K .......... .......... .......... .......... .......... 23%  328M 0s
+  2650K .......... .......... .......... .......... .......... 24%  295M 0s
+  2700K .......... .......... .......... .......... .......... 24%  253M 0s
+  2750K .......... .......... .......... .......... .......... 25%  231M 0s
+  2800K .......... .......... .......... .......... .......... 25%  335M 0s
+  2850K .......... .......... .......... .......... .......... 25%  186M 0s
+  2900K .......... .......... .......... .......... .......... 26%  246M 0s
+  2950K .......... .......... .......... .......... .......... 26% 90.1M 0s
+  3000K .......... .......... .......... .......... .......... 27%  274M 0s
+  3050K .......... .......... .......... .......... .......... 27%  334M 0s
+  3100K .......... .......... .......... .......... .......... 28%  360M 0s
+  3150K .......... .......... .......... .......... .......... 28%  340M 0s
+  3200K .......... .......... .......... .......... .......... 29%  352M 0s
+  3250K .......... .......... .......... .......... .......... 29%  293M 0s
+  3300K .......... .......... .......... .......... .......... 29%  225M 0s
+  3350K .......... .......... .......... .......... .......... 30%  266M 0s
+  3400K .......... .......... .......... .......... .......... 30%  249M 0s
+  3450K .......... .......... .......... .......... .......... 31%  372M 0s
+  3500K .......... .......... .......... .......... .......... 31%  360M 0s
+  3550K .......... .......... .......... .......... .......... 32%  361M 0s
+  3600K .......... .......... .......... .......... .......... 32%  243M 0s
+  3650K .......... .......... .......... .......... .......... 33%  391M 0s
+  3700K .......... .......... .......... .......... .......... 33%  336M 0s
+  3750K .......... .......... .......... .......... .......... 33%  234M 0s
+  3800K .......... .......... .......... .......... .......... 34%  356M 0s
+  3850K .......... .......... .......... .......... .......... 34%  381M 0s
+  3900K .......... .......... .......... .......... .......... 35%  371M 0s
+  3950K .......... .......... .......... .......... .......... 35%  338M 0s
+  4000K .......... .......... .......... .......... .......... 36%  242M 0s
+  4050K .......... .......... .......... .......... .......... 36%  366M 0s
+  4100K .......... .......... .......... .......... .......... 37%  366M 0s
+  4150K .......... .......... .......... .......... .......... 37%  298M 0s
+  4200K .......... .......... .......... .......... .......... 37%  341M 0s
+  4250K .......... .......... .......... .......... .......... 38%  390M 0s
+  4300K .......... .......... .......... .......... .......... 38%  390M 0s
+  4350K .......... .......... .......... .......... .......... 39%  300M 0s
+  4400K .......... .......... .......... .......... .......... 39%  368M 0s
+  4450K .......... .......... .......... .......... .......... 40% 48.2M 0s
+  4500K .......... .......... .......... .......... .......... 40% 20.7M 0s
+  4550K .......... .......... .......... .......... .......... 41%  253M 0s
+  4600K .......... .......... .......... .......... .......... 41% 85.6M 0s
+  4650K .......... .......... .......... .......... .......... 41%  343M 0s
+  4700K .......... .......... .......... .......... .......... 42%  366M 0s
+  4750K .......... .......... .......... .......... .......... 42%  343M 0s
+  4800K .......... .......... .......... .......... .......... 43%  397M 0s
+  4850K .......... .......... .......... .......... .......... 43%  369M 0s
+  4900K .......... .......... .......... .......... .......... 44%  324M 0s
+  4950K .......... .......... .......... .......... .......... 44%  309M 0s
+  5000K .......... .......... .......... .......... .......... 45%  377M 0s
+  5050K .......... .......... .......... .......... .......... 45%  374M 0s
+  5100K .......... .......... .......... .......... .......... 46%  365M 0s
+  5150K .......... .......... .......... .......... .......... 46%  316M 0s
+  5200K .......... .......... .......... .......... .......... 46%  361M 0s
+  5250K .......... .......... .......... .......... .......... 47%  321M 0s
+  5300K .......... .......... .......... .......... .......... 47%  364M 0s
+  5350K .......... .......... .......... .......... .......... 48%  279M 0s
+  5400K .......... .......... .......... .......... .......... 48%  366M 0s
+  5450K .......... .......... .......... .......... .......... 49%  370M 0s
+  5500K .......... .......... .......... .......... .......... 49%  367M 0s
+  5550K .......... .......... .......... .......... .......... 50%  339M 0s
+  5600K .......... .......... .......... .......... .......... 50%  324M 0s
+  5650K .......... .......... .......... .......... .......... 50%  349M 0s
+  5700K .......... .......... .......... .......... .......... 51%  300M 0s
+  5750K .......... .......... .......... .......... .......... 51%  320M 0s
+  5800K .......... .......... .......... .......... .......... 52%  389M 0s
+  5850K .......... .......... .......... .......... .......... 52%  353M 0s
+  5900K .......... .......... .......... .......... .......... 53%  403M 0s
+  5950K .......... .......... .......... .......... .......... 53%  313M 0s
+  6000K .......... .......... .......... .......... .......... 54%  389M 0s
+  6050K .......... .......... .......... .......... .......... 54%  357M 0s
+  6100K .......... .......... .......... .......... .......... 54%  376M 0s
+  6150K .......... .......... .......... .......... .......... 55%  297M 0s
+  6200K .......... .......... .......... .......... .......... 55%  365M 0s
+  6250K .......... .......... .......... .......... .......... 56%  374M 0s
+  6300K .......... .......... .......... .......... .......... 56%  360M 0s
+  6350K .......... .......... .......... .......... .......... 57%  363M 0s
+  6400K .......... .......... .......... .......... .......... 57%  366M 0s
+  6450K .......... .......... .......... .......... .......... 58%  380M 0s
+  6500K .......... .......... .......... .......... .......... 58%  377M 0s
+  6550K .......... .......... .......... .......... .......... 58%  309M 0s
+  6600K .......... .......... .......... .......... .......... 59%  393M 0s
+  6650K .......... .......... .......... .......... .......... 59%  342M 0s
+  6700K .......... .......... .......... .......... .......... 60%  392M 0s
+  6750K .......... .......... .......... .......... .......... 60%  329M 0s
+  6800K .......... .......... .......... .......... .......... 61%  356M 0s
+  6850K .......... .......... .......... .......... .......... 61%  396M 0s
+  6900K .......... .......... .......... .......... .......... 62%  387M 0s
+  6950K .......... .......... .......... .......... .......... 62%  301M 0s
+  7000K .......... .......... .......... .......... .......... 62%  403M 0s
+  7050K .......... .......... .......... .......... .......... 63%  309M 0s
+  7100K .......... .......... .......... .......... .......... 63%  371M 0s
+  7150K .......... .......... .......... .......... .......... 64%  296M 0s
+  7200K .......... .......... .......... .......... .......... 64%  361M 0s
+  7250K .......... .......... .......... .......... .......... 65%  392M 0s
+  7300K .......... .......... .......... .......... .......... 65%  397M 0s
+  7350K .......... .......... .......... .......... .......... 66%  333M 0s
+  7400K .......... .......... .......... .......... .......... 66% 49.0M 0s
+  7450K .......... .......... .......... .......... .......... 67%  362M 0s
+  7500K .......... .......... .......... .......... .......... 67%  397M 0s
+  7550K .......... .......... .......... .......... .......... 67% 22.8M 0s
+  7600K .......... .......... .......... .......... .......... 68%  102M 0s
+  7650K .......... .......... .......... .......... .......... 68%  238M 0s
+  7700K .......... .......... .......... .......... .......... 69%  380M 0s
+  7750K .......... .......... .......... .......... .......... 69%  139M 0s
+  7800K .......... .......... .......... .......... .......... 70%  286M 0s
+  7850K .......... .......... .......... .......... .......... 70%  292M 0s
+  7900K .......... .......... .......... .......... .......... 71%  313M 0s
+  7950K .......... .......... .......... .......... .......... 71%  272M 0s
+  8000K .......... .......... .......... .......... .......... 71%  248M 0s
+  8050K .......... .......... .......... .......... .......... 72%  250M 0s
+  8100K .......... .......... .......... .......... .......... 72%  271M 0s
+  8150K .......... .......... .......... .......... .......... 73%  222M 0s
+  8200K .......... .......... .......... .......... .......... 73%  314M 0s
+  8250K .......... .......... .......... .......... .......... 74%  271M 0s
+  8300K .......... .......... .......... .......... .......... 74%  232M 0s
+  8350K .......... .......... .......... .......... .......... 75%  300M 0s
+  8400K .......... .......... .......... .......... .......... 75%  307M 0s
+  8450K .......... .......... .......... .......... .......... 75%  266M 0s
+  8500K .......... .......... .......... .......... .......... 76%  317M 0s
+  8550K .......... .......... .......... .......... .......... 76%  239M 0s
+  8600K .......... .......... .......... .......... .......... 77%  291M 0s
+  8650K .......... .......... .......... .......... .......... 77%  285M 0s
+  8700K .......... .......... .......... .......... .......... 78%  299M 0s
+  8750K .......... .......... .......... .......... .......... 78%  262M 0s
+  8800K .......... .......... .......... .......... .......... 79%  329M 0s
+  8850K .......... .......... .......... .......... .......... 79%  303M 0s
+  8900K .......... .......... .......... .......... .......... 79%  342M 0s
+  8950K .......... .......... .......... .......... .......... 80%  248M 0s
+  9000K .......... .......... .......... .......... .......... 80%  332M 0s
+  9050K .......... .......... .......... .......... .......... 81%  210M 0s
+  9100K .......... .......... .......... .......... .......... 81%  282M 0s
+  9150K .......... .......... .......... .......... .......... 82%  265M 0s
+  9200K .......... .......... .......... .......... .......... 82%  351M 0s
+  9250K .......... .......... .......... .......... .......... 83%  271M 0s
+  9300K .......... .......... .......... .......... .......... 83%  309M 0s
+  9350K .......... .......... .......... .......... .......... 83%  271M 0s
+  9400K .......... .......... .......... .......... .......... 84%  351M 0s
+  9450K .......... .......... .......... .......... .......... 84%  253M 0s
+  9500K .......... .......... .......... .......... .......... 85%  339M 0s
+  9550K .......... .......... .......... .......... .......... 85%  254M 0s
+  9600K .......... .......... .......... .......... .......... 86%  304M 0s
+  9650K .......... .......... .......... .......... .......... 86%  306M 0s
+  9700K .......... .......... .......... .......... .......... 87%  263M 0s
+  9750K .......... .......... .......... .......... .......... 87%  317M 0s
+  9800K .......... .......... .......... .......... .......... 87%  402M 0s
+  9850K .......... .......... .......... .......... .......... 88%  407M 0s
+  9900K .......... .......... .......... .......... .......... 88%  400M 0s
+  9950K .......... .......... .......... .......... .......... 89%  369M 0s
+ 10000K .......... .......... .......... .......... .......... 89%  359M 0s
+ 10050K .......... .......... .......... .......... .......... 90%  334M 0s
+ 10100K .......... .......... .......... .......... .......... 90%  281M 0s
+ 10150K .......... .......... .......... .......... .......... 91%  246M 0s
+ 10200K .......... .......... .......... .......... .......... 91%  369M 0s
+ 10250K .......... .......... .......... .......... .......... 92%  410M 0s
+ 10300K .......... .......... .......... .......... .......... 92%  411M 0s
+ 10350K .......... .......... .......... .......... .......... 92%  344M 0s
+ 10400K .......... .......... .......... .......... .......... 93%  391M 0s
+ 10450K .......... .......... .......... .......... .......... 93%  415M 0s
+ 10500K .......... .......... .......... .......... .......... 94% 39.6M 0s
+ 10550K .......... .......... .......... .......... .......... 94%  296M 0s
+ 10600K .......... .......... .......... .......... .......... 95% 56.3M 0s
+ 10650K .......... .......... .......... .......... .......... 95%  247M 0s
+ 10700K .......... .......... .......... .......... .......... 96%  340M 0s
+ 10750K .......... .......... .......... .......... .......... 96%  217M 0s
+ 10800K .......... .......... .......... .......... .......... 96%  195M 0s
+ 10850K .......... .......... .......... .......... .......... 97%  252M 0s
+ 10900K .......... .......... .......... .......... .......... 97%  331M 0s
+ 10950K .......... .......... .......... .......... .......... 98%  292M 0s
+ 11000K .......... .......... .......... .......... .......... 98%  329M 0s
+ 11050K .......... .......... .......... .......... .......... 99%  330M 0s
+ 11100K .......... .......... .......... .......... .......... 99%  247M 0s
+ 11150K .......... .......... .......... .......... ...       100%  362M=0.1s
+
+2022-10-11 14:27:01 (102 MB/s) - ‘sql2json.jar’ saved [11462559/11462559]
+
++ chmod u+x sql2json.jar
++ java -jar sql2json.jar -c jdbc:postgresql://geodb-i.rootso.org:5432/simi -u **** -p **** -t https://raw.githubusercontent.com/sogis/pipelines/master/api_webgisclient/qgis-server/sql2json/wms-qgs-content/template.json -o /var/lib/jenkins/jobs/gdi/jobs/qgis-server/workspace/config/default/somap.json -s https://raw.githubusercontent.com/sogis/json2qgs/master/schemas/sogis-wms-qgs-content.json
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -Dsun.zip.disableMemoryMapping=true
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -t
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -o
+[main] INFO ch.so.agi.sql2json.tag.ListTag - root_layer.sql: Starting sql execution
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -c
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -u
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -p
+[main] INFO ch.so.agi.sql2json.tag.ListTag - root_layer.sql: Processed 238 rows.
+[main] INFO ch.so.agi.sql2json.tag.ListTag - layer.sql: Starting sql execution
+[main] INFO ch.so.agi.sql2json.tag.ListTag - layer.sql: Processed 917 rows.
+[main] INFO ch.so.agi.sql2json.Application - Output json written to /var/lib/jenkins/jobs/gdi/jobs/qgis-server/workspace/config/default/somap.json
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -s
+[main] INFO ch.so.agi.sql2json.Application - Validating against schema https://raw.githubusercontent.com/sogis/json2qgs/master/schemas/sogis-wms-qgs-content.json
+[main] INFO ch.so.agi.sql2json.validation.Validator - Validation against json schema passed.
+[8mha:////4LDkjpuAiNgZ/k0imkaz/IOLKqJezK63EJfBp8Q6KiB1AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIESBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAHgAfL9vgAAAA==[0m[Pipeline] sh
++ oc get pods -o custom-columns=POD:.metadata.name --no-headers -n gdi-integration
++ grep -v -E -m 1 'featureinfo|build|print|deploy'
++ grep qgis-server
+[8mha:////4AIxg4IGpOySLu01g+j0E5jgsdLbYkU89iYZbqJlU/NnAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSICQkRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYMpTb3af24Q0vHWp6vgAAAA==[0m[Pipeline] sh
++ oc rsync -n gdi-integration config/ qgis-server-744-vcz24:/data
+sending incremental file list
+default/somap.json
+
+sent 20,531 bytes  received 30,612 bytes  20,457.20 bytes/sec
+total size is 25,887,350  speedup is 506.18
+[8mha:////4OXKRbn85giO6+tZB1aZCFoYTuJzdkCnPXir5pfrrluaAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIAqEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAFuLHFjvgAAAA==[0m[Pipeline] archiveArtifacts
+Archiving artifacts
+[8mha:////4OKsiQwY0DUcOZr9YPN+PpnGH2JSz+dFfDu2dts1bZOUAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCBFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AGigfy3vgAAAA==[0m[Pipeline] sh
++ rm -rf /var/lib/jenkins/jobs/gdi/jobs/qgis-server/workspace/config
+[8mha:////4DLRtAnwFthhR6ZGaHSA7BXSdsxwaHNHEZD8Mv5A6e72AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AHjsOeuvgAAAA==[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PwdSogisService, apiUser]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ '[' -d sql2json ']'
++ '[' '!' -d config/default ']'
++ mkdir -p config/default
++ '[' '!' -f sql2json.jar ']'
++ java -jar sql2json.jar -c jdbc:postgresql://geodb-i.rootso.org:5432/simi -u **** -p **** -t https://raw.githubusercontent.com/sogis/pipelines/master/api_webgisclient/qgis-server/sql2json/wfs-qgs-content/template.json -o /var/lib/jenkins/jobs/gdi/jobs/qgis-server/workspace/config/default/somap_wfs.json -s https://raw.githubusercontent.com/sogis/json2qgs/master/schemas/sogis-wfs-qgs-content.json
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -Dsun.zip.disableMemoryMapping=true
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -t
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -o
+[main] INFO ch.so.agi.sql2json.tag.ListTag - wfs_layer.sql: Starting sql execution
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -c
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -u
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -p
+[main] INFO ch.so.agi.sql2json.tag.ListTag - wfs_layer.sql: Processed 199 rows.
+[main] INFO ch.so.agi.sql2json.Application - Output json written to /var/lib/jenkins/jobs/gdi/jobs/qgis-server/workspace/config/default/somap_wfs.json
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -s
+[main] INFO ch.so.agi.sql2json.Application - Validating against schema https://raw.githubusercontent.com/sogis/json2qgs/master/schemas/sogis-wfs-qgs-content.json
+[main] INFO ch.so.agi.sql2json.validation.Validator - Validation against json schema passed.
+[8mha:////4BQQaiSu/coMXmsRIrWLZzbVCQ7KSR5UhW/QuaQxtQUKAAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGIj8alQKlrLDScwiTFOrN1gOzgVJ+Jq3AGLSFRMMZo3zXu9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw8g48qFvgAAAA==[0m[Pipeline] sh
++ oc get pods -o custom-columns=POD:.metadata.name --no-headers -n gdi-integration
++ grep -v -E -m 1 'featureinfo|build|print|deploy'
++ grep qgis-server
+[8mha:////4I5vjhWgNrJkyd+g04KQAyPyAdQZCPWJFmmCmaYoqJErAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSBCpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNknKOtDrn3tP2HS0Zy+AAAA[0m[Pipeline] sh
++ oc rsync -n gdi-integration config/ qgis-server-744-vcz24:/data
+sending incremental file list
+default/somap_wfs.json
+
+sent 905 bytes  received 1,182 bytes  4,174.00 bytes/sec
+total size is 133,418  speedup is 63.93
+[8mha:////4Gsj6PKv53AMrvnFFMJb+pBhpp5PROmngDC1HJ323/2VAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIpCBWiSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNknKPeHXHXtP6ZEkNO+AAAA[0m[Pipeline] archiveArtifacts
+Archiving artifacts
+[8mha:////4BLm7NMRrYtqGzZi7PKAjKQHrvaM5pEjq6gzP18fGJ/PAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSQCpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNknKPd1rkPtP+d1i8q+AAAA[0m[Pipeline] sh
++ rm -rf /var/lib/jenkins/jobs/gdi/jobs/qgis-server/workspace/config
+[8mha:////4Ji5HhxKAO+HHkucDQX5QiFTJaOgdMwEjIXxju2f4mgPAAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGJT8GlQKlrLDScwiTFOrN1gOzgVJ+Jq3AGLSFRMMZo3zXu9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrnd59odhg8kJqbhvgAAAA==[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PwdSogisService, apiUser]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ '[' -d sql2json ']'
++ '[' '!' -d config/default ']'
++ mkdir -p config/default
++ '[' '!' -f sql2json.jar ']'
++ java -jar sql2json.jar -c jdbc:postgresql://geodb-i.rootso.org:5432/simi -u **** -p **** -t https://raw.githubusercontent.com/sogis/pipelines/master/api_webgisclient/qgis-server/sql2json/print-qgs-content/template.json -o /var/lib/jenkins/jobs/gdi/jobs/qgis-server/workspace/config/default/somap_print.json -s https://raw.githubusercontent.com/sogis/json2qgs/master/schemas/sogis-print-qgs-content.json
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -Dsun.zip.disableMemoryMapping=true
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -t
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -o
+[main] INFO ch.so.agi.sql2json.tag.ListTag - root_layer.sql: Starting sql execution
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -c
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -u
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -p
+[main] INFO ch.so.agi.sql2json.tag.ListTag - root_layer.sql: Processed 266 rows.
+[main] INFO ch.so.agi.sql2json.tag.ListTag - layer.sql: Starting sql execution
+[main] INFO ch.so.agi.sql2json.tag.ListTag - layer.sql: Processed 950 rows.
+[main] INFO ch.so.agi.sql2json.Application - Output json written to /var/lib/jenkins/jobs/gdi/jobs/qgis-server/workspace/config/default/somap_print.json
+[main] INFO ch.so.agi.sql2json.Configuration - Using param value from commandline for -s
+[main] INFO ch.so.agi.sql2json.Application - Validating against schema https://raw.githubusercontent.com/sogis/json2qgs/master/schemas/sogis-print-qgs-content.json
+[main] INFO ch.so.agi.sql2json.validation.Validator - Validation against json schema passed.
+[8mha:////4LIF3yYY7WzURE71IsfYHBjmjSdWMeXOAMedeYbR/HBoAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSAKJAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrnd59odhg9lF734vgAAAA==[0m[Pipeline] sh
++ oc get pods -o custom-columns=POD:.metadata.name --no-headers -n gdi-integration
++ grep qgis-server
++ grep -v -E -m 1 'featureinfo|build|print|deploy'
+[8mha:////4DLECRTvpOEb/9eLUMrJBW1zGZCEq7YHgArnt+USIGtxAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSABISSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANEcrtPtfuMHwAqgslf74AAAA=[0m[Pipeline] sh
++ oc rsync -n gdi-integration config/ qgis-server-744-vcz24:/data
+sending incremental file list
+default/somap_print.json
+
+sent 20,560 bytes  received 30,654 bytes  34,142.67 bytes/sec
+total size is 26,002,716  speedup is 507.73
+[8mha:////4GvDl3eYnSRrUD3oHtNQadBs+9m1YMAjbejfhE+wQGsEAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSAAVCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrnd59odhg/rOj5mvgAAAA==[0m[Pipeline] archiveArtifacts
+Archiving artifacts
+[8mha:////4KH9f3JXWMPixmE9AhQwMO6u3mwWjsGs55Z5hTyN9HoFAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKChFIhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAcw+QXmoc9V7/wGV6z62vgAAAA==[0m[Pipeline] sh
++ rm -rf /var/lib/jenkins/jobs/gdi/jobs/qgis-server/workspace/config
+[8mha:////4JdIg2LSzoT31ySE0HhwakyGxH9Y6btJjMVIkK2R5FPSAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihFIhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyjrfa5D/QECxqVrvgAAAA==[0m[Pipeline] }
+[8mha:////4HKFdj8mOhPv6hJ0mPdfzEhzTYz9J1nXdWoWQkgeACtWAAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGIj8alQKlrLDScwiTFOrN1gOzgVJ+Jq3AGLSFRMMZo3zXu9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFAetrl2+w86hDaavgAAAA==[0m[Pipeline] // withCredentials
+[8mha:////4PMrD0hkJ3vdK7JRtzRD5FW0bBegVvoGJcxJVnFYOoEeAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIpIipERWu54QUmMcaOdWfsC0nFi/gaf8AiEhVbrHa2mdcb1jnBkZIV3uDgMHdOxDDassREabgGmoSni+gIMwUjlJkU9ea0oCI2sKSqYSVhY7ALlB1ahq30+qGboNE2Z07lO0ioXX+HJ1SymFkn/sKcYHcb+0z48/wVwBwjQ71vS7XtBzzCDs++AAAA[0m[Pipeline] }
+[8mha:////4HIZw2fv1ojXJRxp/N0RqioCHcE/upwqcSBttL923/gDAAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGIj8alQKlrLDScwiTFOrN1gOzgVJ+Jq3AGLSFRMMZo3zXu9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFAe9rl22w8SwgylvgAAAA==[0m[Pipeline] // stage
+[8mha:////4F+aiHclghdnL0rYA3D79DKiMr5yqk/8p0mMzpJGZIkHAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSHRCTF2jLJwgJCGkjf4vSUo7cSKuxh0IVGLCg2Vbst7zBVUMcKRgWWewdxiVY4MfbU5sotBfPE2sozNThJG8YcJMgrRplyooGVhUlLDisDaoPEWHNsGGd/Iuay/R1qcU8nbgUDp9gwcUPJOTDOlb5gDb66gj4Y/zFwDzkKDc7bM1zedZvQGGtLcDwgAAAA==[0m[Pipeline] stage
+[8mha:////4JTQp44vr2LQ09KbSpllFNoT9BK/xyyvfoExQE38G2/BAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KgtiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPlyKrR8IAAAA=[0m[Pipeline] { (Create qgs files)
+[8mha:////4Pj+iCf2IRlvNXcTE0L8E6N9X1P1tHtNysI70t558QZIAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSAQWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBkhu+A6+AAAA[0m[Pipeline] echo
+[WARNING] label option is deprecated. To use a static pod template, use the 'inheritFrom' option.
+[8mha:////4IoKcTnmK4SgPG+5AXik+m9UwrqYYrKyjx/xbg4rbNYLAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0AiEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD+YlQ+TCAAAA[0m[Pipeline] podTemplate
+[8mha:////4LgnOIY2yOqYD/5xJB/J0Hi62sZz2/l7NegZyU6n5bd5AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QgIhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0XdaX3CAAAA[0m[Pipeline] {
+[8mha:////4Ogh0CxWQqtaOkLFInHR4y4encmL1CCdBrdZ7K4TAJFiAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoiUBSSEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g3QSQCqwgAAAA==[0m[Pipeline] node
+Agent [8mha:////4HksHbIibYfLuZ/wkgxo8uPW/Ll7ZlgGTQTwfgs63/hHAAAArx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAypEgYV/eT83ILSktQi/SygLqPC9GLdxPTUvBLdJHOzqlxdA+Ms0ywAVZKepNkAAAA=[0mjson2qgs-agent-b76zm-03j5j is provisioned from template json2qgs-agent-b76zm
+---
+apiVersion: "v1"
+kind: "Pod"
+metadata:
+  annotations:
+    buildUrl: "http://jenkins:80/job/gdi/job/qgis-server/1391/"
+    runUrl: "job/gdi/job/qgis-server/1391/"
+  labels:
+    jenkins: "slave"
+    jenkins/label: "json2qgs-agent"
+    jenkins/label-digest: "d564cbd40fea84ae3fe663b89810b5cc4f6734d4"
+  name: "json2qgs-agent-b76zm-03j5j"
+spec:
+  containers:
+  - args:
+    - "********"
+    env:
+    - name: "JENKINS_SECRET"
+      value: "********"
+    - name: "JENKINS_TUNNEL"
+      value: "jenkins-jnlp.agi-apps-production.svc.cluster.local:50000"
+    - name: "JENKINS_AGENT_NAME"
+      value: "json2qgs-agent-b76zm-03j5j"
+    - name: "LC_ALL"
+      value: "C.UTF-8"
+    - name: "JENKINS_NAME"
+      value: "json2qgs-agent-b76zm-03j5j"
+    - name: "JENKINS_AGENT_WORKDIR"
+      value: "/tmp"
+    - name: "JENKINS_URL"
+      value: "http://jenkins:80/"
+    image: "quay.io/openshift/origin-jenkins-agent-base:4.7"
+    imagePullPolicy: "IfNotPresent"
+    name: "jnlp"
+    resources:
+      limits:
+        memory: "2Gi"
+        cpu: "1"
+      requests:
+        memory: "1Gi"
+        cpu: "250m"
+    tty: false
+    volumeMounts:
+    - mountPath: "/qgs-resources"
+      name: "volume-0"
+      readOnly: false
+    - mountPath: "/tmp"
+      name: "workspace-volume"
+      readOnly: false
+    workingDir: "/tmp"
+  - args:
+    - "24h"
+    command:
+    - "sleep"
+    image: "sogis/json2qgs:v1.0.6"
+    imagePullPolicy: "IfNotPresent"
+    name: "json2qgs"
+    resources:
+      limits:
+        memory: "2Gi"
+        cpu: "1"
+      requests:
+        memory: "1Gi"
+        cpu: "200m"
+    tty: false
+    volumeMounts:
+    - mountPath: "/qgs-resources"
+      name: "volume-0"
+      readOnly: false
+    - mountPath: "/tmp"
+      name: "workspace-volume"
+      readOnly: false
+    workingDir: "/tmp"
+  nodeSelector:
+    kubernetes.io/os: "linux"
+  restartPolicy: "Never"
+  serviceAccountName: "jenkins"
+  volumes:
+  - name: "volume-0"
+    persistentVolumeClaim:
+      claimName: "qgs-resources-claim"
+      readOnly: false
+  - emptyDir:
+      medium: ""
+    name: "workspace-volume"
+
+Running on [8mha:////4Pc+8yUyrgNBxhL9C6QTbXkiFoeIRlV0PeBWcZzsFMCEAAAAsB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAypEgZV/eT83ILSktQi/SygLqPC9GLdxPTUvBLdJHOzqlxdA+Ms0yx9AN8U/u/aAAAA[0mjson2qgs-agent-b76zm-03j5j in /tmp/workspace/gdi/qgis-server
+[8mha:////4BZHWPnuv3sKVqZ+1Kghr+jIWGoeBJtsiP9Lc1io+cEuAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUFhbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAQB2j23CAAAA[0m[Pipeline] {
+[8mha:////4JYd5l6mVyWbOyel5wA3CGHHTxvyQe2gzW4BhJrNIHdhAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO63n9qFNzkd4Tq+AAAA[0m[Pipeline] checkout
+The recommended git tool is: git
+No credentials specified
+Fetching changes from the remote Git repository
+ > git rev-parse --resolve-git-dir /tmp/workspace/gdi/qgis-server/.git # timeout=10
+ > git config remote.origin.url https://github.com/sogis/pipelines.git # timeout=10
+Fetching upstream changes from https://github.com/sogis/pipelines.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/sogis/pipelines.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking out Revision 66af947b89ad6896a9e2a1738cd1a3453b03408c (origin/master)
+Commit message: "[meta-exporter_conf] add upload to sodata pod"
+[8mha:////4FeX8k9BXvI6NLSO+J+z80RGGYHFTTnKbawPeL4+8f5OAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCIkFMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLkh91s+/lZfADLCMnhwgAAAA==[0m[Pipeline] withEnv
+[8mha:////4NE0R0B5RVwEYi5HRBruQkQxnv8EUc46c3ydN8oAL+EmAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ALEgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LD7KBoKTCAAAA[0m[Pipeline] {
+[8mha:////4Ou3V+HWSNUyvlxlLG2TteH3cVJKJ8W4glqKwk5Tpk7KAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ARbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAZRHx0bCAAAA[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PwdOgcServer or $PwdSogisService or $apiUser or $PwdApiUser
+[8mha:////4Eom/mBc2n0qqFBMBHcNpkNXEhvfG00YFTzPzI8LpztoAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoh0ogtiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsP+urdAcIAAAA=[0m[Pipeline] {
+[8mha:////4AGVyRVpBQWIqjjQ5ySPjg4MEeNCPqrECV2B/eIt0CjNAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KwNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPXl9jU8IAAAA=[0m[Pipeline] container
+[8mha:////4M5T8N2atIuM4WIvxk7jE+OZuFhBpmVb57z94Ez/HZkLAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0AyTE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAUsyu2PCAAAA[0m[Pipeline] {
+[8mha:////4Nsbbe8PNqPq6Z22J2aGvue/S/w34OQIttsJFYNuBr/1AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSIRCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBiGBjUy+AAAA[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PwdApiUser, apiUser]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
+ > git rev-parse origin/master^{commit} # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 66af947b89ad6896a9e2a1738cd1a3453b03408c # timeout=10
++ [ ! -d config/default ]
++ mkdir -p config/default
++ wget -r -np -nd -erobots=off -A *.json --reject-regex /\*.+\*/|auto_refresh --no-check-certificate --auth-no-challenge --user=**** --password=**** https://jenkins-agi-apps-production.apps.ocp.so.ch/job/gdi/job/qgis-server/1400/artifact/config/default/ -P qgs
+--2022-10-11 14:27:23--  https://jenkins-agi-apps-production.apps.ocp.so.ch/job/gdi/job/qgis-server/1400/artifact/config/default/
+Resolving jenkins-agi-apps-production.apps.ocp.so.ch (jenkins-agi-apps-production.apps.ocp.so.ch)... 193.135.92.21
+Connecting to jenkins-agi-apps-production.apps.ocp.so.ch (jenkins-agi-apps-production.apps.ocp.so.ch)|193.135.92.21|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 15220 (15K) [text/html]
+Saving to: ‘qgs/index.html.tmp’
+
+     0K .......... ....                                       100% 95.3M=0s
+
+2022-10-11 14:27:23 (95.3 MB/s) - ‘qgs/index.html.tmp’ saved [15220/15220]
+
+no-follow attribute found in qgs/index.html.tmp. Will not follow any links on this page
+Removing qgs/index.html.tmp since it should be rejected.
+
+--2022-10-11 14:27:23--  https://jenkins-agi-apps-production.apps.ocp.so.ch/job/gdi/job/qgis-server/1400/artifact/config/default/somap_print.json
+Reusing existing connection to jenkins-agi-apps-production.apps.ocp.so.ch:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 26002716 (25M) [application/json]
+Saving to: ‘qgs/somap_print.json’
+
+     0K .......... .......... .......... .......... ..........  0% 96.9M 0s
+    50K .......... .......... .......... .......... ..........  0% 95.7M 0s
+   100K .......... .......... .......... .......... ..........  0% 63.3M 0s
+   150K .......... .......... .......... .......... ..........  0%  103M 0s
+   200K .......... .......... .......... .......... ..........  0% 50.3M 0s
+   250K .......... .......... .......... .......... ..........  1%  163M 0s
+   300K .......... .......... .......... .......... ..........  1%  102M 0s
+   350K .......... .......... .......... .......... ..........  1%  150M 0s
+   400K .......... .......... .......... .......... ..........  1% 56.7M 0s
+   450K .......... .......... .......... .......... ..........  1% 96.7M 0s
+   500K .......... .......... .......... .......... ..........  2%  220M 0s
+   550K .......... .......... .......... .......... ..........  2% 56.5M 0s
+   600K .......... .......... .......... .......... ..........  2%  423M 0s
+   650K .......... .......... .......... .......... ..........  2%  182M 0s
+   700K .......... .......... .......... .......... ..........  2% 94.5M 0s
+   750K .......... .......... .......... .......... ..........  3%  257M 0s
+   800K .......... .......... .......... .......... ..........  3%  124M 0s
+   850K .......... .......... .......... .......... ..........  3%  153M 0s
+   900K .......... .......... .......... .......... ..........  3%  343M 0s
+   950K .......... .......... .......... .......... ..........  3%  135M 0s
+  1000K .......... .......... .......... .......... ..........  4% 88.6M 0s
+  1050K .......... .......... .......... .......... ..........  4%  131M 0s
+  1100K .......... .......... .......... .......... ..........  4%  174M 0s
+  1150K .......... .......... .......... .......... ..........  4%  190M 0s
+  1200K .......... .......... .......... .......... ..........  4%  244M 0s
+  1250K .......... .......... .......... .......... ..........  5%  105M 0s
+  1300K .......... .......... .......... .......... ..........  5%  101M 0s
+  1350K .......... .......... .......... .......... ..........  5%  202M 0s
+  1400K .......... .......... .......... .......... ..........  5%  439M 0s
+  1450K .......... .......... .......... .......... ..........  5%  124M 0s
+  1500K .......... .......... .......... .......... ..........  6%  119M 0s
+  1550K .......... .......... .......... .......... ..........  6%  237M 0s
+  1600K .......... .......... .......... .......... ..........  6%  122M 0s
+  1650K .......... .......... .......... .......... ..........  6%  305M 0s
+  1700K .......... .......... .......... .......... ..........  6%  142M 0s
+  1750K .......... .......... .......... .......... ..........  7%  245M 0s
+  1800K .......... .......... .......... .......... ..........  7% 96.0M 0s
+  1850K .......... .......... .......... .......... ..........  7%  326M 0s
+  1900K .......... .......... .......... .......... ..........  7%  206M 0s
+  1950K .......... .......... .......... .......... ..........  7%  277M 0s
+  2000K .......... .......... .......... .......... ..........  8%  329M 0s
+  2050K .......... .......... .......... .......... ..........  8%  122M 0s
+  2100K .......... .......... .......... .......... ..........  8%  341M 0s
+  2150K .......... .......... .......... .......... ..........  8%  141M 0s
+  2200K .......... .......... .......... .......... ..........  8%  337M 0s
+  2250K .......... .......... .......... .......... ..........  9%  400M 0s
+  2300K .......... .......... .......... .......... ..........  9%  122M 0s
+  2350K .......... .......... .......... .......... ..........  9%  329M 0s
+  2400K .......... .......... .......... .......... ..........  9%  122M 0s
+  2450K .......... .......... .......... .......... ..........  9%  313M 0s
+  2500K .......... .......... .......... .......... .......... 10%  403M 0s
+  2550K .......... .......... .......... .......... .......... 10%  424M 0s
+  2600K .......... .......... .......... .......... .......... 10%  127M 0s
+  2650K .......... .......... .......... .......... .......... 10%  211M 0s
+  2700K .......... .......... .......... .......... .......... 10%  352M 0s
+  2750K .......... .......... .......... .......... .......... 11%  121M 0s
+  2800K .......... .......... .......... .......... .......... 11%  342M 0s
+  2850K .......... .......... .......... .......... .......... 11%  417M 0s
+  2900K .......... .......... .......... .......... .......... 11%  316M 0s
+  2950K .......... .......... .......... .......... .......... 11%  122M 0s
+  3000K .......... .......... .......... .......... .......... 12%  396M 0s
+  3050K .......... .......... .......... .......... .......... 12%  265M 0s
+  3100K .......... .......... .......... .......... .......... 12%  120M 0s
+  3150K .......... .......... .......... .......... .......... 12%  381M 0s
+  3200K .......... .......... .......... .......... .......... 12%  432M 0s
+  3250K .......... .......... .......... .......... .......... 12%  154M 0s
+  3300K .......... .......... .......... .......... .......... 13%  240M 0s
+  3350K .......... .......... .......... .......... .......... 13%  428M 0s
+  3400K .......... .......... .......... .......... .......... 13%  422M 0s
+  3450K .......... .......... .......... .......... .......... 13%  162M 0s
+  3500K .......... .......... .......... .......... .......... 13%  339M 0s
+  3550K .......... .......... .......... .......... .......... 14%  312M 0s
+  3600K .......... .......... .......... .......... .......... 14%  362M 0s
+  3650K .......... .......... .......... .......... .......... 14%  437M 0s
+  3700K .......... .......... .......... .......... .......... 14%  150M 0s
+  3750K .......... .......... .......... .......... .......... 14%  283M 0s
+  3800K .......... .......... .......... .......... .......... 15%  440M 0s
+  3850K .......... .......... .......... .......... .......... 15%  453M 0s
+  3900K .......... .......... .......... .......... .......... 15%  164M 0s
+  3950K .......... .......... .......... .......... .......... 15%  362M 0s
+  4000K .......... .......... .......... .......... .......... 15%  439M 0s
+  4050K .......... .......... .......... .......... .......... 16%  319M 0s
+  4100K .......... .......... .......... .......... .......... 16%  426M 0s
+  4150K .......... .......... .......... .......... .......... 16%  412M 0s
+  4200K .......... .......... .......... .......... .......... 16%  365M 0s
+  4250K .......... .......... .......... .......... .......... 16%  157M 0s
+  4300K .......... .......... .......... .......... .......... 17%  362M 0s
+  4350K .......... .......... .......... .......... .......... 17%  249M 0s
+  4400K .......... .......... .......... .......... .......... 17%  439M 0s
+  4450K .......... .......... .......... .......... .......... 17%  408M 0s
+  4500K .......... .......... .......... .......... .......... 17%  173M 0s
+  4550K .......... .......... .......... .......... .......... 18%  353M 0s
+  4600K .......... .......... .......... .......... .......... 18%  298M 0s
+  4650K .......... .......... .......... .......... .......... 18%  362M 0s
+  4700K .......... .......... .......... .......... .......... 18%  359M 0s
+  4750K .......... .......... .......... .......... .......... 18%  448M 0s
+  4800K .......... .......... .......... .......... .......... 19%  396M 0s
+  4850K .......... .......... .......... .......... .......... 19%  142M 0s
+  4900K .......... .......... .......... .......... .......... 19%  368M 0s
+  4950K .......... .......... .......... .......... .......... 19%  408M 0s
+  5000K .......... .......... .......... .......... .......... 19%  320M 0s
+  5050K .......... .......... .......... .......... .......... 20%  297M 0s
+  5100K .......... .......... .......... .......... .......... 20%  172M 0s
+  5150K .......... .......... .......... .......... .......... 20%  248M 0s
+  5200K .......... .......... .......... .......... .......... 20%  366M 0s
+  5250K .......... .......... .......... .......... .......... 20%  285M 0s
+  5300K .......... .......... .......... .......... .......... 21%  216M 0s
+  5350K .......... .......... .......... .......... .......... 21%  393M 0s
+  5400K .......... .......... .......... .......... .......... 21%  360M 0s
+  5450K .......... .......... .......... .......... .......... 21%  445M 0s
+  5500K .......... .......... .......... .......... .......... 21%  180M 0s
+  5550K .......... .......... .......... .......... .......... 22%  373M 0s
+  5600K .......... .......... .......... .......... .......... 22%  313M 0s
+  5650K .......... .......... .......... .......... .......... 22%  323M 0s
+  5700K .......... .......... .......... .......... .......... 22%  401M 0s
+  5750K .......... .......... .......... .......... .......... 22%  415M 0s
+  5800K .......... .......... .......... .......... .......... 23%  354M 0s
+  5850K .......... .......... .......... .......... .......... 23%  208M 0s
+  5900K .......... .......... .......... .......... .......... 23%  350M 0s
+  5950K .......... .......... .......... .......... .......... 23%  400M 0s
+  6000K .......... .......... .......... .......... .......... 23%  379M 0s
+  6050K .......... .......... .......... .......... .......... 24%  363M 0s
+  6100K .......... .......... .......... .......... .......... 24%  413M 0s
+  6150K .......... .......... .......... .......... .......... 24%  206M 0s
+  6200K .......... .......... .......... .......... .......... 24%  328M 0s
+  6250K .......... .......... .......... .......... .......... 24%  303M 0s
+  6300K .......... .......... .......... .......... .......... 25%  403M 0s
+  6350K .......... .......... .......... .......... .......... 25%  334M 0s
+  6400K .......... .......... .......... .......... .......... 25%  389M 0s
+  6450K .......... .......... .......... .......... .......... 25%  337M 0s
+  6500K .......... .......... .......... .......... .......... 25%  335M 0s
+  6550K .......... .......... .......... .......... .......... 25%  377M 0s
+  6600K .......... .......... .......... .......... .......... 26%  280M 0s
+  6650K .......... .......... .......... .......... .......... 26%  389M 0s
+  6700K .......... .......... .......... .......... .......... 26%  309M 0s
+  6750K .......... .......... .......... .......... .......... 26%  310M 0s
+  6800K .......... .......... .......... .......... .......... 26%  365M 0s
+  6850K .......... .......... .......... .......... .......... 27%  359M 0s
+  6900K .......... .......... .......... .......... .......... 27%  359M 0s
+  6950K .......... .......... .......... .......... .......... 27%  390M 0s
+  7000K .......... .......... .......... .......... .......... 27%  302M 0s
+  7050K .......... .......... .......... .......... .......... 27%  329M 0s
+  7100K .......... .......... .......... .......... .......... 28%  400M 0s
+  7150K .......... .......... .......... .......... .......... 28%  261M 0s
+  7200K .......... .......... .......... .......... .......... 28%  320M 0s
+  7250K .......... .......... .......... .......... .......... 28%  433M 0s
+  7300K .......... .......... .......... .......... .......... 28%  339M 0s
+  7350K .......... .......... .......... .......... .......... 29%  313M 0s
+  7400K .......... .......... .......... .......... .......... 29%  229M 0s
+  7450K .......... .......... .......... .......... .......... 29%  300M 0s
+  7500K .......... .......... .......... .......... .......... 29%  368M 0s
+  7550K .......... .......... .......... .......... .......... 29%  404M 0s
+  7600K .......... .......... .......... .......... .......... 30%  450M 0s
+  7650K .......... .......... .......... .......... .......... 30%  395M 0s
+  7700K .......... .......... .......... .......... .......... 30%  372M 0s
+  7750K .......... .......... .......... .......... .......... 30%  273M 0s
+  7800K .......... .......... .......... .......... .......... 30%  418M 0s
+  7850K .......... .......... .......... .......... .......... 31%  283M 0s
+  7900K .......... .......... .......... .......... .......... 31%  436M 0s
+  7950K .......... .......... .......... .......... .......... 31%  328M 0s
+  8000K .......... .......... .......... .......... .......... 31%  383M 0s
+  8050K .......... .......... .......... .......... .......... 31%  438M 0s
+  8100K .......... .......... .......... .......... .......... 32%  399M 0s
+  8150K .......... .......... .......... .......... .......... 32%  286M 0s
+  8200K .......... .......... .......... .......... .......... 32%  274M 0s
+  8250K .......... .......... .......... .......... .......... 32%  415M 0s
+  8300K .......... .......... .......... .......... .......... 32%  300M 0s
+  8350K .......... .......... .......... .......... .......... 33%  322M 0s
+  8400K .......... .......... .......... .......... .......... 33%  304M 0s
+  8450K .......... .......... .......... .......... .......... 33%  307M 0s
+  8500K .......... .......... .......... .......... .......... 33%  277M 0s
+  8550K .......... .......... .......... .......... .......... 33%  374M 0s
+  8600K .......... .......... .......... .......... .......... 34%  278M 0s
+  8650K .......... .......... .......... .......... .......... 34%  369M 0s
+  8700K .......... .......... .......... .......... .......... 34%  331M 0s
+  8750K .......... .......... .......... .......... .......... 34%  242M 0s
+  8800K .......... .......... .......... .......... .......... 34%  245M 0s
+  8850K .......... .......... .......... .......... .......... 35%  268M 0s
+  8900K .......... .......... .......... .......... .......... 35%  392M 0s
+  8950K .......... .......... .......... .......... .......... 35%  242M 0s
+  9000K .......... .......... .......... .......... .......... 35%  353M 0s
+  9050K .......... .......... .......... .......... .......... 35%  337M 0s
+  9100K .......... .......... .......... .......... .......... 36%  352M 0s
+  9150K .......... .......... .......... .......... .......... 36%  268M 0s
+  9200K .......... .......... .......... .......... .......... 36%  373M 0s
+  9250K .......... .......... .......... .......... .......... 36%  390M 0s
+  9300K .......... .......... .......... .......... .......... 36%  376M 0s
+  9350K .......... .......... .......... .......... .......... 37%  357M 0s
+  9400K .......... .......... .......... .......... .......... 37%  336M 0s
+  9450K .......... .......... .......... .......... .......... 37%  281M 0s
+  9500K .......... .......... .......... .......... .......... 37%  306M 0s
+  9550K .......... .......... .......... .......... .......... 37%  314M 0s
+  9600K .......... .......... .......... .......... .......... 38%  368M 0s
+  9650K .......... .......... .......... .......... .......... 38%  384M 0s
+  9700K .......... .......... .......... .......... .......... 38%  438M 0s
+  9750K .......... .......... .......... .......... .......... 38%  288M 0s
+  9800K .......... .......... .......... .......... .......... 38%  319M 0s
+  9850K .......... .......... .......... .......... .......... 38%  300M 0s
+  9900K .......... .......... .......... .......... .......... 39%  329M 0s
+  9950K .......... .......... .......... .......... .......... 39%  373M 0s
+ 10000K .......... .......... .......... .......... .......... 39%  270M 0s
+ 10050K .......... .......... .......... .......... .......... 39%  338M 0s
+ 10100K .......... .......... .......... .......... .......... 39%  372M 0s
+ 10150K .......... .......... .......... .......... .......... 40%  330M 0s
+ 10200K .......... .......... .......... .......... .......... 40%  268M 0s
+ 10250K .......... .......... .......... .......... .......... 40%  398M 0s
+ 10300K .......... .......... .......... .......... .......... 40%  366M 0s
+ 10350K .......... .......... .......... .......... .......... 40%  277M 0s
+ 10400K .......... .......... .......... .......... .......... 41%  402M 0s
+ 10450K .......... .......... .......... .......... .......... 41%  399M 0s
+ 10500K .......... .......... .......... .......... .......... 41%  309M 0s
+ 10550K .......... .......... .......... .......... .......... 41%  280M 0s
+ 10600K .......... .......... .......... .......... .......... 41%  381M 0s
+ 10650K .......... .......... .......... .......... .......... 42%  454M 0s
+ 10700K .......... .......... .......... .......... .......... 42%  433M 0s
+ 10750K .......... .......... .......... .......... .......... 42%  265M 0s
+ 10800K .......... .......... .......... .......... .......... 42%  329M 0s
+ 10850K .......... .......... .......... .......... .......... 42%  285M 0s
+ 10900K .......... .......... .......... .......... .......... 43%  336M 0s
+ 10950K .......... .......... .......... .......... .......... 43%  267M 0s
+ 11000K .......... .......... .......... .......... .......... 43%  253M 0s
+ 11050K .......... .......... .......... .......... .......... 43%  352M 0s
+ 11100K .......... .......... .......... .......... .......... 43%  310M 0s
+ 11150K .......... .......... .......... .......... .......... 44%  305M 0s
+ 11200K .......... .......... .......... .......... .......... 44%  344M 0s
+ 11250K .......... .......... .......... .......... .......... 44%  417M 0s
+ 11300K .......... .......... .......... .......... .......... 44%  274M 0s
+ 11350K .......... .......... .......... .......... .......... 44%  372M 0s
+ 11400K .......... .......... .......... .......... .......... 45%  384M 0s
+ 11450K .......... .......... .......... .......... .......... 45%  374M 0s
+ 11500K .......... .......... .......... .......... .......... 45%  394M 0s
+ 11550K .......... .......... .......... .......... .......... 45%  381M 0s
+ 11600K .......... .......... .......... .......... .......... 45%  232M 0s
+ 11650K .......... .......... .......... .......... .......... 46%  317M 0s
+ 11700K .......... .......... .......... .......... .......... 46%  403M 0s
+ 11750K .......... .......... .......... .......... .......... 46%  276M 0s
+ 11800K .......... .......... .......... .......... .......... 46%  366M 0s
+ 11850K .......... .......... .......... .......... .......... 46%  378M 0s
+ 11900K .......... .......... .......... .......... .......... 47%  302M 0s
+ 11950K .......... .......... .......... .......... .......... 47%  371M 0s
+ 12000K .......... .......... .......... .......... .......... 47%  234M 0s
+ 12050K .......... .......... .......... .......... .......... 47%  259M 0s
+ 12100K .......... .......... .......... .......... .......... 47%  333M 0s
+ 12150K .......... .......... .......... .......... .......... 48%  380M 0s
+ 12200K .......... .......... .......... .......... .......... 48%  369M 0s
+ 12250K .......... .......... .......... .......... .......... 48%  288M 0s
+ 12300K .......... .......... .......... .......... .......... 48%  357M 0s
+ 12350K .......... .......... .......... .......... .......... 48%  353M 0s
+ 12400K .......... .......... .......... .......... .......... 49%  287M 0s
+ 12450K .......... .......... .......... .......... .......... 49%  330M 0s
+ 12500K .......... .......... .......... .......... .......... 49%  379M 0s
+ 12550K .......... .......... .......... .......... .......... 49%  243M 0s
+ 12600K .......... .......... .......... .......... .......... 49%  380M 0s
+ 12650K .......... .......... .......... .......... .......... 50%  396M 0s
+ 12700K .......... .......... .......... .......... .......... 50%  381M 0s
+ 12750K .......... .......... .......... .......... .......... 50%  184M 0s
+ 12800K .......... .......... .......... .......... .......... 50%  271M 0s
+ 12850K .......... .......... .......... .......... .......... 50%  355M 0s
+ 12900K .......... .......... .......... .......... .......... 50%  343M 0s
+ 12950K .......... .......... .......... .......... .......... 51%  380M 0s
+ 13000K .......... .......... .......... .......... .......... 51%  340M 0s
+ 13050K .......... .......... .......... .......... .......... 51%  307M 0s
+ 13100K .......... .......... .......... .......... .......... 51%  307M 0s
+ 13150K .......... .......... .......... .......... .......... 51%  315M 0s
+ 13200K .......... .......... .......... .......... .......... 52%  226M 0s
+ 13250K .......... .......... .......... .......... .......... 52%  391M 0s
+ 13300K .......... .......... .......... .......... .......... 52%  359M 0s
+ 13350K .......... .......... .......... .......... .......... 52%  237M 0s
+ 13400K .......... .......... .......... .......... .......... 52%  385M 0s
+ 13450K .......... .......... .......... .......... .......... 53%  411M 0s
+ 13500K .......... .......... .......... .......... .......... 53%  400M 0s
+ 13550K .......... .......... .......... .......... .......... 53%  372M 0s
+ 13600K .......... .......... .......... .......... .......... 53%  391M 0s
+ 13650K .......... .......... .......... .......... .......... 53%  363M 0s
+ 13700K .......... .......... .......... .......... .......... 54%  115M 0s
+ 13750K .......... .......... .......... .......... .......... 54%  305M 0s
+ 13800K .......... .......... .......... .......... .......... 54%  361M 0s
+ 13850K .......... .......... .......... .......... .......... 54%  378M 0s
+ 13900K .......... .......... .......... .......... .......... 54%  336M 0s
+ 13950K .......... .......... .......... .......... .......... 55%  207M 0s
+ 14000K .......... .......... .......... .......... .......... 55%  215M 0s
+ 14050K .......... .......... .......... .......... .......... 55%  288M 0s
+ 14100K .......... .......... .......... .......... .......... 55%  345M 0s
+ 14150K .......... .......... .......... .......... .......... 55%  364M 0s
+ 14200K .......... .......... .......... .......... .......... 56%  315M 0s
+ 14250K .......... .......... .......... .......... .......... 56%  221M 0s
+ 14300K .......... .......... .......... .......... .......... 56%  373M 0s
+ 14350K .......... .......... .......... .......... .......... 56%  368M 0s
+ 14400K .......... .......... .......... .......... .......... 56%  300M 0s
+ 14450K .......... .......... .......... .......... .......... 57%  405M 0s
+ 14500K .......... .......... .......... .......... .......... 57%  346M 0s
+ 14550K .......... .......... .......... .......... .......... 57%  388M 0s
+ 14600K .......... .......... .......... .......... .......... 57%  267M 0s
+ 14650K .......... .......... .......... .......... .......... 57%  303M 0s
+ 14700K .......... .......... .......... .......... .......... 58%  395M 0s
+ 14750K .......... .......... .......... .......... .......... 58%  363M 0s
+ 14800K .......... .......... .......... .......... .......... 58%  361M 0s
+ 14850K .......... .......... .......... .......... .......... 58%  315M 0s
+ 14900K .......... .......... .......... .......... .......... 58%  307M 0s
+ 14950K .......... .......... .......... .......... .......... 59%  303M 0s
+ 15000K .......... .......... .......... .......... .......... 59%  394M 0s
+ 15050K .......... .......... .......... .......... .......... 59%  339M 0s
+ 15100K .......... .......... .......... .......... .......... 59%  380M 0s
+ 15150K .......... .......... .......... .......... .......... 59%  364M 0s
+ 15200K .......... .......... .......... .......... .......... 60%  290M 0s
+ 15250K .......... .......... .......... .......... .......... 60%  401M 0s
+ 15300K .......... .......... .......... .......... .......... 60%  267M 0s
+ 15350K .......... .......... .......... .......... .......... 60%  222M 0s
+ 15400K .......... .......... .......... .......... .......... 60%  373M 0s
+ 15450K .......... .......... .......... .......... .......... 61%  371M 0s
+ 15500K .......... .......... .......... .......... .......... 61%  375M 0s
+ 15550K .......... .......... .......... .......... .......... 61%  234M 0s
+ 15600K .......... .......... .......... .......... .......... 61%  255M 0s
+ 15650K .......... .......... .......... .......... .......... 61%  373M 0s
+ 15700K .......... .......... .......... .......... .......... 62%  319M 0s
+ 15750K .......... .......... .......... .......... .......... 62%  364M 0s
+ 15800K .......... .......... .......... .......... .......... 62%  364M 0s
+ 15850K .......... .......... .......... .......... .......... 62%  431M 0s
+ 15900K .......... .......... .......... .......... .......... 62%  375M 0s
+ 15950K .......... .......... .......... .......... .......... 63%  299M 0s
+ 16000K .......... .......... .......... .......... .......... 63%  306M 0s
+ 16050K .......... .......... .......... .......... .......... 63%  311M 0s
+ 16100K .......... .......... .......... .......... .......... 63%  317M 0s
+ 16150K .......... .......... .......... .......... .......... 63%  301M 0s
+ 16200K .......... .......... .......... .......... .......... 63%  349M 0s
+ 16250K .......... .......... .......... .......... .......... 64%  337M 0s
+ 16300K .......... .......... .......... .......... .......... 64%  340M 0s
+ 16350K .......... .......... .......... .......... .......... 64%  329M 0s
+ 16400K .......... .......... .......... .......... .......... 64%  241M 0s
+ 16450K .......... .......... .......... .......... .......... 64%  293M 0s
+ 16500K .......... .......... .......... .......... .......... 65%  385M 0s
+ 16550K .......... .......... .......... .......... .......... 65%  368M 0s
+ 16600K .......... .......... .......... .......... .......... 65%  294M 0s
+ 16650K .......... .......... .......... .......... .......... 65%  296M 0s
+ 16700K .......... .......... .......... .......... .......... 65%  412M 0s
+ 16750K .......... .......... .......... .......... .......... 66%  332M 0s
+ 16800K .......... .......... .......... .......... .......... 66%  445M 0s
+ 16850K .......... .......... .......... .......... .......... 66%  374M 0s
+ 16900K .......... .......... .......... .......... .......... 66%  391M 0s
+ 16950K .......... .......... .......... .......... .......... 66%  250M 0s
+ 17000K .......... .......... .......... .......... .......... 67%  320M 0s
+ 17050K .......... .......... .......... .......... .......... 67%  367M 0s
+ 17100K .......... .......... .......... .......... .......... 67%  246M 0s
+ 17150K .......... .......... .......... .......... .......... 67%  321M 0s
+ 17200K .......... .......... .......... .......... .......... 67%  262M 0s
+ 17250K .......... .......... .......... .......... .......... 68%  240M 0s
+ 17300K .......... .......... .......... .......... .......... 68%  415M 0s
+ 17350K .......... .......... .......... .......... .......... 68%  306M 0s
+ 17400K .......... .......... .......... .......... .......... 68%  286M 0s
+ 17450K .......... .......... .......... .......... .......... 68%  389M 0s
+ 17500K .......... .......... .......... .......... .......... 69%  358M 0s
+ 17550K .......... .......... .......... .......... .......... 69%  449M 0s
+ 17600K .......... .......... .......... .......... .......... 69%  317M 0s
+ 17650K .......... .......... .......... .......... .......... 69%  391M 0s
+ 17700K .......... .......... .......... .......... .......... 69%  431M 0s
+ 17750K .......... .......... .......... .......... .......... 70%  355M 0s
+ 17800K .......... .......... .......... .......... .......... 70%  366M 0s
+ 17850K .......... .......... .......... .......... .......... 70%  409M 0s
+ 17900K .......... .......... .......... .......... .......... 70%  372M 0s
+ 17950K .......... .......... .......... .......... .......... 70%  444M 0s
+ 18000K .......... .......... .......... .......... .......... 71%  316M 0s
+ 18050K .......... .......... .......... .......... .......... 71%  402M 0s
+ 18100K .......... .......... .......... .......... .......... 71%  428M 0s
+ 18150K .......... .......... .......... .......... .......... 71%  413M 0s
+ 18200K .......... .......... .......... .......... .......... 71%  329M 0s
+ 18250K .......... .......... .......... .......... .......... 72%  334M 0s
+ 18300K .......... .......... .......... .......... .......... 72%  360M 0s
+ 18350K .......... .......... .......... .......... .......... 72%  383M 0s
+ 18400K .......... .......... .......... .......... .......... 72%  351M 0s
+ 18450K .......... .......... .......... .......... .......... 72%  402M 0s
+ 18500K .......... .......... .......... .......... .......... 73%  452M 0s
+ 18550K .......... .......... .......... .......... .......... 73%  352M 0s
+ 18600K .......... .......... .......... .......... .......... 73%  461M 0s
+ 18650K .......... .......... .......... .......... .......... 73%  381M 0s
+ 18700K .......... .......... .......... .......... .......... 73%  403M 0s
+ 18750K .......... .......... .......... .......... .......... 74%  302M 0s
+ 18800K .......... .......... .......... .......... .......... 74%  395M 0s
+ 18850K .......... .......... .......... .......... .......... 74%  413M 0s
+ 18900K .......... .......... .......... .......... .......... 74%  376M 0s
+ 18950K .......... .......... .......... .......... .......... 74%  388M 0s
+ 19000K .......... .......... .......... .......... .......... 75%  381M 0s
+ 19050K .......... .......... .......... .......... .......... 75%  400M 0s
+ 19100K .......... .......... .......... .......... .......... 75%  453M 0s
+ 19150K .......... .......... .......... .......... .......... 75%  405M 0s
+ 19200K .......... .......... .......... .......... .......... 75%  352M 0s
+ 19250K .......... .......... .......... .......... .......... 76%  403M 0s
+ 19300K .......... .......... .......... .......... .......... 76%  356M 0s
+ 19350K .......... .......... .......... .......... .......... 76%  394M 0s
+ 19400K .......... .......... .......... .......... .......... 76%  421M 0s
+ 19450K .......... .......... .......... .......... .......... 76%  454M 0s
+ 19500K .......... .......... .......... .......... .......... 76%  407M 0s
+ 19550K .......... .......... .......... .......... .......... 77%  302M 0s
+ 19600K .......... .......... .......... .......... .......... 77%  379M 0s
+ 19650K .......... .......... .......... .......... .......... 77%  425M 0s
+ 19700K .......... .......... .......... .......... .......... 77%  424M 0s
+ 19750K .......... .......... .......... .......... .......... 77%  349M 0s
+ 19800K .......... .......... .......... .......... .......... 78%  432M 0s
+ 19850K .......... .......... .......... .......... .......... 78%  376M 0s
+ 19900K .......... .......... .......... .......... .......... 78%  440M 0s
+ 19950K .......... .......... .......... .......... .......... 78%  314M 0s
+ 20000K .......... .......... .......... .......... .......... 78%  401M 0s
+ 20050K .......... .......... .......... .......... .......... 79%  429M 0s
+ 20100K .......... .......... .......... .......... .......... 79%  409M 0s
+ 20150K .......... .......... .......... .......... .......... 79%  380M 0s
+ 20200K .......... .......... .......... .......... .......... 79%  424M 0s
+ 20250K .......... .......... .......... .......... .......... 79%  387M 0s
+ 20300K .......... .......... .......... .......... .......... 80%  423M 0s
+ 20350K .......... .......... .......... .......... .......... 80%  399M 0s
+ 20400K .......... .......... .......... .......... .......... 80%  319M 0s
+ 20450K .......... .......... .......... .......... .......... 80%  389M 0s
+ 20500K .......... .......... .......... .......... .......... 80%  333M 0s
+ 20550K .......... .......... .......... .......... .......... 81%  382M 0s
+ 20600K .......... .......... .......... .......... .......... 81%  369M 0s
+ 20650K .......... .......... .......... .......... .......... 81%  439M 0s
+ 20700K .......... .......... .......... .......... .......... 81%  421M 0s
+ 20750K .......... .......... .......... .......... .......... 81%  352M 0s
+ 20800K .......... .......... .......... .......... .......... 82%  375M 0s
+ 20850K .......... .......... .......... .......... .......... 82%  413M 0s
+ 20900K .......... .......... .......... .......... .......... 82%  444M 0s
+ 20950K .......... .......... .......... .......... .......... 82%  358M 0s
+ 21000K .......... .......... .......... .......... .......... 82%  406M 0s
+ 21050K .......... .......... .......... .......... .......... 83%  401M 0s
+ 21100K .......... .......... .......... .......... .......... 83%  453M 0s
+ 21150K .......... .......... .......... .......... .......... 83%  380M 0s
+ 21200K .......... .......... .......... .......... .......... 83%  330M 0s
+ 21250K .......... .......... .......... .......... .......... 83%  329M 0s
+ 21300K .......... .......... .......... .......... .......... 84%  437M 0s
+ 21350K .......... .......... .......... .......... .......... 84%  394M 0s
+ 21400K .......... .......... .......... .......... .......... 84%  392M 0s
+ 21450K .......... .......... .......... .......... .......... 84%  359M 0s
+ 21500K .......... .......... .......... .......... .......... 84%  461M 0s
+ 21550K .......... .......... .......... .......... .......... 85%  382M 0s
+ 21600K .......... .......... .......... .......... .......... 85%  393M 0s
+ 21650K .......... .......... .......... .......... .......... 85%  375M 0s
+ 21700K .......... .......... .......... .......... .......... 85%  415M 0s
+ 21750K .......... .......... .......... .......... .......... 85%  383M 0s
+ 21800K .......... .......... .......... .......... .......... 86%  458M 0s
+ 21850K .......... .......... .......... .......... .......... 86%  400M 0s
+ 21900K .......... .......... .......... .......... .......... 86%  419M 0s
+ 21950K .......... .......... .......... .......... .......... 86%  342M 0s
+ 22000K .......... .......... .......... .......... .......... 86%  402M 0s
+ 22050K .......... .......... .......... .......... .......... 87%  428M 0s
+ 22100K .......... .......... .......... .......... .......... 87%  418M 0s
+ 22150K .......... .......... .......... .......... .......... 87%  433M 0s
+ 22200K .......... .......... .......... .......... .......... 87%  275M 0s
+ 22250K .......... .......... .......... .......... .......... 87%  416M 0s
+ 22300K .......... .......... .......... .......... .......... 88%  388M 0s
+ 22350K .......... .......... .......... .......... .......... 88%  288M 0s
+ 22400K .......... .......... .......... .......... .......... 88%  261M 0s
+ 22450K .......... .......... .......... .......... .......... 88%  284M 0s
+ 22500K .......... .......... .......... .......... .......... 88%  292M 0s
+ 22550K .......... .......... .......... .......... .......... 88%  346M 0s
+ 22600K .......... .......... .......... .......... .......... 89%  467M 0s
+ 22650K .......... .......... .......... .......... .......... 89%  243M 0s
+ 22700K .......... .......... .......... .......... .......... 89%  450M 0s
+ 22750K .......... .......... .......... .......... .......... 89%  318M 0s
+ 22800K .......... .......... .......... .......... .......... 89%  461M 0s
+ 22850K .......... .......... .......... .......... .......... 90%  394M 0s
+ 22900K .......... .......... .......... .......... .......... 90%  141M 0s
+ 22950K .......... .......... .......... .......... .......... 90%  342M 0s
+ 23000K .......... .......... .......... .......... .......... 90%  389M 0s
+ 23050K .......... .......... .......... .......... .......... 90%  424M 0s
+ 23100K .......... .......... .......... .......... .......... 91%  458M 0s
+ 23150K .......... .......... .......... .......... .......... 91%  398M 0s
+ 23200K .......... .......... .......... .......... .......... 91%  356M 0s
+ 23250K .......... .......... .......... .......... .......... 91%  401M 0s
+ 23300K .......... .......... .......... .......... .......... 91%  380M 0s
+ 23350K .......... .......... .......... .......... .......... 92%  300M 0s
+ 23400K .......... .......... .......... .......... .......... 92%  344M 0s
+ 23450K .......... .......... .......... .......... .......... 92%  379M 0s
+ 23500K .......... .......... .......... .......... .......... 92%  404M 0s
+ 23550K .......... .......... .......... .......... .......... 92%  191M 0s
+ 23600K .......... .......... .......... .......... .......... 93%  377M 0s
+ 23650K .......... .......... .......... .......... .......... 93%  270M 0s
+ 23700K .......... .......... .......... .......... .......... 93%  373M 0s
+ 23750K .......... .......... .......... .......... .......... 93%  413M 0s
+ 23800K .......... .......... .......... .......... .......... 93%  405M 0s
+ 23850K .......... .......... .......... .......... .......... 94%  396M 0s
+ 23900K .......... .......... .......... .......... .......... 94%  402M 0s
+ 23950K .......... .......... .......... .......... .......... 94%  159M 0s
+ 24000K .......... .......... .......... .......... .......... 94%  364M 0s
+ 24050K .......... .......... .......... .......... .......... 94%  415M 0s
+ 24100K .......... .......... .......... .......... .......... 95%  452M 0s
+ 24150K .......... .......... .......... .......... .......... 95%  319M 0s
+ 24200K .......... .......... .......... .......... .......... 95%  384M 0s
+ 24250K .......... .......... .......... .......... .......... 95%  414M 0s
+ 24300K .......... .......... .......... .......... .......... 95%  232M 0s
+ 24350K .......... .......... .......... .......... .......... 96%  362M 0s
+ 24400K .......... .......... .......... .......... .......... 96%  373M 0s
+ 24450K .......... .......... .......... .......... .......... 96%  436M 0s
+ 24500K .......... .......... .......... .......... .......... 96%  386M 0s
+ 24550K .......... .......... .......... .......... .......... 96%  347M 0s
+ 24600K .......... .......... .......... .......... .......... 97%  356M 0s
+ 24650K .......... .......... .......... .......... .......... 97%  477M 0s
+ 24700K .......... .......... .......... .......... .......... 97%  409M 0s
+ 24750K .......... .......... .......... .......... .......... 97%  356M 0s
+ 24800K .......... .......... .......... .......... .......... 97%  239M 0s
+ 24850K .......... .......... .......... .......... .......... 98%  418M 0s
+ 24900K .......... .......... .......... .......... .......... 98% 59.8M 0s
+ 24950K .......... .......... .......... .......... .......... 98%  171M 0s
+ 25000K .......... .......... .......... .......... .......... 98%  293M 0s
+ 25050K .......... .......... .......... .......... .......... 98%  423M 0s
+ 25100K .......... .......... .......... .......... .......... 99%  378M 0s
+ 25150K .......... .......... .......... .......... .......... 99% 67.9M 0s
+ 25200K .......... .......... .......... .......... .......... 99% 80.8M 0s
+ 25250K .......... .......... .......... .......... .......... 99%  213M 0s
+ 25300K .......... .......... .......... .......... .......... 99%  328M 0s
+ 25350K .......... .......... .......... .......... ...       100%  496M=0.09s
+
+2022-10-11 14:27:23 (282 MB/s) - ‘qgs/somap_print.json’ saved [26002716/26002716]
+
+--2022-10-11 14:27:23--  https://jenkins-agi-apps-production.apps.ocp.so.ch/job/gdi/job/qgis-server/1400/artifact/config/default/somap_wfs.json
+Reusing existing connection to jenkins-agi-apps-production.apps.ocp.so.ch:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 133418 (130K) [application/json]
+Saving to: ‘qgs/somap_wfs.json’
+
+     0K .......... .......... .......... .......... .......... 38%  123M 0s
+    50K .......... .......... .......... .......... .......... 76%  340M 0s
+   100K .......... .......... ..........                      100%  439M=0.001s
+
+2022-10-11 14:27:23 (209 MB/s) - ‘qgs/somap_wfs.json’ saved [133418/133418]
+
+--2022-10-11 14:27:23--  https://jenkins-agi-apps-production.apps.ocp.so.ch/job/gdi/job/qgis-server/1400/artifact/config/default/somap.json
+Reusing existing connection to jenkins-agi-apps-production.apps.ocp.so.ch:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 25887350 (25M) [application/json]
+Saving to: ‘qgs/somap.json’
+
+     0K .......... .......... .......... .......... ..........  0%  241M 0s
+    50K .......... .......... .......... .......... ..........  0%  261M 0s
+   100K .......... .......... .......... .......... ..........  0%  174M 0s
+   150K .......... .......... .......... .......... ..........  0%  173M 0s
+   200K .......... .......... .......... .......... ..........  0%  309M 0s
+   250K .......... .......... .......... .......... ..........  1%  357M 0s
+   300K .......... .......... .......... .......... ..........  1%  258M 0s
+   350K .......... .......... .......... .......... ..........  1%  250M 0s
+   400K .......... .......... .......... .......... ..........  1%  327M 0s
+   450K .......... .......... .......... .......... ..........  1%  446M 0s
+   500K .......... .......... .......... .......... ..........  2%  456M 0s
+   550K .......... .......... .......... .......... ..........  2%  413M 0s
+   600K .......... .......... .......... .......... ..........  2%  443M 0s
+   650K .......... .......... .......... .......... ..........  2% 53.8M 0s
+   700K .......... .......... .......... .......... ..........  2%  170M 0s
+   750K .......... .......... .......... .......... ..........  3%  315M 0s
+   800K .......... .......... .......... .......... ..........  3%  285M 0s
+   850K .......... .......... .......... .......... ..........  3%  361M 0s
+   900K .......... .......... .......... .......... ..........  3% 36.7M 0s
+   950K .......... .......... .......... .......... ..........  3% 79.3M 0s
+  1000K .......... .......... .......... .......... ..........  4%  441M 0s
+  1050K .......... .......... .......... .......... ..........  4%  464M 0s
+  1100K .......... .......... .......... .......... ..........  4% 27.0M 0s
+  1150K .......... .......... .......... .......... ..........  4% 50.6M 0s
+  1200K .......... .......... .......... .......... ..........  4%  182M 0s
+  1250K .......... .......... .......... .......... ..........  5%  290M 0s
+  1300K .......... .......... .......... .......... ..........  5%  384M 0s
+  1350K .......... .......... .......... .......... ..........  5% 11.3M 0s
+  1400K .......... .......... .......... .......... ..........  5%  246M 0s
+  1450K .......... .......... .......... .......... ..........  5%  139M 0s
+  1500K .......... .......... .......... .......... ..........  6%  395M 0s
+  1550K .......... .......... .......... .......... ..........  6%  378M 0s
+  1600K .......... .......... .......... .......... ..........  6% 68.6M 0s
+  1650K .......... .......... .......... .......... ..........  6% 70.9M 0s
+  1700K .......... .......... .......... .......... ..........  6% 91.4M 0s
+  1750K .......... .......... .......... .......... ..........  7%  368M 0s
+  1800K .......... .......... .......... .......... ..........  7%  270M 0s
+  1850K .......... .......... .......... .......... ..........  7% 27.5M 0s
+  1900K .......... .......... .......... .......... ..........  7%  141M 0s
+  1950K .......... .......... .......... .......... ..........  7%  236M 0s
+  2000K .......... .......... .......... .......... ..........  8%  463M 0s
+  2050K .......... .......... .......... .......... ..........  8%  447M 0s
+  2100K .......... .......... .......... .......... ..........  8% 24.7M 0s
+  2150K .......... .......... .......... .......... ..........  8%  171M 0s
+  2200K .......... .......... .......... .......... ..........  8%  369M 0s
+  2250K .......... .......... .......... .......... ..........  9%  412M 0s
+  2300K .......... .......... .......... .......... ..........  9%  432M 0s
+  2350K .......... .......... .......... .......... ..........  9%  416M 0s
+  2400K .......... .......... .......... .......... ..........  9% 60.2M 0s
+  2450K .......... .......... .......... .......... ..........  9% 93.2M 0s
+  2500K .......... .......... .......... .......... .......... 10%  363M 0s
+  2550K .......... .......... .......... .......... .......... 10% 5.88M 0s
+  2600K .......... .......... .......... .......... .......... 10%  224M 0s
+  2650K .......... .......... .......... .......... .......... 10%  218M 0s
+  2700K .......... .......... .......... .......... .......... 10%  117M 0s
+  2750K .......... .......... .......... .......... .......... 11%  166M 0s
+  2800K .......... .......... .......... .......... .......... 11%  196M 0s
+  2850K .......... .......... .......... .......... .......... 11%  282M 0s
+  2900K .......... .......... .......... .......... .......... 11%  213M 0s
+  2950K .......... .......... .......... .......... .......... 11%  196M 0s
+  3000K .......... .......... .......... .......... .......... 12%  239M 0s
+  3050K .......... .......... .......... .......... .......... 12%  307M 0s
+  3100K .......... .......... .......... .......... .......... 12%  369M 0s
+  3150K .......... .......... .......... .......... .......... 12%  429M 0s
+  3200K .......... .......... .......... .......... .......... 12%  410M 0s
+  3250K .......... .......... .......... .......... .......... 13%  358M 0s
+  3300K .......... .......... .......... .......... .......... 13%  436M 0s
+  3350K .......... .......... .......... .......... .......... 13%  454M 0s
+  3400K .......... .......... .......... .......... .......... 13%  404M 0s
+  3450K .......... .......... .......... .......... .......... 13%  444M 0s
+  3500K .......... .......... .......... .......... .......... 14%  400M 0s
+  3550K .......... .......... .......... .......... .......... 14%  335M 0s
+  3600K .......... .......... .......... .......... .......... 14%  325M 0s
+  3650K .......... .......... .......... .......... .......... 14%  356M 0s
+  3700K .......... .......... .......... .......... .......... 14%  273M 0s
+  3750K .......... .......... .......... .......... .......... 15%  289M 0s
+  3800K .......... .......... .......... .......... .......... 15%  326M 0s
+  3850K .......... .......... .......... .......... .......... 15%  427M 0s
+  3900K .......... .......... .......... .......... .......... 15%  409M 0s
+  3950K .......... .......... .......... .......... .......... 15%  399M 0s
+  4000K .......... .......... .......... .......... .......... 16%  346M 0s
+  4050K .......... .......... .......... .......... .......... 16%  255M 0s
+  4100K .......... .......... .......... .......... .......... 16%  376M 0s
+  4150K .......... .......... .......... .......... .......... 16%  459M 0s
+  4200K .......... .......... .......... .......... .......... 16%  412M 0s
+  4250K .......... .......... .......... .......... .......... 17%  463M 0s
+  4300K .......... .......... .......... .......... .......... 17% 65.7M 0s
+  4350K .......... .......... .......... .......... .......... 17%  213M 0s
+  4400K .......... .......... .......... .......... .......... 17% 85.7M 0s
+  4450K .......... .......... .......... .......... .......... 17%  310M 0s
+  4500K .......... .......... .......... .......... .......... 17%  303M 0s
+  4550K .......... .......... .......... .......... .......... 18% 41.4M 0s
+  4600K .......... .......... .......... .......... .......... 18%  263M 0s
+  4650K .......... .......... .......... .......... .......... 18%  257M 0s
+  4700K .......... .......... .......... .......... .......... 18% 69.1M 0s
+  4750K .......... .......... .......... .......... .......... 18%  229M 0s
+  4800K .......... .......... .......... .......... .......... 19% 60.9M 0s
+  4850K .......... .......... .......... .......... .......... 19%  161M 0s
+  4900K .......... .......... .......... .......... .......... 19%  418M 0s
+  4950K .......... .......... .......... .......... .......... 19% 46.6M 0s
+  5000K .......... .......... .......... .......... .......... 19%  442M 0s
+  5050K .......... .......... .......... .......... .......... 20%  257M 0s
+  5100K .......... .......... .......... .......... .......... 20%  224M 0s
+  5150K .......... .......... .......... .......... .......... 20% 55.4M 0s
+  5200K .......... .......... .......... .......... .......... 20% 44.8M 0s
+  5250K .......... .......... .......... .......... .......... 20%  355M 0s
+  5300K .......... .......... .......... .......... .......... 21% 53.4M 0s
+  5350K .......... .......... .......... .......... .......... 21%  188M 0s
+  5400K .......... .......... .......... .......... .......... 21%  337M 0s
+  5450K .......... .......... .......... .......... .......... 21%  152M 0s
+  5500K .......... .......... .......... .......... .......... 21%  253M 0s
+  5550K .......... .......... .......... .......... .......... 22%  240M 0s
+  5600K .......... .......... .......... .......... .......... 22% 35.0M 0s
+  5650K .......... .......... .......... .......... .......... 22%  251M 0s
+  5700K .......... .......... .......... .......... .......... 22%  367M 0s
+  5750K .......... .......... .......... .......... .......... 22%  429M 0s
+  5800K .......... .......... .......... .......... .......... 23%  385M 0s
+  5850K .......... .......... .......... .......... .......... 23% 41.2M 0s
+  5900K .......... .......... .......... .......... .......... 23%  109M 0s
+  5950K .......... .......... .......... .......... .......... 23%  361M 0s
+  6000K .......... .......... .......... .......... .......... 23%  178M 0s
+  6050K .......... .......... .......... .......... .......... 24%  386M 0s
+  6100K .......... .......... .......... .......... .......... 24% 23.9M 0s
+  6150K .......... .......... .......... .......... .......... 24%  282M 0s
+  6200K .......... .......... .......... .......... .......... 24%  328M 0s
+  6250K .......... .......... .......... .......... .......... 24%  315M 0s
+  6300K .......... .......... .......... .......... .......... 25%  410M 0s
+  6350K .......... .......... .......... .......... .......... 25% 23.6M 0s
+  6400K .......... .......... .......... .......... .......... 25%  334M 0s
+  6450K .......... .......... .......... .......... .......... 25%  239M 0s
+  6500K .......... .......... .......... .......... .......... 25%  392M 0s
+  6550K .......... .......... .......... .......... .......... 26%  389M 0s
+  6600K .......... .......... .......... .......... .......... 26% 27.1M 0s
+  6650K .......... .......... .......... .......... .......... 26%  290M 0s
+  6700K .......... .......... .......... .......... .......... 26%  283M 0s
+  6750K .......... .......... .......... .......... .......... 26%  322M 0s
+  6800K .......... .......... .......... .......... .......... 27%  392M 0s
+  6850K .......... .......... .......... .......... .......... 27% 33.6M 0s
+  6900K .......... .......... .......... .......... .......... 27% 95.7M 0s
+  6950K .......... .......... .......... .......... .......... 27%  173M 0s
+  7000K .......... .......... .......... .......... .......... 27%  137M 0s
+  7050K .......... .......... .......... .......... .......... 28%  361M 0s
+  7100K .......... .......... .......... .......... .......... 28% 39.7M 0s
+  7150K .......... .......... .......... .......... .......... 28%  263M 0s
+  7200K .......... .......... .......... .......... .......... 28%  249M 0s
+  7250K .......... .......... .......... .......... .......... 28%  362M 0s
+  7300K .......... .......... .......... .......... .......... 29%  343M 0s
+  7350K .......... .......... .......... .......... .......... 29% 38.2M 0s
+  7400K .......... .......... .......... .......... .......... 29%  304M 0s
+  7450K .......... .......... .......... .......... .......... 29%  225M 0s
+  7500K .......... .......... .......... .......... .......... 29%  357M 0s
+  7550K .......... .......... .......... .......... .......... 30%  341M 0s
+  7600K .......... .......... .......... .......... .......... 30% 39.0M 0s
+  7650K .......... .......... .......... .......... .......... 30%  128M 0s
+  7700K .......... .......... .......... .......... .......... 30% 21.5M 0s
+  7750K .......... .......... .......... .......... .......... 30%  308M 0s
+  7800K .......... .......... .......... .......... .......... 31%  356M 0s
+  7850K .......... .......... .......... .......... .......... 31%  467M 0s
+  7900K .......... .......... .......... .......... .......... 31% 11.6M 0s
+  7950K .......... .......... .......... .......... .......... 31% 72.2M 0s
+  8000K .......... .......... .......... .......... .......... 31%  152M 0s
+  8050K .......... .......... .......... .......... .......... 32%  218M 0s
+  8100K .......... .......... .......... .......... .......... 32%  243M 0s
+  8150K .......... .......... .......... .......... .......... 32%  294M 0s
+  8200K .......... .......... .......... .......... .......... 32%  199M 0s
+  8250K .......... .......... .......... .......... .......... 32%  284M 0s
+  8300K .......... .......... .......... .......... .......... 33%  224M 0s
+  8350K .......... .......... .......... .......... .......... 33%  199M 0s
+  8400K .......... .......... .......... .......... .......... 33%  330M 0s
+  8450K .......... .......... .......... .......... .......... 33%  434M 0s
+  8500K .......... .......... .......... .......... .......... 33%  270M 0s
+  8550K .......... .......... .......... .......... .......... 34%  220M 0s
+  8600K .......... .......... .......... .......... .......... 34%  298M 0s
+  8650K .......... .......... .......... .......... .......... 34%  237M 0s
+  8700K .......... .......... .......... .......... .......... 34%  261M 0s
+  8750K .......... .......... .......... .......... .......... 34%  261M 0s
+  8800K .......... .......... .......... .......... .......... 35%  179M 0s
+  8850K .......... .......... .......... .......... .......... 35%  251M 0s
+  8900K .......... .......... .......... .......... .......... 35%  256M 0s
+  8950K .......... .......... .......... .......... .......... 35%  306M 0s
+  9000K .......... .......... .......... .......... .......... 35%  252M 0s
+  9050K .......... .......... .......... .......... .......... 35%  272M 0s
+  9100K .......... .......... .......... .......... .......... 36%  226M 0s
+  9150K .......... .......... .......... .......... .......... 36%  324M 0s
+  9200K .......... .......... .......... .......... .......... 36%  206M 0s
+  9250K .......... .......... .......... .......... .......... 36%  252M 0s
+  9300K .......... .......... .......... .......... .......... 36%  332M 0s
+  9350K .......... .......... .......... .......... .......... 37%  336M 0s
+  9400K .......... .......... .......... .......... .......... 37%  373M 0s
+  9450K .......... .......... .......... .......... .......... 37%  311M 0s
+  9500K .......... .......... .......... .......... .......... 37%  482M 0s
+  9550K .......... .......... .......... .......... .......... 37%  327M 0s
+  9600K .......... .......... .......... .......... .......... 38%  376M 0s
+  9650K .......... .......... .......... .......... .......... 38%  438M 0s
+  9700K .......... .......... .......... .......... .......... 38%  310M 0s
+  9750K .......... .......... .......... .......... .......... 38%  328M 0s
+  9800K .......... .......... .......... .......... .......... 38%  457M 0s
+  9850K .......... .......... .......... .......... .......... 39%  443M 0s
+  9900K .......... .......... .......... .......... .......... 39%  447M 0s
+  9950K .......... .......... .......... .......... .......... 39%  391M 0s
+ 10000K .......... .......... .......... .......... .......... 39%  455M 0s
+ 10050K .......... .......... .......... .......... .......... 39%  384M 0s
+ 10100K .......... .......... .......... .......... .......... 40%  321M 0s
+ 10150K .......... .......... .......... .......... .......... 40%  304M 0s
+ 10200K .......... .......... .......... .......... .......... 40%  190M 0s
+ 10250K .......... .......... .......... .......... .......... 40% 47.8M 0s
+ 10300K .......... .......... .......... .......... .......... 40%  230M 0s
+ 10350K .......... .......... .......... .......... .......... 41%  287M 0s
+ 10400K .......... .......... .......... .......... .......... 41%  447M 0s
+ 10450K .......... .......... .......... .......... .......... 41% 36.9M 0s
+ 10500K .......... .......... .......... .......... .......... 41%  368M 0s
+ 10550K .......... .......... .......... .......... .......... 41%  303M 0s
+ 10600K .......... .......... .......... .......... .......... 42%  316M 0s
+ 10650K .......... .......... .......... .......... .......... 42%  454M 0s
+ 10700K .......... .......... .......... .......... .......... 42% 21.8M 0s
+ 10750K .......... .......... .......... .......... .......... 42%  279M 0s
+ 10800K .......... .......... .......... .......... .......... 42%  441M 0s
+ 10850K .......... .......... .......... .......... .......... 43%  355M 0s
+ 10900K .......... .......... .......... .......... .......... 43%  392M 0s
+ 10950K .......... .......... .......... .......... .......... 43%  379M 0s
+ 11000K .......... .......... .......... .......... .......... 43% 44.7M 0s
+ 11050K .......... .......... .......... .......... .......... 43%  264M 0s
+ 11100K .......... .......... .......... .......... .......... 44%  213M 0s
+ 11150K .......... .......... .......... .......... .......... 44%  371M 0s
+ 11200K .......... .......... .......... .......... .......... 44% 28.1M 0s
+ 11250K .......... .......... .......... .......... .......... 44%  107M 0s
+ 11300K .......... .......... .......... .......... .......... 44%  357M 0s
+ 11350K .......... .......... .......... .......... .......... 45%  131M 0s
+ 11400K .......... .......... .......... .......... .......... 45%  440M 0s
+ 11450K .......... .......... .......... .......... .......... 45% 25.6M 0s
+ 11500K .......... .......... .......... .......... .......... 45%  322M 0s
+ 11550K .......... .......... .......... .......... .......... 45%  189M 0s
+ 11600K .......... .......... .......... .......... .......... 46%  374M 0s
+ 11650K .......... .......... .......... .......... .......... 46%  463M 0s
+ 11700K .......... .......... .......... .......... .......... 46% 46.7M 0s
+ 11750K .......... .......... .......... .......... .......... 46%  258M 0s
+ 11800K .......... .......... .......... .......... .......... 46%  164M 0s
+ 11850K .......... .......... .......... .......... .......... 47%  392M 0s
+ 11900K .......... .......... .......... .......... .......... 47%  199M 0s
+ 11950K .......... .......... .......... .......... .......... 47%  356M 0s
+ 12000K .......... .......... .......... .......... .......... 47% 34.8M 0s
+ 12050K .......... .......... .......... .......... .......... 47%  138M 0s
+ 12100K .......... .......... .......... .......... .......... 48%  300M 0s
+ 12150K .......... .......... .......... .......... .......... 48%  286M 0s
+ 12200K .......... .......... .......... .......... .......... 48%  264M 0s
+ 12250K .......... .......... .......... .......... .......... 48% 36.6M 0s
+ 12300K .......... .......... .......... .......... .......... 48%  245M 0s
+ 12350K .......... .......... .......... .......... .......... 49% 6.97M 0s
+ 12400K .......... .......... .......... .......... .......... 49% 49.1M 0s
+ 12450K .......... .......... .......... .......... .......... 49%  342M 0s
+ 12500K .......... .......... .......... .......... .......... 49% 45.6M 0s
+ 12550K .......... .......... .......... .......... .......... 49%  318M 0s
+ 12600K .......... .......... .......... .......... .......... 50% 89.2M 0s
+ 12650K .......... .......... .......... .......... .......... 50%  229M 0s
+ 12700K .......... .......... .......... .......... .......... 50%  139M 0s
+ 12750K .......... .......... .......... .......... .......... 50% 57.8M 0s
+ 12800K .......... .......... .......... .......... .......... 50% 83.9M 0s
+ 12850K .......... .......... .......... .......... .......... 51% 38.6M 0s
+ 12900K .......... .......... .......... .......... .......... 51%  270M 0s
+ 12950K .......... .......... .......... .......... .......... 51%  372M 0s
+ 13000K .......... .......... .......... .......... .......... 51%  195M 0s
+ 13050K .......... .......... .......... .......... .......... 51%  366M 0s
+ 13100K .......... .......... .......... .......... .......... 52%  462M 0s
+ 13150K .......... .......... .......... .......... .......... 52% 23.8M 0s
+ 13200K .......... .......... .......... .......... .......... 52%  288M 0s
+ 13250K .......... .......... .......... .......... .......... 52% 30.2M 0s
+ 13300K .......... .......... .......... .......... .......... 52%  286M 0s
+ 13350K .......... .......... .......... .......... .......... 53%  432M 0s
+ 13400K .......... .......... .......... .......... .......... 53%  115M 0s
+ 13450K .......... .......... .......... .......... .......... 53%  395M 0s
+ 13500K .......... .......... .......... .......... .......... 53%  174M 0s
+ 13550K .......... .......... .......... .......... .......... 53%  356M 0s
+ 13600K .......... .......... .......... .......... .......... 53%  194M 0s
+ 13650K .......... .......... .......... .......... .......... 54% 32.1M 0s
+ 13700K .......... .......... .......... .......... .......... 54%  291M 0s
+ 13750K .......... .......... .......... .......... .......... 54% 67.6M 0s
+ 13800K .......... .......... .......... .......... .......... 54%  119M 0s
+ 13850K .......... .......... .......... .......... .......... 54%  304M 0s
+ 13900K .......... .......... .......... .......... .......... 55% 70.2M 0s
+ 13950K .......... .......... .......... .......... .......... 55%  143M 0s
+ 14000K .......... .......... .......... .......... .......... 55%  152M 0s
+ 14050K .......... .......... .......... .......... .......... 55%  303M 0s
+ 14100K .......... .......... .......... .......... .......... 55%  262M 0s
+ 14150K .......... .......... .......... .......... .......... 56%  304M 0s
+ 14200K .......... .......... .......... .......... .......... 56%  188M 0s
+ 14250K .......... .......... .......... .......... .......... 56%  199M 0s
+ 14300K .......... .......... .......... .......... .......... 56%  375M 0s
+ 14350K .......... .......... .......... .......... .......... 56%  409M 0s
+ 14400K .......... .......... .......... .......... .......... 57%  201M 0s
+ 14450K .......... .......... .......... .......... .......... 57%  221M 0s
+ 14500K .......... .......... .......... .......... .......... 57%  245M 0s
+ 14550K .......... .......... .......... .......... .......... 57%  289M 0s
+ 14600K .......... .......... .......... .......... .......... 57%  308M 0s
+ 14650K .......... .......... .......... .......... .......... 58%  249M 0s
+ 14700K .......... .......... .......... .......... .......... 58%  213M 0s
+ 14750K .......... .......... .......... .......... .......... 58%  295M 0s
+ 14800K .......... .......... .......... .......... .......... 58%  241M 0s
+ 14850K .......... .......... .......... .......... .......... 58%  187M 0s
+ 14900K .......... .......... .......... .......... .......... 59%  287M 0s
+ 14950K .......... .......... .......... .......... .......... 59%  286M 0s
+ 15000K .......... .......... .......... .......... .......... 59%  268M 0s
+ 15050K .......... .......... .......... .......... .......... 59%  256M 0s
+ 15100K .......... .......... .......... .......... .......... 59%  238M 0s
+ 15150K .......... .......... .......... .......... .......... 60%  233M 0s
+ 15200K .......... .......... .......... .......... .......... 60%  292M 0s
+ 15250K .......... .......... .......... .......... .......... 60%  317M 0s
+ 15300K .......... .......... .......... .......... .......... 60%  178M 0s
+ 15350K .......... .......... .......... .......... .......... 60%  248M 0s
+ 15400K .......... .......... .......... .......... .......... 61%  288M 0s
+ 15450K .......... .......... .......... .......... .......... 61%  233M 0s
+ 15500K .......... .......... .......... .......... .......... 61%  173M 0s
+ 15550K .......... .......... .......... .......... .......... 61%  223M 0s
+ 15600K .......... .......... .......... .......... .......... 61%  325M 0s
+ 15650K .......... .......... .......... .......... .......... 62%  276M 0s
+ 15700K .......... .......... .......... .......... .......... 62%  261M 0s
+ 15750K .......... .......... .......... .......... .......... 62%  348M 0s
+ 15800K .......... .......... .......... .......... .......... 62%  297M 0s
+ 15850K .......... .......... .......... .......... .......... 62%  439M 0s
+ 15900K .......... .......... .......... .......... .......... 63%  408M 0s
+ 15950K .......... .......... .......... .......... .......... 63%  297M 0s
+ 16000K .......... .......... .......... .......... .......... 63%  381M 0s
+ 16050K .......... .......... .......... .......... .......... 63%  407M 0s
+ 16100K .......... .......... .......... .......... .......... 63%  436M 0s
+ 16150K .......... .......... .......... .......... .......... 64%  382M 0s
+ 16200K .......... .......... .......... .......... .......... 64%  254M 0s
+ 16250K .......... .......... .......... .......... .......... 64%  298M 0s
+ 16300K .......... .......... .......... .......... .......... 64%  454M 0s
+ 16350K .......... .......... .......... .......... .......... 64%  103M 0s
+ 16400K .......... .......... .......... .......... .......... 65%  253M 0s
+ 16450K .......... .......... .......... .......... .......... 65% 95.5M 0s
+ 16500K .......... .......... .......... .......... .......... 65%  269M 0s
+ 16550K .......... .......... .......... .......... .......... 65%  132M 0s
+ 16600K .......... .......... .......... .......... .......... 65% 62.0M 0s
+ 16650K .......... .......... .......... .......... .......... 66%  319M 0s
+ 16700K .......... .......... .......... .......... .......... 66% 41.2M 0s
+ 16750K .......... .......... .......... .......... .......... 66%  282M 0s
+ 16800K .......... .......... .......... .......... .......... 66%  404M 0s
+ 16850K .......... .......... .......... .......... .......... 66% 76.2M 0s
+ 16900K .......... .......... .......... .......... .......... 67%  291M 0s
+ 16950K .......... .......... .......... .......... .......... 67% 65.2M 0s
+ 17000K .......... .......... .......... .......... .......... 67%  260M 0s
+ 17050K .......... .......... .......... .......... .......... 67%  322M 0s
+ 17100K .......... .......... .......... .......... .......... 67%  138M 0s
+ 17150K .......... .......... .......... .......... .......... 68%  101M 0s
+ 17200K .......... .......... .......... .......... .......... 68% 86.2M 0s
+ 17250K .......... .......... .......... .......... .......... 68%  161M 0s
+ 17300K .......... .......... .......... .......... .......... 68%  180M 0s
+ 17350K .......... .......... .......... .......... .......... 68%  276M 0s
+ 17400K .......... .......... .......... .......... .......... 69%  206M 0s
+ 17450K .......... .......... .......... .......... .......... 69%  219M 0s
+ 17500K .......... .......... .......... .......... .......... 69%  174M 0s
+ 17550K .......... .......... .......... .......... .......... 69%  264M 0s
+ 17600K .......... .......... .......... .......... .......... 69%  258M 0s
+ 17650K .......... .......... .......... .......... .......... 70%  331M 0s
+ 17700K .......... .......... .......... .......... .......... 70%  253M 0s
+ 17750K .......... .......... .......... .......... .......... 70%  181M 0s
+ 17800K .......... .......... .......... .......... .......... 70%  258M 0s
+ 17850K .......... .......... .......... .......... .......... 70%  281M 0s
+ 17900K .......... .......... .......... .......... .......... 71%  308M 0s
+ 17950K .......... .......... .......... .......... .......... 71%  182M 0s
+ 18000K .......... .......... .......... .......... .......... 71%  342M 0s
+ 18050K .......... .......... .......... .......... .......... 71%  308M 0s
+ 18100K .......... .......... .......... .......... .......... 71%  233M 0s
+ 18150K .......... .......... .......... .......... .......... 71%  313M 0s
+ 18200K .......... .......... .......... .......... .......... 72%  286M 0s
+ 18250K .......... .......... .......... .......... .......... 72%  371M 0s
+ 18300K .......... .......... .......... .......... .......... 72%  225M 0s
+ 18350K .......... .......... .......... .......... .......... 72%  234M 0s
+ 18400K .......... .......... .......... .......... .......... 72%  201M 0s
+ 18450K .......... .......... .......... .......... .......... 73%  214M 0s
+ 18500K .......... .......... .......... .......... .......... 73%  240M 0s
+ 18550K .......... .......... .......... .......... .......... 73%  321M 0s
+ 18600K .......... .......... .......... .......... .......... 73%  367M 0s
+ 18650K .......... .......... .......... .......... .......... 73%  331M 0s
+ 18700K .......... .......... .......... .......... .......... 74%  337M 0s
+ 18750K .......... .......... .......... .......... .......... 74%  196M 0s
+ 18800K .......... .......... .......... .......... .......... 74%  166M 0s
+ 18850K .......... .......... .......... .......... .......... 74%  187M 0s
+ 18900K .......... .......... .......... .......... .......... 74%  338M 0s
+ 18950K .......... .......... .......... .......... .......... 75%  299M 0s
+ 19000K .......... .......... .......... .......... .......... 75%  181M 0s
+ 19050K .......... .......... .......... .......... .......... 75%  317M 0s
+ 19100K .......... .......... .......... .......... .......... 75%  248M 0s
+ 19150K .......... .......... .......... .......... .......... 75%  405M 0s
+ 19200K .......... .......... .......... .......... .......... 76%  297M 0s
+ 19250K .......... .......... .......... .......... .......... 76%  199M 0s
+ 19300K .......... .......... .......... .......... .......... 76%  142M 0s
+ 19350K .......... .......... .......... .......... .......... 76%  293M 0s
+ 19400K .......... .......... .......... .......... .......... 76%  212M 0s
+ 19450K .......... .......... .......... .......... .......... 77%  286M 0s
+ 19500K .......... .......... .......... .......... .......... 77%  399M 0s
+ 19550K .......... .......... .......... .......... .......... 77%  294M 0s
+ 19600K .......... .......... .......... .......... .......... 77%  204M 0s
+ 19650K .......... .......... .......... .......... .......... 77%  223M 0s
+ 19700K .......... .......... .......... .......... .......... 78%  186M 0s
+ 19750K .......... .......... .......... .......... .......... 78%  233M 0s
+ 19800K .......... .......... .......... .......... .......... 78%  321M 0s
+ 19850K .......... .......... .......... .......... .......... 78%  183M 0s
+ 19900K .......... .......... .......... .......... .......... 78%  270M 0s
+ 19950K .......... .......... .......... .......... .......... 79%  211M 0s
+ 20000K .......... .......... .......... .......... .......... 79%  175M 0s
+ 20050K .......... .......... .......... .......... .......... 79%  234M 0s
+ 20100K .......... .......... .......... .......... .......... 79%  349M 0s
+ 20150K .......... .......... .......... .......... .......... 79%  328M 0s
+ 20200K .......... .......... .......... .......... .......... 80%  192M 0s
+ 20250K .......... .......... .......... .......... .......... 80%  194M 0s
+ 20300K .......... .......... .......... .......... .......... 80%  286M 0s
+ 20350K .......... .......... .......... .......... .......... 80%  256M 0s
+ 20400K .......... .......... .......... .......... .......... 80%  246M 0s
+ 20450K .......... .......... .......... .......... .......... 81%  209M 0s
+ 20500K .......... .......... .......... .......... .......... 81%  195M 0s
+ 20550K .......... .......... .......... .......... .......... 81%  343M 0s
+ 20600K .......... .......... .......... .......... .......... 81%  308M 0s
+ 20650K .......... .......... .......... .......... .......... 81%  304M 0s
+ 20700K .......... .......... .......... .......... .......... 82%  148M 0s
+ 20750K .......... .......... .......... .......... .......... 82%  266M 0s
+ 20800K .......... .......... .......... .......... .......... 82%  308M 0s
+ 20850K .......... .......... .......... .......... .......... 82%  275M 0s
+ 20900K .......... .......... .......... .......... .......... 82%  231M 0s
+ 20950K .......... .......... .......... .......... .......... 83%  263M 0s
+ 21000K .......... .......... .......... .......... .......... 83%  298M 0s
+ 21050K .......... .......... .......... .......... .......... 83%  265M 0s
+ 21100K .......... .......... .......... .......... .......... 83%  214M 0s
+ 21150K .......... .......... .......... .......... .......... 83%  165M 0s
+ 21200K .......... .......... .......... .......... .......... 84%  299M 0s
+ 21250K .......... .......... .......... .......... .......... 84%  305M 0s
+ 21300K .......... .......... .......... .......... .......... 84%  208M 0s
+ 21350K .......... .......... .......... .......... .......... 84%  220M 0s
+ 21400K .......... .......... .......... .......... .......... 84%  256M 0s
+ 21450K .......... .......... .......... .......... .......... 85%  218M 0s
+ 21500K .......... .......... .......... .......... .......... 85%  282M 0s
+ 21550K .......... .......... .......... .......... .......... 85%  201M 0s
+ 21600K .......... .......... .......... .......... .......... 85%  237M 0s
+ 21650K .......... .......... .......... .......... .......... 85%  289M 0s
+ 21700K .......... .......... .......... .......... .......... 86%  232M 0s
+ 21750K .......... .......... .......... .......... .......... 86%  270M 0s
+ 21800K .......... .......... .......... .......... .......... 86%  265M 0s
+ 21850K .......... .......... .......... .......... .......... 86%  310M 0s
+ 21900K .......... .......... .......... .......... .......... 86%  331M 0s
+ 21950K .......... .......... .......... .......... .......... 87%  194M 0s
+ 22000K .......... .......... .......... .......... .......... 87%  191M 0s
+ 22050K .......... .......... .......... .......... .......... 87%  357M 0s
+ 22100K .......... .......... .......... .......... .......... 87%  294M 0s
+ 22150K .......... .......... .......... .......... .......... 87%  272M 0s
+ 22200K .......... .......... .......... .......... .......... 88%  257M 0s
+ 22250K .......... .......... .......... .......... .......... 88%  217M 0s
+ 22300K .......... .......... .......... .......... .......... 88%  277M 0s
+ 22350K .......... .......... .......... .......... .......... 88%  290M 0s
+ 22400K .......... .......... .......... .......... .......... 88%  251M 0s
+ 22450K .......... .......... .......... .......... .......... 89%  288M 0s
+ 22500K .......... .......... .......... .......... .......... 89%  210M 0s
+ 22550K .......... .......... .......... .......... .......... 89%  222M 0s
+ 22600K .......... .......... .......... .......... .......... 89%  301M 0s
+ 22650K .......... .......... .......... .......... .......... 89%  247M 0s
+ 22700K .......... .......... .......... .......... .......... 89%  269M 0s
+ 22750K .......... .......... .......... .......... .......... 90%  229M 0s
+ 22800K .......... .......... .......... .......... .......... 90%  233M 0s
+ 22850K .......... .......... .......... .......... .......... 90%  295M 0s
+ 22900K .......... .......... .......... .......... .......... 90%  279M 0s
+ 22950K .......... .......... .......... .......... .......... 90%  282M 0s
+ 23000K .......... .......... .......... .......... .......... 91%  217M 0s
+ 23050K .......... .......... .......... .......... .......... 91%  335M 0s
+ 23100K .......... .......... .......... .......... .......... 91%  318M 0s
+ 23150K .......... .......... .......... .......... .......... 91%  225M 0s
+ 23200K .......... .......... .......... .......... .......... 91%  410M 0s
+ 23250K .......... .......... .......... .......... .......... 92%  259M 0s
+ 23300K .......... .......... .......... .......... .......... 92%  383M 0s
+ 23350K .......... .......... .......... .......... .......... 92%  198M 0s
+ 23400K .......... .......... .......... .......... .......... 92%  379M 0s
+ 23450K .......... .......... .......... .......... .......... 92%  270M 0s
+ 23500K .......... .......... .......... .......... .......... 93%  291M 0s
+ 23550K .......... .......... .......... .......... .......... 93%  360M 0s
+ 23600K .......... .......... .......... .......... .......... 93%  369M 0s
+ 23650K .......... .......... .......... .......... .......... 93%  395M 0s
+ 23700K .......... .......... .......... .......... .......... 93%  343M 0s
+ 23750K .......... .......... .......... .......... .......... 94%  427M 0s
+ 23800K .......... .......... .......... .......... .......... 94%  380M 0s
+ 23850K .......... .......... .......... .......... .......... 94%  418M 0s
+ 23900K .......... .......... .......... .......... .......... 94%  398M 0s
+ 23950K .......... .......... .......... .......... .......... 94%  349M 0s
+ 24000K .......... .......... .......... .......... .......... 95%  377M 0s
+ 24050K .......... .......... .......... .......... .......... 95%  376M 0s
+ 24100K .......... .......... .......... .......... .......... 95%  340M 0s
+ 24150K .......... .......... .......... .......... .......... 95%  407M 0s
+ 24200K .......... .......... .......... .......... .......... 95%  409M 0s
+ 24250K .......... .......... .......... .......... .......... 96%  375M 0s
+ 24300K .......... .......... .......... .......... .......... 96%  402M 0s
+ 24350K .......... .......... .......... .......... .......... 96%  428M 0s
+ 24400K .......... .......... .......... .......... .......... 96%  338M 0s
+ 24450K .......... .......... .......... .......... .......... 96%  436M 0s
+ 24500K .......... .......... .......... .......... .......... 97%  367M 0s
+ 24550K .......... .......... .......... .......... .......... 97%  362M 0s
+ 24600K .......... .......... .......... .......... .......... 97%  420M 0s
+ 24650K .......... .......... .......... .......... .......... 97%  409M 0s
+ 24700K .......... .......... .......... .......... .......... 97%  368M 0s
+ 24750K .......... .......... .......... .......... .......... 98%  375M 0s
+ 24800K .......... .......... .......... .......... .......... 98%  373M 0s
+ 24850K .......... .......... .......... .......... .......... 98%  340M 0s
+ 24900K .......... .......... .......... .......... .......... 98%  400M 0s
+ 24950K .......... .......... .......... .......... .......... 98%  392M 0s
+ 25000K .......... .......... .......... .......... .......... 99%  387M 0s
+ 25050K .......... .......... .......... .......... .......... 99%  379M 0s
+ 25100K .......... .......... .......... .......... .......... 99%  426M 0s
+ 25150K .......... .......... .......... .......... .......... 99%  428M 0s
+ 25200K .......... .......... .......... .......... .......... 99%  222M 0s
+ 25250K .......... .......... ..........                      100%  423M=0.2s
+
+2022-10-11 14:27:23 (144 MB/s) - ‘qgs/somap.json’ saved [25887350/25887350]
+
+FINISHED --2022-10-11 14:27:23--
+Total wall clock time: 0.3s
+Downloaded: 4 files, 50M in 0.3s (190 MB/s)
++ python3 /srv/json2qgs/json2qgs.py qgs/somap.json wms ./config/default 2 --qgsName somap --qgsTemplateDir /srv/json2qgs/qgs
+[2022-10-11 14:27:25,100] [33m WARNING: Could not find layer   'ch.bav.lage-stoerfallverordnung_eisenbahnanlagen_line' [0m
+[2022-10-11 14:27:25,105] [33m WARNING: Could not find layer   'ch.bfe.rohrleitungen-konsultationsbereiche_line' [0m
+[2022-10-11 14:27:25,120] [33m WARNING: Could not find layer   'ch.bav.lage-stoerfallverordnung_eisenbahnanlagen_area' [0m
+[2022-10-11 14:27:25,124] [33m WARNING: Could not find layer   'ch.bfe.rohrleitungen-konsultationsbereiche_area' [0m
+[2022-10-11 14:27:25,744] [33m WARNING: Could not find layer   'ch.geodienste.planerischer_gewaesserschutz' [0m
+[2022-10-11 14:27:25,749] [33m WARNING: Could not find layer   'ch.geodienste.planerischer_gewaesserschutz_areal' [0m
+[2022-10-11 14:27:25,755] [33m WARNING: Could not find layer   'ch.geodienste.planerischer_gewaesserschutz_zustroembereich' [0m
+[2022-10-11 14:27:26,576] [33m WARNING: Falling back to default style for ch.so.afu.uplus.luft_anlage.data [0m
+[2022-10-11 14:27:26,586] [33m WARNING: Falling back to default style for ch.so.afu.uplus.luft_betrieb.data [0m
+[2022-10-11 14:27:26,597] [33m WARNING: Falling back to default style for ch.so.afu.uplus.tank.data [0m
+[2022-10-11 14:27:28,378] [33m WARNING: Falling back to default style for ch.so.agi.siegfriedkarte [0m
+[2022-10-11 14:27:28,378] [33m WARNING: Could not find layer 'ch.so.agi.test.layer_ohne_geometrie' [0m
+[2022-10-11 14:27:29,757] [33m WARNING: Falling back to default style for ch.so.arp.nutzungsplanung.laerm.data [0m
+[2022-10-11 14:27:30,165] [33m WARNING: Could not find layer   'ch.astra.wanderland-sperrungen_umleitungen' [0m
+[2022-10-11 14:27:31,177] [33m WARNING: Falling back to default style for ch.swisstopo.sentinel_2018 [0m
+Starting SO!GIS json2qgs...
++ python3 /srv/json2qgs/json2qgs.py qgs/somap_print.json wms ./config/default 2 --qgsName somap_print --qgsTemplateDir /srv/json2qgs/qgs
+[2022-10-11 14:27:34,562] [33m WARNING: Falling back to default style for ch.so.afu.uplus.luft_anlage.data [0m
+[2022-10-11 14:27:34,572] [33m WARNING: Falling back to default style for ch.so.afu.uplus.luft_betrieb.data [0m
+[2022-10-11 14:27:34,583] [33m WARNING: Falling back to default style for ch.so.afu.uplus.tank.data [0m
+[2022-10-11 14:27:36,325] [33m WARNING: Falling back to default style for ch.so.agi.siegfriedkarte [0m
+[2022-10-11 14:27:36,326] [33m WARNING: Could not find layer 'ch.so.agi.test.layer_ohne_geometrie' [0m
+[2022-10-11 14:27:37,715] [33m WARNING: Falling back to default style for ch.so.arp.nutzungsplanung.laerm.data [0m
+[2022-10-11 14:27:39,121] [33m WARNING: Falling back to default style for ch.swisstopo.sentinel_2018 [0m
+Starting SO!GIS json2qgs...
++ python3 /srv/json2qgs/json2qgs.py qgs/somap_wfs.json wfs ./config/default 2 --qgsName somap_wfs --qgsTemplateDir /srv/json2qgs/qgs
+Starting SO!GIS json2qgs...
+[8mha:////4F7ZWciLTaX3AvX5hSIiC5x93kKyw44MD9cbgOXG+ecFAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCBUgoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AF2jKA0vgAAAA==[0m[Pipeline] }
+[8mha:////4BBNw7Kp2YPYg/KX5/n+3EWdt3xVCdN+klQ598LcB32GAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiGlIgqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyjrfa5D/QFCQkNvvgAAAA==[0m[Pipeline] // container
+[8mha:////4DtMOAnoT0HnjE6aH9efS9e9AScs3gl32gmXLskuaa+GAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYigDYuoaZeEEIQkhbfR/SVLaiRNxNe5AoBITHizbkvWeL6higCMFyzqDvcOoHBv8aHNiE4X+4mliHZ2ZIozkDRNmEqRNu1RBycCiooQVh7VB5Sk6tAk2vJN3WXuJtj6lkLcDh9LpGzyg4JmcZEjfMgfYXkcdCX+cvwCYhwRl02Tb7z7P6g1ZxdmlwgAAAA==[0m[Pipeline] script
+[8mha:////4OXJICedGB8hZllwa5WLLzVNJW9BxgqIVM3wXZwPyCkiAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUgoEBMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLkh91s+/lZfAARKflFwgAAAA==[0m[Pipeline] {
+[8mha:////4KTv1dyI+8+34mkkIJJTzJgexbbg/66kU7klUOycdFkWAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSgESBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK//dQuvAE/wUw2vgAAAA==[0m[Pipeline] sh
++ oc get pods -o custom-columns=POD:.metadata.name --no-headers -n gdi-integration
++ grep qgis-server
++ grep -v -E -m 1 'featureinfo|build|print|deploy'
+[8mha:////4KgDqZyt58kMSZIih/f/mw4NkFQgrncihwJ0a++XrTd8AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIESBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK//dQuvAF+8FcvvgAAAA==[0m[Pipeline] sh
++ oc rsync -n gdi-integration config/default/ qgis-server-744-vcz24:/data
+sending incremental file list
+./
+somap.qgs
+somap_print.qgs
+somap_wfs.qgs
+ch.so.afu.bodeninformationen.wald.humusform/Humusform.svg
+ch.so.afu.geologie.grundschicht/backstein.svg
+ch.so.afu.geologie.grundschicht/malm_wild.svg
+ch.so.afu.geologie.grundschicht/zickzack_hoch.svg
+ch.so.afu.geologie.holozaen/backstein.svg
+ch.so.afu.geologie.holozaen/hanglehm.svg
+ch.so.afu.geologie.holozaen/malm_wild.svg
+ch.so.afu.geologie.holozaen/post_schot.svg
+ch.so.afu.geologie.holozaen/rutschungen.svg
+ch.so.afu.geologie.holozaen/zickzack_hoch.svg
+ch.so.afu.geologie.pleistozaen/malm_wild.svg
+ch.so.afu.geologie.pleistozaen/moraene.svg
+ch.so.afu.geologie.pleistozaen/wuerm_nieder.svg
+ch.so.afu.geologie.schichtfallen/Pfeil_Schwarz.svg
+ch.so.agi.av.bodenbedeckung/symbol_1_fels_geroell_param.svg
+ch.so.agi.av.bodenbedeckung/symbol_2_geroell_param.svg
+ch.so.agi.av.bodenbedeckung/symbol_b_reben_param.svg
+ch.so.agi.av.bodenbedeckung/symbol_c_schilfguertel_param.svg
+ch.so.agi.av.bodenbedeckung/symbol_d_moor_param.svg
+ch.so.agi.av.einzelobjekte_punkte/symbol_f_grotte_hoehleneingang.svg
+ch.so.agi.av.einzelobjekte_punkte/symbol_g_einzelner_fels.svg
+ch.so.agi.av.einzelobjekte_punkte/symbol_h_mast_antenne.svg
+ch.so.agi.av.einzelobjekte_punkte/symbol_i_quelle_wasseraustritt.svg
+ch.so.agi.av.einzelobjekte_punkte/symbol_j_bildstock_kruzifix.svg
+ch.so.agi.av.einzelobjekte_punkte/symbol_k_denkmal.svg
+ch.so.agi.av.einzelobjekte_punkte/symbol_o_wichtiger_einzelbaum.svg
+ch.so.agi.av.fixpunkte/symbol_A_lagefixpunkt_1_und_2_begehbar.svg
+ch.so.agi.av.fixpunkte/symbol_C_hoehenfixpunkt_1_und_2.svg
+ch.so.agi.av.fixpunkte/symbol_D_hoehenfixpunkt_3.svg
+ch.so.agi.av.fixpunkte/symbol_J_lagefixpunkt_3_auf_markstein_kunststoffzeichen.svg
+ch.so.agi.av.fixpunkte/symbol_J_lagefixpunkt_3_auf_markstein_kunststoffzeichen_param.svg
+ch.so.agi.av.fixpunkte/symbol_K_lagefixpunkt_3_auf_bolzen.svg
+ch.so.agi.av.fixpunkte/symbol_L_lagefixpunkt_3_auf_rohr_pfahl.svg
+ch.so.agi.av.fixpunkte/symbol_L_lagefixpunkt_3_auf_rohr_pfahl_param.svg
+ch.so.agi.av.fixpunkte/symbol_M_lagefixpunkt_3_auf_kreuz.svg
+ch.so.agi.av.fixpunkte/symbol_M_lagefixpunkt_3_auf_kreuz_param.svg
+ch.so.agi.av.grundstuecke.grenzpunkte/symbol_E_grenzpunkt_markstein_kunststoffzeichen.svg
+ch.so.agi.av.grundstuecke.grenzpunkte/symbol_E_grenzpunkt_markstein_kunststoffzeichen_param.svg
+ch.so.agi.av.grundstuecke.grenzpunkte/symbol_F_grenzpunkt_bolzen.svg
+ch.so.agi.av.grundstuecke.grenzpunkte/symbol_F_grenzpunkt_bolzen_param.svg
+ch.so.agi.av.grundstuecke.grenzpunkte/symbol_G_grenzpunkt_rohr_pfahl.svg
+ch.so.agi.av.grundstuecke.grenzpunkte/symbol_G_grenzpunkt_rohr_pfahl_param.svg
+ch.so.agi.av.grundstuecke.grenzpunkte/symbol_H_grenzpunkt_kreuz.svg
+ch.so.agi.av.grundstuecke.grenzpunkte/symbol_H_grenzpunkt_kreuz_param.svg
+ch.so.agi.av.grundstuecke.grenzpunkte/symbol_I_unversichterter_grenzpunkt.svg
+ch.so.agi.av.grundstuecke.grenzpunkte/symbol_I_unversichterter_grenzpunkt_param.svg
+ch.so.agi.grundbuchplan_f.bodenbedeckung/symbol_1_fels_geroell_param.svg
+ch.so.agi.grundbuchplan_f.bodenbedeckung/symbol_2_geroell_param.svg
+ch.so.agi.grundbuchplan_f.bodenbedeckung/symbol_b_reben_param.svg
+ch.so.agi.grundbuchplan_f.bodenbedeckung/symbol_c_schilfguertel_param.svg
+ch.so.agi.grundbuchplan_f.bodenbedeckung/symbol_d_moor_param.svg
+ch.so.agi.grundbuchplan_f.bodenbedeckung_symbol/symbol_a_fliessrichtung.svg
+ch.so.agi.grundbuchplan_f.bodenbedeckung_symbol/symbol_e_wasserbecken_stehendes_gewaesser_param.svg
+ch.so.agi.grundbuchplan_f.einzelobjekte_punkte/symbol_f_grotte_hoehleneingang.svg
+ch.so.agi.grundbuchplan_f.einzelobjekte_punkte/symbol_g_einzelner_fels.svg
+ch.so.agi.grundbuchplan_f.einzelobjekte_punkte/symbol_h_mast_antenne.svg
+ch.so.agi.grundbuchplan_f.einzelobjekte_punkte/symbol_i_quelle_wasseraustritt.svg
+ch.so.agi.grundbuchplan_f.einzelobjekte_punkte/symbol_j_bildstock_kruzifix.svg
+ch.so.agi.grundbuchplan_f.einzelobjekte_punkte/symbol_k_denkmal.svg
+ch.so.agi.grundbuchplan_f.einzelobjekte_punkte/symbol_o_wichtiger_einzelbaum.svg
+ch.so.agi.grundbuchplan_f.fixpunkte/symbol_A_lagefixpunkt_1_und_2_begehbar.svg
+ch.so.agi.grundbuchplan_f.fixpunkte/symbol_C_hoehenfixpunkt_1_und_2.svg
+ch.so.agi.grundbuchplan_f.fixpunkte/symbol_D_hoehenfixpunkt_3.svg
+ch.so.agi.grundbuchplan_f.fixpunkte/symbol_J_lagefixpunkt_3_auf_markstein_kunststoffzeichen.svg
+ch.so.agi.grundbuchplan_f.fixpunkte/symbol_J_lagefixpunkt_3_auf_markstein_kunststoffzeichen_param.svg
+ch.so.agi.grundbuchplan_f.fixpunkte/symbol_K_lagefixpunkt_3_auf_bolzen.svg
+ch.so.agi.grundbuchplan_f.fixpunkte/symbol_L_lagefixpunkt_3_auf_rohr_pfahl.svg
+ch.so.agi.grundbuchplan_f.fixpunkte/symbol_L_lagefixpunkt_3_auf_rohr_pfahl_param.svg
+ch.so.agi.grundbuchplan_f.fixpunkte/symbol_M_lagefixpunkt_3_auf_kreuz.svg
+ch.so.agi.grundbuchplan_f.fixpunkte/symbol_M_lagefixpunkt_3_auf_kreuz_param.svg
+ch.so.agi.grundbuchplan_f.grenzpunkte/symbol_E_grenzpunkt_markstein_kunststoffzeichen.svg
+ch.so.agi.grundbuchplan_f.grenzpunkte/symbol_E_grenzpunkt_markstein_kunststoffzeichen_param.svg
+ch.so.agi.grundbuchplan_f.grenzpunkte/symbol_F_grenzpunkt_bolzen.svg
+ch.so.agi.grundbuchplan_f.grenzpunkte/symbol_F_grenzpunkt_bolzen_param.svg
+ch.so.agi.grundbuchplan_f.grenzpunkte/symbol_G_grenzpunkt_rohr_pfahl.svg
+ch.so.agi.grundbuchplan_f.grenzpunkte/symbol_G_grenzpunkt_rohr_pfahl_param.svg
+ch.so.agi.grundbuchplan_f.grenzpunkte/symbol_H_grenzpunkt_kreuz.svg
+ch.so.agi.grundbuchplan_f.grenzpunkte/symbol_H_grenzpunkt_kreuz_param.svg
+ch.so.agi.grundbuchplan_f.grenzpunkte/symbol_I_unversichterter_grenzpunkt.svg
+ch.so.agi.grundbuchplan_f.grenzpunkte/symbol_I_unversichterter_grenzpunkt_param.svg
+ch.so.agi.grundbuchplan_f.hoheitsgrenzpunkte/symbol_E_grenzpunkt_markstein_kunststoffzeichen.svg
+ch.so.agi.grundbuchplan_f.hoheitsgrenzpunkte/symbol_E_grenzpunkt_markstein_kunststoffzeichen_param.svg
+ch.so.agi.grundbuchplan_f.hoheitsgrenzpunkte/symbol_F_grenzpunkt_bolzen.svg
+ch.so.agi.grundbuchplan_f.hoheitsgrenzpunkte/symbol_F_grenzpunkt_bolzen_param.svg
+ch.so.agi.grundbuchplan_f.hoheitsgrenzpunkte/symbol_G_grenzpunkt_rohr_pfahl.svg
+ch.so.agi.grundbuchplan_f.hoheitsgrenzpunkte/symbol_H_grenzpunkt_kreuz.svg
+ch.so.agi.grundbuchplan_f.hoheitsgrenzpunkte/symbol_I_unversichterter_grenzpunkt.svg
+ch.so.agi.grundbuchplan_f.hoheitsgrenzpunkte/symbol_I_unversichterter_grenzpunkt_param.svg
+ch.so.agi.grundbuchplan_oereb.bodenbedeckung/symbol_1_fels_geroell_param.svg
+ch.so.agi.grundbuchplan_oereb.bodenbedeckung/symbol_2_geroell_param.svg
+ch.so.agi.grundbuchplan_oereb.bodenbedeckung/symbol_b_reben_param.svg
+ch.so.agi.grundbuchplan_oereb.bodenbedeckung/symbol_c_schilfguertel_param.svg
+ch.so.agi.grundbuchplan_oereb.bodenbedeckung/symbol_d_moor_param.svg
+ch.so.agi.grundbuchplan_oereb.grenzpunkte/symbol_E_grenzpunkt_markstein_kunststoffzeichen.svg
+ch.so.agi.grundbuchplan_oereb.grenzpunkte/symbol_E_grenzpunkt_markstein_kunststoffzeichen_param.svg
+ch.so.agi.grundbuchplan_oereb.grenzpunkte/symbol_F_grenzpunkt_bolzen.svg
+ch.so.agi.grundbuchplan_oereb.grenzpunkte/symbol_F_grenzpunkt_bolzen_param.svg
+ch.so.agi.grundbuchplan_oereb.grenzpunkte/symbol_G_grenzpunkt_rohr_pfahl.svg
+ch.so.agi.grundbuchplan_oereb.grenzpunkte/symbol_G_grenzpunkt_rohr_pfahl_param.svg
+ch.so.agi.grundbuchplan_oereb.grenzpunkte/symbol_H_grenzpunkt_kreuz.svg
+ch.so.agi.grundbuchplan_oereb.grenzpunkte/symbol_H_grenzpunkt_kreuz_param.svg
+ch.so.agi.grundbuchplan_oereb.grenzpunkte/symbol_I_unversichterter_grenzpunkt.svg
+ch.so.agi.grundbuchplan_oereb.grenzpunkte/symbol_I_unversichterter_grenzpunkt_param.svg
+ch.so.agi.grundbuchplan_sw.bodenbedeckung/symbol_1_fels_geroell_param.svg
+ch.so.agi.grundbuchplan_sw.bodenbedeckung/symbol_2_geroell_param.svg
+ch.so.agi.grundbuchplan_sw.bodenbedeckung/symbol_b_reben_param.svg
+ch.so.agi.grundbuchplan_sw.bodenbedeckung/symbol_c_schilfguertel_param.svg
+ch.so.agi.grundbuchplan_sw.bodenbedeckung/symbol_d_moor_param.svg
+ch.so.agi.grundbuchplan_sw.bodenbedeckung_symbol/symbol_a_fliessrichtung.svg
+ch.so.agi.grundbuchplan_sw.bodenbedeckung_symbol/symbol_e_wasserbecken_stehendes_gewaesser_param.svg
+ch.so.agi.grundbuchplan_sw.einzelobjekte_punkte/symbol_f_grotte_hoehleneingang.svg
+ch.so.agi.grundbuchplan_sw.einzelobjekte_punkte/symbol_g_einzelner_fels.svg
+ch.so.agi.grundbuchplan_sw.einzelobjekte_punkte/symbol_h_mast_antenne.svg
+ch.so.agi.grundbuchplan_sw.einzelobjekte_punkte/symbol_i_quelle_wasseraustritt.svg
+ch.so.agi.grundbuchplan_sw.einzelobjekte_punkte/symbol_j_bildstock_kruzifix.svg
+ch.so.agi.grundbuchplan_sw.einzelobjekte_punkte/symbol_k_denkmal.svg
+ch.so.agi.grundbuchplan_sw.einzelobjekte_punkte/symbol_o_wichtiger_einzelbaum.svg
+ch.so.agi.grundbuchplan_sw.fixpunkte/symbol_A_lagefixpunkt_1_und_2_begehbar.svg
+ch.so.agi.grundbuchplan_sw.fixpunkte/symbol_C_hoehenfixpunkt_1_und_2.svg
+ch.so.agi.grundbuchplan_sw.fixpunkte/symbol_D_hoehenfixpunkt_3.svg
+ch.so.agi.grundbuchplan_sw.fixpunkte/symbol_J_lagefixpunkt_3_auf_markstein_kunststoffzeichen.svg
+ch.so.agi.grundbuchplan_sw.fixpunkte/symbol_J_lagefixpunkt_3_auf_markstein_kunststoffzeichen_param.svg
+ch.so.agi.grundbuchplan_sw.fixpunkte/symbol_K_lagefixpunkt_3_auf_bolzen.svg
+ch.so.agi.grundbuchplan_sw.fixpunkte/symbol_L_lagefixpunkt_3_auf_rohr_pfahl.svg
+ch.so.agi.grundbuchplan_sw.fixpunkte/symbol_L_lagefixpunkt_3_auf_rohr_pfahl_param.svg
+ch.so.agi.grundbuchplan_sw.fixpunkte/symbol_M_lagefixpunkt_3_auf_kreuz.svg
+ch.so.agi.grundbuchplan_sw.fixpunkte/symbol_M_lagefixpunkt_3_auf_kreuz_param.svg
+ch.so.agi.grundbuchplan_sw.grenzpunkte/symbol_E_grenzpunkt_markstein_kunststoffzeichen.svg
+ch.so.agi.grundbuchplan_sw.grenzpunkte/symbol_E_grenzpunkt_markstein_kunststoffzeichen_param.svg
+ch.so.agi.grundbuchplan_sw.grenzpunkte/symbol_F_grenzpunkt_bolzen.svg
+ch.so.agi.grundbuchplan_sw.grenzpunkte/symbol_F_grenzpunkt_bolzen_param.svg
+ch.so.agi.grundbuchplan_sw.grenzpunkte/symbol_G_grenzpunkt_rohr_pfahl.svg
+ch.so.agi.grundbuchplan_sw.grenzpunkte/symbol_G_grenzpunkt_rohr_pfahl_param.svg
+ch.so.agi.grundbuchplan_sw.grenzpunkte/symbol_H_grenzpunkt_kreuz.svg
+ch.so.agi.grundbuchplan_sw.grenzpunkte/symbol_H_grenzpunkt_kreuz_param.svg
+ch.so.agi.grundbuchplan_sw.grenzpunkte/symbol_I_unversichterter_grenzpunkt.svg
+ch.so.agi.grundbuchplan_sw.grenzpunkte/symbol_I_unversichterter_grenzpunkt_param.svg
+ch.so.agi.grundbuchplan_sw.hoheitsgrenzpunkte/symbol_E_grenzpunkt_markstein_kunststoffzeichen.svg
+ch.so.agi.grundbuchplan_sw.hoheitsgrenzpunkte/symbol_E_grenzpunkt_markstein_kunststoffzeichen_param.svg
+ch.so.agi.grundbuchplan_sw.hoheitsgrenzpunkte/symbol_F_grenzpunkt_bolzen.svg
+ch.so.agi.grundbuchplan_sw.hoheitsgrenzpunkte/symbol_F_grenzpunkt_bolzen_param.svg
+ch.so.agi.grundbuchplan_sw.hoheitsgrenzpunkte/symbol_G_grenzpunkt_rohr_pfahl.svg
+ch.so.agi.grundbuchplan_sw.hoheitsgrenzpunkte/symbol_H_grenzpunkt_kreuz.svg
+ch.so.agi.grundbuchplan_sw.hoheitsgrenzpunkte/symbol_I_unversichterter_grenzpunkt.svg
+ch.so.agi.grundbuchplan_sw.hoheitsgrenzpunkte/symbol_I_unversichterter_grenzpunkt_param.svg
+ch.so.agi.leitungskataster.abwasser.schaechte/andere_schacht.svg
+ch.so.agi.leitungskataster.abwasser.schaechte/einlaufschaft.svg
+ch.so.agi.leitungskataster.abwasser.schaechte/kontrollschacht.svg
+ch.so.agi.leitungskataster.abwasser.schaechte/oelabscheider.svg
+ch.so.agi.leitungskataster.abwasser.schaechte/schlammsammler.svg
+ch.so.agi.leitungskataster.elektro.trasseepunkte/kandelaber.svg
+ch.so.agi.leitungskataster.elektro.trasseepunkte/transformatorenstation.svg
+ch.so.agi.leitungskataster.elektro.trasseepunkte/verteilkabine_enu_el_distribution_box_ohnex7.svg
+ch.so.agi.leitungskataster.wasser.absperrorgane/absperrorgan.svg
+ch.so.agi.leitungskataster.wasser.absperrorgane/klappe.svg
+ch.so.agi.leitungskataster.wasser.rohrleitungsteile/abschlusselement_verschlussklappe.svg
+ch.so.agi.leitungskataster.wasser.rohrleitungsteile/diverse_zaehler.svg
+ch.so.agi.leitungskataster.wasser.rohrleitungsteile/formstueck_reduktion.svg
+ch.so.agi.leitungskataster.wasser.rohrleitungsteile/lueftung_auf_rohr.svg
+ch.so.ags.religionsgemeinschaften.religionsgemeinschaft/bahai.svg
+ch.so.ags.religionsgemeinschaften.religionsgemeinschaft/cross.svg
+ch.so.ags.religionsgemeinschaften.religionsgemeinschaft/dharmachakra.svg
+ch.so.ags.religionsgemeinschaften.religionsgemeinschaft/dhulfiqar.svg
+ch.so.ags.religionsgemeinschaften.religionsgemeinschaft/khanda.svg
+ch.so.ags.religionsgemeinschaften.religionsgemeinschaft/om.svg
+ch.so.ags.religionsgemeinschaften.religionsgemeinschaft/placeofworshipsolid.svg
+ch.so.ags.religionsgemeinschaften.religionsgemeinschaft/starandcrescentsolid.svg
+ch.so.alw.strukturverbesserungen.wegebau_bruecke_und_lehnenviadukt/bruecke_lehnenviadukt_galerie.svg
+ch.so.amb.notfalltreffpunkte/NTP_Markierung_Orange.svg
+ch.so.arp.richtplan.abbaustellen_bestehend/6.18_Abbaugebiet.svg
+ch.so.arp.richtplan.abbaustellen_erweiterung_vorhaben/6.19_Abbaugebiet_Erweiterung.svg
+ch.so.arp.richtplan.abbaustellen_erweiterung_vorhaben/6.20_Abbaugebiet_Vorhaben.svg
+ch.so.arp.richtplan.deponie_bestehend/6.21_Deponiestandort.svg
+ch.so.arp.richtplan.deponiestandorte_erweiterung_vorhaben/6.22_Deponiestandort_Erweiterung.svg
+ch.so.arp.richtplan.deponiestandorte_erweiterung_vorhaben/6.23_Deponiestandort_Vorhaben.svg
+ch.so.arp.richtplan.punktsymbole_bestehend/6.03_Ortsbild_nat_oder_kant_Bedeutung.svg
+ch.so.arp.richtplan.punktsymbole_bestehend/6.05_Bahnhofgebiet.svg
+ch.so.arp.richtplan.punktsymbole_bestehend/6.06_Einkaufszentrum.svg
+ch.so.arp.richtplan.punktsymbole_bestehend/6.10_Anlage_Freizeit_Sport.svg
+ch.so.arp.richtplan.punktsymbole_bestehend/6.11_Autobahnanschluss.svg
+ch.so.arp.richtplan.punktsymbole_bestehend/6.14_Flugplatz_Flugfeld.svg
+ch.so.arp.richtplan.punktsymbole_bestehend/6.15_Wasserkraftwerk.svg
+ch.so.arp.richtplan.punktsymbole_bestehend/6.17_Kernkraftwerk.svg
+ch.so.arp.richtplan.punktsymbole_bestehend/6.25_Militaerischer_Schiess_Uebungsplatz.svg
+ch.so.arp.richtplan.punktsymbole_bestehend/6.26_UNESCO_Weltkulturerbe_Pallafittes.svg
+ch.so.arp.richtplan.punktsymbole_vorhaben/6.01_Erweiterung_Siedlungsgebiet.svg
+ch.so.arp.richtplan.punktsymbole_vorhaben/6.04_regionale_Arbeitszplatzzone.svg
+ch.so.arp.richtplan.punktsymbole_vorhaben/6.05_Bahnhofgebiet_Vorhaben.svg
+ch.so.arp.richtplan.punktsymbole_vorhaben/6.06_Einkaufszentrum_Erweiterung.svg
+ch.so.arp.richtplan.punktsymbole_vorhaben/6.06_Einkaufszentrum_Vorhaben.svg
+ch.so.arp.richtplan.punktsymbole_vorhaben/6.07_Umstrukturierungsgebiet.svg
+ch.so.arp.richtplan.punktsymbole_vorhaben/6.08_oeff_Bauten_Anlagen.svg
+ch.so.arp.richtplan.punktsymbole_vorhaben/6.09_Gueterregulierung_Vorhaben.svg
+ch.so.arp.richtplan.punktsymbole_vorhaben/6.10_Anlage_Freizeit_Sport_Vorhaben.svg
+ch.so.arp.richtplan.punktsymbole_vorhaben/6.13_Bahnhaltestelle.svg
+ch.so.arp.richtplan.punktsymbole_vorhaben/6.16_Wasserkraftwerk_Erweiterung.svg
+ch.so.arp.richtplan.punktsymbole_vorhaben/6.24_Kehrrichtverbrennungsanlage_Erweiterung.svg
+ch.so.arp.richtplan.windpark_vorhaben/6.27_Windpark_Vorhaben.svg
+ch.so.avt.oev.haltestellen/bahn_station.svg
+ch.so.avt.oev.haltestellen/bus_haltestelle.svg
+print/kanton_4f.svg
+print/north-arrow_3_simple_symmetric_triangular.svg
+
+sent 8,974,430 bytes  received 74,937 bytes  3,619,746.80 bytes/sec
+total size is 48,101,924  speedup is 5.32
+[8mha:////4Cvc8zevcBRPHY3lleACnUum658VMW2ejzEjc+nR9B4ZAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIEGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDud5/avgGihzBsvgAAAA==[0m[Pipeline] }
+[8mha:////4BGqzAUGVVGpfNHCryFhfIf3Uh8KmSWtHbN095zwgPC8AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi0aRAVLRWGl5gEmPsWHeO7eBUvIiv8QcCkajYYrWzzTxfsI4Bjhw0WkW9odga9G7U88LMob86zmj5gi1TZKewUbnhTp0WbDgpWFKUsBKwUdQ6joZ0gq2w8i4rJ0lX5xTm7yCgNN0ADyjEbE4ypC9MAXa3sYtMP89fAUzeJyjr+lP7N5Fka9C+AAAA[0m[Pipeline] // script
+[8mha:////4Ph0AAIHB6XUbDVfLGETLNo63ZvAYQWF9d2TOz72wK3pAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSBSREldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNknKOs61/7gPwqhawS+AAAA[0m[Pipeline] archiveArtifacts
+Archiving artifacts
+[8mha:////4KfNo5xCCTC16SYniTNT3+Y0Ch1flycNIp1H2RNGpK3XAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSBSFEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOX+kKuuP7nwF/S+AAAA[0m[Pipeline] }
+[8mha:////4MoWtBZftU9/FKmY51qGnNT7S2j3JSCJwFpz6kYhL3bAAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCA0JCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFAetrn2uw8igFm8vgAAAA==[0m[Pipeline] // withCredentials
+Post stage
+[8mha:////4BMOqvhCBuqXVVkaFPCjnQDFxycIksCHiCuAaQLPmLWKAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJISQUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpiFDud7kO2+EDV0xqSb4AAAA=[0m[Pipeline] sh
++ rm -rf /tmp/workspace/gdi/qgis-server/config /tmp/workspace/gdi/qgis-server/qgs
+[8mha:////4MCQb2q48tQxm4ib618RzOuyD2QA+dQ10YZrYCS7ManrAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIYSQUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKUh22u/e4DvxGWhr4AAAA=[0m[Pipeline] }
+[8mha:////4MynWaPoG6j/xTiEqoQ1IseVCLRUVnW8okHO9ONJO7LYAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSREJIiCqtlYYXmNgYJ9adsR2SihfxNf6ARSQqtljtbDOvN6xjgBMHg72mwVLsLHo3mrxw4jBcHU/Y8wU7pshOY6unlpVuFmw5aVhSlLASsNHUOY6WTIKt6OVDVk6Sqc4p5O8ooLTqDk8oRDYnGdIX5gC726gi08/zVwCz9wnKQ51rX38AuVeu074AAAA=[0m[Pipeline] // withEnv
+[8mha:////4F7H0NARzCnWKVb39TmoXseQ4us0EY0AGs33PK0CkPVVAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJISQUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKUh12u/fYDLQalIL4AAAA=[0m[Pipeline] }
+[8mha:////4JXi23dAH2cWV53+Hsou2z2lc5HSk+NULDDpd0USwwGAAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCA0JCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFAedrn22w8e5f6cvgAAAA==[0m[Pipeline] // node
+[8mha:////4A8IWGZT+d8QhEvRyqHmrYJR7UdPi9YM/Zk3Yu+ArLdbAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSgUAoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ltf28AHXfJtIvgAAAA==[0m[Pipeline] }
+[8mha:////4MCVPC7iuzYt05366IiYwmWy33C0+xul7ACrjRqr27s5AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSISIhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyjrQ659/QHkn8D0vgAAAA==[0m[Pipeline] // podTemplate
+[8mha:////4BkSIvM+NVG+O/VheCKe247SnWZLv6oVaQVapAS2X1ZxAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSgSIhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyjrOtf+8AE2AC7ivgAAAA==[0m[Pipeline] }
+[8mha:////4NXfjGoQLYHHdznBB8ITeN18RgAbhl/vZMgeHyqIA207AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSRQIhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3h1x1/QEpgnuwvgAAAA==[0m[Pipeline] // stage
+[8mha:////4JMv94QhcV/M9J055dNyoBXa4C3W66aw4N0B3vp69uS+AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUJBaEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WXbbz7P6g1BT9qUwgAAAA==[0m[Pipeline] stage
+[8mha:////4PUu+NH/J5aQFmp8oNyb7ezo/bP7gsw3iPsKpLcGG5ksAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogURoSYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+mJlT6cIAAAA=[0m[Pipeline] { (Deploy qgis-server)
+[8mha:////4IvJ29i4eFVl62EPjt6wbKPI9ZeYo2QagkZqaVDlLszzAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi6BCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBqhInei+AAAA[0m[Pipeline] sh
++ oc apply -n gdi-integration -f-
++ oc process -f https://raw.githubusercontent.com/sogis/pipelines/master/api_webgisclient/qgis-server/deployment/deploymentconfig.yaml -p NAMESPACE=gdi-integration -p TAG=2.0.17 -p REPLICAS=1 -p CPU_REQUEST=1000m -p CPU_LIMIT=4000m -p MEMORY_REQUEST=4096Mi -p MEMORY_LIMIT=8192Mi -p ENVIRONMENT=-int
+deploymentconfig.apps.openshift.io/qgis-server configured
++ oc rollout latest -n gdi-integration qgis-server
+deploymentconfig.apps.openshift.io/qgis-server rolled out
++ oc rollout status -n gdi-integration dc qgis-server
+Waiting for rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for rollout to finish: 0 out of 1 new replicas have been updated...
+Waiting for rollout to finish: 0 of 1 updated replicas are available...
+replication controller "qgis-server-745" successfully rolled out
+[8mha:////4KF7tKAqYgWl8to9li/kSH4AXsyFr5XNHxaYq8RqzpGCAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiRIUQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcr97lPbN+4hTxy+AAAA[0m[Pipeline] }
+[8mha:////4DN/I6S9O8khURiOCkIzREI8Fe+16/ahrIa4M6wDCenEAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCQYMQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcr97lPbN8AhTXa+AAAA[0m[Pipeline] // stage
+[8mha:////4MUjzN4fhW3rstnX6ZzeHlVOgffU9/4ihn0+Z34qKhkLAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAg1Ik16sIJQhNC0uj/kqSkEyfiatyBQCUmPFi2Jes9X1AFDw15zazC3mDoDBvcqHNiiXx/cZSYpTPrCAM5xVqVWpLqONeWooJZRQkLDkuFnaNgUEdYcSvuonYCdX2KPm8HDqWRN3hAwTM5Ch+/ZfKwvo4yEP44fwEwDRHKzTbbfvd5Vm/y3hfEwgAAAA==[0m[Pipeline] stage
+[8mha:////4HUUKWmPEA05518CewfHnXQdmlHjG6FaaSlopW29Xzr8AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0Agkhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LD2IFAYXCAAAA[0m[Pipeline] { (Declarative: Post Actions)
+[8mha:////4F8vLcxPG0y3AQlpmCUoOmBO4JcShER1CC4bi2mg4WbbAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSgRCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBmOCTVC+AAAA[0m[Pipeline] sh
++ rm -rf /var/lib/jenkins/jobs/gdi/qgis-server/workspace@script
++ rm -rf /var/lib/jenkins/jobs/gdi/qgis-server/workspace@libs
++ rm -rf /var/lib/jenkins/jobs/gdi/jobs/qgis-server/workspace/api_webgisclient /var/lib/jenkins/jobs/gdi/jobs/qgis-server/workspace/createGlobalVar.png /var/lib/jenkins/jobs/gdi/jobs/qgis-server/workspace/README.md /var/lib/jenkins/jobs/gdi/jobs/qgis-server/workspace/setBranchesToBuild.png /var/lib/jenkins/jobs/gdi/jobs/qgis-server/workspace/sql2json.jar
+[8mha:////4PYHr//UaktSTk5+apahcVzjFdq+1U8cydwATuGay7xZAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSIRCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nffWr7Bo5E7Oi+AAAA[0m[Pipeline] }
+[8mha:////4FpgM1qXa/ImQ1sCJI+7zP0W7yKeGJoaNj1gvZZs8N3YAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSUUSIitZKwwtMYowd686xHZyKF/E1/kAgEhVbrHa2mecL1jHAkYNGq6g3FFuD3o16Xpg59FfHGS1fsGWK7BQ2KjfcqdOCDScFS4oSVgI2ilrH0ZBOsBVW3mXlJOnqnML8HQSUphvgAYWYzUmG9IUpwO42dpHp5/krgMn7BGVdf2r/BpHGubq+AAAA[0m[Pipeline] // stage
+[8mha:////4MvRglOdo8mUXwkzjibXpl7PjN/6SQUVBbLIpKWNt8OGAAAApR+LCAAAAAAAAP9tjTESgjAQRRcYC1tLDxFgxs6xos3QeIKYxBjI7GKyCJUn8mreQUZmrPzVf695rzdsUoQTRSc6i73HpL0YwuiWJyaK/TXQJDq6CE2YKFjR2qklY5sVW2IL67IcCglbizpQ8ugYdrJTD1UGha48c1zcUULuzR2ekMmlzCryF+YI+9toEuGv8zcA8zAwFHVVMeT14QOCQsJbvwAAAA==[0m[Pipeline] }
+[8mha:////4Kg2XbRAy6FSGUVL2wQWkWiBXqTBHWsxtfugBHgr+YfdAAAApB+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYRDRImoaK00vMDExjix7ox9wal4EV/jD0REomKrnWnm9YZVinCkaEVvcHCYOieCH+38RKY4XD1l0dNFdISJvBGtyS1pc1qwJTawrCihkrA22HlKDi3DRvbqoWqv0NZnjrM7SCidvsMTCjmXWUX+whRhext1Ivx1/gZgCoGhanYNQ9nsP4QE+g6/AAAA[0m[Pipeline] // timeout
+[8mha:////4FFCsY15HYMlCx+p9uI99wRmNkXAzlgOX5y2b0aDUUFsAAAApB+LCAAAAAAAAP9tjTESgjAQRRcYC1tLDxGE1rGizdB4ghhiDGR2MVmEyhN5Ne9gRmas/NV/r3mvN2xigBMFK3qDg8OonRj9ZNMTM4Xh6mkWPV2EJozkjWjN3FJnmhVbYgPrshwKCVuD2lN0aBl2slcPVXqFtjxzSO4oIXfdHZ6QyVRmFfgLS4D9beoi4a/zNwDLODIU1aFmyKv6A7xGaf+/AAAA[0m[Pipeline] }
+[8mha:////4H5vnXbihieJfajreNQBfZJSqbC6C9K1rPTIRcDAy9URAAAApB+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYRDRImoaK00vMDExjix7ox9wal4EV/jD0REomKrnWnm9YZVinCkaEVvcHCYOieCH+38RKY4XD1l0dNFdISJvBGtyS1pc1qwJTawrCihkrA22HlKDi3DRvbqoWqv0NZnjrM7SCidvsMTCjmXWUX+whRhext1Ivx1/gZgCoGhanZ7hrJpPqPEPK2/AAAA[0m[Pipeline] // withEnv
+[8mha:////4PS6byARWZKDcgl3wcVFW2DKljTW79GL9x3gImqSSIUBAAAApB+LCAAAAAAAAP9tjTEOwjAQBM+JKGgpeYQDElSIitZKwwuMY4wT6y7YF5yKF/E1/kBEJCq22plmXm9YpAhHik62FjuPyXjZh8FNT2aK3TVQli1dpCFMFKysba6psacZa2IL80QBpYKlRRMoeXQMK9Xqh66CRledOU7uoKDwzR2eINRUZh35C2OE9W1oEuGv8zcAY98zlNvNjkHsP7feRsq+AAAA[0m[Pipeline] }
+[8mha:////4IrvIocydl0uG0kMUPjfNYQVEkP3Ru7izwkYcMDt02vGAAAApB+LCAAAAAAAAP9tjTEOwjAQBM+JKGgpeYQDElSIitZKwwuMY4wT6y7YF5yKF/E1/kBEJCq22plmXm9YpAhHik62FjuPyXjZh8FNT2aK3TVQli1dpCFMFKysba6psacZa2IL80QBpYKlRRMoeXQMK9Xqh66CRledOU7uoKDwzR2eINRUZh35C2OE9W1oEuGv8zcAY98zlNvNnkHsPpHHIYC+AAAA[0m[Pipeline] // node
+[8mha:////4FtHbLKlrlDOFIAeb7M1H6tT7i3F2/nwLE6QcPNYi2OpAAAApB+LCAAAAAAAAP9tjTEOwjAQBM+JKGgpeYQDFDSIitZKwwuMY4wT6y7YF5yKF/E1/kBEJCq22plmXm9YpAhHik62FjuPyXjZh8FNT2aK3TVQli1dpCFMFKysba6psacZa2IL80QBpYKlRRMoeXQMK9Xqh66CRledOU7uoKDwzR2eINRUZh35C2OE9W1oEuGv8zcAY98zlNvNnkHsPnQY4i6+AAAA[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

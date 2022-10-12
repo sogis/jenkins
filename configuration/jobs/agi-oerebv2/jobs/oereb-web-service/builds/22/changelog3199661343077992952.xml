@@ -1,0 +1,46 @@
+commit 7e3320dea8f9ff87790f5fe9ba8b9e8c959a13fa
+tree 81cfafc4b40569ec561b0d2baad2fd7bb1977aa2
+parent 1944b58f20944c730e32e81c7c0fee0966ea209e
+author edigonzales <edi.gonzales@gmail.com> 2022-10-11 06:17:48 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-10-11 06:17:48 +0200
+
+    [oereb-web-service] bump int version
+
+
+:100644 100644 7ed599c4c8d25d53d0a8ff56ffffd50ec12d3d00 9ac42c7de24891d8b68c96862b7146ed60786ae5 M	oereb-web-service/oereb-web-service_integration.params
+commit 1944b58f20944c730e32e81c7c0fee0966ea209e
+tree e20490287799cb0da752912ace045e82a494e4cb
+parent 7b5d15d5f6f65e28d89c076ce7e52add8fe8ff38
+author Stefan Ziegler <edi.gonzales@gmail.com> 2022-10-10 13:31:31 +0200
+committer GitHub <noreply@github.com> 2022-10-10 13:31:31 +0200
+
+    [interlis-repo-checker] bump version for int
+
+:100644 100644 1219a49c87fab276037bd5664401bad617e2f8c8 9c19cfb6283b161f1ea381f53a6f9047798be1fb M	interlis-repo-checker/interlis-repo-checker_integration.params
+commit 7b5d15d5f6f65e28d89c076ce7e52add8fe8ff38
+tree 6688a98755a1629dbee363af2f39f762305b6974
+parent c9fc3186b1c4346fba177613b56108baf5e92a89
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-10 08:28:28 +0200
+committer GitHub <noreply@github.com> 2022-10-10 08:28:28 +0200
+
+    [gretl] Add Jenkins deploymentconfig (#54)
+    
+
+
+:100644 100644 e3b405a78974c6b62dff8d21630a1ad4107718dc f224e3315cc1fbe7754d96f02259085fbaad012a M	gretl/Jenkinsfile
+:100644 100644 c6801db3cdd4750160ed8914d5203de253f35d88 da15bd55452c074822fa03540e315b8ae9fbe0d6 M	gretl/README.md
+:100644 100644 f0fcae29dff9a1edaa525634fca0704292e95891 14c41dbd4700fe400b5650d6255a5480833d61bb R050	gretl/gretl-pod-template.yaml	gretl/gretl.yaml
+:000000 100644 0000000000000000000000000000000000000000 dfc0ab482993d38dfc577321806f429fdd86da4c A	gretl/gretl_development.params
+:100644 100644 45a82ea3a6987a336b6939eaf7f561259604ef12 f6270b514eb0a785ab5363ee7eb2de7f69d78f12 M	gretl/gretl_integration.params
+:100644 100644 297561c7378647dc8bd14c91fc91ab9210f554af f64f2d441ab429e0bab78a5be327998095dd3905 M	gretl/gretl_production.params
+:100644 100644 550db9996fee96b3aba2665431e2ff0573308b78 d7cb5f29b27718a98ea2fdddb3b497db5c9bb907 M	gretl/gretl_test.params
+commit c9fc3186b1c4346fba177613b56108baf5e92a89
+tree 2fa5e8257acf5bf6ff139406e7335ca9d8905903
+parent e4cd8e1fe1348a3cce53de9bf45e576ee06f4a52
+author edigonzales <edi.gonzales@gmail.com> 2022-10-10 07:37:48 +0200
+committer edigonzales <edi.gonzales@gmail.com> 2022-10-10 07:37:48 +0200
+
+    [wgs-embedded] bump version
+
+
+:100644 100644 d85b77258ccaf0cc26fd4dcb08775e32a652d33e 8d935d2e8f914f8762f8bd3f6456e6dc5ba92f80 M	wgc-embedded/wgc-embedded_production.params

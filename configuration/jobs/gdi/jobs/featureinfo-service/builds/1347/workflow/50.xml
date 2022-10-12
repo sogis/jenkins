@@ -1,0 +1,32 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2.94">
+    <parentIds>
+      <string>49</string>
+    </parentIds>
+    <id>50</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.PushdStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.94">
+      <arguments>
+        <entry>
+          <string>path</string>
+          <string>qwc_services</string>
+        </entry>
+      </arguments>
+      <sensitiveVariables>
+        <string>PwdSogisService</string>
+        <string>PwdSogisServiceWrite</string>
+        <string>PwdApiUser</string>
+        <string>PwdOgcServer</string>
+        <string>apiUser</string>
+      </sensitiveVariables>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.47">
+      <startTime>1665494179810</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

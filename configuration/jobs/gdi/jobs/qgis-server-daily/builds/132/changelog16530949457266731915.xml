@@ -1,0 +1,10 @@
+commit 02bd5a89c82dbbec461f43f76f9d8f95aa701f43
+tree 661d0cafd9c70be9066d560abfbeb0a49dfac08b
+parent d620021fb468a1491d41969355b5ef842b4199d5
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-04 18:47:45 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-04 18:47:45 +0200
+
+    [api-gateway] fixed wrong variable for ip address in limit_req_zone
+
+
+:100644 100644 f2fe5242f44f0da6b1f45dc026f235fcd66f8960 30bfc358038b1655d4cb9570aaf7123bc51d45a1 M	api_webgisclient/api-gateway/resources.yaml

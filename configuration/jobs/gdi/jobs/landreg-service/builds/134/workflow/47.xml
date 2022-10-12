@@ -1,0 +1,30 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.94">
+    <parentIds>
+      <string>46</string>
+    </parentIds>
+    <id>47</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.94">
+      <arguments>
+        <entry>
+          <string>script</string>
+          <string>
+        oc process -f https://raw.githubusercontent.com/sogis/pipelines/simi_v2/api_webgisclient/landreg-service/deployment/deploymentconfig.yaml -p NAMESPACE=gdi-integration -p TAG=v2.0.0 -p REPLICAS=1 -p CPU_REQUEST=16m -p CPU_LIMIT=500m -p MEMORY_REQUEST=75Mi -p MEMORY_LIMIT=150Mi  | oc apply -n gdi-integration -f-
+        oc rollout latest -n gdi-integration landreg-service
+        oc rollout status -n gdi-integration dc landreg-service
+    </string>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.47">
+      <startTime>1663068013400</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

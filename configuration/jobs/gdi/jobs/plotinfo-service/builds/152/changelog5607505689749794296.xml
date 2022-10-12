@@ -1,0 +1,24 @@
+commit e01bc7aef9639b6e2521eac6e746a354a75876f6
+tree 58868b9f70a94d1e62143a6544be2a58f461f82b
+parent 02bd5a89c82dbbec461f43f76f9d8f95aa701f43
+author Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-05 09:10:51 +0200
+committer Andreas Schmid <andreas.schmid@bd.so.ch> 2022-10-05 09:10:51 +0200
+
+    Revert "[plotinfo-service] Route directly to oereb-web-service"
+    
+    This reverts commit d620021fb468a1491d41969355b5ef842b4199d5. The change
+    isn't needed anymore, and it didn't fully work.
+
+
+:100644 100644 6585ec186eda617bdd55170bd14b5d0037c14c21 40c6ab147baacd9043245a665fc44d6b1edee345 M	api_webgisclient/plotinfo-service/Jenkinsfile
+:100644 100644 e06651836e93cdd8fb5f369168e58f0e1087db75 7656cafab56ba3a9fab59d77475643c165568005 M	api_webgisclient/plotinfo-service/deployment/deploymentconfig.yaml
+commit 02bd5a89c82dbbec461f43f76f9d8f95aa701f43
+tree 661d0cafd9c70be9066d560abfbeb0a49dfac08b
+parent d620021fb468a1491d41969355b5ef842b4199d5
+author bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-04 18:47:45 +0200
+committer bjsvwpfe <michael.pfeiffer@bd.so.ch> 2022-10-04 18:47:45 +0200
+
+    [api-gateway] fixed wrong variable for ip address in limit_req_zone
+
+
+:100644 100644 f2fe5242f44f0da6b1f45dc026f235fcd66f8960 30bfc358038b1655d4cb9570aaf7123bc51d45a1 M	api_webgisclient/api-gateway/resources.yaml

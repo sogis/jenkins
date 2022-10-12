@@ -1,0 +1,39 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.94">
+    <parentIds>
+      <string>68</string>
+    </parentIds>
+    <id>69</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.94">
+      <arguments>
+        <entry>
+          <string>script</string>
+          <string>
+                            if [ ! -d &quot;config/default&quot; ]; then
+                              mkdir -p config/default
+                            fi
+                            wget -r -np -nd -erobots=off -A &apos;*.json&apos; --reject-regex &apos;/\*.+\*/|auto_refresh&apos; --no-check-certificate --auth-no-challenge --user=&apos;${apiUser}&apos; --password=&apos;${PwdApiUser}&apos;  &apos;https://jenkins-agi-apps-production.apps.ocp.so.ch/job/gdi/job/qgis-server/1400/artifact/config/default/&apos; -P qgs
+                            python3 /srv/json2qgs/json2qgs.py qgs/somap.json wms ./config/default 2 --qgsName somap --qgsTemplateDir /srv/json2qgs/qgs
+                            python3 /srv/json2qgs/json2qgs.py qgs/somap_print.json wms ./config/default 2 --qgsName somap_print --qgsTemplateDir /srv/json2qgs/qgs
+                            python3 /srv/json2qgs/json2qgs.py qgs/somap_wfs.json wfs ./config/default 2 --qgsName somap_wfs --qgsTemplateDir /srv/json2qgs/qgs
+                        </string>
+        </entry>
+      </arguments>
+      <sensitiveVariables>
+        <string>PwdSogisService</string>
+        <string>PwdApiUser</string>
+        <string>PwdOgcServer</string>
+        <string>apiUser</string>
+      </sensitiveVariables>
+      <isUnmodifiedBySanitization>false</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.47">
+      <startTime>1665498442896</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>
