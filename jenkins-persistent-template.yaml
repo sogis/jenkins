@@ -101,6 +101,8 @@ objects:
           envFrom:
             - configMapRef:
                 name: jenkins-env-config
+            - secretRef:
+                name: jenkins-wmsauth-secret
           image: ' '
           imagePullPolicy: IfNotPresent
           livenessProbe:
