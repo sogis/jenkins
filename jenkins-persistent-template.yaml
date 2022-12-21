@@ -134,6 +134,9 @@ objects:
             name: ${JENKINS_SERVICE_NAME}-data
           - mountPath: /etc/ssh-keys
             name: ssh-keys
+          - mountPath: /etc/pki/ca-trust/source/anchors
+            name: jenkins-ca-certificates-volume
+            readOnly: true
         dnsPolicy: ClusterFirst
         restartPolicy: Always
         serviceAccountName: ${JENKINS_SERVICE_NAME}
@@ -141,6 +144,9 @@ objects:
         - name: ${JENKINS_SERVICE_NAME}-data
           persistentVolumeClaim:
             claimName: ${JENKINS_SERVICE_NAME}-lowback
+        - name: jenkins-ca-certificates-volume
+          configMap:
+            name: jenkins-ca-certificates
         - name: ssh-keys
           secret:
             secretName: jenkins-geocat-ssh-key
