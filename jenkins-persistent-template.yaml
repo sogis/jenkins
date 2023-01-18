@@ -63,6 +63,7 @@ objects:
       template.alpha.openshift.io/wait-for-ready: "true"
     name: ${JENKINS_SERVICE_NAME}
   spec:
+    revisionHistoryLimit: 3
     replicas: 1
     selector:
       name: ${JENKINS_SERVICE_NAME}
