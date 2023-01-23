@@ -97,8 +97,6 @@ objects:
               value: ${NAMESPACE}
             - name: CONTAINER_HEAP_PERCENT
               value: '0.75'
-            - name: JENKINS_JAVA_OVERRIDES
-              value: '-Dcom.sun.jndi.ldap.connect.pool.timeout=1200000'
           envFrom:
             - configMapRef:
                 name: jenkins-env-config
