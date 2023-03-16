@@ -177,7 +177,9 @@ objects:
     - from:
         kind: DockerImage
         name: ${JENKINS_IMAGE_STREAM_TAG}
-      name: v4.7
+      name: v4.10
+      importPolicy:
+        scheduled: true
 - apiVersion: v1
   kind: ImageStream
   metadata:
@@ -282,7 +284,7 @@ parameters:
 - description: Name of the ImageStreamTag to be used for the Jenkins image.
   displayName: Jenkins ImageStreamTag
   name: JENKINS_IMAGE_STREAM_TAG
-  value: registry.redhat.io/openshift4/ose-jenkins:v4.7
+  value: quay.io/openshift/origin-jenkins:4.10
 - description: When a fatal error occurs, an error log is created with information
     and the state obtained at the time of the fatal error.
   displayName: Fatal Error Log File
