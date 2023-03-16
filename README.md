@@ -1,6 +1,9 @@
 Betrieb AGI Jenkins und Pipeline Definitionen
 
+siehe https://github.com/sogis/dok/blob/dok/dok_betrieb/Documents/jenkins/jenkins.md
+
 **Achtung**
+
 Damit der Abgleich der Openshift Secrets mit Jenkins funktioniert müssen bestimmte Abhängigkeiten beim Openshift Sync Plugin beachtet werden.
 Die notwendigen Plugin Versionen sind im *plugins.txt* vermerkt.
 Wenn das Openshift Sync Plugin upgedated wird muss geprüft werden, ob die Synchronisation noch funktioniert. Das sieht im Jenkins Log dann in etwa so aus
@@ -39,6 +42,3 @@ Wenn das Openshift Sync Plugin upgedated wird muss geprüft werden, ob die Synch
 ```
 
 Zu beachten sind die Abhängigkeiten die sich im pom.xml der entsprechenden Version finden (Beispiel Version 1.0.55 https://github.com/jenkinsci/openshift-sync-plugin/blob/openshift-sync-1.0.55/pom.xml)
-
-
-siehe https://github.com/sogis/dok/blob/dok/dok_betrieb/Documents/jenkins/jenkins.md
