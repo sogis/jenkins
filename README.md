@@ -7,6 +7,7 @@ siehe https://github.com/sogis/dok/blob/dok/dok_betrieb/Documents/jenkins/jenkin
 Damit der Abgleich der Openshift Secrets mit Jenkins funktioniert müssen bestimmte Abhängigkeiten beim Openshift Sync Plugin beachtet werden.
 Die notwendigen Plugin Versionen sind im *plugins.txt* vermerkt.
 Wenn das Openshift Sync Plugin upgedated wird muss geprüft werden, ob die Synchronisation noch funktioniert. Das sieht im Jenkins Log dann in etwa so aus
+(das ist nur der Beginn danach folgen dann Log Einträge für den Abgleich von builder, secrets, etc)
 
 ```
 2023-03-16 10:43:09 INFO io.fabric8.jenkins.openshiftsync.GlobalPluginConfiguration configChange OpenShift Sync Plugin processing a newly supplied configuration
