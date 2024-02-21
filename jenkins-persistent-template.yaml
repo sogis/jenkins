@@ -87,6 +87,8 @@ objects:
               value: https://kubernetes.default:443
             - name: KUBERNETES_TRUST_CERTIFICATES
               value: "true"
+            - name: CASC_JENKINS_CONFIG
+              value: /opt/configuration-as-code/configuration-as-code.yaml
             - name: JENKINS_SERVICE_NAME
               value: ${JENKINS_SERVICE_NAME}
             - name: JNLP_SERVICE_NAME
@@ -138,6 +140,9 @@ objects:
           - mountPath: /etc/pki/ca-trust/source/anchors
             name: jenkins-ca-certificates-volume
             readOnly: true
+          - mountPath: /opt/configuration-as-code
+            name: configuration-as-code-volume
+            readOnly: true
         dnsPolicy: ClusterFirst
         restartPolicy: Always
         serviceAccountName: ${JENKINS_SERVICE_NAME}
@@ -148,6 +153,9 @@ objects:
         - name: jenkins-ca-certificates-volume
           configMap:
             name: jenkins-ca-certificates
+        - name: configuration-as-code-volume
+          configMap:
+            name: jenkins-configuration-as-code
         - name: ssh-keys
           secret:
             secretName: jenkins-geocat-ssh-key
@@ -236,6 +244,17 @@ objects:
       name: ${JENKINS_SERVICE_NAME}
     sessionAffinity: None
     type: ClusterIP
+- apiVersion: v1
+  kind: ConfigMap
+  metadata:
+    name: jenkins-configuration-as-code
+  data:
+    configuration-as-code.yaml: |
+      jenkins:
+        scmCheckoutRetryCount: 1
+      unclassified:
+        location:
+          adminAddress: Jenkins ${ENVIRONMENT} <noreply@jenkins.agi.so.ch>
 parameters:
 - description: The name of the OpenShift Service exposed for the Jenkins container.
   displayName: Jenkins Service Name
@@ -290,3 +309,7 @@ parameters:
   displayName: Fatal Error Log File
   name: ENABLE_FATAL_ERROR_LOG_FILE
   value: "false"
+- description: Openshift environment
+  displayName: Environment
+  name: ENVIRONMENT
+  value: test
